@@ -125,7 +125,14 @@ namespace DIT_AIO
 
         private void button9_Click(object sender, EventArgs e)
         {
+            //Scanning
+            runCustomScript(@"\\Ditfp1\helpdesk\PaperPort\CCHSCAN1\ImageRetrieverFix5.cmd");
+        }
 
+        private void button10_Click(object sender, EventArgs e)
+        {
+            //E Signature
+            runCustomScript(@"\\ditfp1\helpdesk\!SHORTCUTS!\checkCert.bat");
         }
     }
 }
