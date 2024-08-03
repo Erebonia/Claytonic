@@ -209,6 +209,7 @@
             this.button11.TabIndex = 14;
             this.button11.Text = "Guide";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -295,6 +296,7 @@
             this.button14.TabIndex = 22;
             this.button14.Text = "DISM";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -304,6 +306,7 @@
             this.button15.TabIndex = 23;
             this.button15.Text = "Wipe Windows Logins";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // Form1
             // 
