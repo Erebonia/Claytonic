@@ -80,7 +80,6 @@
             this.label1.Size = new System.Drawing.Size(157, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Data Recovery";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button2
             // 
@@ -101,7 +100,6 @@
             this.label2.Size = new System.Drawing.Size(127, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Diagnostics";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label3
             // 
@@ -112,7 +110,6 @@
             this.label3.Size = new System.Drawing.Size(147, 29);
             this.label3.TabIndex = 4;
             this.label3.Text = "System Setup";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button3
             // 
@@ -143,7 +140,6 @@
             this.label4.Size = new System.Drawing.Size(125, 29);
             this.label4.TabIndex = 7;
             this.label4.Text = "Mainframe";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button5
             // 
@@ -233,7 +229,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(167, 155);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.DIT_Icon);
             // 
             // label5
             // 
@@ -244,7 +239,6 @@
             this.label5.Size = new System.Drawing.Size(606, 33);
             this.label5.TabIndex = 17;
             this.label5.Text = "Department of Information and Technology";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -322,7 +316,6 @@
             this.label7.Size = new System.Drawing.Size(295, 29);
             this.label7.TabIndex = 19;
             this.label7.Text = "Claytonic - Tech Toolkit";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // button17
             // 
@@ -380,7 +373,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Claytonic";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
