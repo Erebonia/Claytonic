@@ -229,6 +229,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(167, 155);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.DIT_Icon);
             // 
             // label5
             // 
@@ -239,6 +240,7 @@
             this.label5.Size = new System.Drawing.Size(606, 33);
             this.label5.TabIndex = 17;
             this.label5.Text = "Department of Information and Technology";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
