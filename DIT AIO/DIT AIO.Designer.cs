@@ -70,10 +70,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 184);
+            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 181);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 26);
+            this.label1.Size = new System.Drawing.Size(157, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Data Recovery";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -91,10 +91,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(238, 184);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 26);
+            this.label2.Size = new System.Drawing.Size(127, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Diagnostics";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
@@ -102,10 +102,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(444, 184);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 26);
+            this.label3.Size = new System.Drawing.Size(147, 29);
             this.label3.TabIndex = 4;
             this.label3.Text = "System Setup";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -133,10 +133,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(632, 184);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 26);
+            this.label4.Size = new System.Drawing.Size(125, 29);
             this.label4.TabIndex = 7;
             this.label4.Text = "Mainframe";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -219,7 +219,7 @@
             this.button12.TabIndex = 15;
             this.button12.Text = "Ping IP Address";
             this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.button12.Click += new System.EventHandler(this.ping_ipaddress);
             // 
             // pictureBox1
             // 
@@ -298,7 +298,7 @@
             this.button14.TabIndex = 22;
             this.button14.Text = "DISM";
             this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.DISM_Button);
+            this.button14.Click += new System.EventHandler(this.DISM);
             // 
             // button15
             // 

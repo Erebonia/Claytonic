@@ -37,67 +37,57 @@ namespace DIT_AIO
 
         private void Net_User(object sender, EventArgs e)
         {
-            //Net user
             runCustomScript(@"\\ditfp1\helpdesk\BN\Technician_Tools\netuser.bat");
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void ping_ipaddress(object sender, EventArgs e)
         {
-            //Ping IP 
+            runCustomScript(@"\\ditfp1\helpdesk\BN\Technician_Tools\ping_ipaddress.bat");
         }
 
         private void SFC_Scan(object sender, EventArgs e)
         {
-            //sfc scannow
             runCustomScript(@"\\ditfp1\helpdesk\BN\Technician_Tools\SFC_Scannow.bat");
         }
 
-        private void DISM_Button(object sender, EventArgs e)
+        private void DISM(object sender, EventArgs e)
         {
-            //DISM
             runCustomScript(@"\\ditfp1\helpdesk\BN\Technician_Tools\DISM.bat");
         }
 
         private void Scanner_Setup(object sender, EventArgs e)
         {
-            //Scanning
             runCustomScript(@"\\Ditfp1\helpdesk\PaperPort\CCHSCAN1\ImageRetrieverFix5.cmd");
         }
 
         private void Electronic_Signature(object sender, EventArgs e)
         {
-            //E Signature
             runCustomScript(@"\\ditfp1\helpdesk\!SHORTCUTS!\checkCert.bat");
         }
 
         private void Blank_Login(object sender, EventArgs e)
         {
-            //Blank Login cmd
             runCustomScript(@"\\ditfp1\helpdesk\!SHORTCUTS!\BlankLogin.cmd");
         }
 
         private void DisableFirewall(object sender, EventArgs e)
         {
-            //Disables all firewall states + notification
             runCustomScript(@"\\ditfp1\helpdesk\BN\Firewall\firewall-notifications-off.reg");
             runCustomScript(@"\\ditfp1\helpdesk\BN\Firewall\firewall-off.bat");
         }
 
         private void Install_ACID_Unsuspend(object sender, EventArgs e)
         {
-            //Copy unsuspend macro to PC
             runCustomScript(@"\\ditfp1\helpdesk\BN\Mainframe\Install_ACID_Unsuspend.bat");
         }
 
         private void Install_ACID_Reset(object sender, EventArgs e)
         {
-            //Install PW Reset macro to PC
             runCustomScript(@"\\ditfp1\helpdesk\BN\Mainframe\Install_ACID_PW_Reset.bat");
         }
 
         private void Mainframe_Guides(object sender, EventArgs e)
         {
-            //Open all the folder with guides about mainframe
             runCustomScript(@"\\Ditfp1\helpdesk\BN\Mainframe");
         }
 
