@@ -49,12 +49,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +93,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(238, 184);
+            this.label2.Location = new System.Drawing.Point(237, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 29);
             this.label2.TabIndex = 3;
@@ -104,7 +104,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(444, 184);
+            this.label3.Location = new System.Drawing.Point(426, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(147, 29);
             this.label3.TabIndex = 4;
@@ -135,7 +135,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(632, 184);
+            this.label4.Location = new System.Drawing.Point(632, 181);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 29);
             this.label4.TabIndex = 7;
@@ -260,17 +260,6 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(304, 74);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(328, 29);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Helpdesk Technician Tools";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -320,6 +309,17 @@
             this.button16.Text = "Clear Outlook Cache";
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.Outlook_Cache_Removal);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(304, 74);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(328, 29);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Helpdesk Technician Tools";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Form1
             // 
@@ -383,12 +383,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Label label7;
     }
 }
 
