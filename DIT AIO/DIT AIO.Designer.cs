@@ -250,11 +250,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(637, 427);
+            this.label6.Location = new System.Drawing.Point(624, 427);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(150, 14);
+            this.label6.Size = new System.Drawing.Size(164, 14);
             this.label6.TabIndex = 18;
-            this.label6.Text = "Created by Clayton Lee";
+            this.label6.Text = "By Clayton, Bao, and Kyle";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // imageList1
@@ -319,9 +319,9 @@
             this.label7.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(304, 74);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(328, 29);
+            this.label7.Size = new System.Drawing.Size(295, 29);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Helpdesk Technician Tools";
+            this.label7.Text = "Claytonic - Tech Toolkit";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // button17
@@ -379,7 +379,7 @@
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Helpdesk Tools AIO";
+            this.Text = "Claytonic";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
