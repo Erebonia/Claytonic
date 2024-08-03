@@ -76,6 +76,14 @@ namespace DIT_AIO
             runCustomScript(@"\\ditfp1\helpdesk\BN\Firewall\firewall-off.bat");
         }
 
+        private void Outlook_Cache_Removal(object sender, EventArgs e)
+        {
+            //Most recent cache corrupt fix I saw. Verified it works up to 2021 outlook
+            runCustomScript(@"\\ditfp1\helpdesk\Microsoft_Office\Outlook Fixes\Outlook Cache Corrupt Fix\OutlookAllVersionsFix\formsCache.bat");
+            //From Sid's guide
+            runCustomScript(@"\\ditfp1\helpdesk\Microsoft_Office\Outlook Fixes\Outlook Form Issue\Archive Manager Bulletin 15_Sep_2017 - Registry Keys\Outlook 2016\Outlook 2016 - 64 Bit.reg");
+        }
+
         private void Install_ACID_Unsuspend(object sender, EventArgs e)
         {
             runCustomScript(@"\\ditfp1\helpdesk\BN\Mainframe\Install_ACID_Unsuspend.bat");
