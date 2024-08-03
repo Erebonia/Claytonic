@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace DIT_AIO
@@ -84,6 +85,11 @@ namespace DIT_AIO
             runCustomScript(@"\\ditfp1\helpdesk\Microsoft_Office\Outlook Fixes\Outlook Form Issue\Archive Manager Bulletin 15_Sep_2017 - Registry Keys\Outlook 2016\Outlook 2016 - 64 Bit.reg");
         }
 
+        private void CCH_Deploy(object sender, EventArgs e)
+        {
+            runCustomScript(@"\\cchdeploy1\dep$\AppInstallOnly.bat");
+        }
+
         private void Install_ACID_Unsuspend(object sender, EventArgs e)
         {
             runCustomScript(@"\\ditfp1\helpdesk\BN\Mainframe\Install_ACID_Unsuspend.bat");
@@ -92,6 +98,11 @@ namespace DIT_AIO
         private void Install_ACID_Reset(object sender, EventArgs e)
         {
             runCustomScript(@"\\ditfp1\helpdesk\BN\Mainframe\Install_ACID_PW_Reset.bat");
+        }
+
+        private void Clear_PS_PrinterData(object sender, EventArgs e)
+        {
+            runCustomScript(@"\\ditfp1\helpdesk\Mainframe attachmate (Extra!)\MainframeEDPModify.cmd");
         }
 
         private void Mainframe_Guides(object sender, EventArgs e)

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -55,12 +56,14 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(41, 222);
+            this.button1.Location = new System.Drawing.Point(47, 216);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 38);
             this.button1.TabIndex = 0;
@@ -72,7 +75,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 181);
+            this.label1.Location = new System.Drawing.Point(28, 175);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 29);
             this.label1.TabIndex = 1;
@@ -81,7 +84,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(41, 266);
+            this.button2.Location = new System.Drawing.Point(47, 260);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(105, 38);
             this.button2.TabIndex = 2;
@@ -93,7 +96,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(237, 181);
+            this.label2.Location = new System.Drawing.Point(243, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 29);
             this.label2.TabIndex = 3;
@@ -104,7 +107,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(426, 181);
+            this.label3.Location = new System.Drawing.Point(432, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(147, 29);
             this.label3.TabIndex = 4;
@@ -113,7 +116,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(449, 354);
+            this.button3.Location = new System.Drawing.Point(455, 348);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(105, 38);
             this.button3.TabIndex = 5;
@@ -123,7 +126,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(242, 222);
+            this.button4.Location = new System.Drawing.Point(248, 216);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(105, 38);
             this.button4.TabIndex = 6;
@@ -135,7 +138,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(632, 181);
+            this.label4.Location = new System.Drawing.Point(638, 175);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 29);
             this.label4.TabIndex = 7;
@@ -144,7 +147,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(637, 222);
+            this.button5.Location = new System.Drawing.Point(643, 216);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(105, 38);
             this.button5.TabIndex = 8;
@@ -154,7 +157,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(637, 266);
+            this.button6.Location = new System.Drawing.Point(643, 260);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(105, 38);
             this.button6.TabIndex = 9;
@@ -164,7 +167,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(41, 310);
+            this.button7.Location = new System.Drawing.Point(47, 304);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(105, 38);
             this.button7.TabIndex = 10;
@@ -174,7 +177,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(41, 354);
+            this.button8.Location = new System.Drawing.Point(47, 348);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(105, 38);
             this.button8.TabIndex = 11;
@@ -184,7 +187,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(449, 222);
+            this.button9.Location = new System.Drawing.Point(455, 216);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(105, 38);
             this.button9.TabIndex = 12;
@@ -194,7 +197,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(449, 266);
+            this.button10.Location = new System.Drawing.Point(455, 260);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(105, 38);
             this.button10.TabIndex = 13;
@@ -204,7 +207,7 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(637, 310);
+            this.button11.Location = new System.Drawing.Point(643, 348);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(105, 38);
             this.button11.TabIndex = 14;
@@ -214,7 +217,7 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(242, 266);
+            this.button12.Location = new System.Drawing.Point(248, 260);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(105, 38);
             this.button12.TabIndex = 15;
@@ -249,9 +252,9 @@
             this.label6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(637, 427);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 14);
+            this.label6.Size = new System.Drawing.Size(150, 14);
             this.label6.TabIndex = 18;
-            this.label6.Text = "Created by Bao Nguyen";
+            this.label6.Text = "Created by Clayton Lee";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // imageList1
@@ -272,7 +275,7 @@
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(243, 310);
+            this.button13.Location = new System.Drawing.Point(249, 304);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(105, 38);
             this.button13.TabIndex = 21;
@@ -282,7 +285,7 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(243, 354);
+            this.button14.Location = new System.Drawing.Point(249, 348);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(105, 38);
             this.button14.TabIndex = 22;
@@ -292,7 +295,7 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(449, 310);
+            this.button15.Location = new System.Drawing.Point(455, 304);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(105, 38);
             this.button15.TabIndex = 23;
@@ -302,7 +305,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(449, 403);
+            this.button16.Location = new System.Drawing.Point(455, 397);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(105, 38);
             this.button16.TabIndex = 24;
@@ -321,12 +324,34 @@
             this.label7.Text = "Helpdesk Technician Tools";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(248, 392);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(105, 38);
+            this.button17.TabIndex = 25;
+            this.button17.Text = "CCH Deploy Apps";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.CCH_Deploy);
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(643, 304);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(105, 38);
+            this.button18.TabIndex = 26;
+            this.button18.Text = "Clear PS_PrinterData";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.Clear_PS_PrinterData);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button18);
+            this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
@@ -352,6 +377,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Helpdesk Tools AIO";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -389,6 +415,8 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
     }
 }
 
