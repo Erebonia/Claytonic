@@ -1,15 +1,40 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Security.Cryptography;
+using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace DIT_AIO
 {
     public partial class Form1 : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
+        //Logic to highlight each navigation tab when selected.
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeftRect,
+            int nTopRect,
+            int nRightRect,
+            int nBottomRect,
+            int nWidthEllipse,
+            int nHeightEllipse
+        );
         public Form1()
         {
             InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            pnlNav.Height = btnDashboard.Height;
+            pnlNav.Top = btnDashboard.Top;
+            pnlNav.Left = btnDashboard.Left;
+            btnDashboard.BackColor = Color.FromArgb(46, 51, 73);
+
+            // Attach event handlers
+            btnDashboard.Click += HandleButtonClick;
+            btnDataRecovery.Click += HandleButtonClick;
+            btnDiagnostics.Click += HandleButtonClick;
+            btnSystemSetup.Click += HandleButtonClick;
+            btnMainframe.Click += HandleButtonClick;
+            btnSettings.Click += HandleButtonClick;
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -130,6 +155,27 @@ namespace DIT_AIO
                 // Show error message if the script fails to start
                 MessageBox.Show($"Failed to run script: {ex.Message}");
             }
+        }
+
+        private void HandleButtonClick(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            reset_button_ui();
+
+            pnlNav.Height = clickedButton.Height;
+            pnlNav.Top = clickedButton.Top;
+            pnlNav.Left = clickedButton.Left;
+            clickedButton.BackColor = Color.FromArgb(46, 51, 73);
+        }
+
+        private void reset_button_ui()
+        {
+            btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
+            btnDataRecovery.BackColor = Color.FromArgb(24, 30, 54);
+            btnDiagnostics.BackColor = Color.FromArgb(24, 30, 54);
+            btnSystemSetup.BackColor = Color.FromArgb(24, 30, 54);
+            btnMainframe.BackColor = Color.FromArgb(24, 30, 54);
+            btnSettings.BackColor = Color.FromArgb(24, 30, 54);
         }
     }
 }

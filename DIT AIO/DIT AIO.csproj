@@ -89,5 +89,26 @@
   <ItemGroup>
     <None Include="Resources\DIT-Transparent-Logo-pv7llmvitrd8bd7xe0yzvjv2y7sjvlqw6pos4al9ac-150x150.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datarecov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mf.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
