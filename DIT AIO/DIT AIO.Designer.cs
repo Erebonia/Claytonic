@@ -86,6 +86,17 @@
             this.DESC_SFC = new System.Windows.Forms.Label();
             this.DESC_DISM = new System.Windows.Forms.Label();
             this.DESC_CCH_Deploy = new System.Windows.Forms.Label();
+            this.DESC_Paperport = new System.Windows.Forms.Label();
+            this.DESC_Esignature = new System.Windows.Forms.Label();
+            this.DESC_Blanklogin = new System.Windows.Forms.Label();
+            this.DESC_Firewall = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.DESC_MF_Unsuspend = new System.Windows.Forms.Label();
+            this.DESC_MF_PW_Reset = new System.Windows.Forms.Label();
+            this.DESC_MF_PS_PrinterData = new System.Windows.Forms.Label();
+            this.DESC_MF_Guide = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
             this.Master.SuspendLayout();
@@ -98,6 +109,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Restore_User_Data
@@ -116,7 +128,7 @@
             // btn_Firewall
             // 
             this.btn_Firewall.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Firewall.Location = new System.Drawing.Point(26, 233);
+            this.btn_Firewall.Location = new System.Drawing.Point(28, 256);
             this.btn_Firewall.Name = "btn_Firewall";
             this.btn_Firewall.Size = new System.Drawing.Size(105, 38);
             this.btn_Firewall.TabIndex = 5;
@@ -142,7 +154,7 @@
             // btn_MF_Unsuspend
             // 
             this.btn_MF_Unsuspend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(26, 101);
+            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(26, 94);
             this.btn_MF_Unsuspend.Name = "btn_MF_Unsuspend";
             this.btn_MF_Unsuspend.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_Unsuspend.TabIndex = 8;
@@ -155,7 +167,7 @@
             // btn_MF_PW_Reset
             // 
             this.btn_MF_PW_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(26, 145);
+            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(26, 156);
             this.btn_MF_PW_Reset.Name = "btn_MF_PW_Reset";
             this.btn_MF_PW_Reset.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_PW_Reset.TabIndex = 9;
@@ -194,7 +206,7 @@
             // btn_Paperport
             // 
             this.btn_Paperport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Paperport.Location = new System.Drawing.Point(26, 101);
+            this.btn_Paperport.Location = new System.Drawing.Point(26, 85);
             this.btn_Paperport.Name = "btn_Paperport";
             this.btn_Paperport.Size = new System.Drawing.Size(105, 38);
             this.btn_Paperport.TabIndex = 12;
@@ -220,7 +232,7 @@
             // btn_MF_Guide
             // 
             this.btn_MF_Guide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_Guide.Location = new System.Drawing.Point(26, 233);
+            this.btn_MF_Guide.Location = new System.Drawing.Point(26, 276);
             this.btn_MF_Guide.Name = "btn_MF_Guide";
             this.btn_MF_Guide.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_Guide.TabIndex = 14;
@@ -272,7 +284,7 @@
             // btn_blank_login
             // 
             this.btn_blank_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_blank_login.Location = new System.Drawing.Point(26, 189);
+            this.btn_blank_login.Location = new System.Drawing.Point(28, 200);
             this.btn_blank_login.Name = "btn_blank_login";
             this.btn_blank_login.Size = new System.Drawing.Size(105, 38);
             this.btn_blank_login.TabIndex = 23;
@@ -285,7 +297,7 @@
             // btn_outlook_cache
             // 
             this.btn_outlook_cache.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_outlook_cache.Location = new System.Drawing.Point(26, 282);
+            this.btn_outlook_cache.Location = new System.Drawing.Point(28, 313);
             this.btn_outlook_cache.Name = "btn_outlook_cache";
             this.btn_outlook_cache.Size = new System.Drawing.Size(105, 38);
             this.btn_outlook_cache.TabIndex = 24;
@@ -311,7 +323,7 @@
             // btn_MF_PS_Printer_Data
             // 
             this.btn_MF_PS_Printer_Data.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(26, 189);
+            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(26, 212);
             this.btn_MF_PS_Printer_Data.Name = "btn_MF_PS_Printer_Data";
             this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_PS_Printer_Data.TabIndex = 26;
@@ -394,12 +406,12 @@
             // 
             // Master
             // 
+            this.Master.Controls.Add(this.Home);
+            this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
             this.Master.Controls.Add(this.SystemSetup);
             this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
-            this.Master.Controls.Add(this.Home);
-            this.Master.Controls.Add(this.DataRecovery);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(611, 430);
@@ -496,6 +508,11 @@
             // SystemSetup
             // 
             this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.SystemSetup.Controls.Add(this.label1);
+            this.SystemSetup.Controls.Add(this.DESC_Firewall);
+            this.SystemSetup.Controls.Add(this.DESC_Blanklogin);
+            this.SystemSetup.Controls.Add(this.DESC_Esignature);
+            this.SystemSetup.Controls.Add(this.DESC_Paperport);
             this.SystemSetup.Controls.Add(this.Title_SystemSetup);
             this.SystemSetup.Controls.Add(this.btn_Paperport);
             this.SystemSetup.Controls.Add(this.btn_Esignature);
@@ -524,6 +541,10 @@
             // Mainframe
             // 
             this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Mainframe.Controls.Add(this.DESC_MF_Guide);
+            this.Mainframe.Controls.Add(this.DESC_MF_PS_PrinterData);
+            this.Mainframe.Controls.Add(this.DESC_MF_PW_Reset);
+            this.Mainframe.Controls.Add(this.DESC_MF_Unsuspend);
             this.Mainframe.Controls.Add(this.Title_Mainframe);
             this.Mainframe.Controls.Add(this.btn_MF_Unsuspend);
             this.Mainframe.Controls.Add(this.btn_MF_PW_Reset);
@@ -551,6 +572,8 @@
             // Settings
             // 
             this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Settings.Controls.Add(this.label3);
+            this.Settings.Controls.Add(this.pictureBox1);
             this.Settings.Controls.Add(this.Title_Settings);
             this.Settings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Settings.Location = new System.Drawing.Point(0, 0);
@@ -825,6 +848,118 @@
             this.DESC_CCH_Deploy.Text = "Connects to the network drive and opens up the CCH Deployment Server. This is han" +
     "dy for installing all the applications we use during our windows images.";
             // 
+            // DESC_Paperport
+            // 
+            this.DESC_Paperport.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Paperport.Location = new System.Drawing.Point(139, 85);
+            this.DESC_Paperport.Name = "DESC_Paperport";
+            this.DESC_Paperport.Size = new System.Drawing.Size(449, 47);
+            this.DESC_Paperport.TabIndex = 31;
+            this.DESC_Paperport.Text = "Runs imageretrieverfix on the network drive. This will setup network scanning for" +
+    " the user and after installation press the \"Get Now\" button on image retriever t" +
+    "o check for any pending scans.";
+            // 
+            // DESC_Esignature
+            // 
+            this.DESC_Esignature.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Esignature.Location = new System.Drawing.Point(139, 148);
+            this.DESC_Esignature.Name = "DESC_Esignature";
+            this.DESC_Esignature.Size = new System.Drawing.Size(449, 38);
+            this.DESC_Esignature.TabIndex = 32;
+            this.DESC_Esignature.Text = "Runs the checkcert.bat in the network drive which sets up digital scanning for th" +
+    "e user. Open adobe, open a certificate, and double check if their signature was " +
+    "created.";
+            // 
+            // DESC_Blanklogin
+            // 
+            this.DESC_Blanklogin.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Blanklogin.Location = new System.Drawing.Point(139, 202);
+            this.DESC_Blanklogin.Name = "DESC_Blanklogin";
+            this.DESC_Blanklogin.Size = new System.Drawing.Size(449, 46);
+            this.DESC_Blanklogin.TabIndex = 33;
+            this.DESC_Blanklogin.Text = "Runs blanklogin.cmd on the network drive. This clears all cached credentials on W" +
+    "indow\'s login, which can resolve password lockout issues or remove a technician\'" +
+    "s login profile from a user\'s computer.";
+            // 
+            // DESC_Firewall
+            // 
+            this.DESC_Firewall.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Firewall.Location = new System.Drawing.Point(139, 261);
+            this.DESC_Firewall.Name = "DESC_Firewall";
+            this.DESC_Firewall.Size = new System.Drawing.Size(449, 38);
+            this.DESC_Firewall.TabIndex = 34;
+            this.DESC_Firewall.Text = "Disabled all 3 firewall states and runs a .reg file to disable firewall notificat" +
+    "ions.";
+            // 
+            // label1
+            // 
+            this.label1.ForeColor = System.Drawing.Color.BurlyWood;
+            this.label1.Location = new System.Drawing.Point(139, 317);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(449, 38);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Clears outlook cache for all versions up to Outlook 2021. It connects to the netw" +
+    "ork drive and runs a .bat created by Michael Ying that clears cache.";
+            // 
+            // DESC_MF_Unsuspend
+            // 
+            this.DESC_MF_Unsuspend.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_MF_Unsuspend.Location = new System.Drawing.Point(139, 98);
+            this.DESC_MF_Unsuspend.Name = "DESC_MF_Unsuspend";
+            this.DESC_MF_Unsuspend.Size = new System.Drawing.Size(449, 38);
+            this.DESC_MF_Unsuspend.TabIndex = 33;
+            this.DESC_MF_Unsuspend.Text = "Installs the unsuspend macro for VistaTN3270 created by Bao Nguyen. Press guide f" +
+    "or configuration details.";
+            // 
+            // DESC_MF_PW_Reset
+            // 
+            this.DESC_MF_PW_Reset.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_MF_PW_Reset.Location = new System.Drawing.Point(139, 158);
+            this.DESC_MF_PW_Reset.Name = "DESC_MF_PW_Reset";
+            this.DESC_MF_PW_Reset.Size = new System.Drawing.Size(449, 38);
+            this.DESC_MF_PW_Reset.TabIndex = 34;
+            this.DESC_MF_PW_Reset.Text = "Installs the password reset macro for VistaTN3270 created by Sy. Press guide for " +
+    "configuration details.";
+            // 
+            // DESC_MF_PS_PrinterData
+            // 
+            this.DESC_MF_PS_PrinterData.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_MF_PS_PrinterData.Location = new System.Drawing.Point(139, 216);
+            this.DESC_MF_PS_PrinterData.Name = "DESC_MF_PS_PrinterData";
+            this.DESC_MF_PS_PrinterData.Size = new System.Drawing.Size(449, 38);
+            this.DESC_MF_PS_PrinterData.TabIndex = 35;
+            this.DESC_MF_PS_PrinterData.Text = "Mainframe thunderbolt issues or other miscellaneous issues? Type in their IP here" +
+    ", CTRL+F \"psprinterdata\", remove gibberish text, and replace with \"\".";
+            // 
+            // DESC_MF_Guide
+            // 
+            this.DESC_MF_Guide.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_MF_Guide.Location = new System.Drawing.Point(139, 276);
+            this.DESC_MF_Guide.Name = "DESC_MF_Guide";
+            this.DESC_MF_Guide.Size = new System.Drawing.Size(449, 38);
+            this.DESC_MF_Guide.TabIndex = 36;
+            this.DESC_MF_Guide.Text = "This links to the network drive and will open up all relevant guides to Mainframe" +
+    " that DIT Helpdesk utilizes.";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(138, 194);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(409, 38);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "This page is still under development.";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DIT_AIO.Properties.Resources.warning;
+            this.pictureBox1.Location = new System.Drawing.Point(92, 193);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -862,6 +997,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -924,6 +1060,17 @@
         private System.Windows.Forms.Label DESC_SFC;
         private System.Windows.Forms.Label DESC_CCH_Deploy;
         private System.Windows.Forms.Label DESC_DISM;
+        private System.Windows.Forms.Label DESC_Esignature;
+        private System.Windows.Forms.Label DESC_Paperport;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label DESC_Firewall;
+        private System.Windows.Forms.Label DESC_Blanklogin;
+        private System.Windows.Forms.Label DESC_MF_PW_Reset;
+        private System.Windows.Forms.Label DESC_MF_Unsuspend;
+        private System.Windows.Forms.Label DESC_MF_Guide;
+        private System.Windows.Forms.Label DESC_MF_PS_PrinterData;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
