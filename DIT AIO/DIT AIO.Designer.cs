@@ -1,6 +1,6 @@
 ﻿namespace DIT_AIO
 {
-    partial class Forms1
+    partial class Runetonic
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Runetonic));
             this.btn_Restore_User_Data = new System.Windows.Forms.Button();
             this.btn_Firewall = new System.Windows.Forms.Button();
             this.btn_Check_User_Accounts = new System.Windows.Forms.Button();
@@ -48,31 +49,35 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
-            this.btnMainframe = new System.Windows.Forms.Button();
-            this.btnSystemSetup = new System.Windows.Forms.Button();
-            this.btnDiagnostics = new System.Windows.Forms.Button();
-            this.btnDataRecovery = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.Icon = new System.Windows.Forms.Panel();
+            this.programicon = new System.Windows.Forms.Panel();
             this.programName = new System.Windows.Forms.Label();
-            this.subtitle = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Subtitle = new System.Windows.Forms.Label();
             this.btnBackup_User_Data = new System.Windows.Forms.Button();
             this.Master = new System.Windows.Forms.Panel();
+            this.Home = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.DataRecovery = new System.Windows.Forms.Panel();
             this.Diagnostics = new System.Windows.Forms.Panel();
             this.SystemSetup = new System.Windows.Forms.Panel();
             this.Mainframe = new System.Windows.Forms.Panel();
             this.Settings = new System.Windows.Forms.Panel();
-            this.Home = new System.Windows.Forms.Panel();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.btnMainframe = new System.Windows.Forms.Button();
+            this.btnSystemSetup = new System.Windows.Forms.Button();
+            this.btnDiagnostics = new System.Windows.Forms.Button();
+            this.btnDataRecovery = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.Icon.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.programicon.SuspendLayout();
             this.Master.SuspendLayout();
+            this.Home.SuspendLayout();
             this.DataRecovery.SuspendLayout();
             this.Diagnostics.SuspendLayout();
             this.SystemSetup.SuspendLayout();
             this.Mainframe.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Restore_User_Data
@@ -289,10 +294,11 @@
             this.panel1.Controls.Add(this.btnDiagnostics);
             this.panel1.Controls.Add(this.btnDataRecovery);
             this.panel1.Controls.Add(this.btnDashboard);
-            this.panel1.Controls.Add(this.Icon);
+            this.panel1.Controls.Add(this.programicon);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 460);
+            this.panel1.Size = new System.Drawing.Size(186, 452);
             this.panel1.TabIndex = 27;
             // 
             // pnlNav
@@ -305,18 +311,179 @@
             // 
             // btnSettings
             // 
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnSettings.Image = global::DIT_AIO.Properties.Resources.settings;
-            this.btnSettings.Location = new System.Drawing.Point(-3, 413);
+            this.btnSettings.Location = new System.Drawing.Point(0, 410);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(186, 42);
             this.btnSettings.TabIndex = 1;
             this.btnSettings.Text = "Settings";
             this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSettings.UseVisualStyleBackColor = true;
+            // 
+            // programicon
+            // 
+            this.programicon.Controls.Add(this.programName);
+            this.programicon.Controls.Add(this.Subtitle);
+            this.programicon.Controls.Add(this.pictureBox2);
+            this.programicon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.programicon.Location = new System.Drawing.Point(0, 0);
+            this.programicon.Name = "programicon";
+            this.programicon.Size = new System.Drawing.Size(186, 144);
+            this.programicon.TabIndex = 0;
+            // 
+            // programName
+            // 
+            this.programName.AutoSize = true;
+            this.programName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.programName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.programName.Location = new System.Drawing.Point(39, 97);
+            this.programName.Name = "programName";
+            this.programName.Size = new System.Drawing.Size(103, 16);
+            this.programName.TabIndex = 1;
+            this.programName.Text = "DIT Helpdesk";
+            // 
+            // Subtitle
+            // 
+            this.Subtitle.AutoSize = true;
+            this.Subtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Subtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
+            this.Subtitle.Location = new System.Drawing.Point(58, 113);
+            this.Subtitle.Name = "Subtitle";
+            this.Subtitle.Size = new System.Drawing.Size(56, 12);
+            this.Subtitle.TabIndex = 2;
+            this.Subtitle.Text = "Runetonic";
+            // 
+            // btnBackup_User_Data
+            // 
+            this.btnBackup_User_Data.Location = new System.Drawing.Point(41, 85);
+            this.btnBackup_User_Data.Name = "btnBackup_User_Data";
+            this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
+            this.btnBackup_User_Data.TabIndex = 0;
+            this.btnBackup_User_Data.Tag = "DataRecovery";
+            this.btnBackup_User_Data.Text = "Backup User Data";
+            this.btnBackup_User_Data.UseVisualStyleBackColor = true;
+            this.btnBackup_User_Data.Visible = false;
+            this.btnBackup_User_Data.Click += new System.EventHandler(this.Backup_Data);
+            // 
+            // Master
+            // 
+            this.Master.Controls.Add(this.Home);
+            this.Master.Controls.Add(this.DataRecovery);
+            this.Master.Controls.Add(this.Diagnostics);
+            this.Master.Controls.Add(this.SystemSetup);
+            this.Master.Controls.Add(this.Mainframe);
+            this.Master.Controls.Add(this.Settings);
+            this.Master.Location = new System.Drawing.Point(192, 12);
+            this.Master.Name = "Master";
+            this.Master.Size = new System.Drawing.Size(611, 430);
+            this.Master.TabIndex = 28;
+            // 
+            // Home
+            // 
+            this.Home.Controls.Add(this.label1);
+            this.Home.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Home.Location = new System.Drawing.Point(0, 0);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(611, 430);
+            this.Home.TabIndex = 27;
+            this.Home.Tag = "Home";
+            this.Home.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label1.Location = new System.Drawing.Point(20, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Home";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // DataRecovery
+            // 
+            this.DataRecovery.AutoSize = true;
+            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.DataRecovery.Controls.Add(this.btnBackup_User_Data);
+            this.DataRecovery.Controls.Add(this.btn_Restore_User_Data);
+            this.DataRecovery.Controls.Add(this.btn_Backup_Printers);
+            this.DataRecovery.Controls.Add(this.btn_Restore_Printers);
+            this.DataRecovery.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataRecovery.Location = new System.Drawing.Point(0, 0);
+            this.DataRecovery.Name = "DataRecovery";
+            this.DataRecovery.Size = new System.Drawing.Size(611, 430);
+            this.DataRecovery.TabIndex = 29;
+            this.DataRecovery.Tag = "DataRecovery";
+            this.DataRecovery.Visible = false;
+            // 
+            // Diagnostics
+            // 
+            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Diagnostics.Controls.Add(this.btn_Check_User_Accounts);
+            this.Diagnostics.Controls.Add(this.btn_Ping_IP);
+            this.Diagnostics.Controls.Add(this.btn_SFC);
+            this.Diagnostics.Controls.Add(this.btn_DISM);
+            this.Diagnostics.Controls.Add(this.btn_CCH_Deploy);
+            this.Diagnostics.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Diagnostics.Location = new System.Drawing.Point(0, 0);
+            this.Diagnostics.Name = "Diagnostics";
+            this.Diagnostics.Size = new System.Drawing.Size(611, 430);
+            this.Diagnostics.TabIndex = 28;
+            this.Diagnostics.Tag = "Diagnostics";
+            this.Diagnostics.Visible = false;
+            // 
+            // SystemSetup
+            // 
+            this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.SystemSetup.Controls.Add(this.btn_Paperport);
+            this.SystemSetup.Controls.Add(this.btn_Esignature);
+            this.SystemSetup.Controls.Add(this.btn_blank_login);
+            this.SystemSetup.Controls.Add(this.btn_Firewall);
+            this.SystemSetup.Controls.Add(this.btn_outlook_cache);
+            this.SystemSetup.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SystemSetup.Location = new System.Drawing.Point(0, 0);
+            this.SystemSetup.Name = "SystemSetup";
+            this.SystemSetup.Size = new System.Drawing.Size(611, 430);
+            this.SystemSetup.TabIndex = 30;
+            this.SystemSetup.Tag = "SystemSetup";
+            this.SystemSetup.Visible = false;
+            // 
+            // Mainframe
+            // 
+            this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Mainframe.Controls.Add(this.btn_MF_Unsuspend);
+            this.Mainframe.Controls.Add(this.btn_MF_PW_Reset);
+            this.Mainframe.Controls.Add(this.btn_MF_PS_Printer_Data);
+            this.Mainframe.Controls.Add(this.btn_MF_Guide);
+            this.Mainframe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mainframe.Location = new System.Drawing.Point(0, 0);
+            this.Mainframe.Name = "Mainframe";
+            this.Mainframe.Size = new System.Drawing.Size(611, 430);
+            this.Mainframe.TabIndex = 31;
+            this.Mainframe.Tag = "Mainframe";
+            this.Mainframe.Visible = false;
+            // 
+            // Settings
+            // 
+            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Settings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Settings.Location = new System.Drawing.Point(0, 0);
+            this.Settings.Name = "Settings";
+            this.Settings.Size = new System.Drawing.Size(611, 430);
+            this.Settings.TabIndex = 32;
+            this.Settings.Tag = "Settings";
+            this.Settings.Visible = false;
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
             // 
             // btnMainframe
             // 
@@ -325,7 +492,7 @@
             this.btnMainframe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMainframe.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMainframe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnMainframe.Image = global::DIT_AIO.Properties.Resources.mf;
+            this.btnMainframe.Image = global::DIT_AIO.Properties.Resources.mainframe;
             this.btnMainframe.Location = new System.Drawing.Point(0, 312);
             this.btnMainframe.Name = "btnMainframe";
             this.btnMainframe.Size = new System.Drawing.Size(186, 42);
@@ -357,7 +524,7 @@
             this.btnDiagnostics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDiagnostics.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDiagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnDiagnostics.Image = global::DIT_AIO.Properties.Resources.datarecov1;
+            this.btnDiagnostics.Image = global::DIT_AIO.Properties.Resources.diag;
             this.btnDiagnostics.Location = new System.Drawing.Point(0, 228);
             this.btnDiagnostics.Name = "btnDiagnostics";
             this.btnDiagnostics.Size = new System.Drawing.Size(186, 42);
@@ -373,7 +540,7 @@
             this.btnDataRecovery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDataRecovery.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDataRecovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnDataRecovery.Image = global::DIT_AIO.Properties.Resources.diag;
+            this.btnDataRecovery.Image = global::DIT_AIO.Properties.Resources.datarecov;
             this.btnDataRecovery.Location = new System.Drawing.Point(0, 186);
             this.btnDataRecovery.Name = "btnDataRecovery";
             this.btnDataRecovery.Size = new System.Drawing.Size(186, 42);
@@ -398,42 +565,9 @@
             this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashboard.UseVisualStyleBackColor = true;
             // 
-            // Icon
-            // 
-            this.Icon.Controls.Add(this.programName);
-            this.Icon.Controls.Add(this.subtitle);
-            this.Icon.Controls.Add(this.pictureBox2);
-            this.Icon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Icon.Location = new System.Drawing.Point(0, 0);
-            this.Icon.Name = "Icon";
-            this.Icon.Size = new System.Drawing.Size(186, 144);
-            this.Icon.TabIndex = 0;
-            // 
-            // programName
-            // 
-            this.programName.AutoSize = true;
-            this.programName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.programName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.programName.Location = new System.Drawing.Point(40, 97);
-            this.programName.Name = "programName";
-            this.programName.Size = new System.Drawing.Size(103, 16);
-            this.programName.TabIndex = 1;
-            this.programName.Text = "DIT Helpdesk";
-            // 
-            // subtitle
-            // 
-            this.subtitle.AutoSize = true;
-            this.subtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.subtitle.Location = new System.Drawing.Point(41, 118);
-            this.subtitle.Name = "subtitle";
-            this.subtitle.Size = new System.Drawing.Size(89, 12);
-            this.subtitle.TabIndex = 2;
-            this.subtitle.Text = "Session Active: ";
-            // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::DIT_AIO.Properties.Resources.DIT_Transparent_Logo_pv7llmvitrd8bd7xe0yzvjv2y7sjvlqw6pos4al9ac_150x150;
+            this.pictureBox2.Image = global::DIT_AIO.Properties.Resources.DIT_Logo;
             this.pictureBox2.Location = new System.Drawing.Point(60, 22);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(63, 63);
@@ -441,131 +575,31 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // btnBackup_User_Data
-            // 
-            this.btnBackup_User_Data.Location = new System.Drawing.Point(41, 85);
-            this.btnBackup_User_Data.Name = "btnBackup_User_Data";
-            this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
-            this.btnBackup_User_Data.TabIndex = 0;
-            this.btnBackup_User_Data.Tag = "DataRecovery";
-            this.btnBackup_User_Data.Text = "Backup User Data";
-            this.btnBackup_User_Data.UseVisualStyleBackColor = true;
-            this.btnBackup_User_Data.Visible = false;
-            this.btnBackup_User_Data.Click += new System.EventHandler(this.Backup_Data);
-            // 
-            // Master
-            // 
-            this.Master.Controls.Add(this.DataRecovery);
-            this.Master.Controls.Add(this.Diagnostics);
-            this.Master.Controls.Add(this.SystemSetup);
-            this.Master.Controls.Add(this.Mainframe);
-            this.Master.Controls.Add(this.Settings);
-            this.Master.Controls.Add(this.Home);
-            this.Master.Location = new System.Drawing.Point(192, 12);
-            this.Master.Name = "Master";
-            this.Master.Size = new System.Drawing.Size(611, 430);
-            this.Master.TabIndex = 28;
-            // 
-            // DataRecovery
-            // 
-            this.DataRecovery.AutoSize = true;
-            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.DataRecovery.Controls.Add(this.btnBackup_User_Data);
-            this.DataRecovery.Controls.Add(this.btn_Restore_User_Data);
-            this.DataRecovery.Controls.Add(this.btn_Backup_Printers);
-            this.DataRecovery.Controls.Add(this.btn_Restore_Printers);
-            this.DataRecovery.Location = new System.Drawing.Point(0, 0);
-            this.DataRecovery.Name = "DataRecovery";
-            this.DataRecovery.Size = new System.Drawing.Size(586, 417);
-            this.DataRecovery.TabIndex = 29;
-            this.DataRecovery.Tag = "DataRecovery";
-            this.DataRecovery.Visible = false;
-            // 
-            // Diagnostics
-            // 
-            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.Diagnostics.Controls.Add(this.btn_Check_User_Accounts);
-            this.Diagnostics.Controls.Add(this.btn_Ping_IP);
-            this.Diagnostics.Controls.Add(this.btn_SFC);
-            this.Diagnostics.Controls.Add(this.btn_DISM);
-            this.Diagnostics.Controls.Add(this.btn_CCH_Deploy);
-            this.Diagnostics.Location = new System.Drawing.Point(0, 0);
-            this.Diagnostics.Name = "Diagnostics";
-            this.Diagnostics.Size = new System.Drawing.Size(586, 417);
-            this.Diagnostics.TabIndex = 28;
-            this.Diagnostics.Tag = "Diagnostics";
-            this.Diagnostics.Visible = false;
-            // 
-            // SystemSetup
-            // 
-            this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.SystemSetup.Controls.Add(this.btn_Paperport);
-            this.SystemSetup.Controls.Add(this.btn_Esignature);
-            this.SystemSetup.Controls.Add(this.btn_blank_login);
-            this.SystemSetup.Controls.Add(this.btn_Firewall);
-            this.SystemSetup.Controls.Add(this.btn_outlook_cache);
-            this.SystemSetup.Location = new System.Drawing.Point(0, 0);
-            this.SystemSetup.Name = "SystemSetup";
-            this.SystemSetup.Size = new System.Drawing.Size(586, 417);
-            this.SystemSetup.TabIndex = 30;
-            this.SystemSetup.Tag = "SystemSetup";
-            this.SystemSetup.Visible = false;
-            // 
-            // Mainframe
-            // 
-            this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.Mainframe.Controls.Add(this.btn_MF_Unsuspend);
-            this.Mainframe.Controls.Add(this.btn_MF_PW_Reset);
-            this.Mainframe.Controls.Add(this.btn_MF_PS_Printer_Data);
-            this.Mainframe.Controls.Add(this.btn_MF_Guide);
-            this.Mainframe.Location = new System.Drawing.Point(0, 0);
-            this.Mainframe.Name = "Mainframe";
-            this.Mainframe.Size = new System.Drawing.Size(586, 417);
-            this.Mainframe.TabIndex = 31;
-            this.Mainframe.Tag = "Mainframe";
-            this.Mainframe.Visible = false;
-            // 
-            // Settings
-            // 
-            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.Settings.Location = new System.Drawing.Point(0, 0);
-            this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(586, 417);
-            this.Settings.TabIndex = 32;
-            this.Settings.Tag = "Settings";
-            this.Settings.Visible = false;
-            // 
-            // Home
-            // 
-            this.Home.Location = new System.Drawing.Point(0, 0);
-            this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(586, 417);
-            this.Home.TabIndex = 27;
-            this.Home.Tag = "Home";
-            this.Home.Visible = false;
-            // 
-            // Forms1
+            // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(815, 454);
+            this.ClientSize = new System.Drawing.Size(810, 452);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Master);
-            this.Name = "Forms1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Runetonic";
             this.Text = "Runetonic";
             this.panel1.ResumeLayout(false);
-            this.Icon.ResumeLayout(false);
-            this.Icon.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.programicon.ResumeLayout(false);
+            this.programicon.PerformLayout();
             this.Master.ResumeLayout(false);
             this.Master.PerformLayout();
+            this.Home.ResumeLayout(false);
+            this.Home.PerformLayout();
             this.DataRecovery.ResumeLayout(false);
             this.Diagnostics.ResumeLayout(false);
             this.SystemSetup.ResumeLayout(false);
             this.Mainframe.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -589,10 +623,10 @@
         private System.Windows.Forms.Button btn_CCH_Deploy;
         private System.Windows.Forms.Button btn_MF_PS_Printer_Data;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel Icon;
+        private System.Windows.Forms.Panel programicon;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Label subtitle;
+        private System.Windows.Forms.Label Subtitle;
         private System.Windows.Forms.Label programName;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnSystemSetup;
@@ -608,6 +642,8 @@
         private System.Windows.Forms.Panel SystemSetup;
         private System.Windows.Forms.Panel Mainframe;
         private System.Windows.Forms.Panel Settings;
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

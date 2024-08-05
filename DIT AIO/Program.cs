@@ -13,7 +13,7 @@ namespace DIT_AIO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms1());
+            Application.Run(new Runetonic());
         }
     }
 }

@@ -118,29 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="classic-wide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classic-wide.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DIT-Transparent-Logo-pv7llmvitrd8bd7xe0yzvjv2y7sjvlqw6pos4al9ac-150x150" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DIT-Transparent-Logo-pv7llmvitrd8bd7xe0yzvjv2y7sjvlqw6pos4al9ac-150x150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="datarecov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\datarecov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="datarecov" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\datarecov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="datarecov1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\datarecov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DIT_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DIT_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="system" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon032" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon032.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="catjam-cat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\catjam-cat.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,7 +139,7 @@
   <data name="diag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mainframe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainframe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

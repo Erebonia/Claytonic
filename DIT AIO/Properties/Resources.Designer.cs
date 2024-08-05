@@ -63,26 +63,6 @@ namespace DIT_AIO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap catjam_cat {
-            get {
-                object obj = ResourceManager.GetObject("catjam-cat", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap classic_wide {
-            get {
-                object obj = ResourceManager.GetObject("classic-wide", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap datarecov {
             get {
                 object obj = ResourceManager.GetObject("datarecov", resourceCulture);
@@ -113,9 +93,9 @@ namespace DIT_AIO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DIT_Transparent_Logo_pv7llmvitrd8bd7xe0yzvjv2y7sjvlqw6pos4al9ac_150x150 {
+        internal static System.Drawing.Bitmap DIT_Logo {
             get {
-                object obj = ResourceManager.GetObject("DIT-Transparent-Logo-pv7llmvitrd8bd7xe0yzvjv2y7sjvlqw6pos4al9ac-150x150", resourceCulture);
+                object obj = ResourceManager.GetObject("DIT_Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,19 +113,9 @@ namespace DIT_AIO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon032 {
+        internal static System.Drawing.Bitmap mainframe {
             get {
-                object obj = ResourceManager.GetObject("icon032", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mf {
-            get {
-                object obj = ResourceManager.GetObject("mf", resourceCulture);
+                object obj = ResourceManager.GetObject("mainframe", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

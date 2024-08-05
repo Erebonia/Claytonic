@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace DIT_AIO
 {
-    public partial class Forms1 : Form
+    public partial class Runetonic : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -20,7 +20,7 @@ namespace DIT_AIO
             int nHeightEllipse
         );
 
-        public Forms1()
+        public Runetonic()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
@@ -223,5 +223,9 @@ namespace DIT_AIO
             HandleButtonClick(sender, e);
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
