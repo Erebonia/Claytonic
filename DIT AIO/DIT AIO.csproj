@@ -102,10 +102,13 @@
     <None Include="Resources\mainframe.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icon074.png" />
+    <None Include="Resources\exit.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icon070.png" />
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1237969505477722112.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
