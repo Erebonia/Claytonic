@@ -335,7 +335,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Controls.Add(this.btnMainframe);
@@ -360,7 +360,7 @@
             // 
             // programicon
             // 
-            this.programicon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.programicon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.programicon.Controls.Add(this.programName);
             this.programicon.Controls.Add(this.Subtitle);
             this.programicon.Controls.Add(this.pictureBox2);
@@ -422,7 +422,7 @@
             // DataRecovery
             // 
             this.DataRecovery.AutoSize = true;
-            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.DataRecovery.Controls.Add(this.label2);
             this.DataRecovery.Controls.Add(this.warning_printers);
             this.DataRecovery.Controls.Add(this.DESC_Restore_Printers);
@@ -478,7 +478,7 @@
             // 
             // Diagnostics
             // 
-            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(27)))), ((int)(((byte)(17)))));
+            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.Diagnostics.Controls.Add(this.DESC_CCH_Deploy);
             this.Diagnostics.Controls.Add(this.DESC_DISM);
             this.Diagnostics.Controls.Add(this.DESC_SFC);
@@ -511,7 +511,7 @@
             // 
             // SystemSetup
             // 
-            this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(27)))));
+            this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.SystemSetup.Controls.Add(this.label1);
             this.SystemSetup.Controls.Add(this.DESC_Firewall);
             this.SystemSetup.Controls.Add(this.DESC_Blanklogin);
@@ -544,7 +544,7 @@
             // 
             // Mainframe
             // 
-            this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(17)))), ((int)(((byte)(27)))));
+            this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.Mainframe.Controls.Add(this.DESC_MF_Guide);
             this.Mainframe.Controls.Add(this.DESC_MF_PS_PrinterData);
             this.Mainframe.Controls.Add(this.DESC_MF_PW_Reset);
@@ -575,7 +575,7 @@
             // 
             // Settings
             // 
-            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.Settings.Controls.Add(this.label3);
             this.Settings.Controls.Add(this.pictureBox1);
             this.Settings.Controls.Add(this.Title_Settings);
@@ -600,7 +600,7 @@
             // 
             // Home
             // 
-            this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.Home.Controls.Add(this.Title_Home);
             this.Home.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Home.Location = new System.Drawing.Point(0, 0);
@@ -675,7 +675,7 @@
             // 
             // btnSettings
             // 
-            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -692,7 +692,7 @@
             // 
             // btnMainframe
             // 
-            this.btnMainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnMainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.btnMainframe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMainframe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMainframe.FlatAppearance.BorderSize = 0;
@@ -710,7 +710,7 @@
             // 
             // btnSystemSetup
             // 
-            this.btnSystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnSystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.btnSystemSetup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSystemSetup.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSystemSetup.FlatAppearance.BorderSize = 0;
@@ -728,7 +728,7 @@
             // 
             // btnDiagnostics
             // 
-            this.btnDiagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnDiagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.btnDiagnostics.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDiagnostics.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDiagnostics.FlatAppearance.BorderSize = 0;
@@ -746,7 +746,7 @@
             // 
             // btnDataRecovery
             // 
-            this.btnDataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnDataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.btnDataRecovery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDataRecovery.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDataRecovery.FlatAppearance.BorderSize = 0;
@@ -764,7 +764,7 @@
             // 
             // btnDashboard
             // 
-            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
