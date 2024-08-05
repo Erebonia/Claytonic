@@ -675,6 +675,8 @@
             this.Controls.Add(this.Master);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Runetonic";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Runetonic";
             this.panel1.ResumeLayout(false);
             this.programicon.ResumeLayout(false);
