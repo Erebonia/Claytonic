@@ -202,12 +202,12 @@ namespace DIT_AIO
 
         private void reset_button_ui()
         {
-            btnDashboard.BackColor = Color.FromArgb(17, 17, 17);
-            btnDataRecovery.BackColor = Color.FromArgb(17, 17, 17);
-            btnDiagnostics.BackColor = Color.FromArgb(17, 17, 17);
-            btnSystemSetup.BackColor = Color.FromArgb(17, 17, 17);
-            btnMainframe.BackColor = Color.FromArgb(17, 17, 17);
-            btnSettings.BackColor = Color.FromArgb(17, 17, 17);
+            btnDashboard.BackColor = Color.FromArgb(30,31,34);
+            btnDataRecovery.BackColor = Color.FromArgb(30, 31, 34);
+            btnDiagnostics.BackColor = Color.FromArgb(30, 31, 34);
+            btnSystemSetup.BackColor = Color.FromArgb(30, 31, 34);
+            btnMainframe.BackColor = Color.FromArgb(30, 31, 34);
+            btnSettings.BackColor = Color.FromArgb(30, 31, 34);
         }
 
         private void HandleButtonClick(object sender, EventArgs e)
