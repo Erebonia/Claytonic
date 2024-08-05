@@ -116,8 +116,5 @@
   <ItemGroup>
     <None Include="Resources\button.png" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kyubei.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

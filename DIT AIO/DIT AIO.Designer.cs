@@ -578,7 +578,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::DIT_AIO.Properties.Resources.kyubei;
             this.pictureBox3.Location = new System.Drawing.Point(484, 310);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(127, 120);
