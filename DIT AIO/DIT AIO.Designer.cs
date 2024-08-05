@@ -72,6 +72,7 @@
             this.Title_Diagnostics = new System.Windows.Forms.Label();
             this.Title_SystemSetup = new System.Windows.Forms.Label();
             this.Title_Mainframe = new System.Windows.Forms.Label();
+            this.Title_Settings = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -81,12 +82,14 @@
             this.Diagnostics.SuspendLayout();
             this.SystemSetup.SuspendLayout();
             this.Mainframe.SuspendLayout();
+            this.Settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Restore_User_Data
             // 
-            this.btn_Restore_User_Data.Location = new System.Drawing.Point(41, 129);
+            this.btn_Restore_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Restore_User_Data.Location = new System.Drawing.Point(26, 161);
             this.btn_Restore_User_Data.Name = "btn_Restore_User_Data";
             this.btn_Restore_User_Data.Size = new System.Drawing.Size(105, 38);
             this.btn_Restore_User_Data.TabIndex = 2;
@@ -98,7 +101,8 @@
             // 
             // btn_Firewall
             // 
-            this.btn_Firewall.Location = new System.Drawing.Point(350, 217);
+            this.btn_Firewall.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Firewall.Location = new System.Drawing.Point(26, 233);
             this.btn_Firewall.Name = "btn_Firewall";
             this.btn_Firewall.Size = new System.Drawing.Size(105, 38);
             this.btn_Firewall.TabIndex = 5;
@@ -110,7 +114,8 @@
             // 
             // btn_Check_User_Accounts
             // 
-            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(199, 85);
+            this.btn_Check_User_Accounts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(26, 101);
             this.btn_Check_User_Accounts.Name = "btn_Check_User_Accounts";
             this.btn_Check_User_Accounts.Size = new System.Drawing.Size(105, 38);
             this.btn_Check_User_Accounts.TabIndex = 6;
@@ -122,7 +127,8 @@
             // 
             // btn_MF_Unsuspend
             // 
-            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(497, 85);
+            this.btn_MF_Unsuspend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(26, 101);
             this.btn_MF_Unsuspend.Name = "btn_MF_Unsuspend";
             this.btn_MF_Unsuspend.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_Unsuspend.TabIndex = 8;
@@ -134,7 +140,8 @@
             // 
             // btn_MF_PW_Reset
             // 
-            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(497, 129);
+            this.btn_MF_PW_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(26, 145);
             this.btn_MF_PW_Reset.Name = "btn_MF_PW_Reset";
             this.btn_MF_PW_Reset.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_PW_Reset.TabIndex = 9;
@@ -146,7 +153,8 @@
             // 
             // btn_Backup_Printers
             // 
-            this.btn_Backup_Printers.Location = new System.Drawing.Point(41, 173);
+            this.btn_Backup_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Backup_Printers.Location = new System.Drawing.Point(26, 233);
             this.btn_Backup_Printers.Name = "btn_Backup_Printers";
             this.btn_Backup_Printers.Size = new System.Drawing.Size(105, 38);
             this.btn_Backup_Printers.TabIndex = 10;
@@ -158,7 +166,8 @@
             // 
             // btn_Restore_Printers
             // 
-            this.btn_Restore_Printers.Location = new System.Drawing.Point(41, 217);
+            this.btn_Restore_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Restore_Printers.Location = new System.Drawing.Point(26, 304);
             this.btn_Restore_Printers.Name = "btn_Restore_Printers";
             this.btn_Restore_Printers.Size = new System.Drawing.Size(105, 38);
             this.btn_Restore_Printers.TabIndex = 11;
@@ -170,7 +179,8 @@
             // 
             // btn_Paperport
             // 
-            this.btn_Paperport.Location = new System.Drawing.Point(350, 85);
+            this.btn_Paperport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Paperport.Location = new System.Drawing.Point(26, 101);
             this.btn_Paperport.Name = "btn_Paperport";
             this.btn_Paperport.Size = new System.Drawing.Size(105, 38);
             this.btn_Paperport.TabIndex = 12;
@@ -182,7 +192,8 @@
             // 
             // btn_Esignature
             // 
-            this.btn_Esignature.Location = new System.Drawing.Point(350, 129);
+            this.btn_Esignature.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Esignature.Location = new System.Drawing.Point(26, 145);
             this.btn_Esignature.Name = "btn_Esignature";
             this.btn_Esignature.Size = new System.Drawing.Size(105, 38);
             this.btn_Esignature.TabIndex = 13;
@@ -194,7 +205,8 @@
             // 
             // btn_MF_Guide
             // 
-            this.btn_MF_Guide.Location = new System.Drawing.Point(497, 217);
+            this.btn_MF_Guide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Guide.Location = new System.Drawing.Point(26, 233);
             this.btn_MF_Guide.Name = "btn_MF_Guide";
             this.btn_MF_Guide.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_Guide.TabIndex = 14;
@@ -206,7 +218,8 @@
             // 
             // btn_Ping_IP
             // 
-            this.btn_Ping_IP.Location = new System.Drawing.Point(199, 129);
+            this.btn_Ping_IP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Ping_IP.Location = new System.Drawing.Point(26, 145);
             this.btn_Ping_IP.Name = "btn_Ping_IP";
             this.btn_Ping_IP.Size = new System.Drawing.Size(105, 38);
             this.btn_Ping_IP.TabIndex = 15;
@@ -218,7 +231,8 @@
             // 
             // btn_SFC
             // 
-            this.btn_SFC.Location = new System.Drawing.Point(200, 173);
+            this.btn_SFC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_SFC.Location = new System.Drawing.Point(27, 189);
             this.btn_SFC.Name = "btn_SFC";
             this.btn_SFC.Size = new System.Drawing.Size(105, 38);
             this.btn_SFC.TabIndex = 21;
@@ -230,7 +244,8 @@
             // 
             // btn_DISM
             // 
-            this.btn_DISM.Location = new System.Drawing.Point(200, 217);
+            this.btn_DISM.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DISM.Location = new System.Drawing.Point(27, 233);
             this.btn_DISM.Name = "btn_DISM";
             this.btn_DISM.Size = new System.Drawing.Size(105, 38);
             this.btn_DISM.TabIndex = 22;
@@ -242,7 +257,8 @@
             // 
             // btn_blank_login
             // 
-            this.btn_blank_login.Location = new System.Drawing.Point(350, 173);
+            this.btn_blank_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_blank_login.Location = new System.Drawing.Point(26, 189);
             this.btn_blank_login.Name = "btn_blank_login";
             this.btn_blank_login.Size = new System.Drawing.Size(105, 38);
             this.btn_blank_login.TabIndex = 23;
@@ -254,7 +270,8 @@
             // 
             // btn_outlook_cache
             // 
-            this.btn_outlook_cache.Location = new System.Drawing.Point(350, 266);
+            this.btn_outlook_cache.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_outlook_cache.Location = new System.Drawing.Point(26, 282);
             this.btn_outlook_cache.Name = "btn_outlook_cache";
             this.btn_outlook_cache.Size = new System.Drawing.Size(105, 38);
             this.btn_outlook_cache.TabIndex = 24;
@@ -266,7 +283,8 @@
             // 
             // btn_CCH_Deploy
             // 
-            this.btn_CCH_Deploy.Location = new System.Drawing.Point(199, 266);
+            this.btn_CCH_Deploy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_CCH_Deploy.Location = new System.Drawing.Point(26, 282);
             this.btn_CCH_Deploy.Name = "btn_CCH_Deploy";
             this.btn_CCH_Deploy.Size = new System.Drawing.Size(105, 38);
             this.btn_CCH_Deploy.TabIndex = 25;
@@ -278,7 +296,8 @@
             // 
             // btn_MF_PS_Printer_Data
             // 
-            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(497, 173);
+            this.btn_MF_PS_Printer_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(26, 189);
             this.btn_MF_PS_Printer_Data.Name = "btn_MF_PS_Printer_Data";
             this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_PS_Printer_Data.TabIndex = 26;
@@ -331,6 +350,7 @@
             // 
             // btnMainframe
             // 
+            this.btnMainframe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMainframe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMainframe.FlatAppearance.BorderSize = 0;
             this.btnMainframe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -347,6 +367,7 @@
             // 
             // btnSystemSetup
             // 
+            this.btnSystemSetup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSystemSetup.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSystemSetup.FlatAppearance.BorderSize = 0;
             this.btnSystemSetup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -363,6 +384,7 @@
             // 
             // btnDiagnostics
             // 
+            this.btnDiagnostics.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDiagnostics.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDiagnostics.FlatAppearance.BorderSize = 0;
             this.btnDiagnostics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -379,6 +401,7 @@
             // 
             // btnDataRecovery
             // 
+            this.btnDataRecovery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDataRecovery.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDataRecovery.FlatAppearance.BorderSize = 0;
             this.btnDataRecovery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -395,6 +418,7 @@
             // 
             // btnDashboard
             // 
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -454,7 +478,8 @@
             // 
             // btnBackup_User_Data
             // 
-            this.btnBackup_User_Data.Location = new System.Drawing.Point(41, 85);
+            this.btnBackup_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBackup_User_Data.Location = new System.Drawing.Point(26, 87);
             this.btnBackup_User_Data.Name = "btnBackup_User_Data";
             this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
             this.btnBackup_User_Data.TabIndex = 0;
@@ -466,12 +491,12 @@
             // 
             // Master
             // 
-            this.Master.Controls.Add(this.Mainframe);
-            this.Master.Controls.Add(this.Settings);
-            this.Master.Controls.Add(this.Home);
             this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
             this.Master.Controls.Add(this.SystemSetup);
+            this.Master.Controls.Add(this.Mainframe);
+            this.Master.Controls.Add(this.Settings);
+            this.Master.Controls.Add(this.Home);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(611, 430);
@@ -570,6 +595,7 @@
             // Settings
             // 
             this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Settings.Controls.Add(this.Title_Settings);
             this.Settings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Settings.Location = new System.Drawing.Point(0, 0);
             this.Settings.Name = "Settings";
@@ -627,6 +653,17 @@
             this.Title_Mainframe.TabIndex = 27;
             this.Title_Mainframe.Text = "Mainframe";
             // 
+            // Title_Settings
+            // 
+            this.Title_Settings.AutoSize = true;
+            this.Title_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Settings.Location = new System.Drawing.Point(20, 17);
+            this.Title_Settings.Name = "Title_Settings";
+            this.Title_Settings.Size = new System.Drawing.Size(126, 32);
+            this.Title_Settings.TabIndex = 13;
+            this.Title_Settings.Text = "Settings";
+            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -655,6 +692,8 @@
             this.SystemSetup.PerformLayout();
             this.Mainframe.ResumeLayout(false);
             this.Mainframe.PerformLayout();
+            this.Settings.ResumeLayout(false);
+            this.Settings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
@@ -704,6 +743,7 @@
         private System.Windows.Forms.Label Title_Mainframe;
         private System.Windows.Forms.Label Title_Diagnostics;
         private System.Windows.Forms.Label Title_SystemSetup;
+        private System.Windows.Forms.Label Title_Settings;
     }
 }
 
