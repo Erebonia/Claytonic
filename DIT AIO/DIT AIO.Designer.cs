@@ -54,7 +54,7 @@
             this.btnBackup_User_Data = new System.Windows.Forms.Button();
             this.Master = new System.Windows.Forms.Panel();
             this.DataRecovery = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.DESC_Restore_User_Data = new System.Windows.Forms.Label();
             this.Desc_Backup_User_Data = new System.Windows.Forms.Label();
             this.Title_Data_Recovery = new System.Windows.Forms.Label();
             this.Diagnostics = new System.Windows.Forms.Panel();
@@ -81,6 +81,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.warning_printers = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.DESC_Check_User_Account = new System.Windows.Forms.Label();
+            this.DESC_Ping = new System.Windows.Forms.Label();
+            this.DESC_SFC = new System.Windows.Forms.Label();
+            this.DESC_DISM = new System.Windows.Forms.Label();
+            this.DESC_CCH_Deploy = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
             this.Master.SuspendLayout();
@@ -124,7 +129,7 @@
             // btn_Check_User_Accounts
             // 
             this.btn_Check_User_Accounts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(26, 101);
+            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(26, 85);
             this.btn_Check_User_Accounts.Name = "btn_Check_User_Accounts";
             this.btn_Check_User_Accounts.Size = new System.Drawing.Size(105, 38);
             this.btn_Check_User_Accounts.TabIndex = 6;
@@ -241,7 +246,7 @@
             // btn_SFC
             // 
             this.btn_SFC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_SFC.Location = new System.Drawing.Point(27, 189);
+            this.btn_SFC.Location = new System.Drawing.Point(26, 200);
             this.btn_SFC.Name = "btn_SFC";
             this.btn_SFC.Size = new System.Drawing.Size(105, 38);
             this.btn_SFC.TabIndex = 21;
@@ -254,7 +259,7 @@
             // btn_DISM
             // 
             this.btn_DISM.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DISM.Location = new System.Drawing.Point(27, 233);
+            this.btn_DISM.Location = new System.Drawing.Point(26, 261);
             this.btn_DISM.Name = "btn_DISM";
             this.btn_DISM.Size = new System.Drawing.Size(105, 38);
             this.btn_DISM.TabIndex = 22;
@@ -293,7 +298,7 @@
             // btn_CCH_Deploy
             // 
             this.btn_CCH_Deploy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_CCH_Deploy.Location = new System.Drawing.Point(26, 282);
+            this.btn_CCH_Deploy.Location = new System.Drawing.Point(26, 320);
             this.btn_CCH_Deploy.Name = "btn_CCH_Deploy";
             this.btn_CCH_Deploy.Size = new System.Drawing.Size(105, 38);
             this.btn_CCH_Deploy.TabIndex = 25;
@@ -389,12 +394,12 @@
             // 
             // Master
             // 
-            this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
             this.Master.Controls.Add(this.SystemSetup);
             this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
             this.Master.Controls.Add(this.Home);
+            this.Master.Controls.Add(this.DataRecovery);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(611, 430);
@@ -408,7 +413,7 @@
             this.DataRecovery.Controls.Add(this.warning_printers);
             this.DataRecovery.Controls.Add(this.DESC_Restore_Printers);
             this.DataRecovery.Controls.Add(this.DESC_Backup_Printers);
-            this.DataRecovery.Controls.Add(this.label1);
+            this.DataRecovery.Controls.Add(this.DESC_Restore_User_Data);
             this.DataRecovery.Controls.Add(this.Desc_Backup_User_Data);
             this.DataRecovery.Controls.Add(this.Title_Data_Recovery);
             this.DataRecovery.Controls.Add(this.btnBackup_User_Data);
@@ -423,14 +428,14 @@
             this.DataRecovery.Tag = "DataRecovery";
             this.DataRecovery.Visible = false;
             // 
-            // label1
+            // DESC_Restore_User_Data
             // 
-            this.label1.ForeColor = System.Drawing.Color.BurlyWood;
-            this.label1.Location = new System.Drawing.Point(139, 161);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(449, 38);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Restores user Documents, Downloads, Pictures, Videos, Outlook PSTs, Outlook signa" +
+            this.DESC_Restore_User_Data.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Restore_User_Data.Location = new System.Drawing.Point(139, 161);
+            this.DESC_Restore_User_Data.Name = "DESC_Restore_User_Data";
+            this.DESC_Restore_User_Data.Size = new System.Drawing.Size(449, 38);
+            this.DESC_Restore_User_Data.TabIndex = 14;
+            this.DESC_Restore_User_Data.Text = "Restores user Documents, Downloads, Pictures, Videos, Outlook PSTs, Outlook signa" +
     "tures, and Printers";
             // 
             // Desc_Backup_User_Data
@@ -458,6 +463,11 @@
             // Diagnostics
             // 
             this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Diagnostics.Controls.Add(this.DESC_CCH_Deploy);
+            this.Diagnostics.Controls.Add(this.DESC_DISM);
+            this.Diagnostics.Controls.Add(this.DESC_SFC);
+            this.Diagnostics.Controls.Add(this.DESC_Ping);
+            this.Diagnostics.Controls.Add(this.DESC_Check_User_Account);
             this.Diagnostics.Controls.Add(this.Title_Diagnostics);
             this.Diagnostics.Controls.Add(this.btn_Check_User_Accounts);
             this.Diagnostics.Controls.Add(this.btn_Ping_IP);
@@ -764,6 +774,57 @@
             this.label2.Text = "Sometimes printers fail to restore when going across windows versions. Always dou" +
     "ble check if it was successful!";
             // 
+            // DESC_Check_User_Account
+            // 
+            this.DESC_Check_User_Account.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Check_User_Account.Location = new System.Drawing.Point(139, 88);
+            this.DESC_Check_User_Account.Name = "DESC_Check_User_Account";
+            this.DESC_Check_User_Account.Size = new System.Drawing.Size(449, 38);
+            this.DESC_Check_User_Account.TabIndex = 27;
+            this.DESC_Check_User_Account.Text = "Opens cmd and utilizes the netuser command to check active directory. It highligh" +
+    "ts key information such as locked accounts, inactive accounts, and checks VPN / " +
+    "Telework roles";
+            // 
+            // DESC_Ping
+            // 
+            this.DESC_Ping.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Ping.Location = new System.Drawing.Point(139, 148);
+            this.DESC_Ping.Name = "DESC_Ping";
+            this.DESC_Ping.Size = new System.Drawing.Size(449, 38);
+            this.DESC_Ping.TabIndex = 28;
+            this.DESC_Ping.Text = "Opens cmd and lets you type an IP Address in. It checks if it can ping the addres" +
+    "s and after it finishes it loops if more addresses need to be checked.";
+            // 
+            // DESC_SFC
+            // 
+            this.DESC_SFC.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_SFC.Location = new System.Drawing.Point(139, 202);
+            this.DESC_SFC.Name = "DESC_SFC";
+            this.DESC_SFC.Size = new System.Drawing.Size(449, 38);
+            this.DESC_SFC.TabIndex = 29;
+            this.DESC_SFC.Text = "Opens cmd and runs the /sfc scannow command. This checks windows for corruption a" +
+    "nd it is recommended to run DISM afterwards.";
+            // 
+            // DESC_DISM
+            // 
+            this.DESC_DISM.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_DISM.Location = new System.Drawing.Point(139, 266);
+            this.DESC_DISM.Name = "DESC_DISM";
+            this.DESC_DISM.Size = new System.Drawing.Size(449, 38);
+            this.DESC_DISM.TabIndex = 30;
+            this.DESC_DISM.Text = "Opens cmd and runs the /DISM command. This usually helps resolve windows operatin" +
+    "g system issues and windows update.";
+            // 
+            // DESC_CCH_Deploy
+            // 
+            this.DESC_CCH_Deploy.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_CCH_Deploy.Location = new System.Drawing.Point(139, 320);
+            this.DESC_CCH_Deploy.Name = "DESC_CCH_Deploy";
+            this.DESC_CCH_Deploy.Size = new System.Drawing.Size(449, 38);
+            this.DESC_CCH_Deploy.TabIndex = 31;
+            this.DESC_CCH_Deploy.Text = "Connects to the network drive and opens up the CCH Deployment Server. This is han" +
+    "dy for installing all the applications we use during our windows images.";
+            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -852,12 +913,17 @@
         private System.Windows.Forms.Label Title_Settings;
         private System.Windows.Forms.Button exit_button;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label DESC_Restore_User_Data;
         private System.Windows.Forms.Label Desc_Backup_User_Data;
         private System.Windows.Forms.Label DESC_Restore_Printers;
         private System.Windows.Forms.Label DESC_Backup_Printers;
         private System.Windows.Forms.PictureBox warning_printers;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label DESC_Check_User_Account;
+        private System.Windows.Forms.Label DESC_Ping;
+        private System.Windows.Forms.Label DESC_SFC;
+        private System.Windows.Forms.Label DESC_CCH_Deploy;
+        private System.Windows.Forms.Label DESC_DISM;
     }
 }
 
