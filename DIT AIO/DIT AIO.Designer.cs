@@ -61,6 +61,8 @@
             this.btnBackup_User_Data = new System.Windows.Forms.Button();
             this.Master = new System.Windows.Forms.Panel();
             this.DataRecovery = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Desc_Backup_User_Data = new System.Windows.Forms.Label();
             this.Title_Data_Recovery = new System.Windows.Forms.Label();
             this.Diagnostics = new System.Windows.Forms.Panel();
             this.Title_Diagnostics = new System.Windows.Forms.Label();
@@ -75,6 +77,8 @@
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.button1 = new System.Windows.Forms.Button();
             this.exit_button = new System.Windows.Forms.Button();
+            this.DESC_Backup_Printers = new System.Windows.Forms.Label();
+            this.DESC_Restore_Printers = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -508,6 +512,10 @@
             // 
             this.DataRecovery.AutoSize = true;
             this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.DataRecovery.Controls.Add(this.DESC_Restore_Printers);
+            this.DataRecovery.Controls.Add(this.DESC_Backup_Printers);
+            this.DataRecovery.Controls.Add(this.label1);
+            this.DataRecovery.Controls.Add(this.Desc_Backup_User_Data);
             this.DataRecovery.Controls.Add(this.Title_Data_Recovery);
             this.DataRecovery.Controls.Add(this.btnBackup_User_Data);
             this.DataRecovery.Controls.Add(this.btn_Restore_User_Data);
@@ -520,6 +528,27 @@
             this.DataRecovery.TabIndex = 29;
             this.DataRecovery.Tag = "DataRecovery";
             this.DataRecovery.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.ForeColor = System.Drawing.Color.BurlyWood;
+            this.label1.Location = new System.Drawing.Point(139, 161);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(449, 38);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Restores user Documents, Downloads, Pictures, Videos, Outlook PSTs, Outlook signa" +
+    "tures, and Printers";
+            // 
+            // Desc_Backup_User_Data
+            // 
+            this.Desc_Backup_User_Data.ForeColor = System.Drawing.Color.BurlyWood;
+            this.Desc_Backup_User_Data.Location = new System.Drawing.Point(138, 87);
+            this.Desc_Backup_User_Data.Name = "Desc_Backup_User_Data";
+            this.Desc_Backup_User_Data.Size = new System.Drawing.Size(450, 39);
+            this.Desc_Backup_User_Data.TabIndex = 13;
+            this.Desc_Backup_User_Data.Text = "Backs up user Documents, Downloads, Pictures, Videos, Outlook PSTs, Outlook Signa" +
+    "tures, and Printers";
+            this.Desc_Backup_User_Data.Click += new System.EventHandler(this.Desc_Backup_User_Data_Click);
             // 
             // Title_Data_Recovery
             // 
@@ -691,6 +720,25 @@
             this.exit_button.UseVisualStyleBackColor = true;
             this.exit_button.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // DESC_Backup_Printers
+            // 
+            this.DESC_Backup_Printers.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Backup_Printers.Location = new System.Drawing.Point(139, 233);
+            this.DESC_Backup_Printers.Name = "DESC_Backup_Printers";
+            this.DESC_Backup_Printers.Size = new System.Drawing.Size(449, 48);
+            this.DESC_Backup_Printers.TabIndex = 15;
+            this.DESC_Backup_Printers.Text = resources.GetString("DESC_Backup_Printers.Text");
+            // 
+            // DESC_Restore_Printers
+            // 
+            this.DESC_Restore_Printers.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Restore_Printers.Location = new System.Drawing.Point(139, 304);
+            this.DESC_Restore_Printers.Name = "DESC_Restore_Printers";
+            this.DESC_Restore_Printers.Size = new System.Drawing.Size(449, 38);
+            this.DESC_Restore_Printers.TabIndex = 16;
+            this.DESC_Restore_Printers.Text = "Restores printers and drivers from the previously backed up PrinterExport.export " +
+    "file in the users/printers folder.";
+            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -778,6 +826,10 @@
         private System.Windows.Forms.Label Title_Settings;
         private System.Windows.Forms.Button exit_button;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Desc_Backup_User_Data;
+        private System.Windows.Forms.Label DESC_Restore_Printers;
+        private System.Windows.Forms.Label DESC_Backup_Printers;
     }
 }
 
