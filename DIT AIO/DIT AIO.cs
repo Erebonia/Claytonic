@@ -6,11 +6,11 @@ using System.Windows.Forms;
 
 namespace DIT_AIO
 {
-    public partial class Form1 : Form
+    public partial class Forms1 : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
-        //Logic to highlight each navigation tab when selected.
+        // Logic to highlight each navigation tab when selected.
         private static extern IntPtr CreateRoundRectRgn(
             int nLeftRect,
             int nTopRect,
@@ -19,7 +19,8 @@ namespace DIT_AIO
             int nWidthEllipse,
             int nHeightEllipse
         );
-        public Form1()
+
+        public Forms1()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
@@ -29,18 +30,15 @@ namespace DIT_AIO
             btnDashboard.BackColor = Color.FromArgb(46, 51, 73);
 
             // Attach event handlers
-            btnDashboard.Click += HandleButtonClick;
-            btnDataRecovery.Click += HandleButtonClick;
-            btnDiagnostics.Click += HandleButtonClick;
-            btnSystemSetup.Click += HandleButtonClick;
-            btnMainframe.Click += HandleButtonClick;
-            btnSettings.Click += HandleButtonClick;
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
+            btnDashboard.Click += HandleCategoryClick;
+            btnDataRecovery.Click += HandleCategoryClick;
+            btnDiagnostics.Click += HandleCategoryClick;
+            btnSystemSetup.Click += HandleCategoryClick;
+            btnMainframe.Click += HandleCategoryClick;
+            btnSettings.Click += HandleCategoryClick;
 
         }
+
         private void Backup_Data(object sender, EventArgs e)
         {
             runCustomScript(@"\\ditfp1\helpdesk\BN\Data Migration Script\00Backup - User Profile.bat");
@@ -104,9 +102,9 @@ namespace DIT_AIO
 
         private void Outlook_Cache_Removal(object sender, EventArgs e)
         {
-            //Most recent cache corrupt fix I saw. Verified it works up to 2021 outlook
+            // Most recent cache corrupt fix I saw. Verified it works up to 2021 outlook
             runCustomScript(@"\\ditfp1\helpdesk\Microsoft_Office\Outlook Fixes\Outlook Cache Corrupt Fix\OutlookAllVersionsFix\formsCache.bat");
-            //From Sid's guide
+            // From Sid's guide
             runCustomScript(@"\\ditfp1\helpdesk\Microsoft_Office\Outlook Fixes\Outlook Form Issue\Archive Manager Bulletin 15_Sep_2017 - Registry Keys\Outlook 2016\Outlook 2016 - 64 Bit.reg");
         }
 
@@ -157,6 +155,17 @@ namespace DIT_AIO
             }
         }
 
+        private void reset_button_ui()
+        {
+            btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
+            btnDataRecovery.BackColor = Color.FromArgb(24, 30, 54);
+            btnDiagnostics.BackColor = Color.FromArgb(24, 30, 54);
+            btnSystemSetup.BackColor = Color.FromArgb(24, 30, 54);
+            btnMainframe.BackColor = Color.FromArgb(24, 30, 54);
+            btnSettings.BackColor = Color.FromArgb(24, 30, 54);
+        }
+
+        //Highlights the navigation element that was selected. Home, Data Recovery, etc..
         private void HandleButtonClick(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
@@ -168,14 +177,51 @@ namespace DIT_AIO
             clickedButton.BackColor = Color.FromArgb(46, 51, 73);
         }
 
-        private void reset_button_ui()
+
+        //Hides the categories except for the one selected. 
+        //I.E I click the data recovery tab, so only those tools should display.
+        private void HandleCategoryClick(object sender, EventArgs e)
         {
-            btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
-            btnDataRecovery.BackColor = Color.FromArgb(24, 30, 54);
-            btnDiagnostics.BackColor = Color.FromArgb(24, 30, 54);
-            btnSystemSetup.BackColor = Color.FromArgb(24, 30, 54);
-            btnMainframe.BackColor = Color.FromArgb(24, 30, 54);
-            btnSettings.BackColor = Color.FromArgb(24, 30, 54);
+            Button clickedButton = (Button)sender;
+            string category = clickedButton.Text.Replace(" ", "");
+
+            // Hide all category panels initially
+            foreach (Control control in Master.Controls)
+            {
+                if (control is Panel panel)
+                {
+                    panel.Visible = false;
+                    // Hide all buttons within each panel
+                    foreach (Control child in panel.Controls)
+                    {
+                        if (child is Button)
+                        {
+                            child.Visible = false;
+                        }
+                    }
+                }
+            }
+
+            // Show the panel based on the selected category
+            foreach (Control control in Master.Controls)
+            {
+                if (control is Panel panel && panel.Tag != null && panel.Tag.ToString() == category)
+                {
+                    panel.Visible = true;
+                    // Show all buttons within the selected panel
+                    foreach (Control child in panel.Controls)
+                    {
+                        if (child is Button)
+                        {
+                            child.Visible = true;
+                        }
+                    }
+                }
+            }
+
+            // Update navigation panel position and color
+            HandleButtonClick(sender, e);
         }
+
     }
 }
