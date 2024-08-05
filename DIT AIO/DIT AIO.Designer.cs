@@ -48,42 +48,44 @@
             this.btn_MF_PS_Printer_Data = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
+            this.programicon = new System.Windows.Forms.Panel();
+            this.programName = new System.Windows.Forms.Label();
+            this.Subtitle = new System.Windows.Forms.Label();
+            this.btnBackup_User_Data = new System.Windows.Forms.Button();
+            this.Master = new System.Windows.Forms.Panel();
+            this.DataRecovery = new System.Windows.Forms.Panel();
+            this.Title_Data_Recovery = new System.Windows.Forms.Label();
+            this.Diagnostics = new System.Windows.Forms.Panel();
+            this.Title_Diagnostics = new System.Windows.Forms.Label();
+            this.SystemSetup = new System.Windows.Forms.Panel();
+            this.Title_SystemSetup = new System.Windows.Forms.Label();
+            this.Mainframe = new System.Windows.Forms.Panel();
+            this.Title_Mainframe = new System.Windows.Forms.Label();
+            this.Settings = new System.Windows.Forms.Panel();
+            this.Title_Settings = new System.Windows.Forms.Label();
+            this.Home = new System.Windows.Forms.Panel();
+            this.Title_Home = new System.Windows.Forms.Label();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.button1 = new System.Windows.Forms.Button();
+            this.exit_button = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnMainframe = new System.Windows.Forms.Button();
             this.btnSystemSetup = new System.Windows.Forms.Button();
             this.btnDiagnostics = new System.Windows.Forms.Button();
             this.btnDataRecovery = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.programicon = new System.Windows.Forms.Panel();
-            this.programName = new System.Windows.Forms.Label();
-            this.Subtitle = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnBackup_User_Data = new System.Windows.Forms.Button();
-            this.Master = new System.Windows.Forms.Panel();
-            this.Home = new System.Windows.Forms.Panel();
-            this.Title_Home = new System.Windows.Forms.Label();
-            this.DataRecovery = new System.Windows.Forms.Panel();
-            this.Diagnostics = new System.Windows.Forms.Panel();
-            this.SystemSetup = new System.Windows.Forms.Panel();
-            this.Mainframe = new System.Windows.Forms.Panel();
-            this.Settings = new System.Windows.Forms.Panel();
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.Title_Data_Recovery = new System.Windows.Forms.Label();
-            this.Title_Diagnostics = new System.Windows.Forms.Label();
-            this.Title_SystemSetup = new System.Windows.Forms.Label();
-            this.Title_Mainframe = new System.Windows.Forms.Label();
-            this.Title_Settings = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Master.SuspendLayout();
-            this.Home.SuspendLayout();
             this.DataRecovery.SuspendLayout();
             this.Diagnostics.SuspendLayout();
             this.SystemSetup.SuspendLayout();
             this.Mainframe.SuspendLayout();
             this.Settings.SuspendLayout();
+            this.Home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Restore_User_Data
@@ -332,6 +334,252 @@
             this.pnlNav.Size = new System.Drawing.Size(3, 100);
             this.pnlNav.TabIndex = 2;
             // 
+            // programicon
+            // 
+            this.programicon.Controls.Add(this.programName);
+            this.programicon.Controls.Add(this.Subtitle);
+            this.programicon.Controls.Add(this.pictureBox2);
+            this.programicon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.programicon.Location = new System.Drawing.Point(0, 0);
+            this.programicon.Name = "programicon";
+            this.programicon.Size = new System.Drawing.Size(186, 144);
+            this.programicon.TabIndex = 0;
+            // 
+            // programName
+            // 
+            this.programName.AutoSize = true;
+            this.programName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.programName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.programName.Location = new System.Drawing.Point(39, 97);
+            this.programName.Name = "programName";
+            this.programName.Size = new System.Drawing.Size(103, 16);
+            this.programName.TabIndex = 1;
+            this.programName.Text = "DIT Helpdesk";
+            // 
+            // Subtitle
+            // 
+            this.Subtitle.AutoSize = true;
+            this.Subtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Subtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
+            this.Subtitle.Location = new System.Drawing.Point(58, 113);
+            this.Subtitle.Name = "Subtitle";
+            this.Subtitle.Size = new System.Drawing.Size(56, 12);
+            this.Subtitle.TabIndex = 2;
+            this.Subtitle.Text = "Runetonic";
+            // 
+            // btnBackup_User_Data
+            // 
+            this.btnBackup_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBackup_User_Data.Location = new System.Drawing.Point(26, 87);
+            this.btnBackup_User_Data.Name = "btnBackup_User_Data";
+            this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
+            this.btnBackup_User_Data.TabIndex = 0;
+            this.btnBackup_User_Data.Tag = "DataRecovery";
+            this.btnBackup_User_Data.Text = "Backup User Data";
+            this.btnBackup_User_Data.UseVisualStyleBackColor = true;
+            this.btnBackup_User_Data.Visible = false;
+            this.btnBackup_User_Data.Click += new System.EventHandler(this.Backup_Data);
+            // 
+            // Master
+            // 
+            this.Master.Controls.Add(this.DataRecovery);
+            this.Master.Controls.Add(this.Diagnostics);
+            this.Master.Controls.Add(this.SystemSetup);
+            this.Master.Controls.Add(this.Mainframe);
+            this.Master.Controls.Add(this.Settings);
+            this.Master.Controls.Add(this.Home);
+            this.Master.Location = new System.Drawing.Point(192, 12);
+            this.Master.Name = "Master";
+            this.Master.Size = new System.Drawing.Size(611, 430);
+            this.Master.TabIndex = 28;
+            // 
+            // DataRecovery
+            // 
+            this.DataRecovery.AutoSize = true;
+            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.DataRecovery.Controls.Add(this.Title_Data_Recovery);
+            this.DataRecovery.Controls.Add(this.btnBackup_User_Data);
+            this.DataRecovery.Controls.Add(this.btn_Restore_User_Data);
+            this.DataRecovery.Controls.Add(this.btn_Backup_Printers);
+            this.DataRecovery.Controls.Add(this.btn_Restore_Printers);
+            this.DataRecovery.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataRecovery.Location = new System.Drawing.Point(0, 0);
+            this.DataRecovery.Name = "DataRecovery";
+            this.DataRecovery.Size = new System.Drawing.Size(611, 430);
+            this.DataRecovery.TabIndex = 29;
+            this.DataRecovery.Tag = "DataRecovery";
+            this.DataRecovery.Visible = false;
+            // 
+            // Title_Data_Recovery
+            // 
+            this.Title_Data_Recovery.AutoSize = true;
+            this.Title_Data_Recovery.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Data_Recovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Data_Recovery.Location = new System.Drawing.Point(20, 17);
+            this.Title_Data_Recovery.Name = "Title_Data_Recovery";
+            this.Title_Data_Recovery.Size = new System.Drawing.Size(213, 32);
+            this.Title_Data_Recovery.TabIndex = 12;
+            this.Title_Data_Recovery.Text = "Data Recovery";
+            // 
+            // Diagnostics
+            // 
+            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Diagnostics.Controls.Add(this.Title_Diagnostics);
+            this.Diagnostics.Controls.Add(this.btn_Check_User_Accounts);
+            this.Diagnostics.Controls.Add(this.btn_Ping_IP);
+            this.Diagnostics.Controls.Add(this.btn_SFC);
+            this.Diagnostics.Controls.Add(this.btn_DISM);
+            this.Diagnostics.Controls.Add(this.btn_CCH_Deploy);
+            this.Diagnostics.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Diagnostics.Location = new System.Drawing.Point(0, 0);
+            this.Diagnostics.Name = "Diagnostics";
+            this.Diagnostics.Size = new System.Drawing.Size(611, 430);
+            this.Diagnostics.TabIndex = 28;
+            this.Diagnostics.Tag = "Diagnostics";
+            this.Diagnostics.Visible = false;
+            // 
+            // Title_Diagnostics
+            // 
+            this.Title_Diagnostics.AutoSize = true;
+            this.Title_Diagnostics.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Diagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Diagnostics.Location = new System.Drawing.Point(20, 17);
+            this.Title_Diagnostics.Name = "Title_Diagnostics";
+            this.Title_Diagnostics.Size = new System.Drawing.Size(173, 32);
+            this.Title_Diagnostics.TabIndex = 26;
+            this.Title_Diagnostics.Text = "Diagnostics";
+            // 
+            // SystemSetup
+            // 
+            this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.SystemSetup.Controls.Add(this.Title_SystemSetup);
+            this.SystemSetup.Controls.Add(this.btn_Paperport);
+            this.SystemSetup.Controls.Add(this.btn_Esignature);
+            this.SystemSetup.Controls.Add(this.btn_blank_login);
+            this.SystemSetup.Controls.Add(this.btn_Firewall);
+            this.SystemSetup.Controls.Add(this.btn_outlook_cache);
+            this.SystemSetup.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SystemSetup.Location = new System.Drawing.Point(0, 0);
+            this.SystemSetup.Name = "SystemSetup";
+            this.SystemSetup.Size = new System.Drawing.Size(611, 430);
+            this.SystemSetup.TabIndex = 30;
+            this.SystemSetup.Tag = "SystemSetup";
+            this.SystemSetup.Visible = false;
+            // 
+            // Title_SystemSetup
+            // 
+            this.Title_SystemSetup.AutoSize = true;
+            this.Title_SystemSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_SystemSetup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_SystemSetup.Location = new System.Drawing.Point(20, 17);
+            this.Title_SystemSetup.Name = "Title_SystemSetup";
+            this.Title_SystemSetup.Size = new System.Drawing.Size(202, 32);
+            this.Title_SystemSetup.TabIndex = 25;
+            this.Title_SystemSetup.Text = "System Setup";
+            // 
+            // Mainframe
+            // 
+            this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Mainframe.Controls.Add(this.Title_Mainframe);
+            this.Mainframe.Controls.Add(this.btn_MF_Unsuspend);
+            this.Mainframe.Controls.Add(this.btn_MF_PW_Reset);
+            this.Mainframe.Controls.Add(this.btn_MF_PS_Printer_Data);
+            this.Mainframe.Controls.Add(this.btn_MF_Guide);
+            this.Mainframe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mainframe.Location = new System.Drawing.Point(0, 0);
+            this.Mainframe.Name = "Mainframe";
+            this.Mainframe.Size = new System.Drawing.Size(611, 430);
+            this.Mainframe.TabIndex = 31;
+            this.Mainframe.Tag = "Mainframe";
+            this.Mainframe.Visible = false;
+            // 
+            // Title_Mainframe
+            // 
+            this.Title_Mainframe.AutoSize = true;
+            this.Title_Mainframe.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Mainframe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Mainframe.Location = new System.Drawing.Point(20, 17);
+            this.Title_Mainframe.Name = "Title_Mainframe";
+            this.Title_Mainframe.Size = new System.Drawing.Size(157, 32);
+            this.Title_Mainframe.TabIndex = 27;
+            this.Title_Mainframe.Text = "Mainframe";
+            // 
+            // Settings
+            // 
+            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Settings.Controls.Add(this.Title_Settings);
+            this.Settings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Settings.Location = new System.Drawing.Point(0, 0);
+            this.Settings.Name = "Settings";
+            this.Settings.Size = new System.Drawing.Size(611, 430);
+            this.Settings.TabIndex = 32;
+            this.Settings.Tag = "Settings";
+            this.Settings.Visible = false;
+            // 
+            // Title_Settings
+            // 
+            this.Title_Settings.AutoSize = true;
+            this.Title_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Settings.Location = new System.Drawing.Point(20, 17);
+            this.Title_Settings.Name = "Title_Settings";
+            this.Title_Settings.Size = new System.Drawing.Size(126, 32);
+            this.Title_Settings.TabIndex = 13;
+            this.Title_Settings.Text = "Settings";
+            // 
+            // Home
+            // 
+            this.Home.Controls.Add(this.Title_Home);
+            this.Home.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Home.Location = new System.Drawing.Point(0, 0);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(611, 430);
+            this.Home.TabIndex = 27;
+            this.Home.Tag = "Home";
+            this.Home.Visible = false;
+            // 
+            // Title_Home
+            // 
+            this.Title_Home.AutoSize = true;
+            this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Home.Location = new System.Drawing.Point(20, 17);
+            this.Title_Home.Name = "Title_Home";
+            this.Title_Home.Size = new System.Drawing.Size(93, 32);
+            this.Title_Home.TabIndex = 0;
+            this.Title_Home.Text = "Home";
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::DIT_AIO.Properties.Resources.icon070;
+            this.button1.Location = new System.Drawing.Point(740, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(29, 26);
+            this.button1.TabIndex = 29;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // exit_button
+            // 
+            this.exit_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exit_button.FlatAppearance.BorderSize = 0;
+            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit_button.Image = global::DIT_AIO.Properties.Resources.icon074;
+            this.exit_button.Location = new System.Drawing.Point(770, 10);
+            this.exit_button.Name = "exit_button";
+            this.exit_button.Size = new System.Drawing.Size(29, 26);
+            this.exit_button.TabIndex = 13;
+            this.exit_button.UseVisualStyleBackColor = true;
+            this.exit_button.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // btnSettings
             // 
             this.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -433,39 +681,6 @@
             this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashboard.UseVisualStyleBackColor = true;
             // 
-            // programicon
-            // 
-            this.programicon.Controls.Add(this.programName);
-            this.programicon.Controls.Add(this.Subtitle);
-            this.programicon.Controls.Add(this.pictureBox2);
-            this.programicon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.programicon.Location = new System.Drawing.Point(0, 0);
-            this.programicon.Name = "programicon";
-            this.programicon.Size = new System.Drawing.Size(186, 144);
-            this.programicon.TabIndex = 0;
-            // 
-            // programName
-            // 
-            this.programName.AutoSize = true;
-            this.programName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.programName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.programName.Location = new System.Drawing.Point(39, 97);
-            this.programName.Name = "programName";
-            this.programName.Size = new System.Drawing.Size(103, 16);
-            this.programName.TabIndex = 1;
-            this.programName.Text = "DIT Helpdesk";
-            // 
-            // Subtitle
-            // 
-            this.Subtitle.AutoSize = true;
-            this.Subtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Subtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.Subtitle.Location = new System.Drawing.Point(58, 113);
-            this.Subtitle.Name = "Subtitle";
-            this.Subtitle.Size = new System.Drawing.Size(56, 12);
-            this.Subtitle.TabIndex = 2;
-            this.Subtitle.Text = "Runetonic";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DIT_AIO.Properties.Resources.DIT_Logo;
@@ -476,194 +691,6 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // btnBackup_User_Data
-            // 
-            this.btnBackup_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBackup_User_Data.Location = new System.Drawing.Point(26, 87);
-            this.btnBackup_User_Data.Name = "btnBackup_User_Data";
-            this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
-            this.btnBackup_User_Data.TabIndex = 0;
-            this.btnBackup_User_Data.Tag = "DataRecovery";
-            this.btnBackup_User_Data.Text = "Backup User Data";
-            this.btnBackup_User_Data.UseVisualStyleBackColor = true;
-            this.btnBackup_User_Data.Visible = false;
-            this.btnBackup_User_Data.Click += new System.EventHandler(this.Backup_Data);
-            // 
-            // Master
-            // 
-            this.Master.Controls.Add(this.DataRecovery);
-            this.Master.Controls.Add(this.Diagnostics);
-            this.Master.Controls.Add(this.SystemSetup);
-            this.Master.Controls.Add(this.Mainframe);
-            this.Master.Controls.Add(this.Settings);
-            this.Master.Controls.Add(this.Home);
-            this.Master.Location = new System.Drawing.Point(192, 12);
-            this.Master.Name = "Master";
-            this.Master.Size = new System.Drawing.Size(611, 430);
-            this.Master.TabIndex = 28;
-            // 
-            // Home
-            // 
-            this.Home.Controls.Add(this.Title_Home);
-            this.Home.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Home.Location = new System.Drawing.Point(0, 0);
-            this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(611, 430);
-            this.Home.TabIndex = 27;
-            this.Home.Tag = "Home";
-            this.Home.Visible = false;
-            // 
-            // Title_Home
-            // 
-            this.Title_Home.AutoSize = true;
-            this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Home.Location = new System.Drawing.Point(20, 17);
-            this.Title_Home.Name = "Title_Home";
-            this.Title_Home.Size = new System.Drawing.Size(93, 32);
-            this.Title_Home.TabIndex = 0;
-            this.Title_Home.Text = "Home";
-            this.Title_Home.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // DataRecovery
-            // 
-            this.DataRecovery.AutoSize = true;
-            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.DataRecovery.Controls.Add(this.Title_Data_Recovery);
-            this.DataRecovery.Controls.Add(this.btnBackup_User_Data);
-            this.DataRecovery.Controls.Add(this.btn_Restore_User_Data);
-            this.DataRecovery.Controls.Add(this.btn_Backup_Printers);
-            this.DataRecovery.Controls.Add(this.btn_Restore_Printers);
-            this.DataRecovery.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataRecovery.Location = new System.Drawing.Point(0, 0);
-            this.DataRecovery.Name = "DataRecovery";
-            this.DataRecovery.Size = new System.Drawing.Size(611, 430);
-            this.DataRecovery.TabIndex = 29;
-            this.DataRecovery.Tag = "DataRecovery";
-            this.DataRecovery.Visible = false;
-            // 
-            // Diagnostics
-            // 
-            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.Diagnostics.Controls.Add(this.Title_Diagnostics);
-            this.Diagnostics.Controls.Add(this.btn_Check_User_Accounts);
-            this.Diagnostics.Controls.Add(this.btn_Ping_IP);
-            this.Diagnostics.Controls.Add(this.btn_SFC);
-            this.Diagnostics.Controls.Add(this.btn_DISM);
-            this.Diagnostics.Controls.Add(this.btn_CCH_Deploy);
-            this.Diagnostics.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Diagnostics.Location = new System.Drawing.Point(0, 0);
-            this.Diagnostics.Name = "Diagnostics";
-            this.Diagnostics.Size = new System.Drawing.Size(611, 430);
-            this.Diagnostics.TabIndex = 28;
-            this.Diagnostics.Tag = "Diagnostics";
-            this.Diagnostics.Visible = false;
-            // 
-            // SystemSetup
-            // 
-            this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.SystemSetup.Controls.Add(this.Title_SystemSetup);
-            this.SystemSetup.Controls.Add(this.btn_Paperport);
-            this.SystemSetup.Controls.Add(this.btn_Esignature);
-            this.SystemSetup.Controls.Add(this.btn_blank_login);
-            this.SystemSetup.Controls.Add(this.btn_Firewall);
-            this.SystemSetup.Controls.Add(this.btn_outlook_cache);
-            this.SystemSetup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SystemSetup.Location = new System.Drawing.Point(0, 0);
-            this.SystemSetup.Name = "SystemSetup";
-            this.SystemSetup.Size = new System.Drawing.Size(611, 430);
-            this.SystemSetup.TabIndex = 30;
-            this.SystemSetup.Tag = "SystemSetup";
-            this.SystemSetup.Visible = false;
-            // 
-            // Mainframe
-            // 
-            this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.Mainframe.Controls.Add(this.Title_Mainframe);
-            this.Mainframe.Controls.Add(this.btn_MF_Unsuspend);
-            this.Mainframe.Controls.Add(this.btn_MF_PW_Reset);
-            this.Mainframe.Controls.Add(this.btn_MF_PS_Printer_Data);
-            this.Mainframe.Controls.Add(this.btn_MF_Guide);
-            this.Mainframe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mainframe.Location = new System.Drawing.Point(0, 0);
-            this.Mainframe.Name = "Mainframe";
-            this.Mainframe.Size = new System.Drawing.Size(611, 430);
-            this.Mainframe.TabIndex = 31;
-            this.Mainframe.Tag = "Mainframe";
-            this.Mainframe.Visible = false;
-            // 
-            // Settings
-            // 
-            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.Settings.Controls.Add(this.Title_Settings);
-            this.Settings.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Settings.Location = new System.Drawing.Point(0, 0);
-            this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(611, 430);
-            this.Settings.TabIndex = 32;
-            this.Settings.Tag = "Settings";
-            this.Settings.Visible = false;
-            // 
-            // fileSystemWatcher1
-            // 
-            this.fileSystemWatcher1.EnableRaisingEvents = true;
-            this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
-            // Title_Data_Recovery
-            // 
-            this.Title_Data_Recovery.AutoSize = true;
-            this.Title_Data_Recovery.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Data_Recovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Data_Recovery.Location = new System.Drawing.Point(20, 17);
-            this.Title_Data_Recovery.Name = "Title_Data_Recovery";
-            this.Title_Data_Recovery.Size = new System.Drawing.Size(213, 32);
-            this.Title_Data_Recovery.TabIndex = 12;
-            this.Title_Data_Recovery.Text = "Data Recovery";
-            // 
-            // Title_Diagnostics
-            // 
-            this.Title_Diagnostics.AutoSize = true;
-            this.Title_Diagnostics.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Diagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Diagnostics.Location = new System.Drawing.Point(20, 17);
-            this.Title_Diagnostics.Name = "Title_Diagnostics";
-            this.Title_Diagnostics.Size = new System.Drawing.Size(173, 32);
-            this.Title_Diagnostics.TabIndex = 26;
-            this.Title_Diagnostics.Text = "Diagnostics";
-            // 
-            // Title_SystemSetup
-            // 
-            this.Title_SystemSetup.AutoSize = true;
-            this.Title_SystemSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_SystemSetup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_SystemSetup.Location = new System.Drawing.Point(20, 17);
-            this.Title_SystemSetup.Name = "Title_SystemSetup";
-            this.Title_SystemSetup.Size = new System.Drawing.Size(202, 32);
-            this.Title_SystemSetup.TabIndex = 25;
-            this.Title_SystemSetup.Text = "System Setup";
-            // 
-            // Title_Mainframe
-            // 
-            this.Title_Mainframe.AutoSize = true;
-            this.Title_Mainframe.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Mainframe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Mainframe.Location = new System.Drawing.Point(20, 17);
-            this.Title_Mainframe.Name = "Title_Mainframe";
-            this.Title_Mainframe.Size = new System.Drawing.Size(157, 32);
-            this.Title_Mainframe.TabIndex = 27;
-            this.Title_Mainframe.Text = "Mainframe";
-            // 
-            // Title_Settings
-            // 
-            this.Title_Settings.AutoSize = true;
-            this.Title_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Settings.Location = new System.Drawing.Point(20, 17);
-            this.Title_Settings.Name = "Title_Settings";
-            this.Title_Settings.Size = new System.Drawing.Size(126, 32);
-            this.Title_Settings.TabIndex = 13;
-            this.Title_Settings.Text = "Settings";
-            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -671,8 +698,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(810, 452);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.exit_button);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Master);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Runetonic";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -681,11 +711,8 @@
             this.panel1.ResumeLayout(false);
             this.programicon.ResumeLayout(false);
             this.programicon.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Master.ResumeLayout(false);
             this.Master.PerformLayout();
-            this.Home.ResumeLayout(false);
-            this.Home.PerformLayout();
             this.DataRecovery.ResumeLayout(false);
             this.DataRecovery.PerformLayout();
             this.Diagnostics.ResumeLayout(false);
@@ -696,7 +723,10 @@
             this.Mainframe.PerformLayout();
             this.Settings.ResumeLayout(false);
             this.Settings.PerformLayout();
+            this.Home.ResumeLayout(false);
+            this.Home.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -746,6 +776,8 @@
         private System.Windows.Forms.Label Title_Diagnostics;
         private System.Windows.Forms.Label Title_SystemSetup;
         private System.Windows.Forms.Label Title_Settings;
+        private System.Windows.Forms.Button exit_button;
+        private System.Windows.Forms.Button button1;
     }
 }
 

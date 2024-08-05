@@ -20,6 +20,10 @@ namespace DIT_AIO
             int nHeightEllipse
         );
 
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
+
         public Runetonic()
         {
             InitializeComponent();
@@ -39,6 +43,11 @@ namespace DIT_AIO
 
             // Ensure Home tab is selected when starting the program
             HandleCategoryClick(btnDashboard, EventArgs.Empty);
+
+            // Attach mouse event handlers for dragging the form
+            this.MouseDown += new MouseEventHandler(Form_MouseDown);
+            this.MouseMove += new MouseEventHandler(Form_MouseMove);
+            this.MouseUp += new MouseEventHandler(Form_MouseUp);
 
         }
 
@@ -226,9 +235,36 @@ namespace DIT_AIO
             HandleButtonClick(sender, e);
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnMinimize_Click(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Form_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+
+        private void Form_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point diff = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(diff));
+            }
+        }
+
+        private void Form_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+
     }
 }
