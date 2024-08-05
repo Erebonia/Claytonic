@@ -48,22 +48,32 @@
             this.btn_MF_PS_Printer_Data = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.btnMainframe = new System.Windows.Forms.Button();
+            this.btnSystemSetup = new System.Windows.Forms.Button();
+            this.btnDiagnostics = new System.Windows.Forms.Button();
+            this.btnDataRecovery = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.programicon = new System.Windows.Forms.Panel();
             this.programName = new System.Windows.Forms.Label();
             this.Subtitle = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Master = new System.Windows.Forms.Panel();
             this.Home = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.DESC_Info = new System.Windows.Forms.Label();
             this.Title_Home = new System.Windows.Forms.Label();
             this.DataRecovery = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.warning_printers = new System.Windows.Forms.PictureBox();
             this.DESC_Restore_Printers = new System.Windows.Forms.Label();
             this.DESC_Backup_Printers = new System.Windows.Forms.Label();
             this.DESC_Restore_User_Data = new System.Windows.Forms.Label();
             this.Desc_Backup_User_Data = new System.Windows.Forms.Label();
             this.Title_Data_Recovery = new System.Windows.Forms.Label();
+            this.btnBackup_User_Data = new System.Windows.Forms.Button();
             this.Diagnostics = new System.Windows.Forms.Panel();
             this.DESC_CCH_Deploy = new System.Windows.Forms.Label();
             this.DESC_DISM = new System.Windows.Forms.Label();
@@ -86,35 +96,25 @@
             this.Title_Mainframe = new System.Windows.Forms.Label();
             this.Settings = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Title_Settings = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.button1 = new System.Windows.Forms.Button();
             this.exit_button = new System.Windows.Forms.Button();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.btnMainframe = new System.Windows.Forms.Button();
-            this.btnSystemSetup = new System.Windows.Forms.Button();
-            this.btnDiagnostics = new System.Windows.Forms.Button();
-            this.btnDataRecovery = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.warning_printers = new System.Windows.Forms.PictureBox();
-            this.btnBackup_User_Data = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Master.SuspendLayout();
             this.Home.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.DataRecovery.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).BeginInit();
             this.Diagnostics.SuspendLayout();
             this.SystemSetup.SuspendLayout();
             this.Mainframe.SuspendLayout();
             this.Settings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Restore_User_Data
@@ -414,6 +414,113 @@
             this.pnlNav.Size = new System.Drawing.Size(3, 100);
             this.pnlNav.TabIndex = 2;
             // 
+            // btnSettings
+            // 
+            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.btnSettings.Image = global::DIT_AIO.Properties.Resources.settings;
+            this.btnSettings.Location = new System.Drawing.Point(0, 410);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(186, 42);
+            this.btnSettings.TabIndex = 1;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSettings.UseVisualStyleBackColor = false;
+            // 
+            // btnMainframe
+            // 
+            this.btnMainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.btnMainframe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMainframe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMainframe.FlatAppearance.BorderSize = 0;
+            this.btnMainframe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMainframe.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMainframe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.btnMainframe.Image = global::DIT_AIO.Properties.Resources.mainframe;
+            this.btnMainframe.Location = new System.Drawing.Point(0, 312);
+            this.btnMainframe.Name = "btnMainframe";
+            this.btnMainframe.Size = new System.Drawing.Size(186, 42);
+            this.btnMainframe.TabIndex = 1;
+            this.btnMainframe.Text = "Mainframe";
+            this.btnMainframe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMainframe.UseVisualStyleBackColor = false;
+            // 
+            // btnSystemSetup
+            // 
+            this.btnSystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.btnSystemSetup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSystemSetup.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSystemSetup.FlatAppearance.BorderSize = 0;
+            this.btnSystemSetup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSystemSetup.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSystemSetup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.btnSystemSetup.Image = global::DIT_AIO.Properties.Resources.system;
+            this.btnSystemSetup.Location = new System.Drawing.Point(0, 270);
+            this.btnSystemSetup.Name = "btnSystemSetup";
+            this.btnSystemSetup.Size = new System.Drawing.Size(186, 42);
+            this.btnSystemSetup.TabIndex = 1;
+            this.btnSystemSetup.Text = "System Setup";
+            this.btnSystemSetup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSystemSetup.UseVisualStyleBackColor = false;
+            // 
+            // btnDiagnostics
+            // 
+            this.btnDiagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.btnDiagnostics.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDiagnostics.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDiagnostics.FlatAppearance.BorderSize = 0;
+            this.btnDiagnostics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiagnostics.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.btnDiagnostics.Image = global::DIT_AIO.Properties.Resources.datarecov;
+            this.btnDiagnostics.Location = new System.Drawing.Point(0, 228);
+            this.btnDiagnostics.Name = "btnDiagnostics";
+            this.btnDiagnostics.Size = new System.Drawing.Size(186, 42);
+            this.btnDiagnostics.TabIndex = 1;
+            this.btnDiagnostics.Text = "Diagnostics";
+            this.btnDiagnostics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDiagnostics.UseVisualStyleBackColor = false;
+            // 
+            // btnDataRecovery
+            // 
+            this.btnDataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.btnDataRecovery.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDataRecovery.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDataRecovery.FlatAppearance.BorderSize = 0;
+            this.btnDataRecovery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDataRecovery.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDataRecovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.btnDataRecovery.Image = global::DIT_AIO.Properties.Resources.diag;
+            this.btnDataRecovery.Location = new System.Drawing.Point(0, 186);
+            this.btnDataRecovery.Name = "btnDataRecovery";
+            this.btnDataRecovery.Size = new System.Drawing.Size(186, 42);
+            this.btnDataRecovery.TabIndex = 1;
+            this.btnDataRecovery.Text = "Data Recovery";
+            this.btnDataRecovery.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDataRecovery.UseVisualStyleBackColor = false;
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.btnDashboard.Image = global::DIT_AIO.Properties.Resources.Home;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 144);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(186, 42);
+            this.btnDashboard.TabIndex = 1;
+            this.btnDashboard.Text = "Home";
+            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            // 
             // programicon
             // 
             this.programicon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
@@ -449,6 +556,16 @@
             this.Subtitle.TabIndex = 2;
             this.Subtitle.Text = "DIT Helpdesk Application";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DIT_AIO.Properties.Resources.DIT_Logo;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(180, 84);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // Master
             // 
             this.Master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
@@ -466,6 +583,8 @@
             // Home
             // 
             this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.Home.Controls.Add(this.exit_button);
+            this.Home.Controls.Add(this.button1);
             this.Home.Controls.Add(this.label5);
             this.Home.Controls.Add(this.pictureBox3);
             this.Home.Controls.Add(this.label4);
@@ -489,6 +608,17 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "_________________________________________________________________________________" +
     "________";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.Image = global::DIT_AIO.Properties.Resources.citylogo1;
+            this.pictureBox3.Location = new System.Drawing.Point(142, 73);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(308, 185);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
             // 
             // label4
             // 
@@ -556,6 +686,15 @@
             this.label2.Text = "Sometimes printers fail to restore when going across windows versions. Always dou" +
     "ble check if it was successful!";
             // 
+            // warning_printers
+            // 
+            this.warning_printers.Image = global::DIT_AIO.Properties.Resources.warning;
+            this.warning_printers.Location = new System.Drawing.Point(106, 357);
+            this.warning_printers.Name = "warning_printers";
+            this.warning_printers.Size = new System.Drawing.Size(40, 39);
+            this.warning_printers.TabIndex = 17;
+            this.warning_printers.TabStop = false;
+            // 
             // DESC_Restore_Printers
             // 
             this.DESC_Restore_Printers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -609,6 +748,22 @@
             this.Title_Data_Recovery.Size = new System.Drawing.Size(213, 32);
             this.Title_Data_Recovery.TabIndex = 12;
             this.Title_Data_Recovery.Text = "Data Recovery";
+            // 
+            // btnBackup_User_Data
+            // 
+            this.btnBackup_User_Data.BackColor = System.Drawing.Color.Brown;
+            this.btnBackup_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBackup_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackup_User_Data.Image = global::DIT_AIO.Properties.Resources.UI_8;
+            this.btnBackup_User_Data.Location = new System.Drawing.Point(26, 87);
+            this.btnBackup_User_Data.Name = "btnBackup_User_Data";
+            this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
+            this.btnBackup_User_Data.TabIndex = 0;
+            this.btnBackup_User_Data.Tag = "DataRecovery";
+            this.btnBackup_User_Data.Text = "Backup User Data";
+            this.btnBackup_User_Data.UseVisualStyleBackColor = false;
+            this.btnBackup_User_Data.Visible = false;
+            this.btnBackup_User_Data.Click += new System.EventHandler(this.Backup_Data);
             // 
             // Diagnostics
             // 
@@ -889,6 +1044,15 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "This page is still under development.";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DIT_AIO.Properties.Resources.warning;
+            this.pictureBox1.Location = new System.Drawing.Point(92, 193);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // Title_Settings
             // 
             this.Title_Settings.AutoSize = true;
@@ -907,191 +1071,31 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::DIT_AIO.Properties.Resources.minimize;
-            this.button1.Location = new System.Drawing.Point(740, 10);
+            this.button1.Location = new System.Drawing.Point(543, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(29, 26);
             this.button1.TabIndex = 29;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // exit_button
             // 
             this.exit_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.exit_button.FlatAppearance.BorderSize = 0;
             this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit_button.Image = global::DIT_AIO.Properties.Resources.exit;
-            this.exit_button.Location = new System.Drawing.Point(770, 10);
+            this.exit_button.Location = new System.Drawing.Point(577, 3);
             this.exit_button.Name = "exit_button";
             this.exit_button.Size = new System.Drawing.Size(29, 26);
             this.exit_button.TabIndex = 13;
-            this.exit_button.UseVisualStyleBackColor = true;
+            this.exit_button.UseVisualStyleBackColor = false;
             this.exit_button.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.btnSettings.Image = global::DIT_AIO.Properties.Resources.settings;
-            this.btnSettings.Location = new System.Drawing.Point(0, 410);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(186, 42);
-            this.btnSettings.TabIndex = 1;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = false;
-            // 
-            // btnMainframe
-            // 
-            this.btnMainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.btnMainframe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMainframe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMainframe.FlatAppearance.BorderSize = 0;
-            this.btnMainframe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMainframe.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMainframe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.btnMainframe.Image = global::DIT_AIO.Properties.Resources.mainframe;
-            this.btnMainframe.Location = new System.Drawing.Point(0, 312);
-            this.btnMainframe.Name = "btnMainframe";
-            this.btnMainframe.Size = new System.Drawing.Size(186, 42);
-            this.btnMainframe.TabIndex = 1;
-            this.btnMainframe.Text = "Mainframe";
-            this.btnMainframe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMainframe.UseVisualStyleBackColor = false;
-            // 
-            // btnSystemSetup
-            // 
-            this.btnSystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.btnSystemSetup.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSystemSetup.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSystemSetup.FlatAppearance.BorderSize = 0;
-            this.btnSystemSetup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSystemSetup.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSystemSetup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.btnSystemSetup.Image = global::DIT_AIO.Properties.Resources.system;
-            this.btnSystemSetup.Location = new System.Drawing.Point(0, 270);
-            this.btnSystemSetup.Name = "btnSystemSetup";
-            this.btnSystemSetup.Size = new System.Drawing.Size(186, 42);
-            this.btnSystemSetup.TabIndex = 1;
-            this.btnSystemSetup.Text = "System Setup";
-            this.btnSystemSetup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSystemSetup.UseVisualStyleBackColor = false;
-            // 
-            // btnDiagnostics
-            // 
-            this.btnDiagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.btnDiagnostics.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDiagnostics.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDiagnostics.FlatAppearance.BorderSize = 0;
-            this.btnDiagnostics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDiagnostics.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.btnDiagnostics.Image = global::DIT_AIO.Properties.Resources.datarecov;
-            this.btnDiagnostics.Location = new System.Drawing.Point(0, 228);
-            this.btnDiagnostics.Name = "btnDiagnostics";
-            this.btnDiagnostics.Size = new System.Drawing.Size(186, 42);
-            this.btnDiagnostics.TabIndex = 1;
-            this.btnDiagnostics.Text = "Diagnostics";
-            this.btnDiagnostics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDiagnostics.UseVisualStyleBackColor = false;
-            // 
-            // btnDataRecovery
-            // 
-            this.btnDataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.btnDataRecovery.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDataRecovery.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDataRecovery.FlatAppearance.BorderSize = 0;
-            this.btnDataRecovery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataRecovery.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDataRecovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.btnDataRecovery.Image = global::DIT_AIO.Properties.Resources.diag;
-            this.btnDataRecovery.Location = new System.Drawing.Point(0, 186);
-            this.btnDataRecovery.Name = "btnDataRecovery";
-            this.btnDataRecovery.Size = new System.Drawing.Size(186, 42);
-            this.btnDataRecovery.TabIndex = 1;
-            this.btnDataRecovery.Text = "Data Recovery";
-            this.btnDataRecovery.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDataRecovery.UseVisualStyleBackColor = false;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.btnDashboard.Image = global::DIT_AIO.Properties.Resources.Home;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 144);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(186, 42);
-            this.btnDashboard.TabIndex = 1;
-            this.btnDashboard.Text = "Home";
-            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DIT_AIO.Properties.Resources.DIT_Logo;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(180, 84);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // warning_printers
-            // 
-            this.warning_printers.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.warning_printers.Location = new System.Drawing.Point(106, 357);
-            this.warning_printers.Name = "warning_printers";
-            this.warning_printers.Size = new System.Drawing.Size(40, 39);
-            this.warning_printers.TabIndex = 17;
-            this.warning_printers.TabStop = false;
-            // 
-            // btnBackup_User_Data
-            // 
-            this.btnBackup_User_Data.BackColor = System.Drawing.Color.Brown;
-            this.btnBackup_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBackup_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBackup_User_Data.Image = global::DIT_AIO.Properties.Resources.UI_8;
-            this.btnBackup_User_Data.Location = new System.Drawing.Point(26, 87);
-            this.btnBackup_User_Data.Name = "btnBackup_User_Data";
-            this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
-            this.btnBackup_User_Data.TabIndex = 0;
-            this.btnBackup_User_Data.Tag = "DataRecovery";
-            this.btnBackup_User_Data.Text = "Backup User Data";
-            this.btnBackup_User_Data.UseVisualStyleBackColor = false;
-            this.btnBackup_User_Data.Visible = false;
-            this.btnBackup_User_Data.Click += new System.EventHandler(this.Backup_Data);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.pictureBox1.Location = new System.Drawing.Point(92, 193);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Image = global::DIT_AIO.Properties.Resources.citylogo1;
-            this.pictureBox3.Location = new System.Drawing.Point(142, 73);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(308, 185);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
             // 
             // Runetonic
             // 
@@ -1100,8 +1104,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(810, 452);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.exit_button);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Master);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1113,12 +1115,15 @@
             this.panel1.ResumeLayout(false);
             this.programicon.ResumeLayout(false);
             this.programicon.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Master.ResumeLayout(false);
             this.Master.PerformLayout();
             this.Home.ResumeLayout(false);
             this.Home.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.DataRecovery.ResumeLayout(false);
             this.DataRecovery.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).EndInit();
             this.Diagnostics.ResumeLayout(false);
             this.Diagnostics.PerformLayout();
             this.SystemSetup.ResumeLayout(false);
@@ -1127,11 +1132,8 @@
             this.Mainframe.PerformLayout();
             this.Settings.ResumeLayout(false);
             this.Settings.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
         }
