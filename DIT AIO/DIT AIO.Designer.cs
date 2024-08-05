@@ -681,7 +681,6 @@
             this.Desc_Backup_User_Data.TabIndex = 13;
             this.Desc_Backup_User_Data.Text = "Backs up user Documents, Downloads, Pictures, Videos, Outlook PSTs, Outlook Signa" +
     "tures, and Printers";
-            this.Desc_Backup_User_Data.Click += new System.EventHandler(this.Desc_Backup_User_Data_Click);
             // 
             // Title_Data_Recovery
             // 

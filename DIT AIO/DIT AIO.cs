@@ -273,10 +273,5 @@ namespace DIT_AIO
         {
             this.Close();
         }
-
-        private void Desc_Backup_User_Data_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
