@@ -37,6 +37,9 @@ namespace DIT_AIO
             btnMainframe.Click += HandleCategoryClick;
             btnSettings.Click += HandleCategoryClick;
 
+            // Ensure Home tab is selected when starting the program
+            HandleCategoryClick(btnDashboard, EventArgs.Empty);
+
         }
 
         private void Backup_Data(object sender, EventArgs e)
