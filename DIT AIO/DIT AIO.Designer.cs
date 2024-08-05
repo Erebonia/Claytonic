@@ -691,7 +691,7 @@
             this.btnDiagnostics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDiagnostics.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDiagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnDiagnostics.Image = global::DIT_AIO.Properties.Resources.diag;
+            this.btnDiagnostics.Image = global::DIT_AIO.Properties.Resources.datarecov;
             this.btnDiagnostics.Location = new System.Drawing.Point(0, 228);
             this.btnDiagnostics.Name = "btnDiagnostics";
             this.btnDiagnostics.Size = new System.Drawing.Size(186, 42);
@@ -708,7 +708,7 @@
             this.btnDataRecovery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDataRecovery.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDataRecovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnDataRecovery.Image = global::DIT_AIO.Properties.Resources.datarecov;
+            this.btnDataRecovery.Image = global::DIT_AIO.Properties.Resources.diag;
             this.btnDataRecovery.Location = new System.Drawing.Point(0, 186);
             this.btnDataRecovery.Name = "btnDataRecovery";
             this.btnDataRecovery.Size = new System.Drawing.Size(186, 42);
