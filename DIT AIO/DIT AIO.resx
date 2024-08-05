@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DESC_Info.Text" xml:space="preserve">
-    <value>Claytonic is a comprehensive suite of tools designed to aid Helpdesk technicians and CSRs with their work. This software accesses unique locations on the network drive, eliminating the need for technicians to manually search and is a way to centralize tools.</value>
+    <value>Claytonic is a comprehensive suite of tools designed to aid Helpdesk technicians and CSRs with their work. This software accesses unique locations on the network drive, eliminating the need for technicians to manually search for these tools. The goal of this application is to create a centralized place for tools.</value>
   </data>
   <data name="DESC_Backup_Printers.Text" xml:space="preserve">
     <value>Saves a copy of the computer's current printers and associated drivers via print management to your desired drive. It creates a PrinterExport.export file in the username\printers folder ready for restoration.</value>
