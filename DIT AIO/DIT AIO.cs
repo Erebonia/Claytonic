@@ -10,7 +10,6 @@ namespace DIT_AIO
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
-        // Logic to highlight each navigation tab when selected.
         private static extern IntPtr CreateRoundRectRgn(
             int nLeftRect,
             int nTopRect,
@@ -45,10 +44,44 @@ namespace DIT_AIO
             HandleCategoryClick(btnDashboard, EventArgs.Empty);
 
             // Attach mouse event handlers for dragging the form
-            this.MouseDown += new MouseEventHandler(Form_MouseDown);
-            this.MouseMove += new MouseEventHandler(Form_MouseMove);
-            this.MouseUp += new MouseEventHandler(Form_MouseUp);
+            AttachDragEventHandlers(this);
+            AttachDragEventHandlers(pnlNav);
 
+            // Attach mouse event handlers to other controls if necessary
+            // AttachDragEventHandlers(someOtherControl);
+        }
+
+        private void Form_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+
+        private void Form_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point diff = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(diff));
+            }
+        }
+
+        private void Form_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+
+        private void AttachDragEventHandlers(Control control)
+        {
+            control.MouseDown += new MouseEventHandler(Form_MouseDown);
+            control.MouseMove += new MouseEventHandler(Form_MouseMove);
+            control.MouseUp += new MouseEventHandler(Form_MouseUp);
+
+            foreach (Control child in control.Controls)
+            {
+                AttachDragEventHandlers(child);
+            }
         }
 
         private void Backup_Data(object sender, EventArgs e)
@@ -177,7 +210,6 @@ namespace DIT_AIO
             btnSettings.BackColor = Color.FromArgb(24, 30, 54);
         }
 
-        //Highlights the navigation element that was selected. Home, Data Recovery, etc..
         private void HandleButtonClick(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
@@ -189,9 +221,6 @@ namespace DIT_AIO
             clickedButton.BackColor = Color.FromArgb(46, 51, 73);
         }
 
-
-        //Hides the categories except for the one selected. 
-        //I.E I click the data recovery tab, so only those tools should display.
         private void HandleCategoryClick(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
@@ -244,27 +273,5 @@ namespace DIT_AIO
         {
             this.Close();
         }
-
-        private void Form_MouseDown(object sender, MouseEventArgs e)
-        {
-            dragging = true;
-            dragCursorPoint = Cursor.Position;
-            dragFormPoint = this.Location;
-        }
-
-        private void Form_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (dragging)
-            {
-                Point diff = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
-                this.Location = Point.Add(dragFormPoint, new Size(diff));
-            }
-        }
-
-        private void Form_MouseUp(object sender, MouseEventArgs e)
-        {
-            dragging = false;
-        }
-
     }
 }
