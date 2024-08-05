@@ -52,40 +52,40 @@
             this.programName = new System.Windows.Forms.Label();
             this.Subtitle = new System.Windows.Forms.Label();
             this.Master = new System.Windows.Forms.Panel();
+            this.Home = new System.Windows.Forms.Panel();
+            this.Title_Home = new System.Windows.Forms.Label();
             this.DataRecovery = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.DESC_Restore_Printers = new System.Windows.Forms.Label();
+            this.DESC_Backup_Printers = new System.Windows.Forms.Label();
             this.DESC_Restore_User_Data = new System.Windows.Forms.Label();
             this.Desc_Backup_User_Data = new System.Windows.Forms.Label();
             this.Title_Data_Recovery = new System.Windows.Forms.Label();
+            this.btnBackup_User_Data = new System.Windows.Forms.Button();
             this.Diagnostics = new System.Windows.Forms.Panel();
+            this.DESC_CCH_Deploy = new System.Windows.Forms.Label();
+            this.DESC_DISM = new System.Windows.Forms.Label();
+            this.DESC_SFC = new System.Windows.Forms.Label();
+            this.DESC_Ping = new System.Windows.Forms.Label();
+            this.DESC_Check_User_Account = new System.Windows.Forms.Label();
             this.Title_Diagnostics = new System.Windows.Forms.Label();
             this.SystemSetup = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.DESC_Firewall = new System.Windows.Forms.Label();
+            this.DESC_Blanklogin = new System.Windows.Forms.Label();
+            this.DESC_Esignature = new System.Windows.Forms.Label();
+            this.DESC_Paperport = new System.Windows.Forms.Label();
             this.Title_SystemSetup = new System.Windows.Forms.Label();
             this.Mainframe = new System.Windows.Forms.Panel();
+            this.DESC_MF_Guide = new System.Windows.Forms.Label();
+            this.DESC_MF_PS_PrinterData = new System.Windows.Forms.Label();
+            this.DESC_MF_PW_Reset = new System.Windows.Forms.Label();
+            this.DESC_MF_Unsuspend = new System.Windows.Forms.Label();
             this.Title_Mainframe = new System.Windows.Forms.Label();
             this.Settings = new System.Windows.Forms.Panel();
-            this.Title_Settings = new System.Windows.Forms.Label();
-            this.Home = new System.Windows.Forms.Panel();
-            this.Title_Home = new System.Windows.Forms.Label();
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.DESC_Backup_Printers = new System.Windows.Forms.Label();
-            this.DESC_Restore_Printers = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.DESC_Check_User_Account = new System.Windows.Forms.Label();
-            this.DESC_Ping = new System.Windows.Forms.Label();
-            this.DESC_SFC = new System.Windows.Forms.Label();
-            this.DESC_DISM = new System.Windows.Forms.Label();
-            this.DESC_CCH_Deploy = new System.Windows.Forms.Label();
-            this.DESC_Paperport = new System.Windows.Forms.Label();
-            this.DESC_Esignature = new System.Windows.Forms.Label();
-            this.DESC_Blanklogin = new System.Windows.Forms.Label();
-            this.DESC_Firewall = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DESC_MF_Unsuspend = new System.Windows.Forms.Label();
-            this.DESC_MF_PW_Reset = new System.Windows.Forms.Label();
-            this.DESC_MF_PS_PrinterData = new System.Windows.Forms.Label();
-            this.DESC_MF_Guide = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnBackup_User_Data = new System.Windows.Forms.Button();
+            this.Title_Settings = new System.Windows.Forms.Label();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.button1 = new System.Windows.Forms.Button();
             this.exit_button = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
@@ -95,19 +95,21 @@
             this.btnDataRecovery = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.warning_printers = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
             this.Master.SuspendLayout();
+            this.Home.SuspendLayout();
             this.DataRecovery.SuspendLayout();
             this.Diagnostics.SuspendLayout();
             this.SystemSetup.SuspendLayout();
             this.Mainframe.SuspendLayout();
             this.Settings.SuspendLayout();
-            this.Home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -429,16 +431,40 @@
             // 
             // Master
             // 
+            this.Master.Controls.Add(this.Home);
             this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
             this.Master.Controls.Add(this.SystemSetup);
             this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
-            this.Master.Controls.Add(this.Home);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(611, 430);
             this.Master.TabIndex = 28;
+            // 
+            // Home
+            // 
+            this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.Home.Controls.Add(this.pictureBox3);
+            this.Home.Controls.Add(this.Title_Home);
+            this.Home.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Home.Location = new System.Drawing.Point(0, 0);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(611, 430);
+            this.Home.TabIndex = 27;
+            this.Home.Tag = "Home";
+            this.Home.Visible = false;
+            // 
+            // Title_Home
+            // 
+            this.Title_Home.AutoSize = true;
+            this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Home.Location = new System.Drawing.Point(20, 17);
+            this.Title_Home.Name = "Title_Home";
+            this.Title_Home.Size = new System.Drawing.Size(93, 32);
+            this.Title_Home.TabIndex = 0;
+            this.Title_Home.Text = "Home";
             // 
             // DataRecovery
             // 
@@ -462,6 +488,38 @@
             this.DataRecovery.TabIndex = 29;
             this.DataRecovery.Tag = "DataRecovery";
             this.DataRecovery.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(152, 358);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(409, 38);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Sometimes printers fail to restore when going across windows versions. Always dou" +
+    "ble check if it was successful!";
+            // 
+            // DESC_Restore_Printers
+            // 
+            this.DESC_Restore_Printers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Restore_Printers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_Restore_Printers.Location = new System.Drawing.Point(139, 304);
+            this.DESC_Restore_Printers.Name = "DESC_Restore_Printers";
+            this.DESC_Restore_Printers.Size = new System.Drawing.Size(449, 38);
+            this.DESC_Restore_Printers.TabIndex = 16;
+            this.DESC_Restore_Printers.Text = "Restores printers and drivers from the previously backed up PrinterExport.export " +
+    "file in the users/printers folder.";
+            // 
+            // DESC_Backup_Printers
+            // 
+            this.DESC_Backup_Printers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Backup_Printers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_Backup_Printers.Location = new System.Drawing.Point(139, 233);
+            this.DESC_Backup_Printers.Name = "DESC_Backup_Printers";
+            this.DESC_Backup_Printers.Size = new System.Drawing.Size(449, 48);
+            this.DESC_Backup_Printers.TabIndex = 15;
+            this.DESC_Backup_Printers.Text = resources.GetString("DESC_Backup_Printers.Text");
             // 
             // DESC_Restore_User_Data
             // 
@@ -497,6 +555,21 @@
             this.Title_Data_Recovery.TabIndex = 12;
             this.Title_Data_Recovery.Text = "Data Recovery";
             // 
+            // btnBackup_User_Data
+            // 
+            this.btnBackup_User_Data.BackColor = System.Drawing.Color.Brown;
+            this.btnBackup_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBackup_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackup_User_Data.Location = new System.Drawing.Point(26, 87);
+            this.btnBackup_User_Data.Name = "btnBackup_User_Data";
+            this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
+            this.btnBackup_User_Data.TabIndex = 0;
+            this.btnBackup_User_Data.Tag = "DataRecovery";
+            this.btnBackup_User_Data.Text = "Backup User Data";
+            this.btnBackup_User_Data.UseVisualStyleBackColor = false;
+            this.btnBackup_User_Data.Visible = false;
+            this.btnBackup_User_Data.Click += new System.EventHandler(this.Backup_Data);
+            // 
             // Diagnostics
             // 
             this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -518,6 +591,62 @@
             this.Diagnostics.TabIndex = 28;
             this.Diagnostics.Tag = "Diagnostics";
             this.Diagnostics.Visible = false;
+            // 
+            // DESC_CCH_Deploy
+            // 
+            this.DESC_CCH_Deploy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_CCH_Deploy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_CCH_Deploy.Location = new System.Drawing.Point(139, 320);
+            this.DESC_CCH_Deploy.Name = "DESC_CCH_Deploy";
+            this.DESC_CCH_Deploy.Size = new System.Drawing.Size(449, 38);
+            this.DESC_CCH_Deploy.TabIndex = 31;
+            this.DESC_CCH_Deploy.Text = "Connects to the network drive and opens up the CCH Deployment Server. This is han" +
+    "dy for installing all the applications we use during our windows images.";
+            // 
+            // DESC_DISM
+            // 
+            this.DESC_DISM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_DISM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_DISM.Location = new System.Drawing.Point(139, 266);
+            this.DESC_DISM.Name = "DESC_DISM";
+            this.DESC_DISM.Size = new System.Drawing.Size(449, 38);
+            this.DESC_DISM.TabIndex = 30;
+            this.DESC_DISM.Text = "Opens cmd and runs the /DISM command. This usually helps resolve windows operatin" +
+    "g system issues and windows update.";
+            // 
+            // DESC_SFC
+            // 
+            this.DESC_SFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_SFC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_SFC.Location = new System.Drawing.Point(139, 202);
+            this.DESC_SFC.Name = "DESC_SFC";
+            this.DESC_SFC.Size = new System.Drawing.Size(449, 38);
+            this.DESC_SFC.TabIndex = 29;
+            this.DESC_SFC.Text = "Opens cmd and runs the /sfc scannow command. This checks windows for corruption a" +
+    "nd it is recommended to run DISM afterwards.";
+            // 
+            // DESC_Ping
+            // 
+            this.DESC_Ping.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Ping.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_Ping.Location = new System.Drawing.Point(139, 148);
+            this.DESC_Ping.Name = "DESC_Ping";
+            this.DESC_Ping.Size = new System.Drawing.Size(449, 38);
+            this.DESC_Ping.TabIndex = 28;
+            this.DESC_Ping.Text = "Opens cmd and lets you type an IP Address in. It checks if it can ping the addres" +
+    "s and after it finishes it loops if more addresses need to be checked.";
+            // 
+            // DESC_Check_User_Account
+            // 
+            this.DESC_Check_User_Account.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Check_User_Account.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_Check_User_Account.Location = new System.Drawing.Point(139, 88);
+            this.DESC_Check_User_Account.Name = "DESC_Check_User_Account";
+            this.DESC_Check_User_Account.Size = new System.Drawing.Size(449, 38);
+            this.DESC_Check_User_Account.TabIndex = 27;
+            this.DESC_Check_User_Account.Text = "Opens cmd and utilizes the netuser command to check active directory. It highligh" +
+    "ts key information such as locked accounts, inactive accounts, and checks VPN / " +
+    "Telework roles";
             // 
             // Title_Diagnostics
             // 
@@ -552,6 +681,64 @@
             this.SystemSetup.Tag = "SystemSetup";
             this.SystemSetup.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label1.Location = new System.Drawing.Point(139, 317);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(449, 38);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Clears outlook cache for all versions up to Outlook 2021. It connects to the netw" +
+    "ork drive and runs a .bat created by Michael Ying that clears cache.";
+            // 
+            // DESC_Firewall
+            // 
+            this.DESC_Firewall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Firewall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_Firewall.Location = new System.Drawing.Point(138, 267);
+            this.DESC_Firewall.Name = "DESC_Firewall";
+            this.DESC_Firewall.Size = new System.Drawing.Size(449, 33);
+            this.DESC_Firewall.TabIndex = 34;
+            this.DESC_Firewall.Text = "Disables all 3 firewall states and runs a .reg file to disable firewall notificat" +
+    "ions.";
+            // 
+            // DESC_Blanklogin
+            // 
+            this.DESC_Blanklogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Blanklogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_Blanklogin.Location = new System.Drawing.Point(139, 202);
+            this.DESC_Blanklogin.Name = "DESC_Blanklogin";
+            this.DESC_Blanklogin.Size = new System.Drawing.Size(449, 46);
+            this.DESC_Blanklogin.TabIndex = 33;
+            this.DESC_Blanklogin.Text = "Runs blanklogin.cmd on the network drive. This clears all cached credentials on W" +
+    "indow\'s login, which can resolve password lockout issues or remove a technician\'" +
+    "s login profile from a user\'s computer.";
+            // 
+            // DESC_Esignature
+            // 
+            this.DESC_Esignature.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Esignature.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_Esignature.Location = new System.Drawing.Point(139, 148);
+            this.DESC_Esignature.Name = "DESC_Esignature";
+            this.DESC_Esignature.Size = new System.Drawing.Size(449, 38);
+            this.DESC_Esignature.TabIndex = 32;
+            this.DESC_Esignature.Text = "Runs the checkcert.bat in the network drive which sets up digital scanning for th" +
+    "e user. Open adobe, open a certificate, and double check if their signature was " +
+    "created.";
+            // 
+            // DESC_Paperport
+            // 
+            this.DESC_Paperport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Paperport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_Paperport.Location = new System.Drawing.Point(139, 85);
+            this.DESC_Paperport.Name = "DESC_Paperport";
+            this.DESC_Paperport.Size = new System.Drawing.Size(449, 47);
+            this.DESC_Paperport.TabIndex = 31;
+            this.DESC_Paperport.Text = "Runs imageretrieverfix on the network drive. This will setup network scanning for" +
+    " the user and after installation press the \"Get Now\" button on image retriever t" +
+    "o check for any pending scans.";
+            // 
             // Title_SystemSetup
             // 
             this.Title_SystemSetup.AutoSize = true;
@@ -583,6 +770,50 @@
             this.Mainframe.Tag = "Mainframe";
             this.Mainframe.Visible = false;
             // 
+            // DESC_MF_Guide
+            // 
+            this.DESC_MF_Guide.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_MF_Guide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_MF_Guide.Location = new System.Drawing.Point(139, 276);
+            this.DESC_MF_Guide.Name = "DESC_MF_Guide";
+            this.DESC_MF_Guide.Size = new System.Drawing.Size(449, 38);
+            this.DESC_MF_Guide.TabIndex = 36;
+            this.DESC_MF_Guide.Text = "This links to the network drive and will open up all relevant guides to Mainframe" +
+    " that DIT Helpdesk utilizes.";
+            // 
+            // DESC_MF_PS_PrinterData
+            // 
+            this.DESC_MF_PS_PrinterData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_MF_PS_PrinterData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_MF_PS_PrinterData.Location = new System.Drawing.Point(139, 216);
+            this.DESC_MF_PS_PrinterData.Name = "DESC_MF_PS_PrinterData";
+            this.DESC_MF_PS_PrinterData.Size = new System.Drawing.Size(449, 38);
+            this.DESC_MF_PS_PrinterData.TabIndex = 35;
+            this.DESC_MF_PS_PrinterData.Text = "Mainframe thunderbolt issues or other miscellaneous issues? Type in their IP here" +
+    ", CTRL+F \"psprinterdata\", remove gibberish text, and replace with \"\".";
+            // 
+            // DESC_MF_PW_Reset
+            // 
+            this.DESC_MF_PW_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_MF_PW_Reset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_MF_PW_Reset.Location = new System.Drawing.Point(139, 158);
+            this.DESC_MF_PW_Reset.Name = "DESC_MF_PW_Reset";
+            this.DESC_MF_PW_Reset.Size = new System.Drawing.Size(449, 38);
+            this.DESC_MF_PW_Reset.TabIndex = 34;
+            this.DESC_MF_PW_Reset.Text = "Installs the password reset macro for VistaTN3270 created by Sy. Press guide for " +
+    "configuration details.";
+            // 
+            // DESC_MF_Unsuspend
+            // 
+            this.DESC_MF_Unsuspend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_MF_Unsuspend.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_MF_Unsuspend.Location = new System.Drawing.Point(139, 98);
+            this.DESC_MF_Unsuspend.Name = "DESC_MF_Unsuspend";
+            this.DESC_MF_Unsuspend.Size = new System.Drawing.Size(449, 38);
+            this.DESC_MF_Unsuspend.TabIndex = 33;
+            this.DESC_MF_Unsuspend.Text = "Installs the unsuspend macro for VistaTN3270 created by Bao Nguyen. Press guide f" +
+    "or configuration details.";
+            // 
             // Title_Mainframe
             // 
             this.Title_Mainframe.AutoSize = true;
@@ -608,6 +839,16 @@
             this.Settings.Tag = "Settings";
             this.Settings.Visible = false;
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(138, 194);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(409, 38);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "This page is still under development.";
+            // 
             // Title_Settings
             // 
             this.Title_Settings.AutoSize = true;
@@ -619,248 +860,10 @@
             this.Title_Settings.TabIndex = 13;
             this.Title_Settings.Text = "Settings";
             // 
-            // Home
-            // 
-            this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.Home.Controls.Add(this.Title_Home);
-            this.Home.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Home.Location = new System.Drawing.Point(0, 0);
-            this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(611, 430);
-            this.Home.TabIndex = 27;
-            this.Home.Tag = "Home";
-            this.Home.Visible = false;
-            // 
-            // Title_Home
-            // 
-            this.Title_Home.AutoSize = true;
-            this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Home.Location = new System.Drawing.Point(20, 17);
-            this.Title_Home.Name = "Title_Home";
-            this.Title_Home.Size = new System.Drawing.Size(93, 32);
-            this.Title_Home.TabIndex = 0;
-            this.Title_Home.Text = "Home";
-            // 
             // fileSystemWatcher1
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
-            // DESC_Backup_Printers
-            // 
-            this.DESC_Backup_Printers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_Backup_Printers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Backup_Printers.Location = new System.Drawing.Point(139, 233);
-            this.DESC_Backup_Printers.Name = "DESC_Backup_Printers";
-            this.DESC_Backup_Printers.Size = new System.Drawing.Size(449, 48);
-            this.DESC_Backup_Printers.TabIndex = 15;
-            this.DESC_Backup_Printers.Text = resources.GetString("DESC_Backup_Printers.Text");
-            // 
-            // DESC_Restore_Printers
-            // 
-            this.DESC_Restore_Printers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_Restore_Printers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Restore_Printers.Location = new System.Drawing.Point(139, 304);
-            this.DESC_Restore_Printers.Name = "DESC_Restore_Printers";
-            this.DESC_Restore_Printers.Size = new System.Drawing.Size(449, 38);
-            this.DESC_Restore_Printers.TabIndex = 16;
-            this.DESC_Restore_Printers.Text = "Restores printers and drivers from the previously backed up PrinterExport.export " +
-    "file in the users/printers folder.";
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(152, 358);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(409, 38);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Sometimes printers fail to restore when going across windows versions. Always dou" +
-    "ble check if it was successful!";
-            // 
-            // DESC_Check_User_Account
-            // 
-            this.DESC_Check_User_Account.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_Check_User_Account.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Check_User_Account.Location = new System.Drawing.Point(139, 88);
-            this.DESC_Check_User_Account.Name = "DESC_Check_User_Account";
-            this.DESC_Check_User_Account.Size = new System.Drawing.Size(449, 38);
-            this.DESC_Check_User_Account.TabIndex = 27;
-            this.DESC_Check_User_Account.Text = "Opens cmd and utilizes the netuser command to check active directory. It highligh" +
-    "ts key information such as locked accounts, inactive accounts, and checks VPN / " +
-    "Telework roles";
-            // 
-            // DESC_Ping
-            // 
-            this.DESC_Ping.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_Ping.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Ping.Location = new System.Drawing.Point(139, 148);
-            this.DESC_Ping.Name = "DESC_Ping";
-            this.DESC_Ping.Size = new System.Drawing.Size(449, 38);
-            this.DESC_Ping.TabIndex = 28;
-            this.DESC_Ping.Text = "Opens cmd and lets you type an IP Address in. It checks if it can ping the addres" +
-    "s and after it finishes it loops if more addresses need to be checked.";
-            // 
-            // DESC_SFC
-            // 
-            this.DESC_SFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_SFC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_SFC.Location = new System.Drawing.Point(139, 202);
-            this.DESC_SFC.Name = "DESC_SFC";
-            this.DESC_SFC.Size = new System.Drawing.Size(449, 38);
-            this.DESC_SFC.TabIndex = 29;
-            this.DESC_SFC.Text = "Opens cmd and runs the /sfc scannow command. This checks windows for corruption a" +
-    "nd it is recommended to run DISM afterwards.";
-            // 
-            // DESC_DISM
-            // 
-            this.DESC_DISM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_DISM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_DISM.Location = new System.Drawing.Point(139, 266);
-            this.DESC_DISM.Name = "DESC_DISM";
-            this.DESC_DISM.Size = new System.Drawing.Size(449, 38);
-            this.DESC_DISM.TabIndex = 30;
-            this.DESC_DISM.Text = "Opens cmd and runs the /DISM command. This usually helps resolve windows operatin" +
-    "g system issues and windows update.";
-            // 
-            // DESC_CCH_Deploy
-            // 
-            this.DESC_CCH_Deploy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_CCH_Deploy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_CCH_Deploy.Location = new System.Drawing.Point(139, 320);
-            this.DESC_CCH_Deploy.Name = "DESC_CCH_Deploy";
-            this.DESC_CCH_Deploy.Size = new System.Drawing.Size(449, 38);
-            this.DESC_CCH_Deploy.TabIndex = 31;
-            this.DESC_CCH_Deploy.Text = "Connects to the network drive and opens up the CCH Deployment Server. This is han" +
-    "dy for installing all the applications we use during our windows images.";
-            // 
-            // DESC_Paperport
-            // 
-            this.DESC_Paperport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_Paperport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Paperport.Location = new System.Drawing.Point(139, 85);
-            this.DESC_Paperport.Name = "DESC_Paperport";
-            this.DESC_Paperport.Size = new System.Drawing.Size(449, 47);
-            this.DESC_Paperport.TabIndex = 31;
-            this.DESC_Paperport.Text = "Runs imageretrieverfix on the network drive. This will setup network scanning for" +
-    " the user and after installation press the \"Get Now\" button on image retriever t" +
-    "o check for any pending scans.";
-            // 
-            // DESC_Esignature
-            // 
-            this.DESC_Esignature.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_Esignature.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Esignature.Location = new System.Drawing.Point(139, 148);
-            this.DESC_Esignature.Name = "DESC_Esignature";
-            this.DESC_Esignature.Size = new System.Drawing.Size(449, 38);
-            this.DESC_Esignature.TabIndex = 32;
-            this.DESC_Esignature.Text = "Runs the checkcert.bat in the network drive which sets up digital scanning for th" +
-    "e user. Open adobe, open a certificate, and double check if their signature was " +
-    "created.";
-            // 
-            // DESC_Blanklogin
-            // 
-            this.DESC_Blanklogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_Blanklogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Blanklogin.Location = new System.Drawing.Point(139, 202);
-            this.DESC_Blanklogin.Name = "DESC_Blanklogin";
-            this.DESC_Blanklogin.Size = new System.Drawing.Size(449, 46);
-            this.DESC_Blanklogin.TabIndex = 33;
-            this.DESC_Blanklogin.Text = "Runs blanklogin.cmd on the network drive. This clears all cached credentials on W" +
-    "indow\'s login, which can resolve password lockout issues or remove a technician\'" +
-    "s login profile from a user\'s computer.";
-            // 
-            // DESC_Firewall
-            // 
-            this.DESC_Firewall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_Firewall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Firewall.Location = new System.Drawing.Point(138, 267);
-            this.DESC_Firewall.Name = "DESC_Firewall";
-            this.DESC_Firewall.Size = new System.Drawing.Size(449, 33);
-            this.DESC_Firewall.TabIndex = 34;
-            this.DESC_Firewall.Text = "Disables all 3 firewall states and runs a .reg file to disable firewall notificat" +
-    "ions.";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label1.Location = new System.Drawing.Point(139, 317);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(449, 38);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "Clears outlook cache for all versions up to Outlook 2021. It connects to the netw" +
-    "ork drive and runs a .bat created by Michael Ying that clears cache.";
-            // 
-            // DESC_MF_Unsuspend
-            // 
-            this.DESC_MF_Unsuspend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_MF_Unsuspend.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_MF_Unsuspend.Location = new System.Drawing.Point(139, 98);
-            this.DESC_MF_Unsuspend.Name = "DESC_MF_Unsuspend";
-            this.DESC_MF_Unsuspend.Size = new System.Drawing.Size(449, 38);
-            this.DESC_MF_Unsuspend.TabIndex = 33;
-            this.DESC_MF_Unsuspend.Text = "Installs the unsuspend macro for VistaTN3270 created by Bao Nguyen. Press guide f" +
-    "or configuration details.";
-            // 
-            // DESC_MF_PW_Reset
-            // 
-            this.DESC_MF_PW_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_MF_PW_Reset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_MF_PW_Reset.Location = new System.Drawing.Point(139, 158);
-            this.DESC_MF_PW_Reset.Name = "DESC_MF_PW_Reset";
-            this.DESC_MF_PW_Reset.Size = new System.Drawing.Size(449, 38);
-            this.DESC_MF_PW_Reset.TabIndex = 34;
-            this.DESC_MF_PW_Reset.Text = "Installs the password reset macro for VistaTN3270 created by Sy. Press guide for " +
-    "configuration details.";
-            // 
-            // DESC_MF_PS_PrinterData
-            // 
-            this.DESC_MF_PS_PrinterData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_MF_PS_PrinterData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_MF_PS_PrinterData.Location = new System.Drawing.Point(139, 216);
-            this.DESC_MF_PS_PrinterData.Name = "DESC_MF_PS_PrinterData";
-            this.DESC_MF_PS_PrinterData.Size = new System.Drawing.Size(449, 38);
-            this.DESC_MF_PS_PrinterData.TabIndex = 35;
-            this.DESC_MF_PS_PrinterData.Text = "Mainframe thunderbolt issues or other miscellaneous issues? Type in their IP here" +
-    ", CTRL+F \"psprinterdata\", remove gibberish text, and replace with \"\".";
-            // 
-            // DESC_MF_Guide
-            // 
-            this.DESC_MF_Guide.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DESC_MF_Guide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_MF_Guide.Location = new System.Drawing.Point(139, 276);
-            this.DESC_MF_Guide.Name = "DESC_MF_Guide";
-            this.DESC_MF_Guide.Size = new System.Drawing.Size(449, 38);
-            this.DESC_MF_Guide.TabIndex = 36;
-            this.DESC_MF_Guide.Text = "This links to the network drive and will open up all relevant guides to Mainframe" +
-    " that DIT Helpdesk utilizes.";
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(138, 194);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(409, 38);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "This page is still under development.";
-            // 
-            // btnBackup_User_Data
-            // 
-            this.btnBackup_User_Data.BackColor = System.Drawing.Color.Brown;
-            this.btnBackup_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBackup_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBackup_User_Data.Location = new System.Drawing.Point(26, 87);
-            this.btnBackup_User_Data.Name = "btnBackup_User_Data";
-            this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
-            this.btnBackup_User_Data.TabIndex = 0;
-            this.btnBackup_User_Data.Tag = "DataRecovery";
-            this.btnBackup_User_Data.Text = "Backup User Data";
-            this.btnBackup_User_Data.UseVisualStyleBackColor = false;
-            this.btnBackup_User_Data.Visible = false;
-            this.btnBackup_User_Data.Click += new System.EventHandler(this.Backup_Data);
             // 
             // button1
             // 
@@ -1005,6 +1008,15 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::DIT_AIO.Properties.Resources.kyubei;
+            this.pictureBox3.Location = new System.Drawing.Point(484, 310);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(127, 120);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
             // warning_printers
             // 
             this.warning_printers.Image = global::DIT_AIO.Properties.Resources.warning;
@@ -1045,6 +1057,8 @@
             this.programicon.PerformLayout();
             this.Master.ResumeLayout(false);
             this.Master.PerformLayout();
+            this.Home.ResumeLayout(false);
+            this.Home.PerformLayout();
             this.DataRecovery.ResumeLayout(false);
             this.DataRecovery.PerformLayout();
             this.Diagnostics.ResumeLayout(false);
@@ -1055,10 +1069,9 @@
             this.Mainframe.PerformLayout();
             this.Settings.ResumeLayout(false);
             this.Settings.PerformLayout();
-            this.Home.ResumeLayout(false);
-            this.Home.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -1134,6 +1147,7 @@
         private System.Windows.Forms.Label DESC_MF_PS_PrinterData;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 
