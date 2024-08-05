@@ -335,7 +335,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Controls.Add(this.btnMainframe);
@@ -360,6 +360,7 @@
             // 
             // programicon
             // 
+            this.programicon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.programicon.Controls.Add(this.programName);
             this.programicon.Controls.Add(this.Subtitle);
             this.programicon.Controls.Add(this.pictureBox2);
@@ -372,8 +373,9 @@
             // programName
             // 
             this.programName.AutoSize = true;
+            this.programName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.programName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.programName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.programName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.programName.Location = new System.Drawing.Point(39, 97);
             this.programName.Name = "programName";
             this.programName.Size = new System.Drawing.Size(103, 16);
@@ -420,7 +422,7 @@
             // DataRecovery
             // 
             this.DataRecovery.AutoSize = true;
-            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.DataRecovery.Controls.Add(this.label2);
             this.DataRecovery.Controls.Add(this.warning_printers);
             this.DataRecovery.Controls.Add(this.DESC_Restore_Printers);
@@ -442,7 +444,8 @@
             // 
             // DESC_Restore_User_Data
             // 
-            this.DESC_Restore_User_Data.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Restore_User_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Restore_User_Data.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_Restore_User_Data.Location = new System.Drawing.Point(139, 161);
             this.DESC_Restore_User_Data.Name = "DESC_Restore_User_Data";
             this.DESC_Restore_User_Data.Size = new System.Drawing.Size(449, 38);
@@ -452,7 +455,8 @@
             // 
             // Desc_Backup_User_Data
             // 
-            this.Desc_Backup_User_Data.ForeColor = System.Drawing.Color.BurlyWood;
+            this.Desc_Backup_User_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Desc_Backup_User_Data.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.Desc_Backup_User_Data.Location = new System.Drawing.Point(138, 87);
             this.Desc_Backup_User_Data.Name = "Desc_Backup_User_Data";
             this.Desc_Backup_User_Data.Size = new System.Drawing.Size(450, 39);
@@ -474,7 +478,7 @@
             // 
             // Diagnostics
             // 
-            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(27)))), ((int)(((byte)(17)))));
             this.Diagnostics.Controls.Add(this.DESC_CCH_Deploy);
             this.Diagnostics.Controls.Add(this.DESC_DISM);
             this.Diagnostics.Controls.Add(this.DESC_SFC);
@@ -507,7 +511,7 @@
             // 
             // SystemSetup
             // 
-            this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(27)))));
             this.SystemSetup.Controls.Add(this.label1);
             this.SystemSetup.Controls.Add(this.DESC_Firewall);
             this.SystemSetup.Controls.Add(this.DESC_Blanklogin);
@@ -540,7 +544,7 @@
             // 
             // Mainframe
             // 
-            this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(17)))), ((int)(((byte)(27)))));
             this.Mainframe.Controls.Add(this.DESC_MF_Guide);
             this.Mainframe.Controls.Add(this.DESC_MF_PS_PrinterData);
             this.Mainframe.Controls.Add(this.DESC_MF_PW_Reset);
@@ -571,7 +575,7 @@
             // 
             // Settings
             // 
-            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.Settings.Controls.Add(this.label3);
             this.Settings.Controls.Add(this.pictureBox1);
             this.Settings.Controls.Add(this.Title_Settings);
@@ -596,6 +600,7 @@
             // 
             // Home
             // 
+            this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.Home.Controls.Add(this.Title_Home);
             this.Home.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Home.Location = new System.Drawing.Point(0, 0);
@@ -623,7 +628,8 @@
             // 
             // DESC_Backup_Printers
             // 
-            this.DESC_Backup_Printers.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Backup_Printers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Backup_Printers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_Backup_Printers.Location = new System.Drawing.Point(139, 233);
             this.DESC_Backup_Printers.Name = "DESC_Backup_Printers";
             this.DESC_Backup_Printers.Size = new System.Drawing.Size(449, 48);
@@ -632,7 +638,8 @@
             // 
             // DESC_Restore_Printers
             // 
-            this.DESC_Restore_Printers.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Restore_Printers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Restore_Printers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_Restore_Printers.Location = new System.Drawing.Point(139, 304);
             this.DESC_Restore_Printers.Name = "DESC_Restore_Printers";
             this.DESC_Restore_Printers.Size = new System.Drawing.Size(449, 38);
@@ -668,11 +675,12 @@
             // 
             // btnSettings
             // 
+            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnSettings.Image = global::DIT_AIO.Properties.Resources.settings;
             this.btnSettings.Location = new System.Drawing.Point(0, 410);
             this.btnSettings.Name = "btnSettings";
@@ -680,16 +688,17 @@
             this.btnSettings.TabIndex = 1;
             this.btnSettings.Text = "Settings";
             this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.UseVisualStyleBackColor = false;
             // 
             // btnMainframe
             // 
+            this.btnMainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnMainframe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMainframe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMainframe.FlatAppearance.BorderSize = 0;
             this.btnMainframe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMainframe.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMainframe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnMainframe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnMainframe.Image = global::DIT_AIO.Properties.Resources.mainframe;
             this.btnMainframe.Location = new System.Drawing.Point(0, 312);
             this.btnMainframe.Name = "btnMainframe";
@@ -697,16 +706,17 @@
             this.btnMainframe.TabIndex = 1;
             this.btnMainframe.Text = "Mainframe";
             this.btnMainframe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMainframe.UseVisualStyleBackColor = true;
+            this.btnMainframe.UseVisualStyleBackColor = false;
             // 
             // btnSystemSetup
             // 
+            this.btnSystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnSystemSetup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSystemSetup.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSystemSetup.FlatAppearance.BorderSize = 0;
             this.btnSystemSetup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSystemSetup.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSystemSetup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSystemSetup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnSystemSetup.Image = global::DIT_AIO.Properties.Resources.system;
             this.btnSystemSetup.Location = new System.Drawing.Point(0, 270);
             this.btnSystemSetup.Name = "btnSystemSetup";
@@ -714,16 +724,17 @@
             this.btnSystemSetup.TabIndex = 1;
             this.btnSystemSetup.Text = "System Setup";
             this.btnSystemSetup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSystemSetup.UseVisualStyleBackColor = true;
+            this.btnSystemSetup.UseVisualStyleBackColor = false;
             // 
             // btnDiagnostics
             // 
+            this.btnDiagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnDiagnostics.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDiagnostics.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDiagnostics.FlatAppearance.BorderSize = 0;
             this.btnDiagnostics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDiagnostics.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnDiagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnDiagnostics.Image = global::DIT_AIO.Properties.Resources.datarecov;
             this.btnDiagnostics.Location = new System.Drawing.Point(0, 228);
             this.btnDiagnostics.Name = "btnDiagnostics";
@@ -731,16 +742,17 @@
             this.btnDiagnostics.TabIndex = 1;
             this.btnDiagnostics.Text = "Diagnostics";
             this.btnDiagnostics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDiagnostics.UseVisualStyleBackColor = true;
+            this.btnDiagnostics.UseVisualStyleBackColor = false;
             // 
             // btnDataRecovery
             // 
+            this.btnDataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnDataRecovery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDataRecovery.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDataRecovery.FlatAppearance.BorderSize = 0;
             this.btnDataRecovery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDataRecovery.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDataRecovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnDataRecovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnDataRecovery.Image = global::DIT_AIO.Properties.Resources.diag;
             this.btnDataRecovery.Location = new System.Drawing.Point(0, 186);
             this.btnDataRecovery.Name = "btnDataRecovery";
@@ -748,16 +760,17 @@
             this.btnDataRecovery.TabIndex = 1;
             this.btnDataRecovery.Text = "Data Recovery";
             this.btnDataRecovery.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDataRecovery.UseVisualStyleBackColor = true;
+            this.btnDataRecovery.UseVisualStyleBackColor = false;
             // 
             // btnDashboard
             // 
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnDashboard.Image = global::DIT_AIO.Properties.Resources.Home;
             this.btnDashboard.Location = new System.Drawing.Point(0, 144);
             this.btnDashboard.Name = "btnDashboard";
@@ -765,7 +778,7 @@
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Text = "Home";
             this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
@@ -799,7 +812,8 @@
             // 
             // DESC_Check_User_Account
             // 
-            this.DESC_Check_User_Account.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Check_User_Account.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Check_User_Account.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_Check_User_Account.Location = new System.Drawing.Point(139, 88);
             this.DESC_Check_User_Account.Name = "DESC_Check_User_Account";
             this.DESC_Check_User_Account.Size = new System.Drawing.Size(449, 38);
@@ -810,7 +824,8 @@
             // 
             // DESC_Ping
             // 
-            this.DESC_Ping.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Ping.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Ping.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_Ping.Location = new System.Drawing.Point(139, 148);
             this.DESC_Ping.Name = "DESC_Ping";
             this.DESC_Ping.Size = new System.Drawing.Size(449, 38);
@@ -820,7 +835,8 @@
             // 
             // DESC_SFC
             // 
-            this.DESC_SFC.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_SFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_SFC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_SFC.Location = new System.Drawing.Point(139, 202);
             this.DESC_SFC.Name = "DESC_SFC";
             this.DESC_SFC.Size = new System.Drawing.Size(449, 38);
@@ -830,7 +846,8 @@
             // 
             // DESC_DISM
             // 
-            this.DESC_DISM.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_DISM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_DISM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_DISM.Location = new System.Drawing.Point(139, 266);
             this.DESC_DISM.Name = "DESC_DISM";
             this.DESC_DISM.Size = new System.Drawing.Size(449, 38);
@@ -840,7 +857,8 @@
             // 
             // DESC_CCH_Deploy
             // 
-            this.DESC_CCH_Deploy.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_CCH_Deploy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_CCH_Deploy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_CCH_Deploy.Location = new System.Drawing.Point(139, 320);
             this.DESC_CCH_Deploy.Name = "DESC_CCH_Deploy";
             this.DESC_CCH_Deploy.Size = new System.Drawing.Size(449, 38);
@@ -850,7 +868,8 @@
             // 
             // DESC_Paperport
             // 
-            this.DESC_Paperport.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Paperport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Paperport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_Paperport.Location = new System.Drawing.Point(139, 85);
             this.DESC_Paperport.Name = "DESC_Paperport";
             this.DESC_Paperport.Size = new System.Drawing.Size(449, 47);
@@ -861,7 +880,8 @@
             // 
             // DESC_Esignature
             // 
-            this.DESC_Esignature.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Esignature.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Esignature.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_Esignature.Location = new System.Drawing.Point(139, 148);
             this.DESC_Esignature.Name = "DESC_Esignature";
             this.DESC_Esignature.Size = new System.Drawing.Size(449, 38);
@@ -872,7 +892,8 @@
             // 
             // DESC_Blanklogin
             // 
-            this.DESC_Blanklogin.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_Blanklogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Blanklogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_Blanklogin.Location = new System.Drawing.Point(139, 202);
             this.DESC_Blanklogin.Name = "DESC_Blanklogin";
             this.DESC_Blanklogin.Size = new System.Drawing.Size(449, 46);
@@ -883,17 +904,19 @@
             // 
             // DESC_Firewall
             // 
-            this.DESC_Firewall.ForeColor = System.Drawing.Color.BurlyWood;
-            this.DESC_Firewall.Location = new System.Drawing.Point(139, 261);
+            this.DESC_Firewall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_Firewall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_Firewall.Location = new System.Drawing.Point(138, 267);
             this.DESC_Firewall.Name = "DESC_Firewall";
-            this.DESC_Firewall.Size = new System.Drawing.Size(449, 38);
+            this.DESC_Firewall.Size = new System.Drawing.Size(449, 33);
             this.DESC_Firewall.TabIndex = 34;
-            this.DESC_Firewall.Text = "Disabled all 3 firewall states and runs a .reg file to disable firewall notificat" +
+            this.DESC_Firewall.Text = "Disables all 3 firewall states and runs a .reg file to disable firewall notificat" +
     "ions.";
             // 
             // label1
             // 
-            this.label1.ForeColor = System.Drawing.Color.BurlyWood;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.label1.Location = new System.Drawing.Point(139, 317);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(449, 38);
@@ -903,7 +926,8 @@
             // 
             // DESC_MF_Unsuspend
             // 
-            this.DESC_MF_Unsuspend.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_MF_Unsuspend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_MF_Unsuspend.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_MF_Unsuspend.Location = new System.Drawing.Point(139, 98);
             this.DESC_MF_Unsuspend.Name = "DESC_MF_Unsuspend";
             this.DESC_MF_Unsuspend.Size = new System.Drawing.Size(449, 38);
@@ -913,7 +937,8 @@
             // 
             // DESC_MF_PW_Reset
             // 
-            this.DESC_MF_PW_Reset.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_MF_PW_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_MF_PW_Reset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_MF_PW_Reset.Location = new System.Drawing.Point(139, 158);
             this.DESC_MF_PW_Reset.Name = "DESC_MF_PW_Reset";
             this.DESC_MF_PW_Reset.Size = new System.Drawing.Size(449, 38);
@@ -923,7 +948,8 @@
             // 
             // DESC_MF_PS_PrinterData
             // 
-            this.DESC_MF_PS_PrinterData.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_MF_PS_PrinterData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_MF_PS_PrinterData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_MF_PS_PrinterData.Location = new System.Drawing.Point(139, 216);
             this.DESC_MF_PS_PrinterData.Name = "DESC_MF_PS_PrinterData";
             this.DESC_MF_PS_PrinterData.Size = new System.Drawing.Size(449, 38);
@@ -933,7 +959,8 @@
             // 
             // DESC_MF_Guide
             // 
-            this.DESC_MF_Guide.ForeColor = System.Drawing.Color.BurlyWood;
+            this.DESC_MF_Guide.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DESC_MF_Guide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_MF_Guide.Location = new System.Drawing.Point(139, 276);
             this.DESC_MF_Guide.Name = "DESC_MF_Guide";
             this.DESC_MF_Guide.Size = new System.Drawing.Size(449, 38);
@@ -964,7 +991,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(810, 452);
             this.Controls.Add(this.button1);

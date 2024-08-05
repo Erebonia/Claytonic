@@ -30,7 +30,7 @@ namespace DIT_AIO
             pnlNav.Height = btnDashboard.Height;
             pnlNav.Top = btnDashboard.Top;
             pnlNav.Left = btnDashboard.Left;
-            btnDashboard.BackColor = Color.FromArgb(46, 51, 73);
+            btnDashboard.BackColor = Color.FromArgb(28, 28, 18);
 
             // Attach event handlers
             btnDashboard.Click += HandleCategoryClick;
@@ -202,12 +202,12 @@ namespace DIT_AIO
 
         private void reset_button_ui()
         {
-            btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
-            btnDataRecovery.BackColor = Color.FromArgb(24, 30, 54);
-            btnDiagnostics.BackColor = Color.FromArgb(24, 30, 54);
-            btnSystemSetup.BackColor = Color.FromArgb(24, 30, 54);
-            btnMainframe.BackColor = Color.FromArgb(24, 30, 54);
-            btnSettings.BackColor = Color.FromArgb(24, 30, 54);
+            btnDashboard.BackColor = Color.FromArgb(28, 28, 28);
+            btnDataRecovery.BackColor = Color.FromArgb(28, 28, 28);
+            btnDiagnostics.BackColor = Color.FromArgb(28, 28, 28);
+            btnSystemSetup.BackColor = Color.FromArgb(28, 28, 28);
+            btnMainframe.BackColor = Color.FromArgb(28, 28, 28);
+            btnSettings.BackColor = Color.FromArgb(28, 28, 28);
         }
 
         private void HandleButtonClick(object sender, EventArgs e)
