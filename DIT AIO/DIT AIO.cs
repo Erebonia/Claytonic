@@ -26,7 +26,6 @@ namespace DIT_AIO
         public Runetonic()
         {
             InitializeComponent();
-            CheckForUpdates();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             pnlNav.Height = btnDashboard.Height;
             pnlNav.Top = btnDashboard.Top;
@@ -52,7 +51,7 @@ namespace DIT_AIO
             // AttachDragEventHandlers(someOtherControl);
         }
 
-        private void CheckForUpdates()
+        public static bool CheckForUpdates()
         {
             string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\Claytonic.exe";
             string localExePath = Application.ExecutablePath;
@@ -89,15 +88,15 @@ namespace DIT_AIO
 
                     // Exit the current application
                     Application.Exit();
+                    return true; // Update is in progress
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Failed to check for updates: {ex.Message}", "Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            return false; // No update needed
         }
-
-
 
         private void Form_MouseDown(object sender, MouseEventArgs e)
         {
