@@ -54,7 +54,7 @@ namespace DIT_AIO
 
         private void CheckForUpdates()
         {
-            string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\DIT AIO.exe";
+            string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\Claytonic.exe";
             string localExePath = Application.ExecutablePath;
             string batchScriptPath = Path.Combine(Path.GetDirectoryName(localExePath), "update.bat");
 
