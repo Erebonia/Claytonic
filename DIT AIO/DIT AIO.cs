@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -9,7 +10,6 @@ namespace DIT_AIO
     public partial class Runetonic : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-
         private static extern IntPtr CreateRoundRectRgn(
             int nLeftRect,
             int nTopRect,
@@ -26,6 +26,7 @@ namespace DIT_AIO
         public Runetonic()
         {
             InitializeComponent();
+            CheckForUpdates();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             pnlNav.Height = btnDashboard.Height;
             pnlNav.Top = btnDashboard.Top;
@@ -50,6 +51,53 @@ namespace DIT_AIO
             // Attach mouse event handlers to other controls if necessary
             // AttachDragEventHandlers(someOtherControl);
         }
+
+        private void CheckForUpdates()
+        {
+            string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\DIT AIO.exe";
+            string localExePath = Application.ExecutablePath;
+            string batchScriptPath = Path.Combine(Path.GetDirectoryName(localExePath), "update.bat");
+
+            try
+            {
+                FileInfo remoteFile = new FileInfo(remoteExePath);
+                FileInfo localFile = new FileInfo(localExePath);
+
+                if (remoteFile.LastWriteTime > localFile.LastWriteTime)
+                {
+                    MessageBox.Show("A new update is available. The application will now update and restart.", "Update Available", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Create a batch script to replace the executable and restart the application
+                    string batchScriptContent = $@"
+                    @echo off
+                    taskkill /f /im ""{Path.GetFileName(localExePath)}""
+                    copy /b /y ""{remoteExePath}"" ""{localExePath}""
+                    start """" ""{localExePath}""
+                    del ""{batchScriptPath}""
+                    ";
+
+                    File.WriteAllText(batchScriptPath, batchScriptContent);
+
+                    // Run the batch script
+                    ProcessStartInfo processStartInfo = new ProcessStartInfo
+                    {
+                        FileName = batchScriptPath,
+                        UseShellExecute = true,
+                        CreateNoWindow = true
+                    };
+                    Process.Start(processStartInfo);
+
+                    // Exit the current application
+                    Application.Exit();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to check for updates: {ex.Message}", "Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
 
         private void Form_MouseDown(object sender, MouseEventArgs e)
         {
@@ -202,7 +250,7 @@ namespace DIT_AIO
 
         private void reset_button_ui()
         {
-            btnDashboard.BackColor = Color.FromArgb(30,31,34);
+            btnDashboard.BackColor = Color.FromArgb(30, 31, 34);
             btnDataRecovery.BackColor = Color.FromArgb(30, 31, 34);
             btnDiagnostics.BackColor = Color.FromArgb(30, 31, 34);
             btnSystemSetup.BackColor = Color.FromArgb(30, 31, 34);
