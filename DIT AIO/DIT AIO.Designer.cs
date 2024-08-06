@@ -60,8 +60,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Master = new System.Windows.Forms.Panel();
             this.Home = new System.Windows.Forms.Panel();
-            this.exit_button = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -101,6 +99,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Title_Settings = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.button1 = new System.Windows.Forms.Button();
+            this.exit_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -598,34 +598,6 @@
             this.Home.Tag = "Home";
             this.Home.Visible = false;
             // 
-            // exit_button
-            // 
-            this.exit_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.exit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.exit_button.FlatAppearance.BorderSize = 0;
-            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_button.Image = global::DIT_AIO.Properties.Resources.exit;
-            this.exit_button.Location = new System.Drawing.Point(577, 3);
-            this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(29, 26);
-            this.exit_button.TabIndex = 13;
-            this.exit_button.UseVisualStyleBackColor = false;
-            this.exit_button.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::DIT_AIO.Properties.Resources.minimize;
-            this.button1.Location = new System.Drawing.Point(543, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 26);
-            this.button1.TabIndex = 29;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1096,6 +1068,34 @@
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::DIT_AIO.Properties.Resources.minimize;
+            this.button1.Location = new System.Drawing.Point(543, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(29, 26);
+            this.button1.TabIndex = 29;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // exit_button
+            // 
+            this.exit_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.exit_button.FlatAppearance.BorderSize = 0;
+            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit_button.Image = global::DIT_AIO.Properties.Resources.exit;
+            this.exit_button.Location = new System.Drawing.Point(577, 3);
+            this.exit_button.Name = "exit_button";
+            this.exit_button.Size = new System.Drawing.Size(29, 26);
+            this.exit_button.TabIndex = 13;
+            this.exit_button.UseVisualStyleBackColor = false;
+            this.exit_button.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // Runetonic
             // 
