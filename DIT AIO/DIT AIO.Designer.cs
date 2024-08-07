@@ -569,6 +569,8 @@
             // Master
             // 
             this.Master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.Master.Controls.Add(this.button1);
+            this.Master.Controls.Add(this.exit_button);
             this.Master.Controls.Add(this.Home);
             this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
@@ -583,8 +585,6 @@
             // Home
             // 
             this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.Home.Controls.Add(this.exit_button);
-            this.Home.Controls.Add(this.button1);
             this.Home.Controls.Add(this.label5);
             this.Home.Controls.Add(this.pictureBox3);
             this.Home.Controls.Add(this.label4);
@@ -605,7 +605,7 @@
             this.exit_button.FlatAppearance.BorderSize = 0;
             this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit_button.Image = global::DIT_AIO.Properties.Resources.exit;
-            this.exit_button.Location = new System.Drawing.Point(577, 3);
+            this.exit_button.Location = new System.Drawing.Point(570, 10);
             this.exit_button.Name = "exit_button";
             this.exit_button.Size = new System.Drawing.Size(29, 26);
             this.exit_button.TabIndex = 13;
@@ -619,7 +619,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::DIT_AIO.Properties.Resources.minimize;
-            this.button1.Location = new System.Drawing.Point(543, 3);
+            this.button1.Location = new System.Drawing.Point(540, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(29, 26);
             this.button1.TabIndex = 29;
