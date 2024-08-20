@@ -16,16 +16,21 @@ public class ButtonNavigator
 
     public void HandleButtonClick(Button clickedButton)
     {
+        // Reset all buttons to inactive color
         ResetButtonUI(clickedButton.Parent);
 
+        // Set the navigation panel to highlight the clicked button
         pnlNav.Height = clickedButton.Height;
         pnlNav.Top = clickedButton.Top;
         pnlNav.Left = clickedButton.Left;
+
+        // Set the clicked button's background color to active color
         clickedButton.BackColor = activeColor;
     }
 
     private void ResetButtonUI(Control parent)
     {
+        // Reset the background color of all buttons to inactive color
         foreach (Control control in parent.Controls)
         {
             if (control is Button button)

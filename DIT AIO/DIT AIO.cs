@@ -48,7 +48,7 @@ namespace DIT_AIO
             navigator = new ButtonNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34));
 
             // Initialize CategoryNavigator
-            categoryNavigator = new CategoryNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(49, 51, 56), this.Master);
+            categoryNavigator = new CategoryNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34), this.Master);
 
             // Initialize AudioPlayer
             audioPlayer = new AudioPlayer();
@@ -67,7 +67,7 @@ namespace DIT_AIO
             // Ensure Home tab is selected when starting the program
             categoryNavigator.HandleCategoryClick(btnDashboard, EventArgs.Empty);
 
-            // Attach FormDragger to the entire form and its controls
+            // Attach FormDragger to THIS entire form and its controls
             FormDragger dragger = new FormDragger();
             dragger.Attach(this);
             AttachDragEventHandlers(this, dragger); // Pass the dragger instance here
