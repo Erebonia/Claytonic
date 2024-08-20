@@ -29,23 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Runetonic));
-            this.btn_Restore_User_Data = new System.Windows.Forms.Button();
-            this.btn_Firewall = new System.Windows.Forms.Button();
-            this.btn_Check_User_Accounts = new System.Windows.Forms.Button();
-            this.btn_MF_Unsuspend = new System.Windows.Forms.Button();
-            this.btn_MF_PW_Reset = new System.Windows.Forms.Button();
-            this.btn_Backup_Printers = new System.Windows.Forms.Button();
-            this.btn_Restore_Printers = new System.Windows.Forms.Button();
-            this.btn_Paperport = new System.Windows.Forms.Button();
-            this.btn_Esignature = new System.Windows.Forms.Button();
-            this.btn_MF_Guide = new System.Windows.Forms.Button();
-            this.btn_Ping_IP = new System.Windows.Forms.Button();
-            this.btn_SFC = new System.Windows.Forms.Button();
-            this.btn_DISM = new System.Windows.Forms.Button();
-            this.btn_blank_login = new System.Windows.Forms.Button();
-            this.btn_outlook_cache = new System.Windows.Forms.Button();
-            this.btn_CCH_Deploy = new System.Windows.Forms.Button();
-            this.btn_MF_PS_Printer_Data = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
@@ -59,9 +42,10 @@
             this.Subtitle = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Master = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.exit_button = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.Home = new System.Windows.Forms.Panel();
+            this.Music = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -76,6 +60,9 @@
             this.Desc_Backup_User_Data = new System.Windows.Forms.Label();
             this.Title_Data_Recovery = new System.Windows.Forms.Label();
             this.btnBackup_User_Data = new System.Windows.Forms.Button();
+            this.btn_Restore_User_Data = new System.Windows.Forms.Button();
+            this.btn_Backup_Printers = new System.Windows.Forms.Button();
+            this.btn_Restore_Printers = new System.Windows.Forms.Button();
             this.Diagnostics = new System.Windows.Forms.Panel();
             this.DESC_CCH_Deploy = new System.Windows.Forms.Label();
             this.DESC_DISM = new System.Windows.Forms.Label();
@@ -83,26 +70,40 @@
             this.DESC_Ping = new System.Windows.Forms.Label();
             this.DESC_Check_User_Account = new System.Windows.Forms.Label();
             this.Title_Diagnostics = new System.Windows.Forms.Label();
+            this.btn_Check_User_Accounts = new System.Windows.Forms.Button();
+            this.btn_Ping_IP = new System.Windows.Forms.Button();
+            this.btn_SFC = new System.Windows.Forms.Button();
+            this.btn_DISM = new System.Windows.Forms.Button();
+            this.btn_CCH_Deploy = new System.Windows.Forms.Button();
             this.SystemSetup = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.DESC_Firewall = new System.Windows.Forms.Label();
             this.DESC_Blanklogin = new System.Windows.Forms.Label();
             this.DESC_Esignature = new System.Windows.Forms.Label();
             this.DESC_Paperport = new System.Windows.Forms.Label();
             this.Title_SystemSetup = new System.Windows.Forms.Label();
+            this.btn_Paperport = new System.Windows.Forms.Button();
+            this.btn_Esignature = new System.Windows.Forms.Button();
+            this.btn_blank_login = new System.Windows.Forms.Button();
+            this.btn_Firewall = new System.Windows.Forms.Button();
+            this.btn_outlook_cache = new System.Windows.Forms.Button();
             this.Mainframe = new System.Windows.Forms.Panel();
             this.DESC_MF_Guide = new System.Windows.Forms.Label();
             this.DESC_MF_PS_PrinterData = new System.Windows.Forms.Label();
             this.DESC_MF_PW_Reset = new System.Windows.Forms.Label();
             this.DESC_MF_Unsuspend = new System.Windows.Forms.Label();
             this.Title_Mainframe = new System.Windows.Forms.Label();
+            this.btn_MF_Unsuspend = new System.Windows.Forms.Button();
+            this.btn_MF_PW_Reset = new System.Windows.Forms.Button();
+            this.btn_MF_PS_Printer_Data = new System.Windows.Forms.Button();
+            this.btn_MF_Guide = new System.Windows.Forms.Button();
             this.Settings = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Title_Settings = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -113,284 +114,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).BeginInit();
             this.Diagnostics.SuspendLayout();
             this.SystemSetup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Mainframe.SuspendLayout();
             this.Settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_Restore_User_Data
-            // 
-            this.btn_Restore_User_Data.BackColor = System.Drawing.Color.Brown;
-            this.btn_Restore_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Restore_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Restore_User_Data.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore_User_Data.Image")));
-            this.btn_Restore_User_Data.Location = new System.Drawing.Point(26, 161);
-            this.btn_Restore_User_Data.Name = "btn_Restore_User_Data";
-            this.btn_Restore_User_Data.Size = new System.Drawing.Size(105, 38);
-            this.btn_Restore_User_Data.TabIndex = 2;
-            this.btn_Restore_User_Data.Tag = "DataRecovery";
-            this.btn_Restore_User_Data.Text = "Restore User Data";
-            this.btn_Restore_User_Data.UseVisualStyleBackColor = false;
-            this.btn_Restore_User_Data.Visible = false;
-            this.btn_Restore_User_Data.Click += new System.EventHandler(this.Restore_Data);
-            // 
-            // btn_Firewall
-            // 
-            this.btn_Firewall.BackColor = System.Drawing.Color.Brown;
-            this.btn_Firewall.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Firewall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Firewall.Image = ((System.Drawing.Image)(resources.GetObject("btn_Firewall.Image")));
-            this.btn_Firewall.Location = new System.Drawing.Point(28, 256);
-            this.btn_Firewall.Name = "btn_Firewall";
-            this.btn_Firewall.Size = new System.Drawing.Size(105, 38);
-            this.btn_Firewall.TabIndex = 5;
-            this.btn_Firewall.Tag = "SystemSetup";
-            this.btn_Firewall.Text = "Firewall Off";
-            this.btn_Firewall.UseVisualStyleBackColor = false;
-            this.btn_Firewall.Visible = false;
-            this.btn_Firewall.Click += new System.EventHandler(this.DisableFirewall);
-            // 
-            // btn_Check_User_Accounts
-            // 
-            this.btn_Check_User_Accounts.BackColor = System.Drawing.Color.Brown;
-            this.btn_Check_User_Accounts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Check_User_Accounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Check_User_Accounts.Image = ((System.Drawing.Image)(resources.GetObject("btn_Check_User_Accounts.Image")));
-            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(26, 85);
-            this.btn_Check_User_Accounts.Name = "btn_Check_User_Accounts";
-            this.btn_Check_User_Accounts.Size = new System.Drawing.Size(105, 38);
-            this.btn_Check_User_Accounts.TabIndex = 6;
-            this.btn_Check_User_Accounts.Tag = "Diagnostics";
-            this.btn_Check_User_Accounts.Text = "Check User Account";
-            this.btn_Check_User_Accounts.UseVisualStyleBackColor = false;
-            this.btn_Check_User_Accounts.Visible = false;
-            this.btn_Check_User_Accounts.Click += new System.EventHandler(this.Net_User);
-            // 
-            // btn_MF_Unsuspend
-            // 
-            this.btn_MF_Unsuspend.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_Unsuspend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_Unsuspend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_Unsuspend.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Unsuspend.Image")));
-            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(26, 94);
-            this.btn_MF_Unsuspend.Name = "btn_MF_Unsuspend";
-            this.btn_MF_Unsuspend.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_Unsuspend.TabIndex = 8;
-            this.btn_MF_Unsuspend.Tag = "Mainframe";
-            this.btn_MF_Unsuspend.Text = "Install Unsuspend Macro";
-            this.btn_MF_Unsuspend.UseVisualStyleBackColor = false;
-            this.btn_MF_Unsuspend.Visible = false;
-            this.btn_MF_Unsuspend.Click += new System.EventHandler(this.Install_ACID_Unsuspend);
-            // 
-            // btn_MF_PW_Reset
-            // 
-            this.btn_MF_PW_Reset.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_PW_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_PW_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_PW_Reset.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PW_Reset.Image")));
-            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(26, 156);
-            this.btn_MF_PW_Reset.Name = "btn_MF_PW_Reset";
-            this.btn_MF_PW_Reset.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_PW_Reset.TabIndex = 9;
-            this.btn_MF_PW_Reset.Tag = "Mainframe";
-            this.btn_MF_PW_Reset.Text = "Install PW Reset Macro";
-            this.btn_MF_PW_Reset.UseVisualStyleBackColor = false;
-            this.btn_MF_PW_Reset.Visible = false;
-            this.btn_MF_PW_Reset.Click += new System.EventHandler(this.Install_ACID_Reset);
-            // 
-            // btn_Backup_Printers
-            // 
-            this.btn_Backup_Printers.BackColor = System.Drawing.Color.Brown;
-            this.btn_Backup_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Backup_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Backup_Printers.Image = ((System.Drawing.Image)(resources.GetObject("btn_Backup_Printers.Image")));
-            this.btn_Backup_Printers.Location = new System.Drawing.Point(26, 233);
-            this.btn_Backup_Printers.Name = "btn_Backup_Printers";
-            this.btn_Backup_Printers.Size = new System.Drawing.Size(105, 38);
-            this.btn_Backup_Printers.TabIndex = 10;
-            this.btn_Backup_Printers.Tag = "DataRecovery";
-            this.btn_Backup_Printers.Text = "Backup Printers";
-            this.btn_Backup_Printers.UseVisualStyleBackColor = false;
-            this.btn_Backup_Printers.Visible = false;
-            this.btn_Backup_Printers.Click += new System.EventHandler(this.Backup_Printers);
-            // 
-            // btn_Restore_Printers
-            // 
-            this.btn_Restore_Printers.BackColor = System.Drawing.Color.Brown;
-            this.btn_Restore_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Restore_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Restore_Printers.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore_Printers.Image")));
-            this.btn_Restore_Printers.Location = new System.Drawing.Point(26, 304);
-            this.btn_Restore_Printers.Name = "btn_Restore_Printers";
-            this.btn_Restore_Printers.Size = new System.Drawing.Size(105, 38);
-            this.btn_Restore_Printers.TabIndex = 11;
-            this.btn_Restore_Printers.Tag = "DataRecovery";
-            this.btn_Restore_Printers.Text = "Restore Printers";
-            this.btn_Restore_Printers.UseVisualStyleBackColor = false;
-            this.btn_Restore_Printers.Visible = false;
-            this.btn_Restore_Printers.Click += new System.EventHandler(this.Restore_Printers);
-            // 
-            // btn_Paperport
-            // 
-            this.btn_Paperport.BackColor = System.Drawing.Color.Brown;
-            this.btn_Paperport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Paperport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Paperport.Image = ((System.Drawing.Image)(resources.GetObject("btn_Paperport.Image")));
-            this.btn_Paperport.Location = new System.Drawing.Point(26, 85);
-            this.btn_Paperport.Name = "btn_Paperport";
-            this.btn_Paperport.Size = new System.Drawing.Size(105, 38);
-            this.btn_Paperport.TabIndex = 12;
-            this.btn_Paperport.Tag = "SystemSetup";
-            this.btn_Paperport.Text = "Paperport and Scanning";
-            this.btn_Paperport.UseVisualStyleBackColor = false;
-            this.btn_Paperport.Visible = false;
-            this.btn_Paperport.Click += new System.EventHandler(this.Scanner_Setup);
-            // 
-            // btn_Esignature
-            // 
-            this.btn_Esignature.BackColor = System.Drawing.Color.Brown;
-            this.btn_Esignature.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Esignature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Esignature.Image = ((System.Drawing.Image)(resources.GetObject("btn_Esignature.Image")));
-            this.btn_Esignature.Location = new System.Drawing.Point(26, 145);
-            this.btn_Esignature.Name = "btn_Esignature";
-            this.btn_Esignature.Size = new System.Drawing.Size(105, 38);
-            this.btn_Esignature.TabIndex = 13;
-            this.btn_Esignature.Tag = "SystemSetup";
-            this.btn_Esignature.Text = "Electronic Signature";
-            this.btn_Esignature.UseVisualStyleBackColor = false;
-            this.btn_Esignature.Visible = false;
-            this.btn_Esignature.Click += new System.EventHandler(this.Electronic_Signature);
-            // 
-            // btn_MF_Guide
-            // 
-            this.btn_MF_Guide.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_Guide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_Guide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_Guide.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Guide.Image")));
-            this.btn_MF_Guide.Location = new System.Drawing.Point(26, 276);
-            this.btn_MF_Guide.Name = "btn_MF_Guide";
-            this.btn_MF_Guide.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_Guide.TabIndex = 14;
-            this.btn_MF_Guide.Tag = "Mainframe";
-            this.btn_MF_Guide.Text = "Guide";
-            this.btn_MF_Guide.UseVisualStyleBackColor = false;
-            this.btn_MF_Guide.Visible = false;
-            this.btn_MF_Guide.Click += new System.EventHandler(this.Mainframe_Guides);
-            // 
-            // btn_Ping_IP
-            // 
-            this.btn_Ping_IP.BackColor = System.Drawing.Color.Brown;
-            this.btn_Ping_IP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Ping_IP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Ping_IP.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ping_IP.Image")));
-            this.btn_Ping_IP.Location = new System.Drawing.Point(26, 145);
-            this.btn_Ping_IP.Name = "btn_Ping_IP";
-            this.btn_Ping_IP.Size = new System.Drawing.Size(105, 38);
-            this.btn_Ping_IP.TabIndex = 15;
-            this.btn_Ping_IP.Tag = "Diagnostics";
-            this.btn_Ping_IP.Text = "Ping IP Address";
-            this.btn_Ping_IP.UseVisualStyleBackColor = false;
-            this.btn_Ping_IP.Visible = false;
-            this.btn_Ping_IP.Click += new System.EventHandler(this.ping_ipaddress);
-            // 
-            // btn_SFC
-            // 
-            this.btn_SFC.BackColor = System.Drawing.Color.Brown;
-            this.btn_SFC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_SFC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SFC.Image = ((System.Drawing.Image)(resources.GetObject("btn_SFC.Image")));
-            this.btn_SFC.Location = new System.Drawing.Point(26, 200);
-            this.btn_SFC.Name = "btn_SFC";
-            this.btn_SFC.Size = new System.Drawing.Size(105, 38);
-            this.btn_SFC.TabIndex = 21;
-            this.btn_SFC.Tag = "Diagnostics";
-            this.btn_SFC.Text = "SFC Scan";
-            this.btn_SFC.UseVisualStyleBackColor = false;
-            this.btn_SFC.Visible = false;
-            this.btn_SFC.Click += new System.EventHandler(this.SFC_Scan);
-            // 
-            // btn_DISM
-            // 
-            this.btn_DISM.BackColor = System.Drawing.Color.Brown;
-            this.btn_DISM.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DISM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DISM.Image = ((System.Drawing.Image)(resources.GetObject("btn_DISM.Image")));
-            this.btn_DISM.Location = new System.Drawing.Point(26, 261);
-            this.btn_DISM.Name = "btn_DISM";
-            this.btn_DISM.Size = new System.Drawing.Size(105, 38);
-            this.btn_DISM.TabIndex = 22;
-            this.btn_DISM.Tag = "Diagnostics";
-            this.btn_DISM.Text = "DISM";
-            this.btn_DISM.UseVisualStyleBackColor = false;
-            this.btn_DISM.Visible = false;
-            this.btn_DISM.Click += new System.EventHandler(this.DISM);
-            // 
-            // btn_blank_login
-            // 
-            this.btn_blank_login.BackColor = System.Drawing.Color.Brown;
-            this.btn_blank_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_blank_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_blank_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_blank_login.Image")));
-            this.btn_blank_login.Location = new System.Drawing.Point(28, 200);
-            this.btn_blank_login.Name = "btn_blank_login";
-            this.btn_blank_login.Size = new System.Drawing.Size(105, 38);
-            this.btn_blank_login.TabIndex = 23;
-            this.btn_blank_login.Tag = "SystemSetup";
-            this.btn_blank_login.Text = "Wipe Windows Logins";
-            this.btn_blank_login.UseVisualStyleBackColor = false;
-            this.btn_blank_login.Visible = false;
-            this.btn_blank_login.Click += new System.EventHandler(this.Blank_Login);
-            // 
-            // btn_outlook_cache
-            // 
-            this.btn_outlook_cache.BackColor = System.Drawing.Color.Brown;
-            this.btn_outlook_cache.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_outlook_cache.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_outlook_cache.Image = ((System.Drawing.Image)(resources.GetObject("btn_outlook_cache.Image")));
-            this.btn_outlook_cache.Location = new System.Drawing.Point(28, 313);
-            this.btn_outlook_cache.Name = "btn_outlook_cache";
-            this.btn_outlook_cache.Size = new System.Drawing.Size(105, 38);
-            this.btn_outlook_cache.TabIndex = 24;
-            this.btn_outlook_cache.Tag = "SystemSetup";
-            this.btn_outlook_cache.Text = "Clear Outlook Cache";
-            this.btn_outlook_cache.UseVisualStyleBackColor = false;
-            this.btn_outlook_cache.Visible = false;
-            this.btn_outlook_cache.Click += new System.EventHandler(this.Outlook_Cache_Removal);
-            // 
-            // btn_CCH_Deploy
-            // 
-            this.btn_CCH_Deploy.BackColor = System.Drawing.Color.Brown;
-            this.btn_CCH_Deploy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_CCH_Deploy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CCH_Deploy.Image = ((System.Drawing.Image)(resources.GetObject("btn_CCH_Deploy.Image")));
-            this.btn_CCH_Deploy.Location = new System.Drawing.Point(26, 320);
-            this.btn_CCH_Deploy.Name = "btn_CCH_Deploy";
-            this.btn_CCH_Deploy.Size = new System.Drawing.Size(105, 38);
-            this.btn_CCH_Deploy.TabIndex = 25;
-            this.btn_CCH_Deploy.Tag = "Diagnostics";
-            this.btn_CCH_Deploy.Text = "CCH Deploy Apps";
-            this.btn_CCH_Deploy.UseVisualStyleBackColor = false;
-            this.btn_CCH_Deploy.Visible = false;
-            this.btn_CCH_Deploy.Click += new System.EventHandler(this.CCH_Deploy);
-            // 
-            // btn_MF_PS_Printer_Data
-            // 
-            this.btn_MF_PS_Printer_Data.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_PS_Printer_Data.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_PS_Printer_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_PS_Printer_Data.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PS_Printer_Data.Image")));
-            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(26, 212);
-            this.btn_MF_PS_Printer_Data.Name = "btn_MF_PS_Printer_Data";
-            this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_PS_Printer_Data.TabIndex = 26;
-            this.btn_MF_PS_Printer_Data.Tag = "Mainframe";
-            this.btn_MF_PS_Printer_Data.Text = "Clear PS_PrinterData";
-            this.btn_MF_PS_Printer_Data.UseVisualStyleBackColor = false;
-            this.btn_MF_PS_Printer_Data.Visible = false;
-            this.btn_MF_PS_Printer_Data.Click += new System.EventHandler(this.Clear_PS_PrinterData);
             // 
             // panel1
             // 
@@ -572,50 +301,49 @@
             // Master
             // 
             this.Master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.Master.Controls.Add(this.button1);
-            this.Master.Controls.Add(this.exit_button);
-            this.Master.Controls.Add(this.SystemSetup);
-            this.Master.Controls.Add(this.Mainframe);
-            this.Master.Controls.Add(this.Settings);
+            this.Master.Controls.Add(this.btnMinimize);
+            this.Master.Controls.Add(this.btnClose);
             this.Master.Controls.Add(this.Home);
             this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
+            this.Master.Controls.Add(this.SystemSetup);
+            this.Master.Controls.Add(this.Mainframe);
+            this.Master.Controls.Add(this.Settings);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(611, 430);
             this.Master.TabIndex = 28;
             // 
-            // button1
+            // btnMinimize
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::DIT_AIO.Properties.Resources.minimize;
-            this.button1.Location = new System.Drawing.Point(540, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 26);
-            this.button1.TabIndex = 29;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnMinimize_Click);
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.ForeColor = System.Drawing.Color.White;
+            this.btnMinimize.Image = global::DIT_AIO.Properties.Resources.minimize;
+            this.btnMinimize.Location = new System.Drawing.Point(540, 10);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(29, 26);
+            this.btnMinimize.TabIndex = 29;
+            this.btnMinimize.UseVisualStyleBackColor = false;
             // 
-            // exit_button
+            // btnClose
             // 
-            this.exit_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.exit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.exit_button.FlatAppearance.BorderSize = 0;
-            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_button.Image = global::DIT_AIO.Properties.Resources.exit;
-            this.exit_button.Location = new System.Drawing.Point(570, 10);
-            this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(29, 26);
-            this.exit_button.TabIndex = 13;
-            this.exit_button.UseVisualStyleBackColor = false;
-            this.exit_button.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = global::DIT_AIO.Properties.Resources.exit;
+            this.btnClose.Location = new System.Drawing.Point(570, 10);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(29, 26);
+            this.btnClose.TabIndex = 13;
+            this.btnClose.UseVisualStyleBackColor = false;
             // 
             // Home
             // 
             this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.Home.Controls.Add(this.Music);
             this.Home.Controls.Add(this.label5);
             this.Home.Controls.Add(this.pictureBox3);
             this.Home.Controls.Add(this.label4);
@@ -628,6 +356,25 @@
             this.Home.TabIndex = 27;
             this.Home.Tag = "Home";
             this.Home.Visible = false;
+            // 
+            // Music
+            // 
+            this.Music.BackColor = System.Drawing.Color.Transparent;
+            this.Music.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Music.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Music.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Music.Image = global::DIT_AIO.Properties.Resources.icon063;
+            this.Music.Location = new System.Drawing.Point(564, 384);
+            this.Music.Margin = new System.Windows.Forms.Padding(0);
+            this.Music.Name = "Music";
+            this.Music.Size = new System.Drawing.Size(41, 38);
+            this.Music.TabIndex = 17;
+            this.Music.Tag = "Home";
+            this.Music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Music.UseVisualStyleBackColor = false;
+            this.Music.Visible = false;
+            this.Music.Click += new System.EventHandler(this.Music_Click);
             // 
             // label5
             // 
@@ -796,6 +543,54 @@
             this.btnBackup_User_Data.Visible = false;
             this.btnBackup_User_Data.Click += new System.EventHandler(this.Backup_Data);
             // 
+            // btn_Restore_User_Data
+            // 
+            this.btn_Restore_User_Data.BackColor = System.Drawing.Color.Brown;
+            this.btn_Restore_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Restore_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Restore_User_Data.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore_User_Data.Image")));
+            this.btn_Restore_User_Data.Location = new System.Drawing.Point(26, 161);
+            this.btn_Restore_User_Data.Name = "btn_Restore_User_Data";
+            this.btn_Restore_User_Data.Size = new System.Drawing.Size(105, 38);
+            this.btn_Restore_User_Data.TabIndex = 2;
+            this.btn_Restore_User_Data.Tag = "DataRecovery";
+            this.btn_Restore_User_Data.Text = "Restore User Data";
+            this.btn_Restore_User_Data.UseVisualStyleBackColor = false;
+            this.btn_Restore_User_Data.Visible = false;
+            this.btn_Restore_User_Data.Click += new System.EventHandler(this.Restore_Data);
+            // 
+            // btn_Backup_Printers
+            // 
+            this.btn_Backup_Printers.BackColor = System.Drawing.Color.Brown;
+            this.btn_Backup_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Backup_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Backup_Printers.Image = ((System.Drawing.Image)(resources.GetObject("btn_Backup_Printers.Image")));
+            this.btn_Backup_Printers.Location = new System.Drawing.Point(26, 233);
+            this.btn_Backup_Printers.Name = "btn_Backup_Printers";
+            this.btn_Backup_Printers.Size = new System.Drawing.Size(105, 38);
+            this.btn_Backup_Printers.TabIndex = 10;
+            this.btn_Backup_Printers.Tag = "DataRecovery";
+            this.btn_Backup_Printers.Text = "Backup Printers";
+            this.btn_Backup_Printers.UseVisualStyleBackColor = false;
+            this.btn_Backup_Printers.Visible = false;
+            this.btn_Backup_Printers.Click += new System.EventHandler(this.Backup_Printers);
+            // 
+            // btn_Restore_Printers
+            // 
+            this.btn_Restore_Printers.BackColor = System.Drawing.Color.Brown;
+            this.btn_Restore_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Restore_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Restore_Printers.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore_Printers.Image")));
+            this.btn_Restore_Printers.Location = new System.Drawing.Point(26, 304);
+            this.btn_Restore_Printers.Name = "btn_Restore_Printers";
+            this.btn_Restore_Printers.Size = new System.Drawing.Size(105, 38);
+            this.btn_Restore_Printers.TabIndex = 11;
+            this.btn_Restore_Printers.Tag = "DataRecovery";
+            this.btn_Restore_Printers.Text = "Restore Printers";
+            this.btn_Restore_Printers.UseVisualStyleBackColor = false;
+            this.btn_Restore_Printers.Visible = false;
+            this.btn_Restore_Printers.Click += new System.EventHandler(this.Restore_Printers);
+            // 
             // Diagnostics
             // 
             this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
@@ -885,6 +680,86 @@
             this.Title_Diagnostics.TabIndex = 26;
             this.Title_Diagnostics.Text = "Diagnostics";
             // 
+            // btn_Check_User_Accounts
+            // 
+            this.btn_Check_User_Accounts.BackColor = System.Drawing.Color.Brown;
+            this.btn_Check_User_Accounts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Check_User_Accounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Check_User_Accounts.Image = ((System.Drawing.Image)(resources.GetObject("btn_Check_User_Accounts.Image")));
+            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(26, 85);
+            this.btn_Check_User_Accounts.Name = "btn_Check_User_Accounts";
+            this.btn_Check_User_Accounts.Size = new System.Drawing.Size(105, 38);
+            this.btn_Check_User_Accounts.TabIndex = 6;
+            this.btn_Check_User_Accounts.Tag = "Diagnostics";
+            this.btn_Check_User_Accounts.Text = "Check User Account";
+            this.btn_Check_User_Accounts.UseVisualStyleBackColor = false;
+            this.btn_Check_User_Accounts.Visible = false;
+            this.btn_Check_User_Accounts.Click += new System.EventHandler(this.Net_User);
+            // 
+            // btn_Ping_IP
+            // 
+            this.btn_Ping_IP.BackColor = System.Drawing.Color.Brown;
+            this.btn_Ping_IP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Ping_IP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Ping_IP.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ping_IP.Image")));
+            this.btn_Ping_IP.Location = new System.Drawing.Point(26, 145);
+            this.btn_Ping_IP.Name = "btn_Ping_IP";
+            this.btn_Ping_IP.Size = new System.Drawing.Size(105, 38);
+            this.btn_Ping_IP.TabIndex = 15;
+            this.btn_Ping_IP.Tag = "Diagnostics";
+            this.btn_Ping_IP.Text = "Ping IP Address";
+            this.btn_Ping_IP.UseVisualStyleBackColor = false;
+            this.btn_Ping_IP.Visible = false;
+            this.btn_Ping_IP.Click += new System.EventHandler(this.ping_ipaddress);
+            // 
+            // btn_SFC
+            // 
+            this.btn_SFC.BackColor = System.Drawing.Color.Brown;
+            this.btn_SFC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_SFC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SFC.Image = ((System.Drawing.Image)(resources.GetObject("btn_SFC.Image")));
+            this.btn_SFC.Location = new System.Drawing.Point(26, 200);
+            this.btn_SFC.Name = "btn_SFC";
+            this.btn_SFC.Size = new System.Drawing.Size(105, 38);
+            this.btn_SFC.TabIndex = 21;
+            this.btn_SFC.Tag = "Diagnostics";
+            this.btn_SFC.Text = "SFC Scan";
+            this.btn_SFC.UseVisualStyleBackColor = false;
+            this.btn_SFC.Visible = false;
+            this.btn_SFC.Click += new System.EventHandler(this.SFC_Scan);
+            // 
+            // btn_DISM
+            // 
+            this.btn_DISM.BackColor = System.Drawing.Color.Brown;
+            this.btn_DISM.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DISM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_DISM.Image = ((System.Drawing.Image)(resources.GetObject("btn_DISM.Image")));
+            this.btn_DISM.Location = new System.Drawing.Point(26, 261);
+            this.btn_DISM.Name = "btn_DISM";
+            this.btn_DISM.Size = new System.Drawing.Size(105, 38);
+            this.btn_DISM.TabIndex = 22;
+            this.btn_DISM.Tag = "Diagnostics";
+            this.btn_DISM.Text = "DISM";
+            this.btn_DISM.UseVisualStyleBackColor = false;
+            this.btn_DISM.Visible = false;
+            this.btn_DISM.Click += new System.EventHandler(this.DISM);
+            // 
+            // btn_CCH_Deploy
+            // 
+            this.btn_CCH_Deploy.BackColor = System.Drawing.Color.Brown;
+            this.btn_CCH_Deploy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_CCH_Deploy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CCH_Deploy.Image = ((System.Drawing.Image)(resources.GetObject("btn_CCH_Deploy.Image")));
+            this.btn_CCH_Deploy.Location = new System.Drawing.Point(26, 320);
+            this.btn_CCH_Deploy.Name = "btn_CCH_Deploy";
+            this.btn_CCH_Deploy.Size = new System.Drawing.Size(105, 38);
+            this.btn_CCH_Deploy.TabIndex = 25;
+            this.btn_CCH_Deploy.Tag = "Diagnostics";
+            this.btn_CCH_Deploy.Text = "CCH Deploy Apps";
+            this.btn_CCH_Deploy.UseVisualStyleBackColor = false;
+            this.btn_CCH_Deploy.Visible = false;
+            this.btn_CCH_Deploy.Click += new System.EventHandler(this.CCH_Deploy);
+            // 
             // SystemSetup
             // 
             this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
@@ -908,6 +783,26 @@
             this.SystemSetup.TabIndex = 30;
             this.SystemSetup.Tag = "SystemSetup";
             this.SystemSetup.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(130, 377);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(409, 38);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "Paperport / Electronic Scanning - Make sure this program is not running under you" +
+    "r admin credentials!";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::DIT_AIO.Properties.Resources.warning;
+            this.pictureBox4.Location = new System.Drawing.Point(84, 376);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(40, 39);
+            this.pictureBox4.TabIndex = 36;
+            this.pictureBox4.TabStop = false;
             // 
             // label1
             // 
@@ -977,6 +872,86 @@
             this.Title_SystemSetup.Size = new System.Drawing.Size(202, 32);
             this.Title_SystemSetup.TabIndex = 25;
             this.Title_SystemSetup.Text = "System Setup";
+            // 
+            // btn_Paperport
+            // 
+            this.btn_Paperport.BackColor = System.Drawing.Color.Brown;
+            this.btn_Paperport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Paperport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Paperport.Image = ((System.Drawing.Image)(resources.GetObject("btn_Paperport.Image")));
+            this.btn_Paperport.Location = new System.Drawing.Point(26, 85);
+            this.btn_Paperport.Name = "btn_Paperport";
+            this.btn_Paperport.Size = new System.Drawing.Size(105, 38);
+            this.btn_Paperport.TabIndex = 12;
+            this.btn_Paperport.Tag = "SystemSetup";
+            this.btn_Paperport.Text = "Paperport and Scanning";
+            this.btn_Paperport.UseVisualStyleBackColor = false;
+            this.btn_Paperport.Visible = false;
+            this.btn_Paperport.Click += new System.EventHandler(this.Scanner_Setup);
+            // 
+            // btn_Esignature
+            // 
+            this.btn_Esignature.BackColor = System.Drawing.Color.Brown;
+            this.btn_Esignature.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Esignature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Esignature.Image = ((System.Drawing.Image)(resources.GetObject("btn_Esignature.Image")));
+            this.btn_Esignature.Location = new System.Drawing.Point(26, 145);
+            this.btn_Esignature.Name = "btn_Esignature";
+            this.btn_Esignature.Size = new System.Drawing.Size(105, 38);
+            this.btn_Esignature.TabIndex = 13;
+            this.btn_Esignature.Tag = "SystemSetup";
+            this.btn_Esignature.Text = "Electronic Signature";
+            this.btn_Esignature.UseVisualStyleBackColor = false;
+            this.btn_Esignature.Visible = false;
+            this.btn_Esignature.Click += new System.EventHandler(this.Electronic_Signature);
+            // 
+            // btn_blank_login
+            // 
+            this.btn_blank_login.BackColor = System.Drawing.Color.Brown;
+            this.btn_blank_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_blank_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_blank_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_blank_login.Image")));
+            this.btn_blank_login.Location = new System.Drawing.Point(28, 200);
+            this.btn_blank_login.Name = "btn_blank_login";
+            this.btn_blank_login.Size = new System.Drawing.Size(105, 38);
+            this.btn_blank_login.TabIndex = 23;
+            this.btn_blank_login.Tag = "SystemSetup";
+            this.btn_blank_login.Text = "Wipe Windows Logins";
+            this.btn_blank_login.UseVisualStyleBackColor = false;
+            this.btn_blank_login.Visible = false;
+            this.btn_blank_login.Click += new System.EventHandler(this.Blank_Login);
+            // 
+            // btn_Firewall
+            // 
+            this.btn_Firewall.BackColor = System.Drawing.Color.Brown;
+            this.btn_Firewall.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Firewall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Firewall.Image = ((System.Drawing.Image)(resources.GetObject("btn_Firewall.Image")));
+            this.btn_Firewall.Location = new System.Drawing.Point(28, 256);
+            this.btn_Firewall.Name = "btn_Firewall";
+            this.btn_Firewall.Size = new System.Drawing.Size(105, 38);
+            this.btn_Firewall.TabIndex = 5;
+            this.btn_Firewall.Tag = "SystemSetup";
+            this.btn_Firewall.Text = "Firewall Off";
+            this.btn_Firewall.UseVisualStyleBackColor = false;
+            this.btn_Firewall.Visible = false;
+            this.btn_Firewall.Click += new System.EventHandler(this.DisableFirewall);
+            // 
+            // btn_outlook_cache
+            // 
+            this.btn_outlook_cache.BackColor = System.Drawing.Color.Brown;
+            this.btn_outlook_cache.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_outlook_cache.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_outlook_cache.Image = ((System.Drawing.Image)(resources.GetObject("btn_outlook_cache.Image")));
+            this.btn_outlook_cache.Location = new System.Drawing.Point(28, 313);
+            this.btn_outlook_cache.Name = "btn_outlook_cache";
+            this.btn_outlook_cache.Size = new System.Drawing.Size(105, 38);
+            this.btn_outlook_cache.TabIndex = 24;
+            this.btn_outlook_cache.Tag = "SystemSetup";
+            this.btn_outlook_cache.Text = "Clear Outlook Cache";
+            this.btn_outlook_cache.UseVisualStyleBackColor = false;
+            this.btn_outlook_cache.Visible = false;
+            this.btn_outlook_cache.Click += new System.EventHandler(this.Outlook_Cache_Removal);
             // 
             // Mainframe
             // 
@@ -1053,6 +1028,70 @@
             this.Title_Mainframe.TabIndex = 27;
             this.Title_Mainframe.Text = "Mainframe";
             // 
+            // btn_MF_Unsuspend
+            // 
+            this.btn_MF_Unsuspend.BackColor = System.Drawing.Color.Brown;
+            this.btn_MF_Unsuspend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Unsuspend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_Unsuspend.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Unsuspend.Image")));
+            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(26, 94);
+            this.btn_MF_Unsuspend.Name = "btn_MF_Unsuspend";
+            this.btn_MF_Unsuspend.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_Unsuspend.TabIndex = 8;
+            this.btn_MF_Unsuspend.Tag = "Mainframe";
+            this.btn_MF_Unsuspend.Text = "Install Unsuspend Macro";
+            this.btn_MF_Unsuspend.UseVisualStyleBackColor = false;
+            this.btn_MF_Unsuspend.Visible = false;
+            this.btn_MF_Unsuspend.Click += new System.EventHandler(this.Install_ACID_Unsuspend);
+            // 
+            // btn_MF_PW_Reset
+            // 
+            this.btn_MF_PW_Reset.BackColor = System.Drawing.Color.Brown;
+            this.btn_MF_PW_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_PW_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_PW_Reset.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PW_Reset.Image")));
+            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(26, 156);
+            this.btn_MF_PW_Reset.Name = "btn_MF_PW_Reset";
+            this.btn_MF_PW_Reset.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_PW_Reset.TabIndex = 9;
+            this.btn_MF_PW_Reset.Tag = "Mainframe";
+            this.btn_MF_PW_Reset.Text = "Install PW Reset Macro";
+            this.btn_MF_PW_Reset.UseVisualStyleBackColor = false;
+            this.btn_MF_PW_Reset.Visible = false;
+            this.btn_MF_PW_Reset.Click += new System.EventHandler(this.Install_ACID_Reset);
+            // 
+            // btn_MF_PS_Printer_Data
+            // 
+            this.btn_MF_PS_Printer_Data.BackColor = System.Drawing.Color.Brown;
+            this.btn_MF_PS_Printer_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_PS_Printer_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_PS_Printer_Data.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PS_Printer_Data.Image")));
+            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(26, 212);
+            this.btn_MF_PS_Printer_Data.Name = "btn_MF_PS_Printer_Data";
+            this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_PS_Printer_Data.TabIndex = 26;
+            this.btn_MF_PS_Printer_Data.Tag = "Mainframe";
+            this.btn_MF_PS_Printer_Data.Text = "Clear PS_PrinterData";
+            this.btn_MF_PS_Printer_Data.UseVisualStyleBackColor = false;
+            this.btn_MF_PS_Printer_Data.Visible = false;
+            this.btn_MF_PS_Printer_Data.Click += new System.EventHandler(this.Clear_PS_PrinterData);
+            // 
+            // btn_MF_Guide
+            // 
+            this.btn_MF_Guide.BackColor = System.Drawing.Color.Brown;
+            this.btn_MF_Guide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Guide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_Guide.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Guide.Image")));
+            this.btn_MF_Guide.Location = new System.Drawing.Point(26, 276);
+            this.btn_MF_Guide.Name = "btn_MF_Guide";
+            this.btn_MF_Guide.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_Guide.TabIndex = 14;
+            this.btn_MF_Guide.Tag = "Mainframe";
+            this.btn_MF_Guide.Text = "Guide";
+            this.btn_MF_Guide.UseVisualStyleBackColor = false;
+            this.btn_MF_Guide.Visible = false;
+            this.btn_MF_Guide.Click += new System.EventHandler(this.Mainframe_Guides);
+            // 
             // Settings
             // 
             this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
@@ -1102,26 +1141,6 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(130, 377);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(409, 38);
-            this.label6.TabIndex = 37;
-            this.label6.Text = "Paperport / Electronic Scanning - Make sure this program is not running under you" +
-    "r admin credentials!";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.pictureBox4.Location = new System.Drawing.Point(84, 376);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(40, 39);
-            this.pictureBox4.TabIndex = 36;
-            this.pictureBox4.TabStop = false;
-            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1153,13 +1172,13 @@
             this.Diagnostics.PerformLayout();
             this.SystemSetup.ResumeLayout(false);
             this.SystemSetup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Mainframe.ResumeLayout(false);
             this.Mainframe.PerformLayout();
             this.Settings.ResumeLayout(false);
             this.Settings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1209,8 +1228,8 @@
         private System.Windows.Forms.Label Title_Diagnostics;
         private System.Windows.Forms.Label Title_SystemSetup;
         private System.Windows.Forms.Label Title_Settings;
-        private System.Windows.Forms.Button exit_button;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Label DESC_Restore_User_Data;
         private System.Windows.Forms.Label Desc_Backup_User_Data;
         private System.Windows.Forms.Label DESC_Restore_Printers;
@@ -1239,6 +1258,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button Music;
     }
 }
 

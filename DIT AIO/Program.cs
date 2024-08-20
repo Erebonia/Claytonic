@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using DIT_AIO.Helpers; // Ensure this namespace is correctly referenced
 
 namespace DIT_AIO
 {
@@ -11,8 +12,12 @@ namespace DIT_AIO
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            // Define the paths for the remote and local executables
+            string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\Claytonic.exe";
+            string localExePath = Application.ExecutablePath;
+
             // Check for updates before displaying the form
-            bool updating = Runetonic.CheckForUpdates();
+            bool updating = UpdateHelper.CheckForUpdates(remoteExePath, localExePath);
             if (!updating)
             {
                 Application.Run(new Runetonic());

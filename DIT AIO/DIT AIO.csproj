@@ -49,14 +49,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AudioPlayer.cs" />
+    <Compile Include="ButtonNavigator.cs" />
+    <Compile Include="CategoryNavigator.cs" />
     <Compile Include="DIT AIO.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DIT AIO.Designer.cs">
       <DependentUpon>DIT AIO.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDragger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceHelper.cs" />
+    <Compile Include="UpdateHelper.cs" />
     <EmbeddedResource Include="DIT AIO.resx">
       <DependentUpon>DIT AIO.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +135,9 @@
     <None Include="Resources\UI-8.png" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\EzraFortuneLoop.wav" />
+    <EmbeddedResource Include="Resources\playing.png" />
+    <EmbeddedResource Include="Resources\paused.png" />
     <Content Include="test.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

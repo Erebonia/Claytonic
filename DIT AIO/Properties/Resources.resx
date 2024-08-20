@@ -127,8 +127,8 @@
   <data name="datarecov" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\datarecov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="system" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UI-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UI-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,16 +154,19 @@
   <data name="1237969505477722112" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1237969505477722112.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="diag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="datarecov1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\datarecov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="diag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\diag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="system" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UI-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UI-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon063" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
