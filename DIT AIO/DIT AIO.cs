@@ -48,7 +48,7 @@ namespace DIT_AIO
             navigator = new ButtonNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34));
 
             // Initialize CategoryNavigator
-            categoryNavigator = new CategoryNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34), this.Master);
+            categoryNavigator = new CategoryNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(49, 51, 56), this.Master);
 
             // Initialize AudioPlayer
             audioPlayer = new AudioPlayer();
@@ -145,9 +145,7 @@ namespace DIT_AIO
 
         private void Outlook_Cache_Removal(object sender, EventArgs e)
         {
-            // Most recent cache corrupt fix I saw. Verified it works up to 2021 outlook
             runCustomScript(@"\\ditfp1\helpdesk\Microsoft_Office\Outlook Fixes\Outlook Cache Corrupt Fix\OutlookAllVersionsFix\formsCache.bat");
-            // From Sid's guide
             runCustomScript(@"\\ditfp1\helpdesk\Microsoft_Office\Outlook Fixes\Outlook Form Issue\Archive Manager Bulletin 15_Sep_2017 - Registry Keys\Outlook 2016\Outlook 2016 - 64 Bit.reg");
         }
 
