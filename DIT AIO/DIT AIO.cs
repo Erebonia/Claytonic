@@ -55,7 +55,7 @@ namespace DIT_AIO
 
             // Initialize AudioPlayer
             audioPlayer = new AudioPlayer();
-            audioPlayer.LoadAudio("DIT_AIO.Resources.EzraFortuneLoop.wav");
+            audioPlayer.LoadAudio("DIT_AIO.Resources.claytonic_music.wav");
 
             // Attach event handlers
             btnDashboard.Click += categoryNavigator.HandleCategoryClick;

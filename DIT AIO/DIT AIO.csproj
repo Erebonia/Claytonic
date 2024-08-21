@@ -135,9 +135,9 @@
     <None Include="Resources\UI-8.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\EzraFortuneLoop.wav" />
     <EmbeddedResource Include="Resources\playing.png" />
     <EmbeddedResource Include="Resources\paused.png" />
+    <EmbeddedResource Include="Resources\claytonic_music.wav" />
     <Content Include="test.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
