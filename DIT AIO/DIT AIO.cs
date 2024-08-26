@@ -4,11 +4,14 @@ using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using System.Media;
+using System.Reflection;
 
 namespace DIT_AIO
 {
     public partial class Runetonic : Form
     {
+        //This is used for the dark background when hovering over something.
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
             int nLeftRect,
@@ -19,115 +22,67 @@ namespace DIT_AIO
             int nHeightEllipse
         );
 
-        private bool dragging = false;
-        private Point dragCursorPoint;
-        private Point dragFormPoint;
+        //Audio Player
+        private AudioPlayer audioPlayer; 
+        private Image playImage;
+        private Image pauseImage;
+
+        //UI Handler
+        private ButtonNavigator navigator;
+        private CategoryNavigator categoryNavigator;
 
         public Runetonic()
         {
+            //For designer.cs to instantiate
             InitializeComponent();
+
+            //Instantiate the highlighted area. When you select a navigation button there is a dark background around it.
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             pnlNav.Height = btnDashboard.Height;
             pnlNav.Top = btnDashboard.Top;
             pnlNav.Left = btnDashboard.Left;
             btnDashboard.BackColor = Color.FromArgb(28, 28, 18);
 
+            // Initialize the images for our music buttons.
+            playImage = Image.FromStream(ResourceHelper.GetResourceStream("DIT_AIO.Resources.playing.png"));
+            pauseImage = Image.FromStream(ResourceHelper.GetResourceStream("DIT_AIO.Resources.paused.png"));
+
+            // Initialize colors for the buttons
+            navigator = new ButtonNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34));
+
+            // Initialize colors for navigation buttons
+            categoryNavigator = new CategoryNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34), this.Master);
+
+            // Initialize AudioPlayer
+            audioPlayer = new AudioPlayer();
+            audioPlayer.LoadAudio("DIT_AIO.Resources.claytonic_music.wav");
+
             // Attach event handlers
-            btnDashboard.Click += HandleCategoryClick;
-            btnDataRecovery.Click += HandleCategoryClick;
-            btnDiagnostics.Click += HandleCategoryClick;
-            btnSystemSetup.Click += HandleCategoryClick;
-            btnMainframe.Click += HandleCategoryClick;
-            btnSettings.Click += HandleCategoryClick;
+            btnDashboard.Click += categoryNavigator.HandleCategoryClick;
+            btnDataRecovery.Click += categoryNavigator.HandleCategoryClick;
+            btnDiagnostics.Click += categoryNavigator.HandleCategoryClick;
+            btnSystemSetup.Click += categoryNavigator.HandleCategoryClick;
+            btnMainframe.Click += categoryNavigator.HandleCategoryClick;
+            btnSettings.Click += categoryNavigator.HandleCategoryClick;
+            btnMinimize.Click += categoryNavigator.HandleMinimizeClick;
+            btnClose.Click += categoryNavigator.HandleCloseClick;
 
             // Ensure Home tab is selected when starting the program
-            HandleCategoryClick(btnDashboard, EventArgs.Empty);
+            categoryNavigator.HandleCategoryClick(btnDashboard, EventArgs.Empty);
 
-            // Attach mouse event handlers for dragging the form
-            AttachDragEventHandlers(this);
-            AttachDragEventHandlers(pnlNav);
-
-            // Attach mouse event handlers to other controls if necessary
-            // AttachDragEventHandlers(someOtherControl);
+            // Attach FormDragger to THIS entire form and its controls
+            //This allows us to drag the program
+            FormDragger dragger = new FormDragger();
+            dragger.Attach(this);
+            AttachDragEventHandlers(this, dragger); 
         }
 
-        public static bool CheckForUpdates()
+        private void AttachDragEventHandlers(Control control, FormDragger dragger)
         {
-            string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\Claytonic.exe";
-            string localExePath = Application.ExecutablePath;
-            string batchScriptPath = Path.Combine(Path.GetDirectoryName(localExePath), "update.bat");
-
-            try
-            {
-                FileInfo remoteFile = new FileInfo(remoteExePath);
-                FileInfo localFile = new FileInfo(localExePath);
-
-                if (remoteFile.LastWriteTime > localFile.LastWriteTime)
-                {
-                    MessageBox.Show("A new update is available. The application will now update and restart.", "Update Available", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    // Create a batch script to replace the executable and restart the application
-                    string batchScriptContent = $@"
-                    @echo off
-                    taskkill /f /im ""{Path.GetFileName(localExePath)}""
-                    copy /b /y ""{remoteExePath}"" ""{localExePath}""
-                    start """" ""{localExePath}""
-                    del ""{batchScriptPath}""
-                    ";
-
-                    File.WriteAllText(batchScriptPath, batchScriptContent);
-
-                    // Run the batch script
-                    ProcessStartInfo processStartInfo = new ProcessStartInfo
-                    {
-                        FileName = batchScriptPath,
-                        UseShellExecute = true,
-                        CreateNoWindow = true
-                    };
-                    Process.Start(processStartInfo);
-
-                    // Exit the current application
-                    Application.Exit();
-                    return true; // Update is in progress
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Failed to check for updates: {ex.Message}", "Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            return false; // No update needed
-        }
-
-        private void Form_MouseDown(object sender, MouseEventArgs e)
-        {
-            dragging = true;
-            dragCursorPoint = Cursor.Position;
-            dragFormPoint = this.Location;
-        }
-
-        private void Form_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (dragging)
-            {
-                Point diff = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
-                this.Location = Point.Add(dragFormPoint, new Size(diff));
-            }
-        }
-
-        private void Form_MouseUp(object sender, MouseEventArgs e)
-        {
-            dragging = false;
-        }
-
-        private void AttachDragEventHandlers(Control control)
-        {
-            control.MouseDown += new MouseEventHandler(Form_MouseDown);
-            control.MouseMove += new MouseEventHandler(Form_MouseMove);
-            control.MouseUp += new MouseEventHandler(Form_MouseUp);
-
+            dragger.Attach(control); // Attach drag handler to each control
             foreach (Control child in control.Controls)
             {
-                AttachDragEventHandlers(child);
+                AttachDragEventHandlers(child, dragger); // Recursively attach to all child controls
             }
         }
 
@@ -194,9 +149,7 @@ namespace DIT_AIO
 
         private void Outlook_Cache_Removal(object sender, EventArgs e)
         {
-            // Most recent cache corrupt fix I saw. Verified it works up to 2021 outlook
             runCustomScript(@"\\ditfp1\helpdesk\Microsoft_Office\Outlook Fixes\Outlook Cache Corrupt Fix\OutlookAllVersionsFix\formsCache.bat");
-            // From Sid's guide
             runCustomScript(@"\\ditfp1\helpdesk\Microsoft_Office\Outlook Fixes\Outlook Form Issue\Archive Manager Bulletin 15_Sep_2017 - Registry Keys\Outlook 2016\Outlook 2016 - 64 Bit.reg");
         }
 
@@ -247,78 +200,23 @@ namespace DIT_AIO
             }
         }
 
-        private void reset_button_ui()
+        private void Music_Click(object sender, EventArgs e)
         {
-            btnDashboard.BackColor = Color.FromArgb(30, 31, 34);
-            btnDataRecovery.BackColor = Color.FromArgb(30, 31, 34);
-            btnDiagnostics.BackColor = Color.FromArgb(30, 31, 34);
-            btnSystemSetup.BackColor = Color.FromArgb(30, 31, 34);
-            btnMainframe.BackColor = Color.FromArgb(30, 31, 34);
-            btnSettings.BackColor = Color.FromArgb(30, 31, 34);
-        }
+            Button clickedButton = sender as Button; // Get the button that was clicked
 
-        private void HandleButtonClick(object sender, EventArgs e)
-        {
-            Button clickedButton = (Button)sender;
-            reset_button_ui();
-
-            pnlNav.Height = clickedButton.Height;
-            pnlNav.Top = clickedButton.Top;
-            pnlNav.Left = clickedButton.Left;
-            clickedButton.BackColor = Color.FromArgb(46, 51, 73);
-        }
-
-        private void HandleCategoryClick(object sender, EventArgs e)
-        {
-            Button clickedButton = (Button)sender;
-            string category = clickedButton.Text.Replace(" ", "");
-
-            // Hide all category panels initially
-            foreach (Control control in Master.Controls)
+            if (audioPlayer.IsPlaying())
             {
-                if (control is Panel panel)
-                {
-                    panel.Visible = false;
-                    // Hide all buttons within each panel
-                    foreach (Control child in panel.Controls)
-                    {
-                        if (child is Button)
-                        {
-                            child.Visible = false;
-                        }
-                    }
-                }
+                // Stop the sound if it's playing 
+                audioPlayer.Stop();
+                clickedButton.Image = pauseImage;
             }
-
-            // Show the panel based on the selected category
-            foreach (Control control in Master.Controls)
+            else
             {
-                if (control is Panel panel && panel.Tag != null && panel.Tag.ToString() == category)
-                {
-                    panel.Visible = true;
-                    // Show all buttons within the selected panel
-                    foreach (Control child in panel.Controls)
-                    {
-                        if (child is Button)
-                        {
-                            child.Visible = true;
-                        }
-                    }
-                }
+                // Play the sound if it's not playing
+                audioPlayer.PlayLooping();
+                clickedButton.Image = playImage;
             }
-
-            // Update navigation panel position and color
-            HandleButtonClick(sender, e);
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
+
