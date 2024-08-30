@@ -11,24 +11,12 @@ namespace DIT_AIO
 {
     public partial class Runetonic : Form
     {
-        //This is used for the dark background when hovering over something.
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn(
-            int nLeftRect,
-            int nTopRect,
-            int nRightRect,
-            int nBottomRect,
-            int nWidthEllipse,
-            int nHeightEllipse
-        );
-
         //Audio Player
         private AudioPlayer audioPlayer; 
         private Image playImage;
         private Image pauseImage;
 
         //UI Handler
-        private ButtonNavigator navigator;
         private CategoryNavigator categoryNavigator;
 
         public Runetonic()
@@ -36,19 +24,9 @@ namespace DIT_AIO
             //For designer.cs to instantiate
             InitializeComponent();
 
-            //Instantiate the highlighted area. When you select a navigation button there is a dark background around it.
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            pnlNav.Height = btnDashboard.Height;
-            pnlNav.Top = btnDashboard.Top;
-            pnlNav.Left = btnDashboard.Left;
-            btnDashboard.BackColor = Color.FromArgb(28, 28, 18);
-
             // Initialize the images for our music buttons.
             playImage = Image.FromStream(ResourceHelper.GetResourceStream("DIT_AIO.Resources.playing.png"));
             pauseImage = Image.FromStream(ResourceHelper.GetResourceStream("DIT_AIO.Resources.paused.png"));
-
-            // Initialize colors for the buttons
-            navigator = new ButtonNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34));
 
             // Initialize colors for navigation buttons
             categoryNavigator = new CategoryNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34), this.Master);
@@ -72,9 +50,9 @@ namespace DIT_AIO
 
             // Attach FormDragger to THIS entire form and its controls
             //This allows us to drag the program
-            FormDragger dragger = new FormDragger();
-            dragger.Attach(this);
-            AttachDragEventHandlers(this, dragger); 
+            //FormDragger dragger = new FormDragger();
+            //dragger.Attach(this);
+            //AttachDragEventHandlers(this, dragger); 
         }
 
         private void AttachDragEventHandlers(Control control, FormDragger dragger)

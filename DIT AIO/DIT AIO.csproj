@@ -126,9 +126,6 @@
     <None Include="Resources\button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\citylogo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\citylogo.png" />
   </ItemGroup>
   <ItemGroup>
