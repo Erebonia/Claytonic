@@ -186,12 +186,12 @@
             this.Master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.Master.Controls.Add(this.btnMinimize);
             this.Master.Controls.Add(this.btnClose);
-            this.Master.Controls.Add(this.Diagnostics);
-            this.Master.Controls.Add(this.SystemSetup);
             this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
             this.Master.Controls.Add(this.Home);
             this.Master.Controls.Add(this.DataRecovery);
+            this.Master.Controls.Add(this.Diagnostics);
+            this.Master.Controls.Add(this.SystemSetup);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(809, 539);
@@ -301,8 +301,7 @@
             this.tooltip.Name = "tooltip";
             this.tooltip.Size = new System.Drawing.Size(611, 25);
             this.tooltip.TabIndex = 15;
-            this.tooltip.Text = "Copy this software to any windows or external device and it will work off the bat" +
-    "!";
+            this.tooltip.Text = "Designed and created by Bao Nguyen, Clayton, and Kyle Santiago.";
             this.tooltip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DESC_Info
@@ -598,7 +597,9 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox6.Image = global::DIT_AIO.Properties.Resources.server_setup;
             this.pictureBox6.Location = new System.Drawing.Point(26, 65);
             this.pictureBox6.Name = "pictureBox6";
@@ -726,7 +727,9 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox7.Image = global::DIT_AIO.Properties.Resources.mainframe_bg;
             this.pictureBox7.Location = new System.Drawing.Point(26, 85);
             this.pictureBox7.Name = "pictureBox7";
@@ -958,7 +961,9 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Image = global::DIT_AIO.Properties.Resources.pc_diagnostics;
             this.pictureBox5.Location = new System.Drawing.Point(26, 65);
             this.pictureBox5.Name = "pictureBox5";
