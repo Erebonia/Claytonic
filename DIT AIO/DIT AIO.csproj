@@ -134,6 +134,7 @@
     <None Include="Resources\happy.png" />
     <None Include="Resources\labratory.gif" />
     <None Include="Resources\system_setup.gif" />
+    <None Include="Resources\clara.gif" />
     <Content Include="test.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -31,21 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Runetonic));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.programicon = new System.Windows.Forms.Panel();
             this.programName = new System.Windows.Forms.Label();
             this.Subtitle = new System.Windows.Forms.Label();
             this.Master = new System.Windows.Forms.Panel();
-            this.SystemSetup = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Title_SystemSetup = new System.Windows.Forms.Label();
-            this.Mainframe = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Title_Mainframe = new System.Windows.Forms.Label();
-            this.Settings = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Title_Settings = new System.Windows.Forms.Label();
             this.Home = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.tooltip = new System.Windows.Forms.Label();
             this.DESC_Info = new System.Windows.Forms.Label();
             this.Title_Home = new System.Windows.Forms.Label();
@@ -55,8 +51,18 @@
             this.Diagnostics = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.Title_Diagnostics = new System.Windows.Forms.Label();
+            this.SystemSetup = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Title_SystemSetup = new System.Windows.Forms.Label();
+            this.Mainframe = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Title_Mainframe = new System.Windows.Forms.Label();
+            this.Settings = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Title_Settings = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnMainframe = new System.Windows.Forms.Button();
             this.btnSystemSetup = new System.Windows.Forms.Button();
@@ -66,20 +72,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btn_Paperport = new System.Windows.Forms.Button();
-            this.btn_Esignature = new System.Windows.Forms.Button();
-            this.btn_blank_login = new System.Windows.Forms.Button();
-            this.btn_Firewall = new System.Windows.Forms.Button();
-            this.btn_outlook_cache = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.btn_MF_Unsuspend = new System.Windows.Forms.Button();
-            this.btn_MF_PW_Reset = new System.Windows.Forms.Button();
-            this.btn_MF_PS_Printer_Data = new System.Windows.Forms.Button();
-            this.btn_MF_Guide = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CityLogo = new System.Windows.Forms.PictureBox();
             this.Music = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -95,32 +87,49 @@
             this.btn_DISM = new System.Windows.Forms.Button();
             this.btn_CCH_Deploy = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btn_Paperport = new System.Windows.Forms.Button();
+            this.btn_Esignature = new System.Windows.Forms.Button();
+            this.btn_blank_login = new System.Windows.Forms.Button();
+            this.btn_Firewall = new System.Windows.Forms.Button();
+            this.btn_outlook_cache = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btn_MF_Unsuspend = new System.Windows.Forms.Button();
+            this.btn_MF_PW_Reset = new System.Windows.Forms.Button();
+            this.btn_MF_PS_Printer_Data = new System.Windows.Forms.Button();
+            this.btn_MF_Guide = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
             this.Master.SuspendLayout();
-            this.SystemSetup.SuspendLayout();
-            this.Mainframe.SuspendLayout();
-            this.Settings.SuspendLayout();
             this.Home.SuspendLayout();
             this.DataRecovery.SuspendLayout();
             this.Diagnostics.SuspendLayout();
+            this.SystemSetup.SuspendLayout();
+            this.Mainframe.SuspendLayout();
+            this.Settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.panel1.Controls.Add(this.pictureBox10);
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Controls.Add(this.btnMainframe);
@@ -134,6 +143,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 561);
             this.panel1.TabIndex = 27;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Khaki;
+            this.label10.Location = new System.Drawing.Point(3, 357);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(183, 75);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Hover over buttons to view the description!";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlNav
             // 
@@ -186,16 +208,213 @@
             this.Master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.Master.Controls.Add(this.btnMinimize);
             this.Master.Controls.Add(this.btnClose);
+            this.Master.Controls.Add(this.Home);
             this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
             this.Master.Controls.Add(this.SystemSetup);
             this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
-            this.Master.Controls.Add(this.Home);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(809, 539);
             this.Master.TabIndex = 28;
+            // 
+            // Home
+            // 
+            this.Home.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.Home.Controls.Add(this.label9);
+            this.Home.Controls.Add(this.label8);
+            this.Home.Controls.Add(this.label7);
+            this.Home.Controls.Add(this.label5);
+            this.Home.Controls.Add(this.CityLogo);
+            this.Home.Controls.Add(this.Music);
+            this.Home.Controls.Add(this.tooltip);
+            this.Home.Controls.Add(this.DESC_Info);
+            this.Home.Controls.Add(this.Title_Home);
+            this.Home.Location = new System.Drawing.Point(0, 0);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(809, 539);
+            this.Home.TabIndex = 27;
+            this.Home.Tag = "Home";
+            this.Home.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label9.Location = new System.Drawing.Point(392, 165);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(353, 50);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "- Button descriptions have been converted to tool tips.";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label8.Location = new System.Drawing.Point(392, 137);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(353, 28);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "- Redesigned user interface and resizable UI. ";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label7.Location = new System.Drawing.Point(391, 109);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(353, 28);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Claytonic version 1.1 is now released!";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Khaki;
+            this.label5.Location = new System.Drawing.Point(381, 75);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(362, 34);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Update Log";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tooltip
+            // 
+            this.tooltip.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tooltip.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tooltip.ForeColor = System.Drawing.Color.Khaki;
+            this.tooltip.Location = new System.Drawing.Point(97, 514);
+            this.tooltip.Name = "tooltip";
+            this.tooltip.Size = new System.Drawing.Size(611, 25);
+            this.tooltip.TabIndex = 15;
+            this.tooltip.Text = "Special thanks to Clayton Lee, Kyle Santiago, and Tyler Yee for making this progr" +
+    "am possible.";
+            this.tooltip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DESC_Info
+            // 
+            this.DESC_Info.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DESC_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.DESC_Info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_Info.Location = new System.Drawing.Point(71, 404);
+            this.DESC_Info.Name = "DESC_Info";
+            this.DESC_Info.Size = new System.Drawing.Size(666, 101);
+            this.DESC_Info.TabIndex = 14;
+            this.DESC_Info.Text = resources.GetString("DESC_Info.Text");
+            this.DESC_Info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Title_Home
+            // 
+            this.Title_Home.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Home.Location = new System.Drawing.Point(0, 0);
+            this.Title_Home.Name = "Title_Home";
+            this.Title_Home.Size = new System.Drawing.Size(809, 62);
+            this.Title_Home.TabIndex = 0;
+            this.Title_Home.Text = "Homepage";
+            this.Title_Home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // DataRecovery
+            // 
+            this.DataRecovery.AutoSize = true;
+            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.DataRecovery.Controls.Add(this.pictureBox3);
+            this.DataRecovery.Controls.Add(this.label2);
+            this.DataRecovery.Controls.Add(this.warning_printers);
+            this.DataRecovery.Controls.Add(this.Title_Data_Recovery);
+            this.DataRecovery.Controls.Add(this.btnBackup_User_Data);
+            this.DataRecovery.Controls.Add(this.btn_Restore_User_Data);
+            this.DataRecovery.Controls.Add(this.btn_Backup_Printers);
+            this.DataRecovery.Controls.Add(this.btn_Restore_Printers);
+            this.DataRecovery.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataRecovery.Location = new System.Drawing.Point(0, 0);
+            this.DataRecovery.Name = "DataRecovery";
+            this.DataRecovery.Size = new System.Drawing.Size(809, 539);
+            this.DataRecovery.TabIndex = 29;
+            this.DataRecovery.Tag = "DataRecovery";
+            this.DataRecovery.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Khaki;
+            this.label2.Location = new System.Drawing.Point(93, 504);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(669, 22);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Sometimes printers fail to restore when going across windows versions. Always dou" +
+    "ble check if it was successful!";
+            // 
+            // Title_Data_Recovery
+            // 
+            this.Title_Data_Recovery.AutoSize = true;
+            this.Title_Data_Recovery.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Data_Recovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Data_Recovery.Location = new System.Drawing.Point(20, 17);
+            this.Title_Data_Recovery.Name = "Title_Data_Recovery";
+            this.Title_Data_Recovery.Size = new System.Drawing.Size(213, 32);
+            this.Title_Data_Recovery.TabIndex = 12;
+            this.Title_Data_Recovery.Text = "Data Recovery";
+            // 
+            // Diagnostics
+            // 
+            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.Diagnostics.Controls.Add(this.label4);
+            this.Diagnostics.Controls.Add(this.pictureBox8);
+            this.Diagnostics.Controls.Add(this.Title_Diagnostics);
+            this.Diagnostics.Controls.Add(this.btn_Check_User_Accounts);
+            this.Diagnostics.Controls.Add(this.btn_Ping_IP);
+            this.Diagnostics.Controls.Add(this.btn_SFC);
+            this.Diagnostics.Controls.Add(this.btn_DISM);
+            this.Diagnostics.Controls.Add(this.btn_CCH_Deploy);
+            this.Diagnostics.Controls.Add(this.pictureBox5);
+            this.Diagnostics.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Diagnostics.Location = new System.Drawing.Point(0, 0);
+            this.Diagnostics.Name = "Diagnostics";
+            this.Diagnostics.Size = new System.Drawing.Size(809, 539);
+            this.Diagnostics.TabIndex = 28;
+            this.Diagnostics.Tag = "Diagnostics";
+            this.Diagnostics.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Khaki;
+            this.label4.Location = new System.Drawing.Point(165, 498);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(461, 24);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Investigate user accounts, check if a computer is online, or run some repairs.";
+            // 
+            // Title_Diagnostics
+            // 
+            this.Title_Diagnostics.AutoSize = true;
+            this.Title_Diagnostics.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Diagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Diagnostics.Location = new System.Drawing.Point(20, 17);
+            this.Title_Diagnostics.Name = "Title_Diagnostics";
+            this.Title_Diagnostics.Size = new System.Drawing.Size(173, 32);
+            this.Title_Diagnostics.TabIndex = 26;
+            this.Title_Diagnostics.Text = "Diagnostics";
             // 
             // SystemSetup
             // 
@@ -317,151 +536,23 @@
             this.Title_Settings.TabIndex = 13;
             this.Title_Settings.Text = "Settings";
             // 
-            // Home
-            // 
-            this.Home.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.Home.Controls.Add(this.CityLogo);
-            this.Home.Controls.Add(this.Music);
-            this.Home.Controls.Add(this.tooltip);
-            this.Home.Controls.Add(this.DESC_Info);
-            this.Home.Controls.Add(this.Title_Home);
-            this.Home.Location = new System.Drawing.Point(0, 0);
-            this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(809, 539);
-            this.Home.TabIndex = 27;
-            this.Home.Tag = "Home";
-            this.Home.Visible = false;
-            // 
-            // tooltip
-            // 
-            this.tooltip.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.tooltip.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tooltip.ForeColor = System.Drawing.Color.Khaki;
-            this.tooltip.Location = new System.Drawing.Point(97, 514);
-            this.tooltip.Name = "tooltip";
-            this.tooltip.Size = new System.Drawing.Size(611, 25);
-            this.tooltip.TabIndex = 15;
-            this.tooltip.Text = "Special thanks to Clayton Lee, Kyle Santiago, and Tyler Yee for making this progr" +
-    "am possible.";
-            this.tooltip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DESC_Info
-            // 
-            this.DESC_Info.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DESC_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.DESC_Info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Info.Location = new System.Drawing.Point(71, 385);
-            this.DESC_Info.Name = "DESC_Info";
-            this.DESC_Info.Size = new System.Drawing.Size(666, 101);
-            this.DESC_Info.TabIndex = 14;
-            this.DESC_Info.Text = resources.GetString("DESC_Info.Text");
-            this.DESC_Info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Title_Home
-            // 
-            this.Title_Home.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Home.Location = new System.Drawing.Point(0, 0);
-            this.Title_Home.Name = "Title_Home";
-            this.Title_Home.Size = new System.Drawing.Size(809, 62);
-            this.Title_Home.TabIndex = 0;
-            this.Title_Home.Text = "Mission Statement";
-            this.Title_Home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // DataRecovery
-            // 
-            this.DataRecovery.AutoSize = true;
-            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.DataRecovery.Controls.Add(this.pictureBox3);
-            this.DataRecovery.Controls.Add(this.label2);
-            this.DataRecovery.Controls.Add(this.warning_printers);
-            this.DataRecovery.Controls.Add(this.Title_Data_Recovery);
-            this.DataRecovery.Controls.Add(this.btnBackup_User_Data);
-            this.DataRecovery.Controls.Add(this.btn_Restore_User_Data);
-            this.DataRecovery.Controls.Add(this.btn_Backup_Printers);
-            this.DataRecovery.Controls.Add(this.btn_Restore_Printers);
-            this.DataRecovery.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataRecovery.Location = new System.Drawing.Point(0, 0);
-            this.DataRecovery.Name = "DataRecovery";
-            this.DataRecovery.Size = new System.Drawing.Size(809, 539);
-            this.DataRecovery.TabIndex = 29;
-            this.DataRecovery.Tag = "DataRecovery";
-            this.DataRecovery.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Khaki;
-            this.label2.Location = new System.Drawing.Point(93, 504);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(669, 22);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Sometimes printers fail to restore when going across windows versions. Always dou" +
-    "ble check if it was successful!";
-            // 
-            // Title_Data_Recovery
-            // 
-            this.Title_Data_Recovery.AutoSize = true;
-            this.Title_Data_Recovery.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Data_Recovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Data_Recovery.Location = new System.Drawing.Point(20, 17);
-            this.Title_Data_Recovery.Name = "Title_Data_Recovery";
-            this.Title_Data_Recovery.Size = new System.Drawing.Size(213, 32);
-            this.Title_Data_Recovery.TabIndex = 12;
-            this.Title_Data_Recovery.Text = "Data Recovery";
-            // 
-            // Diagnostics
-            // 
-            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.Diagnostics.Controls.Add(this.label4);
-            this.Diagnostics.Controls.Add(this.pictureBox8);
-            this.Diagnostics.Controls.Add(this.Title_Diagnostics);
-            this.Diagnostics.Controls.Add(this.btn_Check_User_Accounts);
-            this.Diagnostics.Controls.Add(this.btn_Ping_IP);
-            this.Diagnostics.Controls.Add(this.btn_SFC);
-            this.Diagnostics.Controls.Add(this.btn_DISM);
-            this.Diagnostics.Controls.Add(this.btn_CCH_Deploy);
-            this.Diagnostics.Controls.Add(this.pictureBox5);
-            this.Diagnostics.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Diagnostics.Location = new System.Drawing.Point(0, 0);
-            this.Diagnostics.Name = "Diagnostics";
-            this.Diagnostics.Size = new System.Drawing.Size(809, 539);
-            this.Diagnostics.TabIndex = 28;
-            this.Diagnostics.Tag = "Diagnostics";
-            this.Diagnostics.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Khaki;
-            this.label4.Location = new System.Drawing.Point(165, 498);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(461, 24);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Investigate user accounts, check if a computer is online, or run some repairs.";
-            // 
-            // Title_Diagnostics
-            // 
-            this.Title_Diagnostics.AutoSize = true;
-            this.Title_Diagnostics.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Diagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Diagnostics.Location = new System.Drawing.Point(20, 17);
-            this.Title_Diagnostics.Name = "Title_Diagnostics";
-            this.Title_Diagnostics.Size = new System.Drawing.Size(173, 32);
-            this.Title_Diagnostics.TabIndex = 26;
-            this.Title_Diagnostics.Text = "Diagnostics";
-            // 
             // fileSystemWatcher1
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox10.Image = global::DIT_AIO.Properties.Resources.clara;
+            this.pictureBox10.Location = new System.Drawing.Point(45, 432);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(95, 70);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 22;
+            this.pictureBox10.TabStop = false;
             // 
             // btnSettings
             // 
@@ -607,243 +698,12 @@
             this.btnClose.TabIndex = 13;
             this.btnClose.UseVisualStyleBackColor = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pictureBox4.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.pictureBox4.Location = new System.Drawing.Point(74, 489);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 39);
-            this.pictureBox4.TabIndex = 36;
-            this.pictureBox4.TabStop = false;
-            // 
-            // btn_Paperport
-            // 
-            this.btn_Paperport.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Paperport.BackColor = System.Drawing.Color.Brown;
-            this.btn_Paperport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Paperport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Paperport.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Paperport.Image = ((System.Drawing.Image)(resources.GetObject("btn_Paperport.Image")));
-            this.btn_Paperport.Location = new System.Drawing.Point(50, 372);
-            this.btn_Paperport.Name = "btn_Paperport";
-            this.btn_Paperport.Size = new System.Drawing.Size(105, 38);
-            this.btn_Paperport.TabIndex = 12;
-            this.btn_Paperport.Tag = "SystemSetup";
-            this.btn_Paperport.Text = "Paperport and Scanning";
-            this.toolTip1.SetToolTip(this.btn_Paperport, "Don\'t run as admin. Sets up user\'s paperport and scanning.");
-            this.btn_Paperport.UseVisualStyleBackColor = false;
-            this.btn_Paperport.Visible = false;
-            this.btn_Paperport.Click += new System.EventHandler(this.Scanner_Setup);
-            // 
-            // btn_Esignature
-            // 
-            this.btn_Esignature.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Esignature.BackColor = System.Drawing.Color.Brown;
-            this.btn_Esignature.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Esignature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Esignature.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Esignature.Image = ((System.Drawing.Image)(resources.GetObject("btn_Esignature.Image")));
-            this.btn_Esignature.Location = new System.Drawing.Point(180, 372);
-            this.btn_Esignature.Name = "btn_Esignature";
-            this.btn_Esignature.Size = new System.Drawing.Size(105, 38);
-            this.btn_Esignature.TabIndex = 13;
-            this.btn_Esignature.Tag = "SystemSetup";
-            this.btn_Esignature.Text = "Electronic Signature";
-            this.toolTip1.SetToolTip(this.btn_Esignature, "Don\'t run as admin. Sets up a user\'s electronic signature.");
-            this.btn_Esignature.UseVisualStyleBackColor = false;
-            this.btn_Esignature.Visible = false;
-            this.btn_Esignature.Click += new System.EventHandler(this.Electronic_Signature);
-            // 
-            // btn_blank_login
-            // 
-            this.btn_blank_login.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_blank_login.BackColor = System.Drawing.Color.Brown;
-            this.btn_blank_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_blank_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_blank_login.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_blank_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_blank_login.Image")));
-            this.btn_blank_login.Location = new System.Drawing.Point(50, 435);
-            this.btn_blank_login.Name = "btn_blank_login";
-            this.btn_blank_login.Size = new System.Drawing.Size(105, 38);
-            this.btn_blank_login.TabIndex = 23;
-            this.btn_blank_login.Tag = "SystemSetup";
-            this.btn_blank_login.Text = "Blank Login";
-            this.toolTip1.SetToolTip(this.btn_blank_login, "Wipes windows logon of all previous users.");
-            this.btn_blank_login.UseVisualStyleBackColor = false;
-            this.btn_blank_login.Visible = false;
-            this.btn_blank_login.Click += new System.EventHandler(this.Blank_Login);
-            // 
-            // btn_Firewall
-            // 
-            this.btn_Firewall.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Firewall.BackColor = System.Drawing.Color.Brown;
-            this.btn_Firewall.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Firewall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Firewall.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Firewall.Image = ((System.Drawing.Image)(resources.GetObject("btn_Firewall.Image")));
-            this.btn_Firewall.Location = new System.Drawing.Point(180, 435);
-            this.btn_Firewall.Name = "btn_Firewall";
-            this.btn_Firewall.Size = new System.Drawing.Size(105, 38);
-            this.btn_Firewall.TabIndex = 5;
-            this.btn_Firewall.Tag = "SystemSetup";
-            this.btn_Firewall.Text = "Firewall Off";
-            this.toolTip1.SetToolTip(this.btn_Firewall, "Turns off all firewall states and notification. Press yes to the .reg file notifc" +
-        "ation.");
-            this.btn_Firewall.UseVisualStyleBackColor = false;
-            this.btn_Firewall.Visible = false;
-            this.btn_Firewall.Click += new System.EventHandler(this.DisableFirewall);
-            // 
-            // btn_outlook_cache
-            // 
-            this.btn_outlook_cache.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_outlook_cache.BackColor = System.Drawing.Color.Brown;
-            this.btn_outlook_cache.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_outlook_cache.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_outlook_cache.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_outlook_cache.Image = ((System.Drawing.Image)(resources.GetObject("btn_outlook_cache.Image")));
-            this.btn_outlook_cache.Location = new System.Drawing.Point(307, 435);
-            this.btn_outlook_cache.Name = "btn_outlook_cache";
-            this.btn_outlook_cache.Size = new System.Drawing.Size(105, 38);
-            this.btn_outlook_cache.TabIndex = 24;
-            this.btn_outlook_cache.Tag = "SystemSetup";
-            this.btn_outlook_cache.Text = "Clear Outlook Cache";
-            this.toolTip1.SetToolTip(this.btn_outlook_cache, "Clears outlook cache, helps restore attachments.");
-            this.btn_outlook_cache.UseVisualStyleBackColor = false;
-            this.btn_outlook_cache.Visible = false;
-            this.btn_outlook_cache.Click += new System.EventHandler(this.Outlook_Cache_Removal);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox6.Image = global::DIT_AIO.Properties.Resources.system_setup;
-            this.pictureBox6.Location = new System.Drawing.Point(26, 65);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(753, 425);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 38;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox9.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.pictureBox9.Location = new System.Drawing.Point(168, 492);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(31, 39);
-            this.pictureBox9.TabIndex = 30;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox7.Image = global::DIT_AIO.Properties.Resources.mainframe_bg;
-            this.pictureBox7.Location = new System.Drawing.Point(26, 65);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(741, 364);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 28;
-            this.pictureBox7.TabStop = false;
-            // 
-            // btn_MF_Unsuspend
-            // 
-            this.btn_MF_Unsuspend.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_MF_Unsuspend.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_Unsuspend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_Unsuspend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_Unsuspend.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_MF_Unsuspend.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Unsuspend.Image")));
-            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(270, 448);
-            this.btn_MF_Unsuspend.Name = "btn_MF_Unsuspend";
-            this.btn_MF_Unsuspend.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_Unsuspend.TabIndex = 8;
-            this.btn_MF_Unsuspend.Tag = "Mainframe";
-            this.btn_MF_Unsuspend.Text = "Install Unsuspend Macro";
-            this.toolTip1.SetToolTip(this.btn_MF_Unsuspend, "Installs unsuspend macro for VistaTN3270 by Bao Nguyen. Press guide to configure " +
-        "the rest.");
-            this.btn_MF_Unsuspend.UseVisualStyleBackColor = false;
-            this.btn_MF_Unsuspend.Visible = false;
-            this.btn_MF_Unsuspend.Click += new System.EventHandler(this.Install_ACID_Unsuspend);
-            // 
-            // btn_MF_PW_Reset
-            // 
-            this.btn_MF_PW_Reset.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_MF_PW_Reset.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_PW_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_PW_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_PW_Reset.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_MF_PW_Reset.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PW_Reset.Image")));
-            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(394, 448);
-            this.btn_MF_PW_Reset.Name = "btn_MF_PW_Reset";
-            this.btn_MF_PW_Reset.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_PW_Reset.TabIndex = 9;
-            this.btn_MF_PW_Reset.Tag = "Mainframe";
-            this.btn_MF_PW_Reset.Text = "Install PW Reset Macro";
-            this.toolTip1.SetToolTip(this.btn_MF_PW_Reset, "Installs PW Reset macro for VistaTN3270 by Sy Nishigata. Press guide to configure" +
-        " the rest.");
-            this.btn_MF_PW_Reset.UseVisualStyleBackColor = false;
-            this.btn_MF_PW_Reset.Visible = false;
-            this.btn_MF_PW_Reset.Click += new System.EventHandler(this.Install_ACID_Reset);
-            // 
-            // btn_MF_PS_Printer_Data
-            // 
-            this.btn_MF_PS_Printer_Data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_MF_PS_Printer_Data.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_PS_Printer_Data.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_PS_Printer_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_PS_Printer_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_MF_PS_Printer_Data.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PS_Printer_Data.Image")));
-            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(521, 448);
-            this.btn_MF_PS_Printer_Data.Name = "btn_MF_PS_Printer_Data";
-            this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_PS_Printer_Data.TabIndex = 26;
-            this.btn_MF_PS_Printer_Data.Tag = "Mainframe";
-            this.btn_MF_PS_Printer_Data.Text = "Clear PS_PrinterData";
-            this.toolTip1.SetToolTip(this.btn_MF_PS_Printer_Data, "Mainframe thunderbolt issues or miscellaneous issues? CTRL+F \"psprinterdata\", rem" +
-        "ove gibberish text and replace with \"\".");
-            this.btn_MF_PS_Printer_Data.UseVisualStyleBackColor = false;
-            this.btn_MF_PS_Printer_Data.Visible = false;
-            this.btn_MF_PS_Printer_Data.Click += new System.EventHandler(this.Clear_PS_PrinterData);
-            // 
-            // btn_MF_Guide
-            // 
-            this.btn_MF_Guide.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_MF_Guide.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_Guide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_Guide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_Guide.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_MF_Guide.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Guide.Image")));
-            this.btn_MF_Guide.Location = new System.Drawing.Point(139, 448);
-            this.btn_MF_Guide.Name = "btn_MF_Guide";
-            this.btn_MF_Guide.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_Guide.TabIndex = 14;
-            this.btn_MF_Guide.Tag = "Mainframe";
-            this.btn_MF_Guide.Text = "Guide";
-            this.toolTip1.SetToolTip(this.btn_MF_Guide, "Opens up all relevant mainframe guides that DIT Helpdesk utilizes.");
-            this.btn_MF_Guide.UseVisualStyleBackColor = false;
-            this.btn_MF_Guide.Visible = false;
-            this.btn_MF_Guide.Click += new System.EventHandler(this.Mainframe_Guides);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.pictureBox1.Location = new System.Drawing.Point(190, 242);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
             // CityLogo
             // 
             this.CityLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.CityLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CityLogo.Image = global::DIT_AIO.Properties.Resources.citylogo1;
-            this.CityLogo.Location = new System.Drawing.Point(241, 73);
+            this.CityLogo.Location = new System.Drawing.Point(50, 75);
             this.CityLogo.Margin = new System.Windows.Forms.Padding(0);
             this.CityLogo.Name = "CityLogo";
             this.CityLogo.Size = new System.Drawing.Size(305, 294);
@@ -1092,6 +952,237 @@
             this.pictureBox5.TabIndex = 27;
             this.pictureBox5.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox4.Image = global::DIT_AIO.Properties.Resources.warning;
+            this.pictureBox4.Location = new System.Drawing.Point(74, 489);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(30, 39);
+            this.pictureBox4.TabIndex = 36;
+            this.pictureBox4.TabStop = false;
+            // 
+            // btn_Paperport
+            // 
+            this.btn_Paperport.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Paperport.BackColor = System.Drawing.Color.Brown;
+            this.btn_Paperport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Paperport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Paperport.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Paperport.Image = ((System.Drawing.Image)(resources.GetObject("btn_Paperport.Image")));
+            this.btn_Paperport.Location = new System.Drawing.Point(50, 372);
+            this.btn_Paperport.Name = "btn_Paperport";
+            this.btn_Paperport.Size = new System.Drawing.Size(105, 38);
+            this.btn_Paperport.TabIndex = 12;
+            this.btn_Paperport.Tag = "SystemSetup";
+            this.btn_Paperport.Text = "Paperport and Scanning";
+            this.toolTip1.SetToolTip(this.btn_Paperport, "Don\'t run as admin. Sets up user\'s paperport and scanning.");
+            this.btn_Paperport.UseVisualStyleBackColor = false;
+            this.btn_Paperport.Visible = false;
+            this.btn_Paperport.Click += new System.EventHandler(this.Scanner_Setup);
+            // 
+            // btn_Esignature
+            // 
+            this.btn_Esignature.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Esignature.BackColor = System.Drawing.Color.Brown;
+            this.btn_Esignature.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Esignature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Esignature.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Esignature.Image = ((System.Drawing.Image)(resources.GetObject("btn_Esignature.Image")));
+            this.btn_Esignature.Location = new System.Drawing.Point(180, 372);
+            this.btn_Esignature.Name = "btn_Esignature";
+            this.btn_Esignature.Size = new System.Drawing.Size(105, 38);
+            this.btn_Esignature.TabIndex = 13;
+            this.btn_Esignature.Tag = "SystemSetup";
+            this.btn_Esignature.Text = "Electronic Signature";
+            this.toolTip1.SetToolTip(this.btn_Esignature, "Don\'t run as admin. Sets up a user\'s electronic signature.");
+            this.btn_Esignature.UseVisualStyleBackColor = false;
+            this.btn_Esignature.Visible = false;
+            this.btn_Esignature.Click += new System.EventHandler(this.Electronic_Signature);
+            // 
+            // btn_blank_login
+            // 
+            this.btn_blank_login.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_blank_login.BackColor = System.Drawing.Color.Brown;
+            this.btn_blank_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_blank_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_blank_login.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_blank_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_blank_login.Image")));
+            this.btn_blank_login.Location = new System.Drawing.Point(50, 435);
+            this.btn_blank_login.Name = "btn_blank_login";
+            this.btn_blank_login.Size = new System.Drawing.Size(105, 38);
+            this.btn_blank_login.TabIndex = 23;
+            this.btn_blank_login.Tag = "SystemSetup";
+            this.btn_blank_login.Text = "Blank Login";
+            this.toolTip1.SetToolTip(this.btn_blank_login, "Wipes windows logon of all previous users.");
+            this.btn_blank_login.UseVisualStyleBackColor = false;
+            this.btn_blank_login.Visible = false;
+            this.btn_blank_login.Click += new System.EventHandler(this.Blank_Login);
+            // 
+            // btn_Firewall
+            // 
+            this.btn_Firewall.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Firewall.BackColor = System.Drawing.Color.Brown;
+            this.btn_Firewall.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Firewall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Firewall.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Firewall.Image = ((System.Drawing.Image)(resources.GetObject("btn_Firewall.Image")));
+            this.btn_Firewall.Location = new System.Drawing.Point(180, 435);
+            this.btn_Firewall.Name = "btn_Firewall";
+            this.btn_Firewall.Size = new System.Drawing.Size(105, 38);
+            this.btn_Firewall.TabIndex = 5;
+            this.btn_Firewall.Tag = "SystemSetup";
+            this.btn_Firewall.Text = "Firewall Off";
+            this.toolTip1.SetToolTip(this.btn_Firewall, "Turns off all firewall states and notification. Press yes to the .reg file notifc" +
+        "ation.");
+            this.btn_Firewall.UseVisualStyleBackColor = false;
+            this.btn_Firewall.Visible = false;
+            this.btn_Firewall.Click += new System.EventHandler(this.DisableFirewall);
+            // 
+            // btn_outlook_cache
+            // 
+            this.btn_outlook_cache.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_outlook_cache.BackColor = System.Drawing.Color.Brown;
+            this.btn_outlook_cache.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_outlook_cache.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_outlook_cache.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_outlook_cache.Image = ((System.Drawing.Image)(resources.GetObject("btn_outlook_cache.Image")));
+            this.btn_outlook_cache.Location = new System.Drawing.Point(307, 435);
+            this.btn_outlook_cache.Name = "btn_outlook_cache";
+            this.btn_outlook_cache.Size = new System.Drawing.Size(105, 38);
+            this.btn_outlook_cache.TabIndex = 24;
+            this.btn_outlook_cache.Tag = "SystemSetup";
+            this.btn_outlook_cache.Text = "Clear Outlook Cache";
+            this.toolTip1.SetToolTip(this.btn_outlook_cache, "Clears outlook cache, helps restore attachments.");
+            this.btn_outlook_cache.UseVisualStyleBackColor = false;
+            this.btn_outlook_cache.Visible = false;
+            this.btn_outlook_cache.Click += new System.EventHandler(this.Outlook_Cache_Removal);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox6.Image = global::DIT_AIO.Properties.Resources.system_setup;
+            this.pictureBox6.Location = new System.Drawing.Point(26, 65);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(753, 425);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 38;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox9.Image = global::DIT_AIO.Properties.Resources.warning;
+            this.pictureBox9.Location = new System.Drawing.Point(168, 492);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(31, 39);
+            this.pictureBox9.TabIndex = 30;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox7.Image = global::DIT_AIO.Properties.Resources.mainframe_bg;
+            this.pictureBox7.Location = new System.Drawing.Point(26, 65);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(741, 364);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 28;
+            this.pictureBox7.TabStop = false;
+            // 
+            // btn_MF_Unsuspend
+            // 
+            this.btn_MF_Unsuspend.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_Unsuspend.BackColor = System.Drawing.Color.Brown;
+            this.btn_MF_Unsuspend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Unsuspend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_Unsuspend.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_Unsuspend.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Unsuspend.Image")));
+            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(270, 448);
+            this.btn_MF_Unsuspend.Name = "btn_MF_Unsuspend";
+            this.btn_MF_Unsuspend.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_Unsuspend.TabIndex = 8;
+            this.btn_MF_Unsuspend.Tag = "Mainframe";
+            this.btn_MF_Unsuspend.Text = "Install Unsuspend Macro";
+            this.toolTip1.SetToolTip(this.btn_MF_Unsuspend, "Installs unsuspend macro for VistaTN3270 by Bao Nguyen. Press guide to configure " +
+        "the rest.");
+            this.btn_MF_Unsuspend.UseVisualStyleBackColor = false;
+            this.btn_MF_Unsuspend.Visible = false;
+            this.btn_MF_Unsuspend.Click += new System.EventHandler(this.Install_ACID_Unsuspend);
+            // 
+            // btn_MF_PW_Reset
+            // 
+            this.btn_MF_PW_Reset.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_PW_Reset.BackColor = System.Drawing.Color.Brown;
+            this.btn_MF_PW_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_PW_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_PW_Reset.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_PW_Reset.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PW_Reset.Image")));
+            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(394, 448);
+            this.btn_MF_PW_Reset.Name = "btn_MF_PW_Reset";
+            this.btn_MF_PW_Reset.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_PW_Reset.TabIndex = 9;
+            this.btn_MF_PW_Reset.Tag = "Mainframe";
+            this.btn_MF_PW_Reset.Text = "Install PW Reset Macro";
+            this.toolTip1.SetToolTip(this.btn_MF_PW_Reset, "Installs PW Reset macro for VistaTN3270 by Sy Nishigata. Press guide to configure" +
+        " the rest.");
+            this.btn_MF_PW_Reset.UseVisualStyleBackColor = false;
+            this.btn_MF_PW_Reset.Visible = false;
+            this.btn_MF_PW_Reset.Click += new System.EventHandler(this.Install_ACID_Reset);
+            // 
+            // btn_MF_PS_Printer_Data
+            // 
+            this.btn_MF_PS_Printer_Data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_PS_Printer_Data.BackColor = System.Drawing.Color.Brown;
+            this.btn_MF_PS_Printer_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_PS_Printer_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_PS_Printer_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_PS_Printer_Data.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PS_Printer_Data.Image")));
+            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(521, 448);
+            this.btn_MF_PS_Printer_Data.Name = "btn_MF_PS_Printer_Data";
+            this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_PS_Printer_Data.TabIndex = 26;
+            this.btn_MF_PS_Printer_Data.Tag = "Mainframe";
+            this.btn_MF_PS_Printer_Data.Text = "Clear PS_PrinterData";
+            this.toolTip1.SetToolTip(this.btn_MF_PS_Printer_Data, "Mainframe thunderbolt issues or miscellaneous issues? CTRL+F \"psprinterdata\", rem" +
+        "ove gibberish text and replace with \"\".");
+            this.btn_MF_PS_Printer_Data.UseVisualStyleBackColor = false;
+            this.btn_MF_PS_Printer_Data.Visible = false;
+            this.btn_MF_PS_Printer_Data.Click += new System.EventHandler(this.Clear_PS_PrinterData);
+            // 
+            // btn_MF_Guide
+            // 
+            this.btn_MF_Guide.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_Guide.BackColor = System.Drawing.Color.Brown;
+            this.btn_MF_Guide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Guide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_Guide.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_Guide.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Guide.Image")));
+            this.btn_MF_Guide.Location = new System.Drawing.Point(139, 448);
+            this.btn_MF_Guide.Name = "btn_MF_Guide";
+            this.btn_MF_Guide.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_Guide.TabIndex = 14;
+            this.btn_MF_Guide.Tag = "Mainframe";
+            this.btn_MF_Guide.Text = "Guide";
+            this.toolTip1.SetToolTip(this.btn_MF_Guide, "Opens up all relevant mainframe guides that DIT Helpdesk utilizes.");
+            this.btn_MF_Guide.UseVisualStyleBackColor = false;
+            this.btn_MF_Guide.Visible = false;
+            this.btn_MF_Guide.Click += new System.EventHandler(this.Mainframe_Guides);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DIT_AIO.Properties.Resources.warning;
+            this.pictureBox1.Location = new System.Drawing.Point(190, 242);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1112,29 +1203,30 @@
             this.programicon.PerformLayout();
             this.Master.ResumeLayout(false);
             this.Master.PerformLayout();
+            this.Home.ResumeLayout(false);
+            this.DataRecovery.ResumeLayout(false);
+            this.DataRecovery.PerformLayout();
+            this.Diagnostics.ResumeLayout(false);
+            this.Diagnostics.PerformLayout();
             this.SystemSetup.ResumeLayout(false);
             this.SystemSetup.PerformLayout();
             this.Mainframe.ResumeLayout(false);
             this.Mainframe.PerformLayout();
             this.Settings.ResumeLayout(false);
             this.Settings.PerformLayout();
-            this.Home.ResumeLayout(false);
-            this.DataRecovery.ResumeLayout(false);
-            this.DataRecovery.PerformLayout();
-            this.Diagnostics.ResumeLayout(false);
-            this.Diagnostics.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1205,6 +1297,12 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox10;
     }
 }
 

@@ -121,23 +121,26 @@
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="datarecov1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="mainframe_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainframe_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UI-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UI-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="datarecov" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\datarecov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="happy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\happy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="datarecov" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\datarecov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="system" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UI-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UI-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="diag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="free-data-recovery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-data-recovery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="system_setup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\system_setup.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mainframe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mainframe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,14 +151,17 @@
   <data name="citylogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\citylogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="DIT_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DIT_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="labratory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\labratory.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon063" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,16 +169,13 @@
   <data name="minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="labratory" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\labratory.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="datarecov1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\datarecov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mainframe_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mainframe_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="system" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="diag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\diag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="system_setup" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\system_setup.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="clara" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clara.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
