@@ -101,6 +101,7 @@
             this.Title_Settings = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.UpdateNotes = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.programicon.SuspendLayout();
@@ -123,6 +124,7 @@
             this.Settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            this.UpdateNotes.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -146,7 +148,7 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox10.Image = global::DIT_AIO.Properties.Resources.clara;
             this.pictureBox10.Location = new System.Drawing.Point(45, 432);
@@ -382,15 +384,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.Home.Controls.Add(this.label9);
-            this.Home.Controls.Add(this.label8);
-            this.Home.Controls.Add(this.label7);
-            this.Home.Controls.Add(this.label5);
             this.Home.Controls.Add(this.CityLogo);
             this.Home.Controls.Add(this.Music);
             this.Home.Controls.Add(this.tooltip);
             this.Home.Controls.Add(this.DESC_Info);
             this.Home.Controls.Add(this.Title_Home);
+            this.Home.Controls.Add(this.UpdateNotes);
             this.Home.Location = new System.Drawing.Point(0, 0);
             this.Home.Name = "Home";
             this.Home.Size = new System.Drawing.Size(809, 539);
@@ -400,59 +399,59 @@
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label9.Location = new System.Drawing.Point(392, 165);
+            this.label9.Location = new System.Drawing.Point(8, 118);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(353, 50);
+            this.label9.Size = new System.Drawing.Size(328, 50);
             this.label9.TabIndex = 21;
             this.label9.Text = "- Button descriptions have been converted to tool tips.";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label8.Location = new System.Drawing.Point(392, 137);
+            this.label8.Location = new System.Drawing.Point(5, 90);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(353, 28);
+            this.label8.Size = new System.Drawing.Size(328, 28);
             this.label8.TabIndex = 20;
             this.label8.Text = "- Redesigned user interface and resizable UI. ";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label7.Location = new System.Drawing.Point(391, 109);
+            this.label7.Location = new System.Drawing.Point(8, 35);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(353, 28);
+            this.label7.Size = new System.Drawing.Size(325, 28);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Claytonic version 1.1 is now released!";
+            this.label7.Text = "Version 1.1";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Khaki;
-            this.label5.Location = new System.Drawing.Point(381, 75);
+            this.label5.Location = new System.Drawing.Point(3, 1);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(362, 34);
+            this.label5.Size = new System.Drawing.Size(337, 34);
             this.label5.TabIndex = 18;
             this.label5.Text = "Update Log";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CityLogo
             // 
-            this.CityLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.CityLogo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.CityLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CityLogo.Image = global::DIT_AIO.Properties.Resources.citylogo1;
             this.CityLogo.Location = new System.Drawing.Point(50, 75);
@@ -1183,6 +1182,19 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
+            // UpdateNotes
+            // 
+            this.UpdateNotes.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.UpdateNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.UpdateNotes.Controls.Add(this.label9);
+            this.UpdateNotes.Controls.Add(this.label8);
+            this.UpdateNotes.Controls.Add(this.label5);
+            this.UpdateNotes.Controls.Add(this.label7);
+            this.UpdateNotes.Location = new System.Drawing.Point(401, 75);
+            this.UpdateNotes.Name = "UpdateNotes";
+            this.UpdateNotes.Size = new System.Drawing.Size(342, 294);
+            this.UpdateNotes.TabIndex = 22;
+            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1227,6 +1239,7 @@
             this.Settings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            this.UpdateNotes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1303,6 +1316,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label npcdialogue;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Panel UpdateNotes;
     }
 }
 
