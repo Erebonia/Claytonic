@@ -1,10 +1,10 @@
-﻿using System;
+﻿using DIT_AIO;
+using NAudio.Wave;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Windows.Forms;
-using DIT_AIO;
-using NAudio.Wave;
+using System;
+using System.Linq;
 
 public class AudioPlayer
 {
@@ -44,7 +44,7 @@ public class AudioPlayer
         playedIndices.Clear();
     }
 
-    public void LoadNextSong()
+    public void LoadNextSong(Button clickedButton)
     {
         if (playedIndices.Count == songList.Count)
         {
@@ -58,10 +58,10 @@ public class AudioPlayer
         } while (playedIndices.Contains(currentSongIndex));
 
         playedIndices.Add(currentSongIndex);
-        LoadAudio(songList[currentSongIndex]);
+        LoadAudio(songList[currentSongIndex], clickedButton);
     }
 
-    public void LoadAudio(string resourceName)
+    public void LoadAudio(string resourceName, Button clickedButton)
     {
         try
         {
@@ -72,10 +72,30 @@ public class AudioPlayer
 
             // Set the initial volume based on the TrackBar's current value
             SetVolume(musicVolume.Value / 100f);
+
+            // Subscribe to the PlaybackStopped event
+            waveOutEvent.PlaybackStopped += OnPlaybackStopped;
+
+            // Update the button image
+            UpdateUI(clickedButton);
         }
         catch (Exception ex)
         {
             MessageBox.Show($"Failed to load audio: {ex.Message}");
+        }
+    }
+
+    private void OnPlaybackStopped(object sender, StoppedEventArgs e)
+    {
+        if (e.Exception == null)
+        {
+            // This means the playback stopped naturally (song ended)
+            LoadNextSong(null);  // Load next song, no need to update UI as we're auto-playing
+            PlayLooping();
+        }
+        else
+        {
+            MessageBox.Show($"Playback stopped due to an error: {e.Exception.Message}");
         }
     }
 
@@ -85,6 +105,15 @@ public class AudioPlayer
         {
             waveOutEvent.Play();
             isPlaying = true;
+        }
+    }
+
+    public void Pause()
+    {
+        if (waveOutEvent != null)
+        {
+            waveOutEvent.Pause();
+            isPlaying = false;
         }
     }
 
@@ -106,14 +135,14 @@ public class AudioPlayer
     {
         if (IsPlaying())
         {
-            Stop();
-            clickedButton.Image = pauseImage;
+            Pause(); // Pause the current song
+            UpdateUI(clickedButton);
         }
         else
         {
-            LoadNextSong();
+            LoadNextSong(clickedButton); // Load and play the next song
             PlayLooping();
-            clickedButton.Image = playImage;
+            UpdateUI(clickedButton);
         }
     }
 
@@ -129,5 +158,27 @@ public class AudioPlayer
     {
         float volume = musicVolume.Value / 100f;
         SetVolume(volume);
+    }
+
+    // This method will update the button image based on the playing status
+    public void UpdateButtonImage(Button clickedButton)
+    {
+        if (IsPlaying())
+        {
+            clickedButton.Image = pauseImage;
+        }
+        else
+        {
+            clickedButton.Image = playImage;
+        }
+    }
+
+    // Call this method after loading or stopping audio to ensure the image is correct
+    private void UpdateUI(Button clickedButton)
+    {
+        if (clickedButton != null)
+        {
+            UpdateButtonImage(clickedButton);
+        }
     }
 }
