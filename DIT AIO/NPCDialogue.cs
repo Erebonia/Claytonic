@@ -6,9 +6,10 @@ using System.Windows.Forms;
 public class NPCDialogue
 {
     private string[] phrases = {
-        "Hover over buttons to view their description!", 
-        "For any issues with the tool please contact Bao Nguyen from DIT Helpdesk!",
-        "Welcome to Claytonic. A program dedicated to helpdesk technicians :)"
+        "Hover over buttons to view descriptions..", 
+        "For any issues with the program please contact Bao Nguyen from DIT Helpdesk!",
+        "Welcome to Claytonic. A program dedicated to helpdesk technicians :)",
+        "CLAYTONIC"
     };
     private int currentPhraseIndex = -1; // Initialize to -1 to indicate no previous phrase
     private Label dialogueLabel; // Reference to the Label control
@@ -20,13 +21,26 @@ public class NPCDialogue
 
     public async Task StartDialogue(int charDelay, int phraseDelay)
     {
-        for (int i = 0; i < phrases.Length; i++)
+        // If there is already text in the Label, display that first
+        if (!string.IsNullOrEmpty(dialogueLabel.Text))
         {
-            string phrase = GetRandomPhrase();
-            await ShowTextOneCharacterAtATime(phrase, charDelay);
+            string initialText = dialogueLabel.Text;
+            await ShowTextOneCharacterAtATime(initialText, charDelay);
             await Task.Delay(phraseDelay);
         }
+
+        while (true)
+        {
+            for (int i = 0; i < phrases.Length; i++)
+            {
+                string phrase = GetRandomPhrase();
+                await ShowTextOneCharacterAtATime(phrase, charDelay);
+                await Task.Delay(phraseDelay);
+            }
+        }
     }
+
+
 
     private string GetRandomPhrase()
     {
