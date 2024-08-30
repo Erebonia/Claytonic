@@ -136,6 +136,10 @@
     <EmbeddedResource Include="Resources\paused.png" />
     <EmbeddedResource Include="Resources\claytonic_music.wav" />
     <None Include="Resources\free-data-recovery.png" />
+    <None Include="Resources\pc_diagnostics.png" />
+    <None Include="Resources\server_setup.png" />
+    <None Include="Resources\mainframe_bg.png" />
+    <None Include="Resources\happy.png" />
     <Content Include="test.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

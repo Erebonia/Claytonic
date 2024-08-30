@@ -186,12 +186,12 @@
             this.Master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.Master.Controls.Add(this.btnMinimize);
             this.Master.Controls.Add(this.btnClose);
+            this.Master.Controls.Add(this.Diagnostics);
+            this.Master.Controls.Add(this.SystemSetup);
             this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
             this.Master.Controls.Add(this.Home);
             this.Master.Controls.Add(this.DataRecovery);
-            this.Master.Controls.Add(this.Diagnostics);
-            this.Master.Controls.Add(this.SystemSetup);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(809, 539);
@@ -218,10 +218,11 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(200, 465);
+            this.label1.Location = new System.Drawing.Point(195, 501);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(450, 21);
             this.label1.TabIndex = 29;
@@ -351,6 +352,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(220, 476);
@@ -424,9 +426,10 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(220, 468);
+            this.label6.Location = new System.Drawing.Point(236, 486);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(409, 38);
             this.label6.TabIndex = 37;
@@ -595,18 +598,20 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.pictureBox6.Image = global::DIT_AIO.Properties.Resources.server_setup;
-            this.pictureBox6.Location = new System.Drawing.Point(109, 85);
+            this.pictureBox6.Location = new System.Drawing.Point(26, 65);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(552, 294);
+            this.pictureBox6.Size = new System.Drawing.Size(753, 346);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 38;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox4.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.pictureBox4.Location = new System.Drawing.Point(174, 467);
+            this.pictureBox4.Location = new System.Drawing.Point(190, 485);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(40, 39);
             this.pictureBox4.TabIndex = 36;
@@ -614,12 +619,13 @@
             // 
             // btn_Paperport
             // 
+            this.btn_Paperport.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Paperport.BackColor = System.Drawing.Color.Brown;
             this.btn_Paperport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Paperport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Paperport.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Paperport.Image = ((System.Drawing.Image)(resources.GetObject("btn_Paperport.Image")));
-            this.btn_Paperport.Location = new System.Drawing.Point(109, 403);
+            this.btn_Paperport.Location = new System.Drawing.Point(118, 424);
             this.btn_Paperport.Name = "btn_Paperport";
             this.btn_Paperport.Size = new System.Drawing.Size(105, 38);
             this.btn_Paperport.TabIndex = 12;
@@ -632,12 +638,13 @@
             // 
             // btn_Esignature
             // 
+            this.btn_Esignature.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Esignature.BackColor = System.Drawing.Color.Brown;
             this.btn_Esignature.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Esignature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Esignature.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Esignature.Image = ((System.Drawing.Image)(resources.GetObject("btn_Esignature.Image")));
-            this.btn_Esignature.Location = new System.Drawing.Point(223, 403);
+            this.btn_Esignature.Location = new System.Drawing.Point(232, 424);
             this.btn_Esignature.Name = "btn_Esignature";
             this.btn_Esignature.Size = new System.Drawing.Size(105, 38);
             this.btn_Esignature.TabIndex = 13;
@@ -650,12 +657,13 @@
             // 
             // btn_blank_login
             // 
+            this.btn_blank_login.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_blank_login.BackColor = System.Drawing.Color.Brown;
             this.btn_blank_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_blank_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_blank_login.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_blank_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_blank_login.Image")));
-            this.btn_blank_login.Location = new System.Drawing.Point(334, 403);
+            this.btn_blank_login.Location = new System.Drawing.Point(343, 424);
             this.btn_blank_login.Name = "btn_blank_login";
             this.btn_blank_login.Size = new System.Drawing.Size(105, 38);
             this.btn_blank_login.TabIndex = 23;
@@ -668,12 +676,13 @@
             // 
             // btn_Firewall
             // 
+            this.btn_Firewall.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Firewall.BackColor = System.Drawing.Color.Brown;
             this.btn_Firewall.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Firewall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Firewall.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Firewall.Image = ((System.Drawing.Image)(resources.GetObject("btn_Firewall.Image")));
-            this.btn_Firewall.Location = new System.Drawing.Point(445, 403);
+            this.btn_Firewall.Location = new System.Drawing.Point(454, 424);
             this.btn_Firewall.Name = "btn_Firewall";
             this.btn_Firewall.Size = new System.Drawing.Size(105, 38);
             this.btn_Firewall.TabIndex = 5;
@@ -687,12 +696,13 @@
             // 
             // btn_outlook_cache
             // 
+            this.btn_outlook_cache.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_outlook_cache.BackColor = System.Drawing.Color.Brown;
             this.btn_outlook_cache.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_outlook_cache.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_outlook_cache.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_outlook_cache.Image = ((System.Drawing.Image)(resources.GetObject("btn_outlook_cache.Image")));
-            this.btn_outlook_cache.Location = new System.Drawing.Point(556, 403);
+            this.btn_outlook_cache.Location = new System.Drawing.Point(565, 424);
             this.btn_outlook_cache.Name = "btn_outlook_cache";
             this.btn_outlook_cache.Size = new System.Drawing.Size(105, 38);
             this.btn_outlook_cache.TabIndex = 24;
@@ -705,9 +715,10 @@
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox9.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.pictureBox9.Location = new System.Drawing.Point(163, 456);
+            this.pictureBox9.Location = new System.Drawing.Point(158, 492);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(35, 39);
             this.pictureBox9.TabIndex = 30;
@@ -715,22 +726,24 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.pictureBox7.Image = global::DIT_AIO.Properties.Resources.mainframe_bg;
-            this.pictureBox7.Location = new System.Drawing.Point(139, 85);
+            this.pictureBox7.Location = new System.Drawing.Point(26, 85);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(487, 294);
+            this.pictureBox7.Size = new System.Drawing.Size(741, 333);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 28;
             this.pictureBox7.TabStop = false;
             // 
             // btn_MF_Unsuspend
             // 
+            this.btn_MF_Unsuspend.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_MF_Unsuspend.BackColor = System.Drawing.Color.Brown;
             this.btn_MF_Unsuspend.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MF_Unsuspend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_Unsuspend.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_Unsuspend.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Unsuspend.Image")));
-            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(270, 398);
+            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(270, 435);
             this.btn_MF_Unsuspend.Name = "btn_MF_Unsuspend";
             this.btn_MF_Unsuspend.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_Unsuspend.TabIndex = 8;
@@ -744,12 +757,13 @@
             // 
             // btn_MF_PW_Reset
             // 
+            this.btn_MF_PW_Reset.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_MF_PW_Reset.BackColor = System.Drawing.Color.Brown;
             this.btn_MF_PW_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MF_PW_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_PW_Reset.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_PW_Reset.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PW_Reset.Image")));
-            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(394, 398);
+            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(394, 435);
             this.btn_MF_PW_Reset.Name = "btn_MF_PW_Reset";
             this.btn_MF_PW_Reset.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_PW_Reset.TabIndex = 9;
@@ -763,12 +777,13 @@
             // 
             // btn_MF_PS_Printer_Data
             // 
+            this.btn_MF_PS_Printer_Data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_MF_PS_Printer_Data.BackColor = System.Drawing.Color.Brown;
             this.btn_MF_PS_Printer_Data.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MF_PS_Printer_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_PS_Printer_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_PS_Printer_Data.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PS_Printer_Data.Image")));
-            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(521, 398);
+            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(521, 435);
             this.btn_MF_PS_Printer_Data.Name = "btn_MF_PS_Printer_Data";
             this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_PS_Printer_Data.TabIndex = 26;
@@ -782,12 +797,13 @@
             // 
             // btn_MF_Guide
             // 
+            this.btn_MF_Guide.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_MF_Guide.BackColor = System.Drawing.Color.Brown;
             this.btn_MF_Guide.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MF_Guide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_Guide.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_Guide.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Guide.Image")));
-            this.btn_MF_Guide.Location = new System.Drawing.Point(139, 398);
+            this.btn_MF_Guide.Location = new System.Drawing.Point(139, 435);
             this.btn_MF_Guide.Name = "btn_MF_Guide";
             this.btn_MF_Guide.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_Guide.TabIndex = 14;
@@ -842,16 +858,20 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = global::DIT_AIO.Properties.Resources.free_data_recovery;
-            this.pictureBox3.Location = new System.Drawing.Point(150, 73);
+            this.pictureBox3.Location = new System.Drawing.Point(26, 52);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(487, 294);
+            this.pictureBox3.Size = new System.Drawing.Size(753, 359);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
             // 
             // warning_printers
             // 
+            this.warning_printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.warning_printers.Image = global::DIT_AIO.Properties.Resources.warning;
             this.warning_printers.Location = new System.Drawing.Point(174, 475);
             this.warning_printers.Name = "warning_printers";
@@ -861,12 +881,13 @@
             // 
             // btnBackup_User_Data
             // 
+            this.btnBackup_User_Data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnBackup_User_Data.BackColor = System.Drawing.Color.Brown;
             this.btnBackup_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBackup_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBackup_User_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackup_User_Data.Image = global::DIT_AIO.Properties.Resources.UI_8;
-            this.btnBackup_User_Data.Location = new System.Drawing.Point(150, 403);
+            this.btnBackup_User_Data.Location = new System.Drawing.Point(158, 424);
             this.btnBackup_User_Data.Name = "btnBackup_User_Data";
             this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
             this.btnBackup_User_Data.TabIndex = 0;
@@ -880,12 +901,13 @@
             // 
             // btn_Restore_User_Data
             // 
+            this.btn_Restore_User_Data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Restore_User_Data.BackColor = System.Drawing.Color.Brown;
             this.btn_Restore_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Restore_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Restore_User_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Restore_User_Data.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore_User_Data.Image")));
-            this.btn_Restore_User_Data.Location = new System.Drawing.Point(283, 403);
+            this.btn_Restore_User_Data.Location = new System.Drawing.Point(291, 424);
             this.btn_Restore_User_Data.Name = "btn_Restore_User_Data";
             this.btn_Restore_User_Data.Size = new System.Drawing.Size(105, 38);
             this.btn_Restore_User_Data.TabIndex = 2;
@@ -898,12 +920,13 @@
             // 
             // btn_Backup_Printers
             // 
+            this.btn_Backup_Printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Backup_Printers.BackColor = System.Drawing.Color.Brown;
             this.btn_Backup_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Backup_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Backup_Printers.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Backup_Printers.Image = ((System.Drawing.Image)(resources.GetObject("btn_Backup_Printers.Image")));
-            this.btn_Backup_Printers.Location = new System.Drawing.Point(410, 403);
+            this.btn_Backup_Printers.Location = new System.Drawing.Point(418, 424);
             this.btn_Backup_Printers.Name = "btn_Backup_Printers";
             this.btn_Backup_Printers.Size = new System.Drawing.Size(105, 38);
             this.btn_Backup_Printers.TabIndex = 10;
@@ -916,12 +939,13 @@
             // 
             // btn_Restore_Printers
             // 
+            this.btn_Restore_Printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Restore_Printers.BackColor = System.Drawing.Color.Brown;
             this.btn_Restore_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Restore_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Restore_Printers.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Restore_Printers.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore_Printers.Image")));
-            this.btn_Restore_Printers.Location = new System.Drawing.Point(532, 403);
+            this.btn_Restore_Printers.Location = new System.Drawing.Point(540, 424);
             this.btn_Restore_Printers.Name = "btn_Restore_Printers";
             this.btn_Restore_Printers.Size = new System.Drawing.Size(105, 38);
             this.btn_Restore_Printers.TabIndex = 11;
@@ -934,22 +958,24 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.pictureBox5.Image = global::DIT_AIO.Properties.Resources.pc_diagnostics;
-            this.pictureBox5.Location = new System.Drawing.Point(88, 88);
+            this.pictureBox5.Location = new System.Drawing.Point(26, 65);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(582, 294);
+            this.pictureBox5.Size = new System.Drawing.Size(753, 332);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 27;
             this.pictureBox5.TabStop = false;
             // 
             // btn_Check_User_Accounts
             // 
+            this.btn_Check_User_Accounts.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Check_User_Accounts.BackColor = System.Drawing.Color.Brown;
             this.btn_Check_User_Accounts.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Check_User_Accounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Check_User_Accounts.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Check_User_Accounts.Image = ((System.Drawing.Image)(resources.GetObject("btn_Check_User_Accounts.Image")));
-            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(88, 421);
+            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(107, 417);
             this.btn_Check_User_Accounts.Name = "btn_Check_User_Accounts";
             this.btn_Check_User_Accounts.Size = new System.Drawing.Size(105, 38);
             this.btn_Check_User_Accounts.TabIndex = 6;
@@ -963,12 +989,13 @@
             // 
             // btn_Ping_IP
             // 
+            this.btn_Ping_IP.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Ping_IP.BackColor = System.Drawing.Color.Brown;
             this.btn_Ping_IP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Ping_IP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ping_IP.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Ping_IP.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ping_IP.Image")));
-            this.btn_Ping_IP.Location = new System.Drawing.Point(204, 421);
+            this.btn_Ping_IP.Location = new System.Drawing.Point(223, 417);
             this.btn_Ping_IP.Name = "btn_Ping_IP";
             this.btn_Ping_IP.Size = new System.Drawing.Size(105, 38);
             this.btn_Ping_IP.TabIndex = 15;
@@ -981,12 +1008,13 @@
             // 
             // btn_SFC
             // 
+            this.btn_SFC.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_SFC.BackColor = System.Drawing.Color.Brown;
             this.btn_SFC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_SFC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_SFC.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SFC.Image = ((System.Drawing.Image)(resources.GetObject("btn_SFC.Image")));
-            this.btn_SFC.Location = new System.Drawing.Point(324, 421);
+            this.btn_SFC.Location = new System.Drawing.Point(343, 417);
             this.btn_SFC.Name = "btn_SFC";
             this.btn_SFC.Size = new System.Drawing.Size(105, 38);
             this.btn_SFC.TabIndex = 21;
@@ -1000,12 +1028,13 @@
             // 
             // btn_DISM
             // 
+            this.btn_DISM.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_DISM.BackColor = System.Drawing.Color.Brown;
             this.btn_DISM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_DISM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_DISM.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DISM.Image = ((System.Drawing.Image)(resources.GetObject("btn_DISM.Image")));
-            this.btn_DISM.Location = new System.Drawing.Point(445, 421);
+            this.btn_DISM.Location = new System.Drawing.Point(464, 417);
             this.btn_DISM.Name = "btn_DISM";
             this.btn_DISM.Size = new System.Drawing.Size(105, 38);
             this.btn_DISM.TabIndex = 22;
@@ -1018,12 +1047,13 @@
             // 
             // btn_CCH_Deploy
             // 
+            this.btn_CCH_Deploy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_CCH_Deploy.BackColor = System.Drawing.Color.Brown;
             this.btn_CCH_Deploy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_CCH_Deploy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CCH_Deploy.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CCH_Deploy.Image = ((System.Drawing.Image)(resources.GetObject("btn_CCH_Deploy.Image")));
-            this.btn_CCH_Deploy.Location = new System.Drawing.Point(565, 421);
+            this.btn_CCH_Deploy.Location = new System.Drawing.Point(584, 417);
             this.btn_CCH_Deploy.Name = "btn_CCH_Deploy";
             this.btn_CCH_Deploy.Size = new System.Drawing.Size(105, 38);
             this.btn_CCH_Deploy.TabIndex = 25;
@@ -1037,9 +1067,10 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(201, 475);
+            this.label4.Location = new System.Drawing.Point(236, 476);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(409, 38);
             this.label4.TabIndex = 39;
@@ -1048,8 +1079,9 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox8.Image = global::DIT_AIO.Properties.Resources.happy;
-            this.pictureBox8.Location = new System.Drawing.Point(155, 474);
+            this.pictureBox8.Location = new System.Drawing.Point(190, 475);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(40, 39);
             this.pictureBox8.TabIndex = 38;
