@@ -1227,6 +1227,7 @@
             this.musicVolume.Name = "musicVolume";
             this.musicVolume.Size = new System.Drawing.Size(104, 45);
             this.musicVolume.TabIndex = 23;
+            this.musicVolume.Value = 5;
             // 
             // Runetonic
             // 

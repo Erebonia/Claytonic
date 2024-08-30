@@ -33,7 +33,7 @@ namespace DIT_AIO
             pauseImage = Image.FromStream(ResourceHelper.GetResourceStream("DIT_AIO.Resources.paused.png"));
 
             // Initialize AudioPlayer
-            audioPlayer = new AudioPlayer(playImage, pauseImage);
+            audioPlayer = new AudioPlayer(playImage, pauseImage, musicVolume);
 
             // Update the event handler to use the AudioPlayer's method
             btnMusic.Click += (s, e) => audioPlayer.HandleMusicButtonClick(btnMusic);

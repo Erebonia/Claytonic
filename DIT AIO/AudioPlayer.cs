@@ -1,36 +1,40 @@
 ﻿using System;
-using System.IO;
-using System.Media;
-using System.Drawing;
-using System.Windows.Forms;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Windows.Forms;
 using DIT_AIO;
+using NAudio.Wave;
 
 public class AudioPlayer
 {
-    private SoundPlayer soundPlayer;
+    private WaveOutEvent waveOutEvent;
+    private WaveStream waveStream;
     private bool isPlaying = false;
     private System.Drawing.Image playImage;
     private System.Drawing.Image pauseImage;
-    private List<string> songList = new List<string>(); // Store the list of resource names here
-    private int currentSongIndex = -1; // Start at -1 to indicate no song has been played yet
+    private List<string> songList = new List<string>();
+    private int currentSongIndex = -1;
     private List<int> playedIndices = new List<int>();
+    private TrackBar musicVolume; // Reference to the TrackBar control
 
-    public AudioPlayer(System.Drawing.Image playImage, System.Drawing.Image pauseImage)
+    public AudioPlayer(System.Drawing.Image playImage, System.Drawing.Image pauseImage, TrackBar musicVolume)
     {
         this.playImage = playImage;
         this.pauseImage = pauseImage;
+        this.musicVolume = musicVolume;
 
-        // Initialize the song list with the resource name
+        // Initialize the song list with the resource names
         songList = new List<string>
         {
             "DIT_AIO.Resources.claytonic_music.wav",
             "DIT_AIO.Resources.claytonic_music_slow.wav"
-            // Add more resource names if you have more songs
         };
 
-        ShuffleSongs(); // Shuffle the songs at the beginning
+        ShuffleSongs();
+
+        // Attach the Scroll event handler to the TrackBar
+        this.musicVolume.Scroll += new EventHandler(musicVolume_Scroll);
     }
 
     private void ShuffleSongs()
@@ -42,11 +46,10 @@ public class AudioPlayer
 
     public void LoadNextSong()
     {
-        // If all songs have been played, reshuffle and start over
         if (playedIndices.Count == songList.Count)
         {
             ShuffleSongs();
-            currentSongIndex = -1; // Reset index
+            currentSongIndex = -1;
         }
 
         do
@@ -62,11 +65,13 @@ public class AudioPlayer
     {
         try
         {
-            // Load the audio resource using ResourceHelper
             Stream resourceStream = ResourceHelper.GetResourceStream(resourceName);
+            waveStream = new WaveFileReader(resourceStream);
+            waveOutEvent = new WaveOutEvent();
+            waveOutEvent.Init(waveStream);
 
-            // Initialize the SoundPlayer with the stream
-            soundPlayer = new SoundPlayer(resourceStream);
+            // Set the initial volume based on the TrackBar's current value
+            SetVolume(musicVolume.Value / 100f);
         }
         catch (Exception ex)
         {
@@ -76,18 +81,18 @@ public class AudioPlayer
 
     public void PlayLooping()
     {
-        if (soundPlayer != null)
+        if (waveOutEvent != null)
         {
-            soundPlayer.PlayLooping();
+            waveOutEvent.Play();
             isPlaying = true;
         }
     }
 
     public void Stop()
     {
-        if (soundPlayer != null)
+        if (waveOutEvent != null)
         {
-            soundPlayer.Stop();
+            waveOutEvent.Stop();
             isPlaying = false;
         }
     }
@@ -101,16 +106,28 @@ public class AudioPlayer
     {
         if (IsPlaying())
         {
-            // Stop the sound if it's playing 
             Stop();
             clickedButton.Image = pauseImage;
         }
         else
         {
-            // Load and play the next song
             LoadNextSong();
             PlayLooping();
             clickedButton.Image = playImage;
         }
+    }
+
+    public void SetVolume(float volume)
+    {
+        if (waveOutEvent != null && waveStream != null)
+        {
+            waveOutEvent.Volume = volume;
+        }
+    }
+
+    private void musicVolume_Scroll(object sender, EventArgs e)
+    {
+        float volume = musicVolume.Value / 100f;
+        SetVolume(volume);
     }
 }
