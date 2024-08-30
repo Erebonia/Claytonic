@@ -71,7 +71,7 @@ public class AudioPlayer
             waveOutEvent.Init(waveStream);
 
             // Set the initial volume based on the TrackBar's current value
-            SetVolume(musicVolume.Value / 100f);
+            SetVolume(musicVolume.Value / 10f);
 
             // Subscribe to the PlaybackStopped event
             waveOutEvent.PlaybackStopped += OnPlaybackStopped;
@@ -93,7 +93,8 @@ public class AudioPlayer
         if (e.Exception == null && isPlaying)
         {
             // If the playback stopped naturally (song ended), loop the track
-            PlayLooping();
+            waveStream.Position = 0; // Reset position to the beginning
+            waveOutEvent.Play();
         }
         else if (e.Exception != null)
         {
@@ -126,6 +127,9 @@ public class AudioPlayer
         {
             waveOutEvent.Stop();
             isPlaying = false;
+
+            // Reset volume to current TrackBar setting when stopping
+            SetVolume(musicVolume.Value / 10f);
         }
     }
 
@@ -154,12 +158,20 @@ public class AudioPlayer
         if (waveOutEvent != null && waveStream != null)
         {
             waveOutEvent.Volume = volume;
+
+            // Debugging: Output the volume value to see if it matches expectations
+            Console.WriteLine($"Volume Set: {waveOutEvent.Volume}");
         }
     }
 
     private void musicVolume_Scroll(object sender, EventArgs e)
     {
+        // Scale the TrackBar value (0 to 10) to the NAudio volume range (0.0 to 1.0)
         float volume = musicVolume.Value / 10f;
+
+        // Debugging: Output the TrackBar value and scaled volume
+        Console.WriteLine($"TrackBar Value: {musicVolume.Value}, Volume Set: {volume}");
+
         SetVolume(volume);
     }
 
