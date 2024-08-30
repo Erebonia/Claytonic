@@ -1210,6 +1210,14 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 7600;
+            this.toolTip1.InitialDelay = 0;
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ReshowDelay = 0;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

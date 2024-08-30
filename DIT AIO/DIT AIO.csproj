@@ -136,6 +136,7 @@
     <None Include="Resources\labratory.gif" />
     <None Include="Resources\system_setup.gif" />
     <None Include="Resources\clara.gif" />
+    <EmbeddedResource Include="Resources\claytonic_music_slow.wav" />
     <Content Include="test.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

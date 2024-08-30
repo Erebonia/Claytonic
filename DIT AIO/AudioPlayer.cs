@@ -1,38 +1,72 @@
 ﻿using System;
 using System.IO;
 using System.Media;
-using System.Drawing;  // This is the key to ensuring the correct Image type is used
+using System.Drawing;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System.Linq;
 using DIT_AIO;
 
 public class AudioPlayer
 {
     private SoundPlayer soundPlayer;
-    private MemoryStream audioStream;
     private bool isPlaying = false;
-    private System.Drawing.Image playImage;  // Use System.Drawing.Image
-    private System.Drawing.Image pauseImage;  // Use System.Drawing.Image
+    private System.Drawing.Image playImage;
+    private System.Drawing.Image pauseImage;
+    private List<string> songList = new List<string>(); // Store the list of resource names here
+    private int currentSongIndex = -1; // Start at -1 to indicate no song has been played yet
+    private List<int> playedIndices = new List<int>();
 
     public AudioPlayer(System.Drawing.Image playImage, System.Drawing.Image pauseImage)
     {
         this.playImage = playImage;
         this.pauseImage = pauseImage;
+
+        // Initialize the song list with the resource name
+        songList = new List<string>
+        {
+            "DIT_AIO.Resources.claytonic_music.wav",
+            "DIT_AIO.Resources.claytonic_music_slow.wav"
+            // Add more resource names if you have more songs
+        };
+
+        ShuffleSongs(); // Shuffle the songs at the beginning
+    }
+
+    private void ShuffleSongs()
+    {
+        Random rng = new Random();
+        songList = songList.OrderBy(x => rng.Next()).ToList();
+        playedIndices.Clear();
+    }
+
+    public void LoadNextSong()
+    {
+        // If all songs have been played, reshuffle and start over
+        if (playedIndices.Count == songList.Count)
+        {
+            ShuffleSongs();
+            currentSongIndex = -1; // Reset index
+        }
+
+        do
+        {
+            currentSongIndex = (currentSongIndex + 1) % songList.Count;
+        } while (playedIndices.Contains(currentSongIndex));
+
+        playedIndices.Add(currentSongIndex);
+        LoadAudio(songList[currentSongIndex]);
     }
 
     public void LoadAudio(string resourceName)
     {
         try
         {
-            // Get the assembly where the resource is embedded
+            // Load the audio resource using ResourceHelper
             Stream resourceStream = ResourceHelper.GetResourceStream(resourceName);
 
-            // Copy the stream to a MemoryStream
-            audioStream = new MemoryStream();
-            resourceStream.CopyTo(audioStream);
-            audioStream.Position = 0; // Reset position to the beginning
-
-            // Initialize the SoundPlayer with the MemoryStream
-            soundPlayer = new SoundPlayer(audioStream);
+            // Initialize the SoundPlayer with the stream
+            soundPlayer = new SoundPlayer(resourceStream);
         }
         catch (Exception ex)
         {
@@ -73,7 +107,8 @@ public class AudioPlayer
         }
         else
         {
-            // Play the sound if it's not playing
+            // Load and play the next song
+            LoadNextSong();
             PlayLooping();
             clickedButton.Image = playImage;
         }

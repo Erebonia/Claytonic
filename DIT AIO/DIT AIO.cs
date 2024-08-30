@@ -34,7 +34,6 @@ namespace DIT_AIO
 
             // Initialize AudioPlayer
             audioPlayer = new AudioPlayer(playImage, pauseImage);
-            audioPlayer.LoadAudio("DIT_AIO.Resources.claytonic_music.wav");
 
             // Update the event handler to use the AudioPlayer's method
             btnMusic.Click += (s, e) => audioPlayer.HandleMusicButtonClick(btnMusic);
