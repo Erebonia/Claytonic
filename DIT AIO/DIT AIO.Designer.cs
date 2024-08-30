@@ -32,90 +32,90 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Runetonic));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
+            this.programicon = new System.Windows.Forms.Panel();
+            this.programName = new System.Windows.Forms.Label();
+            this.Subtitle = new System.Windows.Forms.Label();
+            this.Master = new System.Windows.Forms.Panel();
+            this.SystemSetup = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Title_SystemSetup = new System.Windows.Forms.Label();
+            this.Mainframe = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Title_Mainframe = new System.Windows.Forms.Label();
+            this.Settings = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Title_Settings = new System.Windows.Forms.Label();
+            this.Home = new System.Windows.Forms.Panel();
+            this.tooltip = new System.Windows.Forms.Label();
+            this.DESC_Info = new System.Windows.Forms.Label();
+            this.Title_Home = new System.Windows.Forms.Label();
+            this.DataRecovery = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Title_Data_Recovery = new System.Windows.Forms.Label();
+            this.Diagnostics = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Title_Diagnostics = new System.Windows.Forms.Label();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnMainframe = new System.Windows.Forms.Button();
             this.btnSystemSetup = new System.Windows.Forms.Button();
             this.btnDiagnostics = new System.Windows.Forms.Button();
             this.btnDataRecovery = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.programicon = new System.Windows.Forms.Panel();
-            this.programName = new System.Windows.Forms.Label();
-            this.Subtitle = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Master = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.SystemSetup = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.Title_SystemSetup = new System.Windows.Forms.Label();
             this.btn_Paperport = new System.Windows.Forms.Button();
             this.btn_Esignature = new System.Windows.Forms.Button();
             this.btn_blank_login = new System.Windows.Forms.Button();
             this.btn_Firewall = new System.Windows.Forms.Button();
             this.btn_outlook_cache = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.Mainframe = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.Title_Mainframe = new System.Windows.Forms.Label();
             this.btn_MF_Unsuspend = new System.Windows.Forms.Button();
             this.btn_MF_PW_Reset = new System.Windows.Forms.Button();
             this.btn_MF_PS_Printer_Data = new System.Windows.Forms.Button();
             this.btn_MF_Guide = new System.Windows.Forms.Button();
-            this.Settings = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Title_Settings = new System.Windows.Forms.Label();
-            this.Home = new System.Windows.Forms.Panel();
             this.CityLogo = new System.Windows.Forms.PictureBox();
             this.Music = new System.Windows.Forms.Button();
-            this.tooltip = new System.Windows.Forms.Label();
-            this.DESC_Info = new System.Windows.Forms.Label();
-            this.Title_Home = new System.Windows.Forms.Label();
-            this.DataRecovery = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.warning_printers = new System.Windows.Forms.PictureBox();
-            this.Title_Data_Recovery = new System.Windows.Forms.Label();
             this.btnBackup_User_Data = new System.Windows.Forms.Button();
             this.btn_Restore_User_Data = new System.Windows.Forms.Button();
             this.btn_Backup_Printers = new System.Windows.Forms.Button();
             this.btn_Restore_Printers = new System.Windows.Forms.Button();
-            this.Diagnostics = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.Title_Diagnostics = new System.Windows.Forms.Label();
             this.btn_Check_User_Accounts = new System.Windows.Forms.Button();
             this.btn_Ping_IP = new System.Windows.Forms.Button();
             this.btn_SFC = new System.Windows.Forms.Button();
             this.btn_DISM = new System.Windows.Forms.Button();
             this.btn_CCH_Deploy = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Master.SuspendLayout();
             this.SystemSetup.SuspendLayout();
+            this.Mainframe.SuspendLayout();
+            this.Settings.SuspendLayout();
+            this.Home.SuspendLayout();
+            this.DataRecovery.SuspendLayout();
+            this.Diagnostics.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.Mainframe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.Settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.Home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).BeginInit();
-            this.DataRecovery.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).BeginInit();
-            this.Diagnostics.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -142,6 +142,326 @@
             this.pnlNav.Name = "pnlNav";
             this.pnlNav.Size = new System.Drawing.Size(3, 100);
             this.pnlNav.TabIndex = 2;
+            // 
+            // programicon
+            // 
+            this.programicon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.programicon.Controls.Add(this.programName);
+            this.programicon.Controls.Add(this.Subtitle);
+            this.programicon.Controls.Add(this.pictureBox2);
+            this.programicon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.programicon.Location = new System.Drawing.Point(0, 0);
+            this.programicon.Name = "programicon";
+            this.programicon.Size = new System.Drawing.Size(186, 144);
+            this.programicon.TabIndex = 0;
+            // 
+            // programName
+            // 
+            this.programName.AutoSize = true;
+            this.programName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.programName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.programName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.programName.Location = new System.Drawing.Point(57, 97);
+            this.programName.Name = "programName";
+            this.programName.Size = new System.Drawing.Size(71, 16);
+            this.programName.TabIndex = 1;
+            this.programName.Text = "Claytonic";
+            // 
+            // Subtitle
+            // 
+            this.Subtitle.AutoSize = true;
+            this.Subtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Subtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
+            this.Subtitle.Location = new System.Drawing.Point(31, 120);
+            this.Subtitle.Name = "Subtitle";
+            this.Subtitle.Size = new System.Drawing.Size(133, 12);
+            this.Subtitle.TabIndex = 2;
+            this.Subtitle.Text = "DIT Helpdesk Application";
+            // 
+            // Master
+            // 
+            this.Master.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
+            this.Master.Controls.Add(this.btnMinimize);
+            this.Master.Controls.Add(this.btnClose);
+            this.Master.Controls.Add(this.DataRecovery);
+            this.Master.Controls.Add(this.Diagnostics);
+            this.Master.Controls.Add(this.SystemSetup);
+            this.Master.Controls.Add(this.Mainframe);
+            this.Master.Controls.Add(this.Settings);
+            this.Master.Controls.Add(this.Home);
+            this.Master.Location = new System.Drawing.Point(192, 12);
+            this.Master.Name = "Master";
+            this.Master.Size = new System.Drawing.Size(809, 539);
+            this.Master.TabIndex = 28;
+            // 
+            // SystemSetup
+            // 
+            this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.SystemSetup.Controls.Add(this.label6);
+            this.SystemSetup.Controls.Add(this.pictureBox4);
+            this.SystemSetup.Controls.Add(this.Title_SystemSetup);
+            this.SystemSetup.Controls.Add(this.btn_Paperport);
+            this.SystemSetup.Controls.Add(this.btn_Esignature);
+            this.SystemSetup.Controls.Add(this.btn_blank_login);
+            this.SystemSetup.Controls.Add(this.btn_Firewall);
+            this.SystemSetup.Controls.Add(this.btn_outlook_cache);
+            this.SystemSetup.Controls.Add(this.pictureBox6);
+            this.SystemSetup.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SystemSetup.Location = new System.Drawing.Point(0, 0);
+            this.SystemSetup.Name = "SystemSetup";
+            this.SystemSetup.Size = new System.Drawing.Size(809, 539);
+            this.SystemSetup.TabIndex = 30;
+            this.SystemSetup.Tag = "SystemSetup";
+            this.SystemSetup.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label6.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Khaki;
+            this.label6.Location = new System.Drawing.Point(107, 498);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(659, 21);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "Paperport / Electronic Scanning - Make sure this program is not running under you" +
+    "r admin credentials!";
+            // 
+            // Title_SystemSetup
+            // 
+            this.Title_SystemSetup.AutoSize = true;
+            this.Title_SystemSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_SystemSetup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_SystemSetup.Location = new System.Drawing.Point(20, 17);
+            this.Title_SystemSetup.Name = "Title_SystemSetup";
+            this.Title_SystemSetup.Size = new System.Drawing.Size(202, 32);
+            this.Title_SystemSetup.TabIndex = 25;
+            this.Title_SystemSetup.Text = "System Setup";
+            // 
+            // Mainframe
+            // 
+            this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.Mainframe.Controls.Add(this.pictureBox9);
+            this.Mainframe.Controls.Add(this.label1);
+            this.Mainframe.Controls.Add(this.pictureBox7);
+            this.Mainframe.Controls.Add(this.Title_Mainframe);
+            this.Mainframe.Controls.Add(this.btn_MF_Unsuspend);
+            this.Mainframe.Controls.Add(this.btn_MF_PW_Reset);
+            this.Mainframe.Controls.Add(this.btn_MF_PS_Printer_Data);
+            this.Mainframe.Controls.Add(this.btn_MF_Guide);
+            this.Mainframe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mainframe.Location = new System.Drawing.Point(0, 0);
+            this.Mainframe.Name = "Mainframe";
+            this.Mainframe.Size = new System.Drawing.Size(809, 539);
+            this.Mainframe.TabIndex = 31;
+            this.Mainframe.Tag = "Mainframe";
+            this.Mainframe.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Khaki;
+            this.label1.Location = new System.Drawing.Point(195, 501);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(406, 21);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Review the Mainframe guides before utilizing these tools.";
+            // 
+            // Title_Mainframe
+            // 
+            this.Title_Mainframe.AutoSize = true;
+            this.Title_Mainframe.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Mainframe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Mainframe.Location = new System.Drawing.Point(20, 17);
+            this.Title_Mainframe.Name = "Title_Mainframe";
+            this.Title_Mainframe.Size = new System.Drawing.Size(157, 32);
+            this.Title_Mainframe.TabIndex = 27;
+            this.Title_Mainframe.Text = "Mainframe";
+            // 
+            // Settings
+            // 
+            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.Settings.Controls.Add(this.label3);
+            this.Settings.Controls.Add(this.pictureBox1);
+            this.Settings.Controls.Add(this.Title_Settings);
+            this.Settings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Settings.Location = new System.Drawing.Point(0, 0);
+            this.Settings.Name = "Settings";
+            this.Settings.Size = new System.Drawing.Size(809, 539);
+            this.Settings.TabIndex = 32;
+            this.Settings.Tag = "Settings";
+            this.Settings.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(236, 243);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(409, 38);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "This page is still under development.";
+            // 
+            // Title_Settings
+            // 
+            this.Title_Settings.AutoSize = true;
+            this.Title_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Settings.Location = new System.Drawing.Point(20, 17);
+            this.Title_Settings.Name = "Title_Settings";
+            this.Title_Settings.Size = new System.Drawing.Size(126, 32);
+            this.Title_Settings.TabIndex = 13;
+            this.Title_Settings.Text = "Settings";
+            // 
+            // Home
+            // 
+            this.Home.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.Home.Controls.Add(this.CityLogo);
+            this.Home.Controls.Add(this.Music);
+            this.Home.Controls.Add(this.tooltip);
+            this.Home.Controls.Add(this.DESC_Info);
+            this.Home.Controls.Add(this.Title_Home);
+            this.Home.Location = new System.Drawing.Point(0, 0);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(809, 539);
+            this.Home.TabIndex = 27;
+            this.Home.Tag = "Home";
+            this.Home.Visible = false;
+            // 
+            // tooltip
+            // 
+            this.tooltip.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tooltip.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tooltip.ForeColor = System.Drawing.Color.Khaki;
+            this.tooltip.Location = new System.Drawing.Point(97, 514);
+            this.tooltip.Name = "tooltip";
+            this.tooltip.Size = new System.Drawing.Size(611, 25);
+            this.tooltip.TabIndex = 15;
+            this.tooltip.Text = "Special thanks to Clayton Lee, Kyle Santiago, and Tyler Yee for making this progr" +
+    "am possible.";
+            this.tooltip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DESC_Info
+            // 
+            this.DESC_Info.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DESC_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.DESC_Info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.DESC_Info.Location = new System.Drawing.Point(71, 385);
+            this.DESC_Info.Name = "DESC_Info";
+            this.DESC_Info.Size = new System.Drawing.Size(666, 101);
+            this.DESC_Info.TabIndex = 14;
+            this.DESC_Info.Text = resources.GetString("DESC_Info.Text");
+            this.DESC_Info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Title_Home
+            // 
+            this.Title_Home.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Home.Location = new System.Drawing.Point(0, 0);
+            this.Title_Home.Name = "Title_Home";
+            this.Title_Home.Size = new System.Drawing.Size(809, 62);
+            this.Title_Home.TabIndex = 0;
+            this.Title_Home.Text = "Mission Statement";
+            this.Title_Home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // DataRecovery
+            // 
+            this.DataRecovery.AutoSize = true;
+            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.DataRecovery.Controls.Add(this.pictureBox3);
+            this.DataRecovery.Controls.Add(this.label2);
+            this.DataRecovery.Controls.Add(this.warning_printers);
+            this.DataRecovery.Controls.Add(this.Title_Data_Recovery);
+            this.DataRecovery.Controls.Add(this.btnBackup_User_Data);
+            this.DataRecovery.Controls.Add(this.btn_Restore_User_Data);
+            this.DataRecovery.Controls.Add(this.btn_Backup_Printers);
+            this.DataRecovery.Controls.Add(this.btn_Restore_Printers);
+            this.DataRecovery.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataRecovery.Location = new System.Drawing.Point(0, 0);
+            this.DataRecovery.Name = "DataRecovery";
+            this.DataRecovery.Size = new System.Drawing.Size(809, 539);
+            this.DataRecovery.TabIndex = 29;
+            this.DataRecovery.Tag = "DataRecovery";
+            this.DataRecovery.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Khaki;
+            this.label2.Location = new System.Drawing.Point(93, 504);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(669, 22);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Sometimes printers fail to restore when going across windows versions. Always dou" +
+    "ble check if it was successful!";
+            // 
+            // Title_Data_Recovery
+            // 
+            this.Title_Data_Recovery.AutoSize = true;
+            this.Title_Data_Recovery.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Data_Recovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Data_Recovery.Location = new System.Drawing.Point(20, 17);
+            this.Title_Data_Recovery.Name = "Title_Data_Recovery";
+            this.Title_Data_Recovery.Size = new System.Drawing.Size(213, 32);
+            this.Title_Data_Recovery.TabIndex = 12;
+            this.Title_Data_Recovery.Text = "Data Recovery";
+            // 
+            // Diagnostics
+            // 
+            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.Diagnostics.Controls.Add(this.label4);
+            this.Diagnostics.Controls.Add(this.pictureBox8);
+            this.Diagnostics.Controls.Add(this.Title_Diagnostics);
+            this.Diagnostics.Controls.Add(this.btn_Check_User_Accounts);
+            this.Diagnostics.Controls.Add(this.btn_Ping_IP);
+            this.Diagnostics.Controls.Add(this.btn_SFC);
+            this.Diagnostics.Controls.Add(this.btn_DISM);
+            this.Diagnostics.Controls.Add(this.btn_CCH_Deploy);
+            this.Diagnostics.Controls.Add(this.pictureBox5);
+            this.Diagnostics.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Diagnostics.Location = new System.Drawing.Point(0, 0);
+            this.Diagnostics.Name = "Diagnostics";
+            this.Diagnostics.Size = new System.Drawing.Size(809, 539);
+            this.Diagnostics.TabIndex = 28;
+            this.Diagnostics.Tag = "Diagnostics";
+            this.Diagnostics.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Khaki;
+            this.label4.Location = new System.Drawing.Point(165, 498);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(461, 24);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Investigate user accounts, check if a computer is online, or run some repairs.";
+            // 
+            // Title_Diagnostics
+            // 
+            this.Title_Diagnostics.AutoSize = true;
+            this.Title_Diagnostics.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Diagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Diagnostics.Location = new System.Drawing.Point(20, 17);
+            this.Title_Diagnostics.Name = "Title_Diagnostics";
+            this.Title_Diagnostics.Size = new System.Drawing.Size(173, 32);
+            this.Title_Diagnostics.TabIndex = 26;
+            this.Title_Diagnostics.Text = "Diagnostics";
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
             // 
             // btnSettings
             // 
@@ -250,41 +570,6 @@
             this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashboard.UseVisualStyleBackColor = false;
             // 
-            // programicon
-            // 
-            this.programicon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.programicon.Controls.Add(this.programName);
-            this.programicon.Controls.Add(this.Subtitle);
-            this.programicon.Controls.Add(this.pictureBox2);
-            this.programicon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.programicon.Location = new System.Drawing.Point(0, 0);
-            this.programicon.Name = "programicon";
-            this.programicon.Size = new System.Drawing.Size(186, 144);
-            this.programicon.TabIndex = 0;
-            // 
-            // programName
-            // 
-            this.programName.AutoSize = true;
-            this.programName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.programName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.programName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.programName.Location = new System.Drawing.Point(57, 97);
-            this.programName.Name = "programName";
-            this.programName.Size = new System.Drawing.Size(71, 16);
-            this.programName.TabIndex = 1;
-            this.programName.Text = "Claytonic";
-            // 
-            // Subtitle
-            // 
-            this.Subtitle.AutoSize = true;
-            this.Subtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Subtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.Subtitle.Location = new System.Drawing.Point(31, 120);
-            this.Subtitle.Name = "Subtitle";
-            this.Subtitle.Size = new System.Drawing.Size(133, 12);
-            this.Subtitle.TabIndex = 2;
-            this.Subtitle.Text = "DIT Helpdesk Application";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DIT_AIO.Properties.Resources.DIT_Logo;
@@ -294,25 +579,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            // 
-            // Master
-            // 
-            this.Master.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.Master.Controls.Add(this.btnMinimize);
-            this.Master.Controls.Add(this.btnClose);
-            this.Master.Controls.Add(this.SystemSetup);
-            this.Master.Controls.Add(this.Mainframe);
-            this.Master.Controls.Add(this.Settings);
-            this.Master.Controls.Add(this.Home);
-            this.Master.Controls.Add(this.DataRecovery);
-            this.Master.Controls.Add(this.Diagnostics);
-            this.Master.Location = new System.Drawing.Point(192, 12);
-            this.Master.Name = "Master";
-            this.Master.Size = new System.Drawing.Size(809, 539);
-            this.Master.TabIndex = 28;
             // 
             // btnMinimize
             // 
@@ -341,38 +607,6 @@
             this.btnClose.TabIndex = 13;
             this.btnClose.UseVisualStyleBackColor = false;
             // 
-            // SystemSetup
-            // 
-            this.SystemSetup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.SystemSetup.Controls.Add(this.label6);
-            this.SystemSetup.Controls.Add(this.pictureBox4);
-            this.SystemSetup.Controls.Add(this.Title_SystemSetup);
-            this.SystemSetup.Controls.Add(this.btn_Paperport);
-            this.SystemSetup.Controls.Add(this.btn_Esignature);
-            this.SystemSetup.Controls.Add(this.btn_blank_login);
-            this.SystemSetup.Controls.Add(this.btn_Firewall);
-            this.SystemSetup.Controls.Add(this.btn_outlook_cache);
-            this.SystemSetup.Controls.Add(this.pictureBox6);
-            this.SystemSetup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SystemSetup.Location = new System.Drawing.Point(0, 0);
-            this.SystemSetup.Name = "SystemSetup";
-            this.SystemSetup.Size = new System.Drawing.Size(809, 539);
-            this.SystemSetup.TabIndex = 30;
-            this.SystemSetup.Tag = "SystemSetup";
-            this.SystemSetup.Visible = false;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Khaki;
-            this.label6.Location = new System.Drawing.Point(107, 498);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(659, 21);
-            this.label6.TabIndex = 37;
-            this.label6.Text = "Paperport / Electronic Scanning - Make sure this program is not running under you" +
-    "r admin credentials!";
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -382,17 +616,6 @@
             this.pictureBox4.Size = new System.Drawing.Size(30, 39);
             this.pictureBox4.TabIndex = 36;
             this.pictureBox4.TabStop = false;
-            // 
-            // Title_SystemSetup
-            // 
-            this.Title_SystemSetup.AutoSize = true;
-            this.Title_SystemSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_SystemSetup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_SystemSetup.Location = new System.Drawing.Point(20, 17);
-            this.Title_SystemSetup.Name = "Title_SystemSetup";
-            this.Title_SystemSetup.Size = new System.Drawing.Size(202, 32);
-            this.Title_SystemSetup.TabIndex = 25;
-            this.Title_SystemSetup.Text = "System Setup";
             // 
             // btn_Paperport
             // 
@@ -503,25 +726,6 @@
             this.pictureBox6.TabIndex = 38;
             this.pictureBox6.TabStop = false;
             // 
-            // Mainframe
-            // 
-            this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.Mainframe.Controls.Add(this.pictureBox9);
-            this.Mainframe.Controls.Add(this.label1);
-            this.Mainframe.Controls.Add(this.pictureBox7);
-            this.Mainframe.Controls.Add(this.Title_Mainframe);
-            this.Mainframe.Controls.Add(this.btn_MF_Unsuspend);
-            this.Mainframe.Controls.Add(this.btn_MF_PW_Reset);
-            this.Mainframe.Controls.Add(this.btn_MF_PS_Printer_Data);
-            this.Mainframe.Controls.Add(this.btn_MF_Guide);
-            this.Mainframe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mainframe.Location = new System.Drawing.Point(0, 0);
-            this.Mainframe.Name = "Mainframe";
-            this.Mainframe.Size = new System.Drawing.Size(809, 539);
-            this.Mainframe.TabIndex = 31;
-            this.Mainframe.Tag = "Mainframe";
-            this.Mainframe.Visible = false;
-            // 
             // pictureBox9
             // 
             this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -532,18 +736,6 @@
             this.pictureBox9.Size = new System.Drawing.Size(31, 39);
             this.pictureBox9.TabIndex = 30;
             this.pictureBox9.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Khaki;
-            this.label1.Location = new System.Drawing.Point(195, 501);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(406, 21);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "Review the Mainframe guides before utilizing these tools.";
             // 
             // pictureBox7
             // 
@@ -557,17 +749,6 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 28;
             this.pictureBox7.TabStop = false;
-            // 
-            // Title_Mainframe
-            // 
-            this.Title_Mainframe.AutoSize = true;
-            this.Title_Mainframe.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Mainframe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Mainframe.Location = new System.Drawing.Point(20, 17);
-            this.Title_Mainframe.Name = "Title_Mainframe";
-            this.Title_Mainframe.Size = new System.Drawing.Size(157, 32);
-            this.Title_Mainframe.TabIndex = 27;
-            this.Title_Mainframe.Text = "Mainframe";
             // 
             // btn_MF_Unsuspend
             // 
@@ -648,30 +829,6 @@
             this.btn_MF_Guide.Visible = false;
             this.btn_MF_Guide.Click += new System.EventHandler(this.Mainframe_Guides);
             // 
-            // Settings
-            // 
-            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.Settings.Controls.Add(this.label3);
-            this.Settings.Controls.Add(this.pictureBox1);
-            this.Settings.Controls.Add(this.Title_Settings);
-            this.Settings.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Settings.Location = new System.Drawing.Point(0, 0);
-            this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(809, 539);
-            this.Settings.TabIndex = 32;
-            this.Settings.Tag = "Settings";
-            this.Settings.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(236, 243);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(409, 38);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "This page is still under development.";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DIT_AIO.Properties.Resources.warning;
@@ -680,35 +837,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(40, 39);
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
-            // 
-            // Title_Settings
-            // 
-            this.Title_Settings.AutoSize = true;
-            this.Title_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Settings.Location = new System.Drawing.Point(20, 17);
-            this.Title_Settings.Name = "Title_Settings";
-            this.Title_Settings.Size = new System.Drawing.Size(126, 32);
-            this.Title_Settings.TabIndex = 13;
-            this.Title_Settings.Text = "Settings";
-            // 
-            // Home
-            // 
-            this.Home.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.Home.Controls.Add(this.CityLogo);
-            this.Home.Controls.Add(this.Music);
-            this.Home.Controls.Add(this.tooltip);
-            this.Home.Controls.Add(this.DESC_Info);
-            this.Home.Controls.Add(this.Title_Home);
-            this.Home.Location = new System.Drawing.Point(0, 0);
-            this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(809, 539);
-            this.Home.TabIndex = 27;
-            this.Home.Tag = "Home";
-            this.Home.Visible = false;
             // 
             // CityLogo
             // 
@@ -743,64 +871,6 @@
             this.Music.Visible = false;
             this.Music.Click += new System.EventHandler(this.Music_Click);
             // 
-            // tooltip
-            // 
-            this.tooltip.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.tooltip.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tooltip.ForeColor = System.Drawing.Color.Khaki;
-            this.tooltip.Location = new System.Drawing.Point(97, 514);
-            this.tooltip.Name = "tooltip";
-            this.tooltip.Size = new System.Drawing.Size(611, 25);
-            this.tooltip.TabIndex = 15;
-            this.tooltip.Text = "Special thanks to Clayton Lee, Kyle Santiago, and Tyler Yee for making this progr" +
-    "am possible.";
-            this.tooltip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DESC_Info
-            // 
-            this.DESC_Info.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DESC_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.DESC_Info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Info.Location = new System.Drawing.Point(71, 385);
-            this.DESC_Info.Name = "DESC_Info";
-            this.DESC_Info.Size = new System.Drawing.Size(666, 101);
-            this.DESC_Info.TabIndex = 14;
-            this.DESC_Info.Text = resources.GetString("DESC_Info.Text");
-            this.DESC_Info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Title_Home
-            // 
-            this.Title_Home.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Home.Location = new System.Drawing.Point(0, 0);
-            this.Title_Home.Name = "Title_Home";
-            this.Title_Home.Size = new System.Drawing.Size(809, 62);
-            this.Title_Home.TabIndex = 0;
-            this.Title_Home.Text = "Mission Statement";
-            this.Title_Home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // DataRecovery
-            // 
-            this.DataRecovery.AutoSize = true;
-            this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.DataRecovery.Controls.Add(this.pictureBox3);
-            this.DataRecovery.Controls.Add(this.label2);
-            this.DataRecovery.Controls.Add(this.warning_printers);
-            this.DataRecovery.Controls.Add(this.Title_Data_Recovery);
-            this.DataRecovery.Controls.Add(this.btnBackup_User_Data);
-            this.DataRecovery.Controls.Add(this.btn_Restore_User_Data);
-            this.DataRecovery.Controls.Add(this.btn_Backup_Printers);
-            this.DataRecovery.Controls.Add(this.btn_Restore_Printers);
-            this.DataRecovery.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataRecovery.Location = new System.Drawing.Point(0, 0);
-            this.DataRecovery.Name = "DataRecovery";
-            this.DataRecovery.Size = new System.Drawing.Size(809, 539);
-            this.DataRecovery.TabIndex = 29;
-            this.DataRecovery.Tag = "DataRecovery";
-            this.DataRecovery.Visible = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -814,18 +884,6 @@
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Khaki;
-            this.label2.Location = new System.Drawing.Point(93, 504);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(669, 22);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Sometimes printers fail to restore when going across windows versions. Always dou" +
-    "ble check if it was successful!";
-            // 
             // warning_printers
             // 
             this.warning_printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -835,17 +893,6 @@
             this.warning_printers.Size = new System.Drawing.Size(36, 39);
             this.warning_printers.TabIndex = 17;
             this.warning_printers.TabStop = false;
-            // 
-            // Title_Data_Recovery
-            // 
-            this.Title_Data_Recovery.AutoSize = true;
-            this.Title_Data_Recovery.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Data_Recovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Data_Recovery.Location = new System.Drawing.Point(20, 17);
-            this.Title_Data_Recovery.Name = "Title_Data_Recovery";
-            this.Title_Data_Recovery.Size = new System.Drawing.Size(213, 32);
-            this.Title_Data_Recovery.TabIndex = 12;
-            this.Title_Data_Recovery.Text = "Data Recovery";
             // 
             // btnBackup_User_Data
             // 
@@ -924,37 +971,6 @@
             this.btn_Restore_Printers.Visible = false;
             this.btn_Restore_Printers.Click += new System.EventHandler(this.Restore_Printers);
             // 
-            // Diagnostics
-            // 
-            this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.Diagnostics.Controls.Add(this.label4);
-            this.Diagnostics.Controls.Add(this.pictureBox8);
-            this.Diagnostics.Controls.Add(this.Title_Diagnostics);
-            this.Diagnostics.Controls.Add(this.btn_Check_User_Accounts);
-            this.Diagnostics.Controls.Add(this.btn_Ping_IP);
-            this.Diagnostics.Controls.Add(this.btn_SFC);
-            this.Diagnostics.Controls.Add(this.btn_DISM);
-            this.Diagnostics.Controls.Add(this.btn_CCH_Deploy);
-            this.Diagnostics.Controls.Add(this.pictureBox5);
-            this.Diagnostics.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Diagnostics.Location = new System.Drawing.Point(0, 0);
-            this.Diagnostics.Name = "Diagnostics";
-            this.Diagnostics.Size = new System.Drawing.Size(809, 539);
-            this.Diagnostics.TabIndex = 28;
-            this.Diagnostics.Tag = "Diagnostics";
-            this.Diagnostics.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Khaki;
-            this.label4.Location = new System.Drawing.Point(165, 498);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(461, 24);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Investigate user accounts, check if a computer is online, or run some repairs.";
-            // 
             // pictureBox8
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -964,17 +980,6 @@
             this.pictureBox8.Size = new System.Drawing.Size(26, 39);
             this.pictureBox8.TabIndex = 38;
             this.pictureBox8.TabStop = false;
-            // 
-            // Title_Diagnostics
-            // 
-            this.Title_Diagnostics.AutoSize = true;
-            this.Title_Diagnostics.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Diagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Title_Diagnostics.Location = new System.Drawing.Point(20, 17);
-            this.Title_Diagnostics.Name = "Title_Diagnostics";
-            this.Title_Diagnostics.Size = new System.Drawing.Size(173, 32);
-            this.Title_Diagnostics.TabIndex = 26;
-            this.Title_Diagnostics.Text = "Diagnostics";
             // 
             // btn_Check_User_Accounts
             // 
@@ -1087,11 +1092,6 @@
             this.pictureBox5.TabIndex = 27;
             this.pictureBox5.TabStop = false;
             // 
-            // fileSystemWatcher1
-            // 
-            this.fileSystemWatcher1.EnableRaisingEvents = true;
-            this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1110,31 +1110,31 @@
             this.panel1.ResumeLayout(false);
             this.programicon.ResumeLayout(false);
             this.programicon.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Master.ResumeLayout(false);
             this.Master.PerformLayout();
             this.SystemSetup.ResumeLayout(false);
             this.SystemSetup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.Mainframe.ResumeLayout(false);
             this.Mainframe.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.Settings.ResumeLayout(false);
             this.Settings.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Home.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).EndInit();
             this.DataRecovery.ResumeLayout(false);
             this.DataRecovery.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).EndInit();
             this.Diagnostics.ResumeLayout(false);
             this.Diagnostics.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
         }
