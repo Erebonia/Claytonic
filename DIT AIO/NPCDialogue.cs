@@ -6,10 +6,11 @@ using System.Windows.Forms;
 public class NPCDialogue
 {
     private string[] phrases = {
-        "Hover over buttons to view descriptions..", 
-        "For any issues with the program please contact Bao Nguyen from DIT Helpdesk!",
-        "Welcome to Claytonic. A program dedicated to helpdesk technicians :)",
-        "CLAYTONIC"
+        "Hover over buttons to view descriptions!", 
+        "For any issues with the program please contact Bao Nguyen.",
+        "Welcome to Claytonic. A program designed for Helpdesk & CSRs",
+        "Making this program was a ton of work. I hope people actually use it...",
+        "Do you have any ideas you would like to add? Contact helpdesk.",
     };
     private int currentPhraseIndex = -1; // Initialize to -1 to indicate no previous phrase
     private Label dialogueLabel; // Reference to the Label control
