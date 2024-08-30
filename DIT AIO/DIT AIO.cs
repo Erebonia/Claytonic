@@ -13,31 +13,34 @@ namespace DIT_AIO
 {
     public partial class Runetonic : Form
     {
-        //Audio Player
-        private AudioPlayer audioPlayer; 
-        private Image playImage;
-        private Image pauseImage;
 
         //UI Handler
         private CategoryNavigator categoryNavigator;
 
         private NPCDialogue npcDialogue;
 
+        private AudioPlayer audioPlayer;
+        private Image playImage;
+        private Image pauseImage;
+
         public Runetonic()
         {
-            //For designer.cs to instantiate
+            // For designer.cs to instantiate
             InitializeComponent();
 
             // Initialize the images for our music buttons.
             playImage = Image.FromStream(ResourceHelper.GetResourceStream("DIT_AIO.Resources.playing.png"));
             pauseImage = Image.FromStream(ResourceHelper.GetResourceStream("DIT_AIO.Resources.paused.png"));
 
+            // Initialize AudioPlayer
+            audioPlayer = new AudioPlayer(playImage, pauseImage);
+            audioPlayer.LoadAudio("DIT_AIO.Resources.claytonic_music.wav");
+
+            // Update the event handler to use the AudioPlayer's method
+            btnMusic.Click += (s, e) => audioPlayer.HandleMusicButtonClick(btnMusic);
+
             // Initialize colors for navigation buttons
             categoryNavigator = new CategoryNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34), this.Master);
-
-            // Initialize AudioPlayer
-            audioPlayer = new AudioPlayer();
-            audioPlayer.LoadAudio("DIT_AIO.Resources.claytonic_music.wav");
 
             // Attach event handlers
             btnDashboard.Click += categoryNavigator.HandleCategoryClick;
@@ -53,7 +56,7 @@ namespace DIT_AIO
             categoryNavigator.HandleCategoryClick(btnDashboard, EventArgs.Empty);
 
             // Attach FormDragger to THIS entire form and its controls
-            //This allows us to drag the program
+            // This allows us to drag the program
             FormDragger dragger = new FormDragger();
             dragger.Attach(this);
             AttachDragEventHandlers(this, dragger);
@@ -61,8 +64,9 @@ namespace DIT_AIO
             // Initialize NPCDialogue and start it when the program loads
             npcDialogue = new NPCDialogue(npcdialogue);
             // 35 is characters displaying every 35ms to simulate talking and 10k ms (10 seconds) delay for each phrase
-            this.Load += async (s, e) => await npcDialogue.StartDialogue(35, 10000); 
+            this.Load += async (s, e) => await npcDialogue.StartDialogue(35, 10000);
         }
+
 
         private void AttachDragEventHandlers(Control control, FormDragger dragger)
         {
@@ -184,24 +188,6 @@ namespace DIT_AIO
             {
                 // Show error message if the script fails to start
                 MessageBox.Show($"Failed to run script: {ex.Message}");
-            }
-        }
-
-        private void Music_Click(object sender, EventArgs e)
-        {
-            Button clickedButton = sender as Button; // Get the button that was clicked
-
-            if (audioPlayer.IsPlaying())
-            {
-                // Stop the sound if it's playing 
-                audioPlayer.Stop();
-                clickedButton.Image = pauseImage;
-            }
-            else
-            {
-                // Play the sound if it's not playing
-                audioPlayer.PlayLooping();
-                clickedButton.Image = playImage;
             }
         }
     }

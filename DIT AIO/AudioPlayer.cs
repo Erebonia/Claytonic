@@ -1,17 +1,23 @@
-﻿using DIT_AIO;
-using System;
+﻿using System;
 using System.IO;
 using System.Media;
-using System.Reflection;
+using System.Drawing;  // This is the key to ensuring the correct Image type is used
 using System.Windows.Forms;
+using DIT_AIO;
 
 public class AudioPlayer
 {
     private SoundPlayer soundPlayer;
     private MemoryStream audioStream;
     private bool isPlaying = false;
+    private System.Drawing.Image playImage;  // Use System.Drawing.Image
+    private System.Drawing.Image pauseImage;  // Use System.Drawing.Image
 
-    public AudioPlayer() { }
+    public AudioPlayer(System.Drawing.Image playImage, System.Drawing.Image pauseImage)
+    {
+        this.playImage = playImage;
+        this.pauseImage = pauseImage;
+    }
 
     public void LoadAudio(string resourceName)
     {
@@ -55,5 +61,21 @@ public class AudioPlayer
     public bool IsPlaying()
     {
         return isPlaying;
+    }
+
+    public void HandleMusicButtonClick(Button clickedButton)
+    {
+        if (IsPlaying())
+        {
+            // Stop the sound if it's playing 
+            Stop();
+            clickedButton.Image = pauseImage;
+        }
+        else
+        {
+            // Play the sound if it's not playing
+            PlayLooping();
+            clickedButton.Image = playImage;
+        }
     }
 }

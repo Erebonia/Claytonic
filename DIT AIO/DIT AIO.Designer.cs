@@ -48,15 +48,17 @@
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.Home = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.CityLogo = new System.Windows.Forms.PictureBox();
-            this.Music = new System.Windows.Forms.Button();
+            this.btnMusic = new System.Windows.Forms.Button();
             this.tooltip = new System.Windows.Forms.Label();
             this.DESC_Info = new System.Windows.Forms.Label();
             this.Title_Home = new System.Windows.Forms.Label();
+            this.UpdateNotes = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.DataRecovery = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -101,8 +103,6 @@
             this.Title_Settings = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.UpdateNotes = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.programicon.SuspendLayout();
@@ -110,6 +110,7 @@
             this.Master.SuspendLayout();
             this.Home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).BeginInit();
+            this.UpdateNotes.SuspendLayout();
             this.DataRecovery.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).BeginInit();
@@ -125,7 +126,6 @@
             this.Settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            this.UpdateNotes.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -386,7 +386,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.Home.Controls.Add(this.CityLogo);
-            this.Home.Controls.Add(this.Music);
+            this.Home.Controls.Add(this.btnMusic);
             this.Home.Controls.Add(this.tooltip);
             this.Home.Controls.Add(this.DESC_Info);
             this.Home.Controls.Add(this.Title_Home);
@@ -397,58 +397,6 @@
             this.Home.TabIndex = 27;
             this.Home.Tag = "Home";
             this.Home.Visible = false;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label9.Location = new System.Drawing.Point(8, 118);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(328, 50);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "- Button descriptions have been converted to tool tips.";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label8.Location = new System.Drawing.Point(5, 90);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(328, 28);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "- Redesigned user interface and resizable UI. ";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label7.Location = new System.Drawing.Point(8, 35);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(325, 28);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Version 1.1";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Khaki;
-            this.label5.Location = new System.Drawing.Point(3, 1);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(337, 34);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Update Log";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CityLogo
             // 
@@ -463,25 +411,24 @@
             this.CityLogo.TabIndex = 1;
             this.CityLogo.TabStop = false;
             // 
-            // Music
+            // btnMusic
             // 
-            this.Music.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Music.BackColor = System.Drawing.Color.Transparent;
-            this.Music.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Music.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Music.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Music.Image = global::DIT_AIO.Properties.Resources.icon063;
-            this.Music.Location = new System.Drawing.Point(765, 516);
-            this.Music.Margin = new System.Windows.Forms.Padding(0);
-            this.Music.Name = "Music";
-            this.Music.Size = new System.Drawing.Size(41, 38);
-            this.Music.TabIndex = 17;
-            this.Music.Tag = "Home";
-            this.Music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Music.UseVisualStyleBackColor = false;
-            this.Music.Visible = false;
-            this.Music.Click += new System.EventHandler(this.Music_Click);
+            this.btnMusic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMusic.BackColor = System.Drawing.Color.Transparent;
+            this.btnMusic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMusic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.btnMusic.Image = global::DIT_AIO.Properties.Resources.icon063;
+            this.btnMusic.Location = new System.Drawing.Point(765, 516);
+            this.btnMusic.Margin = new System.Windows.Forms.Padding(0);
+            this.btnMusic.Name = "btnMusic";
+            this.btnMusic.Size = new System.Drawing.Size(41, 38);
+            this.btnMusic.TabIndex = 17;
+            this.btnMusic.Tag = "Home";
+            this.btnMusic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMusic.UseVisualStyleBackColor = false;
+            this.btnMusic.Visible = false;
             // 
             // tooltip
             // 
@@ -520,6 +467,86 @@
             this.Title_Home.TabIndex = 0;
             this.Title_Home.Text = "Homepage";
             this.Title_Home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // UpdateNotes
+            // 
+            this.UpdateNotes.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.UpdateNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.UpdateNotes.Controls.Add(this.label10);
+            this.UpdateNotes.Controls.Add(this.label9);
+            this.UpdateNotes.Controls.Add(this.label8);
+            this.UpdateNotes.Controls.Add(this.label5);
+            this.UpdateNotes.Controls.Add(this.label7);
+            this.UpdateNotes.Location = new System.Drawing.Point(401, 98);
+            this.UpdateNotes.Name = "UpdateNotes";
+            this.UpdateNotes.Size = new System.Drawing.Size(342, 294);
+            this.UpdateNotes.TabIndex = 22;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label10.Location = new System.Drawing.Point(11, 168);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(328, 64);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "- Added an NPC assistant to display tips and information about the program. Above" +
+    " the settings.";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label9.Location = new System.Drawing.Point(8, 118);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(328, 50);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "- Button descriptions have been converted to tool tips.";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label8.Location = new System.Drawing.Point(5, 90);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(328, 28);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "- Redesigned user interface and resizable UI. ";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Khaki;
+            this.label5.Location = new System.Drawing.Point(3, 1);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(337, 34);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Update Log";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label7.Location = new System.Drawing.Point(8, 35);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(325, 28);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Version 1.1";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DataRecovery
             // 
@@ -1183,34 +1210,6 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // UpdateNotes
-            // 
-            this.UpdateNotes.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.UpdateNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.UpdateNotes.Controls.Add(this.label10);
-            this.UpdateNotes.Controls.Add(this.label9);
-            this.UpdateNotes.Controls.Add(this.label8);
-            this.UpdateNotes.Controls.Add(this.label5);
-            this.UpdateNotes.Controls.Add(this.label7);
-            this.UpdateNotes.Location = new System.Drawing.Point(401, 98);
-            this.UpdateNotes.Name = "UpdateNotes";
-            this.UpdateNotes.Size = new System.Drawing.Size(342, 294);
-            this.UpdateNotes.TabIndex = 22;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label10.Location = new System.Drawing.Point(11, 168);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(328, 64);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "- Added an NPC assistant to display tips and information about the program. Above" +
-    " the settings.";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1235,6 +1234,7 @@
             this.Master.PerformLayout();
             this.Home.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).EndInit();
+            this.UpdateNotes.ResumeLayout(false);
             this.DataRecovery.ResumeLayout(false);
             this.DataRecovery.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1255,7 +1255,6 @@
             this.Settings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            this.UpdateNotes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1314,7 +1313,7 @@
         private System.Windows.Forms.Label tooltip;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button Music;
+        private System.Windows.Forms.Button btnMusic;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.PictureBox CityLogo;
         private System.Windows.Forms.PictureBox pictureBox3;
