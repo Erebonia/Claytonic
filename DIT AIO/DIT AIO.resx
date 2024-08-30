@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DESC_Info.Text" xml:space="preserve">
-    <value>Claytonic is a comprehensive suite of tools designed to aid Helpdesk technicians and CSRs with their work. This software accesses unique locations on the network drive, eliminating the need for technicians to manually search for these tools. The goal of this application is to create a centralized place for tools.</value>
-  </data>
-  <data name="DESC_Backup_Printers.Text" xml:space="preserve">
-    <value>Saves a copy of the computer's current printers and associated drivers via print management to your desired drive. It creates a PrinterExport.export file in the username\printers folder ready for restoration.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_Restore_User_Data.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1194,6 +1188,9 @@
         S40LjQ098hYAAJiouEBwvrHu26LWkm6sJQ64sdyIFenWbwAAwPTEPB4XA2I+rx4Wg9KNk9acVFztWOX4
         rp3LAADA+mVzdjaPT9bKtv8D1JmB3hd136AAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="DESC_Info.Text" xml:space="preserve">
+    <value>Claytonic is a comprehensive suite of tools designed to aid Helpdesk technicians and CSRs with their work. This software accesses unique locations on the network drive, eliminating the need for technicians to manually search for these tools. The goal of this application is to create a centralized place for tools.</value>
   </data>
   <metadata name="fileSystemWatcher1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
