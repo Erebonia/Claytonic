@@ -134,7 +134,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 452);
+            this.panel1.Size = new System.Drawing.Size(186, 561);
             this.panel1.TabIndex = 27;
             // 
             // pnlNav
@@ -154,7 +154,7 @@
             this.btnSettings.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnSettings.Image = global::DIT_AIO.Properties.Resources.settings;
-            this.btnSettings.Location = new System.Drawing.Point(0, 410);
+            this.btnSettings.Location = new System.Drawing.Point(0, 519);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(186, 42);
             this.btnSettings.TabIndex = 1;
@@ -313,7 +313,7 @@
             this.Master.Controls.Add(this.Settings);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
-            this.Master.Size = new System.Drawing.Size(611, 430);
+            this.Master.Size = new System.Drawing.Size(809, 539);
             this.Master.TabIndex = 28;
             // 
             // btnMinimize
@@ -324,7 +324,7 @@
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
             this.btnMinimize.Image = global::DIT_AIO.Properties.Resources.minimize;
-            this.btnMinimize.Location = new System.Drawing.Point(540, 10);
+            this.btnMinimize.Location = new System.Drawing.Point(738, 10);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(29, 26);
             this.btnMinimize.TabIndex = 29;
@@ -337,7 +337,7 @@
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Image = global::DIT_AIO.Properties.Resources.exit;
-            this.btnClose.Location = new System.Drawing.Point(570, 10);
+            this.btnClose.Location = new System.Drawing.Point(768, 10);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(29, 26);
             this.btnClose.TabIndex = 13;
@@ -356,7 +356,7 @@
             this.Home.Controls.Add(this.Title_Home);
             this.Home.Location = new System.Drawing.Point(0, 0);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(611, 430);
+            this.Home.Size = new System.Drawing.Size(809, 539);
             this.Home.TabIndex = 27;
             this.Home.Tag = "Home";
             this.Home.Visible = false;
@@ -366,10 +366,10 @@
             this.CityLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.CityLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CityLogo.Image = global::DIT_AIO.Properties.Resources.citylogo1;
-            this.CityLogo.Location = new System.Drawing.Point(142, 73);
+            this.CityLogo.Location = new System.Drawing.Point(241, 73);
             this.CityLogo.Margin = new System.Windows.Forms.Padding(0);
             this.CityLogo.Name = "CityLogo";
-            this.CityLogo.Size = new System.Drawing.Size(305, 185);
+            this.CityLogo.Size = new System.Drawing.Size(305, 294);
             this.CityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CityLogo.TabIndex = 1;
             this.CityLogo.TabStop = false;
@@ -383,7 +383,7 @@
             this.Music.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Music.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.Music.Image = global::DIT_AIO.Properties.Resources.icon063;
-            this.Music.Location = new System.Drawing.Point(567, 384);
+            this.Music.Location = new System.Drawing.Point(765, 493);
             this.Music.Margin = new System.Windows.Forms.Padding(0);
             this.Music.Name = "Music";
             this.Music.Size = new System.Drawing.Size(41, 38);
@@ -399,7 +399,7 @@
             this.tooltip.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tooltip.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tooltip.ForeColor = System.Drawing.Color.Khaki;
-            this.tooltip.Location = new System.Drawing.Point(-2, 405);
+            this.tooltip.Location = new System.Drawing.Point(97, 514);
             this.tooltip.Name = "tooltip";
             this.tooltip.Size = new System.Drawing.Size(611, 25);
             this.tooltip.TabIndex = 15;
@@ -413,9 +413,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DESC_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.DESC_Info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Info.Location = new System.Drawing.Point(71, 276);
+            this.DESC_Info.Location = new System.Drawing.Point(71, 385);
             this.DESC_Info.Name = "DESC_Info";
-            this.DESC_Info.Size = new System.Drawing.Size(468, 101);
+            this.DESC_Info.Size = new System.Drawing.Size(666, 101);
             this.DESC_Info.TabIndex = 14;
             this.DESC_Info.Text = resources.GetString("DESC_Info.Text");
             this.DESC_Info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -427,7 +427,7 @@
             this.Title_Home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.Title_Home.Location = new System.Drawing.Point(0, 0);
             this.Title_Home.Name = "Title_Home";
-            this.Title_Home.Size = new System.Drawing.Size(611, 62);
+            this.Title_Home.Size = new System.Drawing.Size(809, 62);
             this.Title_Home.TabIndex = 0;
             this.Title_Home.Text = "Mission Statement";
             this.Title_Home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -450,7 +450,7 @@
             this.DataRecovery.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataRecovery.Location = new System.Drawing.Point(0, 0);
             this.DataRecovery.Name = "DataRecovery";
-            this.DataRecovery.Size = new System.Drawing.Size(611, 430);
+            this.DataRecovery.Size = new System.Drawing.Size(809, 539);
             this.DataRecovery.TabIndex = 29;
             this.DataRecovery.Tag = "DataRecovery";
             this.DataRecovery.Visible = false;
@@ -614,7 +614,7 @@
             this.Diagnostics.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Diagnostics.Location = new System.Drawing.Point(0, 0);
             this.Diagnostics.Name = "Diagnostics";
-            this.Diagnostics.Size = new System.Drawing.Size(611, 430);
+            this.Diagnostics.Size = new System.Drawing.Size(809, 539);
             this.Diagnostics.TabIndex = 28;
             this.Diagnostics.Tag = "Diagnostics";
             this.Diagnostics.Visible = false;
@@ -790,7 +790,7 @@
             this.SystemSetup.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SystemSetup.Location = new System.Drawing.Point(0, 0);
             this.SystemSetup.Name = "SystemSetup";
-            this.SystemSetup.Size = new System.Drawing.Size(611, 430);
+            this.SystemSetup.Size = new System.Drawing.Size(809, 539);
             this.SystemSetup.TabIndex = 30;
             this.SystemSetup.Tag = "SystemSetup";
             this.SystemSetup.Visible = false;
@@ -984,7 +984,7 @@
             this.Mainframe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Mainframe.Location = new System.Drawing.Point(0, 0);
             this.Mainframe.Name = "Mainframe";
-            this.Mainframe.Size = new System.Drawing.Size(611, 430);
+            this.Mainframe.Size = new System.Drawing.Size(809, 539);
             this.Mainframe.TabIndex = 31;
             this.Mainframe.Tag = "Mainframe";
             this.Mainframe.Visible = false;
@@ -1121,7 +1121,7 @@
             this.Settings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Settings.Location = new System.Drawing.Point(0, 0);
             this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(611, 430);
+            this.Settings.Size = new System.Drawing.Size(809, 539);
             this.Settings.TabIndex = 32;
             this.Settings.Tag = "Settings";
             this.Settings.Visible = false;
@@ -1167,7 +1167,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(810, 452);
+            this.ClientSize = new System.Drawing.Size(1008, 561);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Master);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
