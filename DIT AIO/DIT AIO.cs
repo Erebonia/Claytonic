@@ -21,6 +21,8 @@ namespace DIT_AIO
         //UI Handler
         private CategoryNavigator categoryNavigator;
 
+        private NPCDialogue npcDialogue;
+
         public Runetonic()
         {
             //For designer.cs to instantiate
@@ -54,10 +56,12 @@ namespace DIT_AIO
             //This allows us to drag the program
             FormDragger dragger = new FormDragger();
             dragger.Attach(this);
-            AttachDragEventHandlers(this, dragger); 
+            AttachDragEventHandlers(this, dragger);
 
-            // Start the NPC dialogue automatically when the program starts
-            this.Load += (s, e) => NPC_Dialogue(s, e);
+            // Initialize NPCDialogue and start it when the program loads
+            npcDialogue = new NPCDialogue(npcdialogue);
+            // 35 is characters displaying every 35ms to simulate talking and 10k ms (10 seconds) delay for each phrase
+            this.Load += async (s, e) => await npcDialogue.StartDialogue(35, 10000); 
         }
 
         private void AttachDragEventHandlers(Control control, FormDragger dragger)
@@ -200,52 +204,6 @@ namespace DIT_AIO
                 clickedButton.Image = playImage;
             }
         }
-
-
-        private string[] phrases = { "Hover over buttons to view their description!", "For any issues with the tool please contact Bao Nguyen from DIT Helpdesk!", "Welcome to Claytonic. A program dedicated to helpdesk technicians :)" };
-        private int currentPhraseIndex = -1; // Initialize to -1 to indicate no previous phrase
-
-        private async void NPC_Dialogue(object sender, EventArgs e)
-        {
-            await ShowPhrasesOneByOne(35, 10000); // 25 ms delay per character (talking), 3000 ms delay between phrases
-        }
-
-        private async Task ShowPhrasesOneByOne(int charDelay, int phraseDelay)
-        {
-            for (int i = 0; i < phrases.Length; i++)
-            {
-                string phrase = GetRandomPhrase();
-                await ShowTextOneCharacterAtATime(phrase, charDelay); // Show each phrase with typewriter effect
-                await Task.Delay(phraseDelay); // Wait for 3 seconds (3000 ms) before showing the next phrase
-            }
-        }
-
-        private string GetRandomPhrase()
-        {
-            Random random = new Random();
-            int newPhraseIndex;
-
-            do
-            {
-                newPhraseIndex = random.Next(phrases.Length);
-            } while (newPhraseIndex == currentPhraseIndex); // Ensure the new phrase is not the same as the previous one
-
-            currentPhraseIndex = newPhraseIndex; // Update the current phrase index
-            return phrases[currentPhraseIndex];
-        }
-
-        private async Task ShowTextOneCharacterAtATime(string text, int delay)
-        {
-            npcdialogue.Text = ""; // Clear the Label to start the typewriter effect
-
-            foreach (char c in text)
-            {
-                npcdialogue.Text += c.ToString(); // Append text to the Label
-                await Task.Delay(delay); // Pause for the delay time without blocking the UI
-            }
-        }
-
-
     }
 }
 

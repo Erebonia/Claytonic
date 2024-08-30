@@ -169,7 +169,6 @@
             this.npcdialogue.TabIndex = 22;
             this.npcdialogue.Text = "Hover over buttons to view the description!";
             this.npcdialogue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.npcdialogue.Click += new System.EventHandler(this.NPC_Dialogue);
             // 
             // pnlNav
             // 
