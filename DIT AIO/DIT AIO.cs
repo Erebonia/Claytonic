@@ -189,6 +189,11 @@ namespace DIT_AIO
                 MessageBox.Show($"Failed to run script: {ex.Message}");
             }
         }
+
+        private void UpdateNotes_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

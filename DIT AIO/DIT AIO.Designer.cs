@@ -403,6 +403,7 @@
             // 
             // musicVolume
             // 
+            this.musicVolume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.musicVolume.Location = new System.Drawing.Point(705, 516);
             this.musicVolume.Name = "musicVolume";
             this.musicVolume.Size = new System.Drawing.Size(104, 45);
@@ -492,6 +493,7 @@
             this.UpdateNotes.Name = "UpdateNotes";
             this.UpdateNotes.Size = new System.Drawing.Size(342, 294);
             this.UpdateNotes.TabIndex = 22;
+            this.UpdateNotes.Paint += new System.Windows.Forms.PaintEventHandler(this.UpdateNotes_Paint);
             // 
             // label10
             // 
@@ -1228,6 +1230,7 @@
             this.toolTip1.IsBalloon = true;
             this.toolTip1.ReshowDelay = 0;
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Information";
             // 
             // Runetonic
             // 
