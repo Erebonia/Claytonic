@@ -355,7 +355,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Khaki;
-            this.label2.Location = new System.Drawing.Point(93, 492);
+            this.label2.Location = new System.Drawing.Point(93, 504);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(669, 22);
             this.label2.TabIndex = 18;
@@ -758,9 +758,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = global::DIT_AIO.Properties.Resources.free_data_recovery;
-            this.pictureBox3.Location = new System.Drawing.Point(26, 52);
+            this.pictureBox3.Location = new System.Drawing.Point(26, 65);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(753, 377);
+            this.pictureBox3.Size = new System.Drawing.Size(753, 364);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
@@ -769,7 +769,7 @@
             // 
             this.warning_printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.warning_printers.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.warning_printers.Location = new System.Drawing.Point(61, 483);
+            this.warning_printers.Location = new System.Drawing.Point(61, 495);
             this.warning_printers.Name = "warning_printers";
             this.warning_printers.Size = new System.Drawing.Size(36, 39);
             this.warning_printers.TabIndex = 17;
@@ -783,7 +783,7 @@
             this.btnBackup_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBackup_User_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackup_User_Data.Image = global::DIT_AIO.Properties.Resources.UI_8;
-            this.btnBackup_User_Data.Location = new System.Drawing.Point(150, 445);
+            this.btnBackup_User_Data.Location = new System.Drawing.Point(158, 452);
             this.btnBackup_User_Data.Name = "btnBackup_User_Data";
             this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
             this.btnBackup_User_Data.TabIndex = 0;
@@ -803,7 +803,7 @@
             this.btn_Restore_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Restore_User_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Restore_User_Data.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore_User_Data.Image")));
-            this.btn_Restore_User_Data.Location = new System.Drawing.Point(283, 445);
+            this.btn_Restore_User_Data.Location = new System.Drawing.Point(291, 452);
             this.btn_Restore_User_Data.Name = "btn_Restore_User_Data";
             this.btn_Restore_User_Data.Size = new System.Drawing.Size(105, 38);
             this.btn_Restore_User_Data.TabIndex = 2;
@@ -822,7 +822,7 @@
             this.btn_Backup_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Backup_Printers.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Backup_Printers.Image = ((System.Drawing.Image)(resources.GetObject("btn_Backup_Printers.Image")));
-            this.btn_Backup_Printers.Location = new System.Drawing.Point(410, 445);
+            this.btn_Backup_Printers.Location = new System.Drawing.Point(418, 452);
             this.btn_Backup_Printers.Name = "btn_Backup_Printers";
             this.btn_Backup_Printers.Size = new System.Drawing.Size(105, 38);
             this.btn_Backup_Printers.TabIndex = 10;
@@ -841,7 +841,7 @@
             this.btn_Restore_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Restore_Printers.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Restore_Printers.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore_Printers.Image")));
-            this.btn_Restore_Printers.Location = new System.Drawing.Point(532, 445);
+            this.btn_Restore_Printers.Location = new System.Drawing.Point(540, 452);
             this.btn_Restore_Printers.Name = "btn_Restore_Printers";
             this.btn_Restore_Printers.Size = new System.Drawing.Size(105, 38);
             this.btn_Restore_Printers.TabIndex = 11;
