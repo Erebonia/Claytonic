@@ -435,7 +435,7 @@
             this.tooltip.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tooltip.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tooltip.ForeColor = System.Drawing.Color.Khaki;
-            this.tooltip.Location = new System.Drawing.Point(97, 537);
+            this.tooltip.Location = new System.Drawing.Point(93, 530);
             this.tooltip.Name = "tooltip";
             this.tooltip.Size = new System.Drawing.Size(611, 25);
             this.tooltip.TabIndex = 15;
