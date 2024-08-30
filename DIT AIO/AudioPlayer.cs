@@ -76,6 +76,9 @@ public class AudioPlayer
             // Subscribe to the PlaybackStopped event
             waveOutEvent.PlaybackStopped += OnPlaybackStopped;
 
+            // Start playing immediately
+            PlayLooping();
+
             // Update the button image
             UpdateUI(clickedButton);
         }
@@ -87,13 +90,12 @@ public class AudioPlayer
 
     private void OnPlaybackStopped(object sender, StoppedEventArgs e)
     {
-        if (e.Exception == null)
+        if (e.Exception == null && isPlaying)
         {
-            // This means the playback stopped naturally (song ended)
-            LoadNextSong(null);  // Load next song, no need to update UI as we're auto-playing
+            // If the playback stopped naturally (song ended), loop the track
             PlayLooping();
         }
-        else
+        else if (e.Exception != null)
         {
             MessageBox.Show($"Playback stopped due to an error: {e.Exception.Message}");
         }
@@ -103,6 +105,7 @@ public class AudioPlayer
     {
         if (waveOutEvent != null)
         {
+            waveStream.Position = 0; // Reset position to the beginning
             waveOutEvent.Play();
             isPlaying = true;
         }
@@ -135,7 +138,7 @@ public class AudioPlayer
     {
         if (IsPlaying())
         {
-            Pause(); // Pause the current song
+            Stop(); // Stop the current song
             UpdateUI(clickedButton);
         }
         else
@@ -156,7 +159,7 @@ public class AudioPlayer
 
     private void musicVolume_Scroll(object sender, EventArgs e)
     {
-        float volume = musicVolume.Value / 100f;
+        float volume = musicVolume.Value / 10f;
         SetVolume(volume);
     }
 

@@ -48,6 +48,7 @@
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.Home = new System.Windows.Forms.Panel();
+            this.musicVolume = new System.Windows.Forms.TrackBar();
             this.CityLogo = new System.Windows.Forms.PictureBox();
             this.btnMusic = new System.Windows.Forms.Button();
             this.tooltip = new System.Windows.Forms.Label();
@@ -103,13 +104,13 @@
             this.Title_Settings = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.musicVolume = new System.Windows.Forms.TrackBar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.programicon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Master.SuspendLayout();
             this.Home.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.musicVolume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).BeginInit();
             this.UpdateNotes.SuspendLayout();
             this.DataRecovery.SuspendLayout();
@@ -127,7 +128,6 @@
             this.Settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.musicVolume)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -400,6 +400,14 @@
             this.Home.TabIndex = 27;
             this.Home.Tag = "Home";
             this.Home.Visible = false;
+            // 
+            // musicVolume
+            // 
+            this.musicVolume.Location = new System.Drawing.Point(705, 516);
+            this.musicVolume.Name = "musicVolume";
+            this.musicVolume.Size = new System.Drawing.Size(104, 45);
+            this.musicVolume.TabIndex = 23;
+            this.musicVolume.Value = 5;
             // 
             // CityLogo
             // 
@@ -1221,14 +1229,6 @@
             this.toolTip1.ReshowDelay = 0;
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
-            // musicVolume
-            // 
-            this.musicVolume.Location = new System.Drawing.Point(705, 516);
-            this.musicVolume.Name = "musicVolume";
-            this.musicVolume.Size = new System.Drawing.Size(104, 45);
-            this.musicVolume.TabIndex = 23;
-            this.musicVolume.Value = 5;
-            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1253,6 +1253,7 @@
             this.Master.PerformLayout();
             this.Home.ResumeLayout(false);
             this.Home.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.musicVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).EndInit();
             this.UpdateNotes.ResumeLayout(false);
             this.DataRecovery.ResumeLayout(false);
@@ -1275,7 +1276,6 @@
             this.Settings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.musicVolume)).EndInit();
             this.ResumeLayout(false);
 
         }
