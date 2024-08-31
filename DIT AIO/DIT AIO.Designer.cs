@@ -480,8 +480,7 @@
             this.tooltip.Name = "tooltip";
             this.tooltip.Size = new System.Drawing.Size(611, 25);
             this.tooltip.TabIndex = 15;
-            this.tooltip.Text = "Special thanks to Clayton Lee, Kyle Santiago, and Tyler Yee for making this progr" +
-    "am possible.";
+            this.tooltip.Text = "Developed by Bao Nguyen, Clayton Lee, and Kyle Santiago";
             this.tooltip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DESC_Info
@@ -513,6 +512,7 @@
             // 
             this.UpdateNotes.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.UpdateNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.UpdateNotes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UpdateNotes.Controls.Add(this.label10);
             this.UpdateNotes.Controls.Add(this.label9);
             this.UpdateNotes.Controls.Add(this.label8);
@@ -530,7 +530,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label10.Location = new System.Drawing.Point(11, 168);
+            this.label10.Location = new System.Drawing.Point(10, 166);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(328, 64);
             this.label10.TabIndex = 22;
@@ -544,7 +544,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label9.Location = new System.Drawing.Point(8, 118);
+            this.label9.Location = new System.Drawing.Point(7, 116);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(328, 50);
             this.label9.TabIndex = 21;
@@ -557,7 +557,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label8.Location = new System.Drawing.Point(5, 90);
+            this.label8.Location = new System.Drawing.Point(4, 88);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(328, 28);
             this.label8.TabIndex = 20;
@@ -570,7 +570,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Khaki;
-            this.label5.Location = new System.Drawing.Point(3, 1);
+            this.label5.Location = new System.Drawing.Point(2, -1);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(337, 34);
             this.label5.TabIndex = 18;
@@ -583,7 +583,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label7.Location = new System.Drawing.Point(8, 35);
+            this.label7.Location = new System.Drawing.Point(6, 45);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(325, 28);
             this.label7.TabIndex = 19;
