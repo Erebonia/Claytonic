@@ -28,7 +28,9 @@ public class AudioPlayer
         songList = new List<string>
         {
             "DIT_AIO.Resources.claytonic_music.wav",
-            "DIT_AIO.Resources.claytonic_music_slow.wav"
+            "DIT_AIO.Resources.claytonic_music_slow.wav",
+            "DIT_AIO.Resources.CoffeeTonic.wav"
+
         };
 
         ShuffleSongs();

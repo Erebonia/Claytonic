@@ -352,6 +352,7 @@
     <None Include="Resources\system_setup.gif" />
     <None Include="Resources\clara.gif" />
     <EmbeddedResource Include="Resources\claytonic_music_slow.wav" />
+    <EmbeddedResource Include="Resources\CoffeeTonic.wav" />
     <Content Include="test.ico" />
   </ItemGroup>
   <ItemGroup>
