@@ -626,12 +626,13 @@
             this.btnSettings.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnSettings.Image = global::DIT_AIO.Properties.Resources.settings;
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.Location = new System.Drawing.Point(0, 558);
             this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSettings.Size = new System.Drawing.Size(186, 42);
             this.btnSettings.TabIndex = 1;
             this.btnSettings.Text = "Settings";
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSettings.UseVisualStyleBackColor = false;
             // 
             // btnMainframe
@@ -644,12 +645,13 @@
             this.btnMainframe.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMainframe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnMainframe.Image = global::DIT_AIO.Properties.Resources.mainframe;
+            this.btnMainframe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMainframe.Location = new System.Drawing.Point(0, 312);
             this.btnMainframe.Name = "btnMainframe";
+            this.btnMainframe.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMainframe.Size = new System.Drawing.Size(186, 42);
             this.btnMainframe.TabIndex = 1;
             this.btnMainframe.Text = "Mainframe";
-            this.btnMainframe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMainframe.UseVisualStyleBackColor = false;
             // 
             // btnSystemSetup
@@ -662,12 +664,13 @@
             this.btnSystemSetup.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSystemSetup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnSystemSetup.Image = global::DIT_AIO.Properties.Resources.system;
+            this.btnSystemSetup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSystemSetup.Location = new System.Drawing.Point(0, 270);
             this.btnSystemSetup.Name = "btnSystemSetup";
+            this.btnSystemSetup.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSystemSetup.Size = new System.Drawing.Size(186, 42);
             this.btnSystemSetup.TabIndex = 1;
             this.btnSystemSetup.Text = "System Setup";
-            this.btnSystemSetup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSystemSetup.UseVisualStyleBackColor = false;
             // 
             // btnDiagnostics
@@ -680,12 +683,13 @@
             this.btnDiagnostics.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDiagnostics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnDiagnostics.Image = global::DIT_AIO.Properties.Resources.datarecov;
+            this.btnDiagnostics.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDiagnostics.Location = new System.Drawing.Point(0, 228);
             this.btnDiagnostics.Name = "btnDiagnostics";
+            this.btnDiagnostics.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnDiagnostics.Size = new System.Drawing.Size(186, 42);
             this.btnDiagnostics.TabIndex = 1;
             this.btnDiagnostics.Text = "Diagnostics";
-            this.btnDiagnostics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDiagnostics.UseVisualStyleBackColor = false;
             // 
             // btnDataRecovery
@@ -698,12 +702,13 @@
             this.btnDataRecovery.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDataRecovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnDataRecovery.Image = global::DIT_AIO.Properties.Resources.diag;
+            this.btnDataRecovery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDataRecovery.Location = new System.Drawing.Point(0, 186);
             this.btnDataRecovery.Name = "btnDataRecovery";
+            this.btnDataRecovery.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnDataRecovery.Size = new System.Drawing.Size(186, 42);
             this.btnDataRecovery.TabIndex = 1;
             this.btnDataRecovery.Text = "Data Recovery";
-            this.btnDataRecovery.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDataRecovery.UseVisualStyleBackColor = false;
             // 
             // btnDashboard
@@ -716,12 +721,13 @@
             this.btnDashboard.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.btnDashboard.Image = global::DIT_AIO.Properties.Resources.Home;
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.Location = new System.Drawing.Point(0, 144);
             this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnDashboard.Size = new System.Drawing.Size(186, 42);
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Text = "Home";
-            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashboard.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
