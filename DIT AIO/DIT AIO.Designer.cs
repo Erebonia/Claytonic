@@ -778,12 +778,12 @@
             // 
             this.btnMusic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMusic.BackColor = System.Drawing.Color.Transparent;
-            this.btnMusic.BackgroundImage = global::DIT_AIO.Properties.Resources.playing;
-            this.btnMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnMusic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMusic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.btnMusic.Image = global::DIT_AIO.Properties.Resources.playing;
             this.btnMusic.Location = new System.Drawing.Point(756, 491);
             this.btnMusic.Margin = new System.Windows.Forms.Padding(0);
             this.btnMusic.Name = "btnMusic";
