@@ -117,12 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DESC_Info.Text" xml:space="preserve">
-    <value>Claytonic is a comprehensive suite of tools designed to aid Helpdesk technicians and CSRs with their work. This software accesses unique locations on the network drive, eliminating the need for technicians to manually search for these tools. The goal of this application is to create a centralized place for tools.</value>
-  </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>272, 17</value>
   </metadata>
+  <data name="DESC_Info.Text" xml:space="preserve">
+    <value>Claytonic is a comprehensive suite of tools designed to aid Helpdesk technicians and CSRs with their work. This software accesses unique locations on the network drive, eliminating the need for technicians to manually search for these tools. The goal of this application is to create a centralized place for tools.</value>
+  </data>
   <metadata name="fileSystemWatcher1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>114, 17</value>
   </metadata>
@@ -203,4 +203,7 @@
         AAPgAAAH8AAAD/gAAB/8AAA//gAAf/+AAf8=
 </value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>272, 17</value>
+  </metadata>
 </root>

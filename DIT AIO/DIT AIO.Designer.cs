@@ -363,12 +363,12 @@
             this.Master.Controls.Add(this.btnMaximize);
             this.Master.Controls.Add(this.btnMinimize);
             this.Master.Controls.Add(this.btnClose);
-            this.Master.Controls.Add(this.Home);
             this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
             this.Master.Controls.Add(this.SystemSetup);
             this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
+            this.Master.Controls.Add(this.Home);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(825, 578);
@@ -684,7 +684,7 @@
             // 
             this.Title_Data_Recovery.AutoSize = true;
             this.Title_Data_Recovery.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Data_Recovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Title_Data_Recovery.ForeColor = System.Drawing.Color.Khaki;
             this.Title_Data_Recovery.Location = new System.Drawing.Point(20, 17);
             this.Title_Data_Recovery.Name = "Title_Data_Recovery";
             this.Title_Data_Recovery.Size = new System.Drawing.Size(213, 32);
