@@ -350,6 +350,7 @@
     <EmbeddedResource Include="Resources\claytonic_music_slow.wav" />
     <EmbeddedResource Include="Resources\CoffeeTonic.wav" />
     <None Include="Resources\datarecovery.gif" />
+    <None Include="Resources\maximize.png" />
     <Content Include="test.ico" />
   </ItemGroup>
   <ItemGroup>

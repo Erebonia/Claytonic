@@ -48,6 +48,7 @@ namespace DIT_AIO
             btnSystemSetup.Click += categoryNavigator.HandleCategoryClick;
             btnMainframe.Click += categoryNavigator.HandleCategoryClick;
             btnSettings.Click += categoryNavigator.HandleCategoryClick;
+            btnMaximize.Click += categoryNavigator.HandleMaximizeClick;
             btnMinimize.Click += categoryNavigator.HandleMinimizeClick;
             btnClose.Click += categoryNavigator.HandleCloseClick;
 

@@ -69,4 +69,24 @@ public class CategoryNavigator
         var form = ((Control)sender).FindForm();
         form.Close();
     }
+
+    public void HandleMaximizeClick(object sender, EventArgs e)
+    {
+        var form = ((Control)sender).FindForm();
+
+        if (form.WindowState == FormWindowState.Maximized)
+        {
+            form.WindowState = FormWindowState.Normal;
+        }
+        else
+        {
+            form.WindowState = FormWindowState.Maximized;
+        }
+
+    }
+
+
+
+
+
 }
