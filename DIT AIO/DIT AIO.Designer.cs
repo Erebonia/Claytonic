@@ -31,25 +31,38 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Runetonic));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.npcdialogue = new System.Windows.Forms.Label();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.programicon = new System.Windows.Forms.Panel();
             this.programName = new System.Windows.Forms.Label();
             this.Subtitle = new System.Windows.Forms.Label();
             this.chatbox_bg = new System.Windows.Forms.Panel();
+            this.npcdialogue = new System.Windows.Forms.Label();
             this.Master = new System.Windows.Forms.Panel();
             this.DataRecovery = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.Title_Data_Recovery = new System.Windows.Forms.Label();
+            this.btnBackup_User_Data = new System.Windows.Forms.Button();
+            this.btn_Restore_User_Data = new System.Windows.Forms.Button();
+            this.btn_Backup_Printers = new System.Windows.Forms.Button();
+            this.btn_Restore_Printers = new System.Windows.Forms.Button();
             this.Diagnostics = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.Title_Diagnostics = new System.Windows.Forms.Label();
+            this.btn_Check_User_Accounts = new System.Windows.Forms.Button();
+            this.btn_Ping_IP = new System.Windows.Forms.Button();
+            this.btn_SFC = new System.Windows.Forms.Button();
+            this.btn_DISM = new System.Windows.Forms.Button();
+            this.btn_CCH_Deploy = new System.Windows.Forms.Button();
             this.SystemSetup = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.Title_SystemSetup = new System.Windows.Forms.Label();
             this.Mainframe = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Title_Mainframe = new System.Windows.Forms.Label();
+            this.btn_MF_Unsuspend = new System.Windows.Forms.Button();
+            this.btn_MF_PW_Reset = new System.Windows.Forms.Button();
+            this.btn_MF_PS_Printer_Data = new System.Windows.Forms.Button();
+            this.btn_MF_Guide = new System.Windows.Forms.Button();
             this.Settings = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.Title_Settings = new System.Windows.Forms.Label();
@@ -76,20 +89,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.CityLogo = new System.Windows.Forms.PictureBox();
-            this.btnMusic = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.warning_printers = new System.Windows.Forms.PictureBox();
-            this.btnBackup_User_Data = new System.Windows.Forms.Button();
-            this.btn_Restore_User_Data = new System.Windows.Forms.Button();
-            this.btn_Backup_Printers = new System.Windows.Forms.Button();
-            this.btn_Restore_Printers = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.btn_Check_User_Accounts = new System.Windows.Forms.Button();
-            this.btn_Ping_IP = new System.Windows.Forms.Button();
-            this.btn_SFC = new System.Windows.Forms.Button();
-            this.btn_DISM = new System.Windows.Forms.Button();
-            this.btn_CCH_Deploy = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn_Paperport = new System.Windows.Forms.Button();
@@ -100,11 +102,9 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.btn_MF_Unsuspend = new System.Windows.Forms.Button();
-            this.btn_MF_PW_Reset = new System.Windows.Forms.Button();
-            this.btn_MF_PS_Printer_Data = new System.Windows.Forms.Button();
-            this.btn_MF_Guide = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CityLogo = new System.Windows.Forms.PictureBox();
+            this.btnMusic = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
             this.chatbox_bg.SuspendLayout();
@@ -120,9 +120,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -130,6 +129,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -150,20 +150,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 600);
             this.panel1.TabIndex = 27;
-            // 
-            // npcdialogue
-            // 
-            this.npcdialogue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.npcdialogue.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.npcdialogue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.npcdialogue.ForeColor = System.Drawing.Color.Khaki;
-            this.npcdialogue.Location = new System.Drawing.Point(-1, 0);
-            this.npcdialogue.Name = "npcdialogue";
-            this.npcdialogue.Size = new System.Drawing.Size(183, 75);
-            this.npcdialogue.TabIndex = 22;
-            this.npcdialogue.Text = "Hover over buttons to view the description!";
-            this.npcdialogue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlNav
             // 
@@ -217,6 +203,20 @@
             this.chatbox_bg.Size = new System.Drawing.Size(179, 65);
             this.chatbox_bg.TabIndex = 23;
             // 
+            // npcdialogue
+            // 
+            this.npcdialogue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.npcdialogue.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.npcdialogue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.npcdialogue.ForeColor = System.Drawing.Color.Khaki;
+            this.npcdialogue.Location = new System.Drawing.Point(-1, 0);
+            this.npcdialogue.Name = "npcdialogue";
+            this.npcdialogue.Size = new System.Drawing.Size(183, 75);
+            this.npcdialogue.TabIndex = 22;
+            this.npcdialogue.Text = "Hover over buttons to view the description!";
+            this.npcdialogue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Master
             // 
             this.Master.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -225,12 +225,12 @@
             this.Master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.Master.Controls.Add(this.btnMinimize);
             this.Master.Controls.Add(this.btnClose);
-            this.Master.Controls.Add(this.Home);
-            this.Master.Controls.Add(this.DataRecovery);
-            this.Master.Controls.Add(this.Diagnostics);
             this.Master.Controls.Add(this.SystemSetup);
             this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
+            this.Master.Controls.Add(this.Home);
+            this.Master.Controls.Add(this.DataRecovery);
+            this.Master.Controls.Add(this.Diagnostics);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(825, 578);
@@ -240,7 +240,6 @@
             // 
             this.DataRecovery.AutoSize = true;
             this.DataRecovery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.DataRecovery.Controls.Add(this.pictureBox3);
             this.DataRecovery.Controls.Add(this.label2);
             this.DataRecovery.Controls.Add(this.warning_printers);
             this.DataRecovery.Controls.Add(this.Title_Data_Recovery);
@@ -248,6 +247,7 @@
             this.DataRecovery.Controls.Add(this.btn_Restore_User_Data);
             this.DataRecovery.Controls.Add(this.btn_Backup_Printers);
             this.DataRecovery.Controls.Add(this.btn_Restore_Printers);
+            this.DataRecovery.Controls.Add(this.pictureBox3);
             this.DataRecovery.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataRecovery.Location = new System.Drawing.Point(0, 0);
             this.DataRecovery.Name = "DataRecovery";
@@ -259,14 +259,14 @@
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Khaki;
-            this.label2.Location = new System.Drawing.Point(101, 543);
+            this.label2.Location = new System.Drawing.Point(105, 531);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(669, 22);
             this.label2.TabIndex = 18;
             this.label2.Text = "Sometimes printers fail to restore when going across windows versions. Always dou" +
-    "ble check if it was successful!";
+    "ble check!";
             // 
             // Title_Data_Recovery
             // 
@@ -278,6 +278,83 @@
             this.Title_Data_Recovery.Size = new System.Drawing.Size(213, 32);
             this.Title_Data_Recovery.TabIndex = 12;
             this.Title_Data_Recovery.Text = "Data Recovery";
+            // 
+            // btnBackup_User_Data
+            // 
+            this.btnBackup_User_Data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnBackup_User_Data.BackColor = System.Drawing.Color.Transparent;
+            this.btnBackup_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBackup_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackup_User_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBackup_User_Data.ForeColor = System.Drawing.Color.Ivory;
+            this.btnBackup_User_Data.Location = new System.Drawing.Point(142, 443);
+            this.btnBackup_User_Data.Name = "btnBackup_User_Data";
+            this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
+            this.btnBackup_User_Data.TabIndex = 0;
+            this.btnBackup_User_Data.Tag = "DataRecovery";
+            this.btnBackup_User_Data.Text = "Backup Data";
+            this.toolTip1.SetToolTip(this.btnBackup_User_Data, "Backs up user data (Documents, Pictures, Downloads, Videos), outlook psts, outloo" +
+        "k signatures, and printers.");
+            this.btnBackup_User_Data.UseVisualStyleBackColor = false;
+            this.btnBackup_User_Data.Visible = false;
+            this.btnBackup_User_Data.Click += new System.EventHandler(this.Backup_Data);
+            // 
+            // btn_Restore_User_Data
+            // 
+            this.btn_Restore_User_Data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Restore_User_Data.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Restore_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Restore_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Restore_User_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Restore_User_Data.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_Restore_User_Data.Location = new System.Drawing.Point(275, 443);
+            this.btn_Restore_User_Data.Name = "btn_Restore_User_Data";
+            this.btn_Restore_User_Data.Size = new System.Drawing.Size(105, 38);
+            this.btn_Restore_User_Data.TabIndex = 2;
+            this.btn_Restore_User_Data.Tag = "DataRecovery";
+            this.btn_Restore_User_Data.Text = "Restore Data";
+            this.toolTip1.SetToolTip(this.btn_Restore_User_Data, "Restores everything that was backed up.");
+            this.btn_Restore_User_Data.UseVisualStyleBackColor = false;
+            this.btn_Restore_User_Data.Visible = false;
+            this.btn_Restore_User_Data.Click += new System.EventHandler(this.Restore_Data);
+            // 
+            // btn_Backup_Printers
+            // 
+            this.btn_Backup_Printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Backup_Printers.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Backup_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Backup_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Backup_Printers.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Backup_Printers.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_Backup_Printers.Location = new System.Drawing.Point(402, 443);
+            this.btn_Backup_Printers.Name = "btn_Backup_Printers";
+            this.btn_Backup_Printers.Size = new System.Drawing.Size(105, 38);
+            this.btn_Backup_Printers.TabIndex = 10;
+            this.btn_Backup_Printers.Tag = "DataRecovery";
+            this.btn_Backup_Printers.Text = "Backup Printers";
+            this.toolTip1.SetToolTip(this.btn_Backup_Printers, "Backs up a user\'s printers & drivers via PrinterExport.export file");
+            this.btn_Backup_Printers.UseVisualStyleBackColor = false;
+            this.btn_Backup_Printers.Visible = false;
+            this.btn_Backup_Printers.Click += new System.EventHandler(this.Backup_Printers);
+            // 
+            // btn_Restore_Printers
+            // 
+            this.btn_Restore_Printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Restore_Printers.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Restore_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Restore_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Restore_Printers.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Restore_Printers.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_Restore_Printers.Location = new System.Drawing.Point(524, 443);
+            this.btn_Restore_Printers.Name = "btn_Restore_Printers";
+            this.btn_Restore_Printers.Size = new System.Drawing.Size(105, 38);
+            this.btn_Restore_Printers.TabIndex = 11;
+            this.btn_Restore_Printers.Tag = "DataRecovery";
+            this.btn_Restore_Printers.Text = "Restore Printers";
+            this.toolTip1.SetToolTip(this.btn_Restore_Printers, "Restore a user\'s printers.");
+            this.btn_Restore_Printers.UseVisualStyleBackColor = false;
+            this.btn_Restore_Printers.Visible = false;
+            this.btn_Restore_Printers.Click += new System.EventHandler(this.Restore_Printers);
             // 
             // Diagnostics
             // 
@@ -302,13 +379,13 @@
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Khaki;
             this.label4.Location = new System.Drawing.Point(173, 537);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(461, 24);
+            this.label4.Size = new System.Drawing.Size(537, 24);
             this.label4.TabIndex = 39;
-            this.label4.Text = "Investigate user accounts, check if a computer is online, or run some repairs.";
+            this.label4.Text = "This page contains a compilation of CMD commands for user diagnostics.";
             // 
             // Title_Diagnostics
             // 
@@ -320,6 +397,104 @@
             this.Title_Diagnostics.Size = new System.Drawing.Size(173, 32);
             this.Title_Diagnostics.TabIndex = 26;
             this.Title_Diagnostics.Text = "Diagnostics";
+            // 
+            // btn_Check_User_Accounts
+            // 
+            this.btn_Check_User_Accounts.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Check_User_Accounts.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Check_User_Accounts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Check_User_Accounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Check_User_Accounts.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Check_User_Accounts.ForeColor = System.Drawing.Color.Lavender;
+            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(111, 443);
+            this.btn_Check_User_Accounts.Name = "btn_Check_User_Accounts";
+            this.btn_Check_User_Accounts.Size = new System.Drawing.Size(105, 38);
+            this.btn_Check_User_Accounts.TabIndex = 6;
+            this.btn_Check_User_Accounts.Tag = "Diagnostics";
+            this.btn_Check_User_Accounts.Text = "Check User Account";
+            this.toolTip1.SetToolTip(this.btn_Check_User_Accounts, "Check user account via cmd netuser. Critical information highlighted on the botto" +
+        "m and the script loops.");
+            this.btn_Check_User_Accounts.UseVisualStyleBackColor = false;
+            this.btn_Check_User_Accounts.Visible = false;
+            this.btn_Check_User_Accounts.Click += new System.EventHandler(this.Net_User);
+            // 
+            // btn_Ping_IP
+            // 
+            this.btn_Ping_IP.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_Ping_IP.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Ping_IP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Ping_IP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Ping_IP.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Ping_IP.ForeColor = System.Drawing.Color.Lavender;
+            this.btn_Ping_IP.Location = new System.Drawing.Point(236, 443);
+            this.btn_Ping_IP.Name = "btn_Ping_IP";
+            this.btn_Ping_IP.Size = new System.Drawing.Size(105, 38);
+            this.btn_Ping_IP.TabIndex = 15;
+            this.btn_Ping_IP.Tag = "Diagnostics";
+            this.btn_Ping_IP.Text = "Ping IP Address";
+            this.toolTip1.SetToolTip(this.btn_Ping_IP, "Ping an IP address via CMD. Script loops so you can check multiple IPs.");
+            this.btn_Ping_IP.UseVisualStyleBackColor = false;
+            this.btn_Ping_IP.Visible = false;
+            this.btn_Ping_IP.Click += new System.EventHandler(this.ping_ipaddress);
+            // 
+            // btn_SFC
+            // 
+            this.btn_SFC.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_SFC.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SFC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_SFC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SFC.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SFC.ForeColor = System.Drawing.Color.Lavender;
+            this.btn_SFC.Location = new System.Drawing.Point(360, 443);
+            this.btn_SFC.Name = "btn_SFC";
+            this.btn_SFC.Size = new System.Drawing.Size(105, 38);
+            this.btn_SFC.TabIndex = 21;
+            this.btn_SFC.Tag = "Diagnostics";
+            this.btn_SFC.Text = "SFC Scan";
+            this.toolTip1.SetToolTip(this.btn_SFC, "Runs /sfc scannow to check for window\'s corruption. Recommended to run DISM after" +
+        ".");
+            this.btn_SFC.UseVisualStyleBackColor = false;
+            this.btn_SFC.Visible = false;
+            this.btn_SFC.Click += new System.EventHandler(this.SFC_Scan);
+            // 
+            // btn_DISM
+            // 
+            this.btn_DISM.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_DISM.BackColor = System.Drawing.Color.Transparent;
+            this.btn_DISM.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DISM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_DISM.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DISM.ForeColor = System.Drawing.Color.Lavender;
+            this.btn_DISM.Location = new System.Drawing.Point(481, 443);
+            this.btn_DISM.Name = "btn_DISM";
+            this.btn_DISM.Size = new System.Drawing.Size(105, 38);
+            this.btn_DISM.TabIndex = 22;
+            this.btn_DISM.Tag = "Diagnostics";
+            this.btn_DISM.Text = "DISM";
+            this.toolTip1.SetToolTip(this.btn_DISM, "Usually helps operating system issues / windows update.");
+            this.btn_DISM.UseVisualStyleBackColor = false;
+            this.btn_DISM.Visible = false;
+            this.btn_DISM.Click += new System.EventHandler(this.DISM);
+            // 
+            // btn_CCH_Deploy
+            // 
+            this.btn_CCH_Deploy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_CCH_Deploy.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CCH_Deploy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_CCH_Deploy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CCH_Deploy.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CCH_Deploy.ForeColor = System.Drawing.Color.Lavender;
+            this.btn_CCH_Deploy.Location = new System.Drawing.Point(605, 443);
+            this.btn_CCH_Deploy.Name = "btn_CCH_Deploy";
+            this.btn_CCH_Deploy.Size = new System.Drawing.Size(105, 38);
+            this.btn_CCH_Deploy.TabIndex = 25;
+            this.btn_CCH_Deploy.Tag = "Diagnostics";
+            this.btn_CCH_Deploy.Text = "CCH Deploy Apps";
+            this.toolTip1.SetToolTip(this.btn_CCH_Deploy, "Connects to network drive and opens up CCHDeploy1 deployment server. Use this to " +
+        "install the usual city applications.");
+            this.btn_CCH_Deploy.UseVisualStyleBackColor = false;
+            this.btn_CCH_Deploy.Visible = false;
+            this.btn_CCH_Deploy.Click += new System.EventHandler(this.CCH_Deploy);
             // 
             // SystemSetup
             // 
@@ -405,6 +580,85 @@
             this.Title_Mainframe.Size = new System.Drawing.Size(157, 32);
             this.Title_Mainframe.TabIndex = 27;
             this.Title_Mainframe.Text = "Mainframe";
+            // 
+            // btn_MF_Unsuspend
+            // 
+            this.btn_MF_Unsuspend.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_Unsuspend.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btn_MF_Unsuspend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Unsuspend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_Unsuspend.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_Unsuspend.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(278, 487);
+            this.btn_MF_Unsuspend.Name = "btn_MF_Unsuspend";
+            this.btn_MF_Unsuspend.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_Unsuspend.TabIndex = 8;
+            this.btn_MF_Unsuspend.Tag = "Mainframe";
+            this.btn_MF_Unsuspend.Text = "Install Unsuspend Macro";
+            this.toolTip1.SetToolTip(this.btn_MF_Unsuspend, "Installs unsuspend macro for VistaTN3270 by Bao Nguyen. Press guide to configure " +
+        "the rest.");
+            this.btn_MF_Unsuspend.UseVisualStyleBackColor = false;
+            this.btn_MF_Unsuspend.Visible = false;
+            this.btn_MF_Unsuspend.Click += new System.EventHandler(this.Install_ACID_Unsuspend);
+            // 
+            // btn_MF_PW_Reset
+            // 
+            this.btn_MF_PW_Reset.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_PW_Reset.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btn_MF_PW_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_PW_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_PW_Reset.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_PW_Reset.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(402, 487);
+            this.btn_MF_PW_Reset.Name = "btn_MF_PW_Reset";
+            this.btn_MF_PW_Reset.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_PW_Reset.TabIndex = 9;
+            this.btn_MF_PW_Reset.Tag = "Mainframe";
+            this.btn_MF_PW_Reset.Text = "Install PW Reset Macro";
+            this.toolTip1.SetToolTip(this.btn_MF_PW_Reset, "Installs PW Reset macro for VistaTN3270 by Sy Nishigata. Press guide to configure" +
+        " the rest.");
+            this.btn_MF_PW_Reset.UseVisualStyleBackColor = false;
+            this.btn_MF_PW_Reset.Visible = false;
+            this.btn_MF_PW_Reset.Click += new System.EventHandler(this.Install_ACID_Reset);
+            // 
+            // btn_MF_PS_Printer_Data
+            // 
+            this.btn_MF_PS_Printer_Data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_PS_Printer_Data.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btn_MF_PS_Printer_Data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_PS_Printer_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_PS_Printer_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_PS_Printer_Data.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(529, 487);
+            this.btn_MF_PS_Printer_Data.Name = "btn_MF_PS_Printer_Data";
+            this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_PS_Printer_Data.TabIndex = 26;
+            this.btn_MF_PS_Printer_Data.Tag = "Mainframe";
+            this.btn_MF_PS_Printer_Data.Text = "Clear PS_PrinterData";
+            this.toolTip1.SetToolTip(this.btn_MF_PS_Printer_Data, "Mainframe thunderbolt issues or miscellaneous issues? CTRL+F \"psprinterdata\", rem" +
+        "ove gibberish text and replace with \"\".");
+            this.btn_MF_PS_Printer_Data.UseVisualStyleBackColor = false;
+            this.btn_MF_PS_Printer_Data.Visible = false;
+            this.btn_MF_PS_Printer_Data.Click += new System.EventHandler(this.Clear_PS_PrinterData);
+            // 
+            // btn_MF_Guide
+            // 
+            this.btn_MF_Guide.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_Guide.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btn_MF_Guide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Guide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_Guide.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_Guide.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_MF_Guide.Location = new System.Drawing.Point(147, 487);
+            this.btn_MF_Guide.Name = "btn_MF_Guide";
+            this.btn_MF_Guide.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_Guide.TabIndex = 14;
+            this.btn_MF_Guide.Tag = "Mainframe";
+            this.btn_MF_Guide.Text = "Guide";
+            this.toolTip1.SetToolTip(this.btn_MF_Guide, "Opens up all relevant mainframe guides that DIT Helpdesk utilizes.");
+            this.btn_MF_Guide.UseVisualStyleBackColor = false;
+            this.btn_MF_Guide.Visible = false;
+            this.btn_MF_Guide.Click += new System.EventHandler(this.Mainframe_Guides);
             // 
             // Settings
             // 
@@ -522,7 +776,6 @@
             this.UpdateNotes.Name = "UpdateNotes";
             this.UpdateNotes.Size = new System.Drawing.Size(342, 294);
             this.UpdateNotes.TabIndex = 22;
-            this.UpdateNotes.Paint += new System.Windows.Forms.PaintEventHandler(this.UpdateNotes_Paint);
             // 
             // label10
             // 
@@ -767,136 +1020,28 @@
             this.btnClose.TabIndex = 13;
             this.btnClose.UseVisualStyleBackColor = false;
             // 
-            // CityLogo
+            // warning_printers
             // 
-            this.CityLogo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.CityLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CityLogo.Image = global::DIT_AIO.Properties.Resources.citylogo1;
-            this.CityLogo.Location = new System.Drawing.Point(58, 114);
-            this.CityLogo.Margin = new System.Windows.Forms.Padding(0);
-            this.CityLogo.Name = "CityLogo";
-            this.CityLogo.Size = new System.Drawing.Size(305, 294);
-            this.CityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CityLogo.TabIndex = 1;
-            this.CityLogo.TabStop = false;
-            // 
-            // btnMusic
-            // 
-            this.btnMusic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMusic.BackColor = System.Drawing.Color.Transparent;
-            this.btnMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnMusic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMusic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.btnMusic.Image = global::DIT_AIO.Properties.Resources.playing;
-            this.btnMusic.Location = new System.Drawing.Point(756, 491);
-            this.btnMusic.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMusic.Name = "btnMusic";
-            this.btnMusic.Size = new System.Drawing.Size(41, 38);
-            this.btnMusic.TabIndex = 17;
-            this.btnMusic.Tag = "Home";
-            this.btnMusic.UseVisualStyleBackColor = false;
+            this.warning_printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.warning_printers.Image = global::DIT_AIO.Properties.Resources.warning;
+            this.warning_printers.Location = new System.Drawing.Point(77, 526);
+            this.warning_printers.Name = "warning_printers";
+            this.warning_printers.Size = new System.Drawing.Size(36, 29);
+            this.warning_printers.TabIndex = 17;
+            this.warning_printers.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = global::DIT_AIO.Properties.Resources.free_data_recovery;
+            this.pictureBox3.Image = global::DIT_AIO.Properties.Resources.datarecovery;
             this.pictureBox3.Location = new System.Drawing.Point(26, 65);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(769, 403);
+            this.pictureBox3.Size = new System.Drawing.Size(769, 447);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
-            // 
-            // warning_printers
-            // 
-            this.warning_printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.warning_printers.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.warning_printers.Location = new System.Drawing.Point(69, 534);
-            this.warning_printers.Name = "warning_printers";
-            this.warning_printers.Size = new System.Drawing.Size(36, 39);
-            this.warning_printers.TabIndex = 17;
-            this.warning_printers.TabStop = false;
-            // 
-            // btnBackup_User_Data
-            // 
-            this.btnBackup_User_Data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnBackup_User_Data.BackColor = System.Drawing.Color.Brown;
-            this.btnBackup_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBackup_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBackup_User_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBackup_User_Data.Image = global::DIT_AIO.Properties.Resources.UI_8;
-            this.btnBackup_User_Data.Location = new System.Drawing.Point(166, 491);
-            this.btnBackup_User_Data.Name = "btnBackup_User_Data";
-            this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
-            this.btnBackup_User_Data.TabIndex = 0;
-            this.btnBackup_User_Data.Tag = "DataRecovery";
-            this.btnBackup_User_Data.Text = "Backup User Data";
-            this.toolTip1.SetToolTip(this.btnBackup_User_Data, "Backs up user data (Documents, Pictures, Downloads, Videos), outlook psts, outloo" +
-        "k signatures, and printers.");
-            this.btnBackup_User_Data.UseVisualStyleBackColor = false;
-            this.btnBackup_User_Data.Visible = false;
-            this.btnBackup_User_Data.Click += new System.EventHandler(this.Backup_Data);
-            // 
-            // btn_Restore_User_Data
-            // 
-            this.btn_Restore_User_Data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Restore_User_Data.BackColor = System.Drawing.Color.Brown;
-            this.btn_Restore_User_Data.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Restore_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Restore_User_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Restore_User_Data.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore_User_Data.Image")));
-            this.btn_Restore_User_Data.Location = new System.Drawing.Point(299, 491);
-            this.btn_Restore_User_Data.Name = "btn_Restore_User_Data";
-            this.btn_Restore_User_Data.Size = new System.Drawing.Size(105, 38);
-            this.btn_Restore_User_Data.TabIndex = 2;
-            this.btn_Restore_User_Data.Tag = "DataRecovery";
-            this.btn_Restore_User_Data.Text = "Restore User Data";
-            this.toolTip1.SetToolTip(this.btn_Restore_User_Data, "Restores everything that was backed up.");
-            this.btn_Restore_User_Data.UseVisualStyleBackColor = false;
-            this.btn_Restore_User_Data.Visible = false;
-            this.btn_Restore_User_Data.Click += new System.EventHandler(this.Restore_Data);
-            // 
-            // btn_Backup_Printers
-            // 
-            this.btn_Backup_Printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Backup_Printers.BackColor = System.Drawing.Color.Brown;
-            this.btn_Backup_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Backup_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Backup_Printers.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Backup_Printers.Image = ((System.Drawing.Image)(resources.GetObject("btn_Backup_Printers.Image")));
-            this.btn_Backup_Printers.Location = new System.Drawing.Point(426, 491);
-            this.btn_Backup_Printers.Name = "btn_Backup_Printers";
-            this.btn_Backup_Printers.Size = new System.Drawing.Size(105, 38);
-            this.btn_Backup_Printers.TabIndex = 10;
-            this.btn_Backup_Printers.Tag = "DataRecovery";
-            this.btn_Backup_Printers.Text = "Backup Printers";
-            this.toolTip1.SetToolTip(this.btn_Backup_Printers, "Backs up a user\'s printers & drivers via PrinterExport.export file");
-            this.btn_Backup_Printers.UseVisualStyleBackColor = false;
-            this.btn_Backup_Printers.Visible = false;
-            this.btn_Backup_Printers.Click += new System.EventHandler(this.Backup_Printers);
-            // 
-            // btn_Restore_Printers
-            // 
-            this.btn_Restore_Printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Restore_Printers.BackColor = System.Drawing.Color.Brown;
-            this.btn_Restore_Printers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Restore_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Restore_Printers.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Restore_Printers.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore_Printers.Image")));
-            this.btn_Restore_Printers.Location = new System.Drawing.Point(548, 491);
-            this.btn_Restore_Printers.Name = "btn_Restore_Printers";
-            this.btn_Restore_Printers.Size = new System.Drawing.Size(105, 38);
-            this.btn_Restore_Printers.TabIndex = 11;
-            this.btn_Restore_Printers.Tag = "DataRecovery";
-            this.btn_Restore_Printers.Text = "Restore Printers";
-            this.toolTip1.SetToolTip(this.btn_Restore_Printers, "Restore a user\'s printers.");
-            this.btn_Restore_Printers.UseVisualStyleBackColor = false;
-            this.btn_Restore_Printers.Visible = false;
-            this.btn_Restore_Printers.Click += new System.EventHandler(this.Restore_Printers);
             // 
             // pictureBox8
             // 
@@ -907,104 +1052,6 @@
             this.pictureBox8.Size = new System.Drawing.Size(26, 39);
             this.pictureBox8.TabIndex = 38;
             this.pictureBox8.TabStop = false;
-            // 
-            // btn_Check_User_Accounts
-            // 
-            this.btn_Check_User_Accounts.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Check_User_Accounts.BackColor = System.Drawing.Color.Brown;
-            this.btn_Check_User_Accounts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Check_User_Accounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Check_User_Accounts.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Check_User_Accounts.Image = ((System.Drawing.Image)(resources.GetObject("btn_Check_User_Accounts.Image")));
-            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(111, 443);
-            this.btn_Check_User_Accounts.Name = "btn_Check_User_Accounts";
-            this.btn_Check_User_Accounts.Size = new System.Drawing.Size(105, 38);
-            this.btn_Check_User_Accounts.TabIndex = 6;
-            this.btn_Check_User_Accounts.Tag = "Diagnostics";
-            this.btn_Check_User_Accounts.Text = "Check User Account";
-            this.toolTip1.SetToolTip(this.btn_Check_User_Accounts, "Check user account via cmd netuser. Critical information highlighted on the botto" +
-        "m and the script loops.");
-            this.btn_Check_User_Accounts.UseVisualStyleBackColor = false;
-            this.btn_Check_User_Accounts.Visible = false;
-            this.btn_Check_User_Accounts.Click += new System.EventHandler(this.Net_User);
-            // 
-            // btn_Ping_IP
-            // 
-            this.btn_Ping_IP.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Ping_IP.BackColor = System.Drawing.Color.Brown;
-            this.btn_Ping_IP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Ping_IP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Ping_IP.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Ping_IP.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ping_IP.Image")));
-            this.btn_Ping_IP.Location = new System.Drawing.Point(236, 443);
-            this.btn_Ping_IP.Name = "btn_Ping_IP";
-            this.btn_Ping_IP.Size = new System.Drawing.Size(105, 38);
-            this.btn_Ping_IP.TabIndex = 15;
-            this.btn_Ping_IP.Tag = "Diagnostics";
-            this.btn_Ping_IP.Text = "Ping IP Address";
-            this.toolTip1.SetToolTip(this.btn_Ping_IP, "Ping an IP address via CMD. Script loops so you can check multiple IPs.");
-            this.btn_Ping_IP.UseVisualStyleBackColor = false;
-            this.btn_Ping_IP.Visible = false;
-            this.btn_Ping_IP.Click += new System.EventHandler(this.ping_ipaddress);
-            // 
-            // btn_SFC
-            // 
-            this.btn_SFC.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_SFC.BackColor = System.Drawing.Color.Brown;
-            this.btn_SFC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_SFC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SFC.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SFC.Image = ((System.Drawing.Image)(resources.GetObject("btn_SFC.Image")));
-            this.btn_SFC.Location = new System.Drawing.Point(360, 443);
-            this.btn_SFC.Name = "btn_SFC";
-            this.btn_SFC.Size = new System.Drawing.Size(105, 38);
-            this.btn_SFC.TabIndex = 21;
-            this.btn_SFC.Tag = "Diagnostics";
-            this.btn_SFC.Text = "SFC Scan";
-            this.toolTip1.SetToolTip(this.btn_SFC, "Runs /sfc scannow to check for window\'s corruption. Recommended to run DISM after" +
-        ".");
-            this.btn_SFC.UseVisualStyleBackColor = false;
-            this.btn_SFC.Visible = false;
-            this.btn_SFC.Click += new System.EventHandler(this.SFC_Scan);
-            // 
-            // btn_DISM
-            // 
-            this.btn_DISM.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_DISM.BackColor = System.Drawing.Color.Brown;
-            this.btn_DISM.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DISM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DISM.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DISM.Image = ((System.Drawing.Image)(resources.GetObject("btn_DISM.Image")));
-            this.btn_DISM.Location = new System.Drawing.Point(481, 443);
-            this.btn_DISM.Name = "btn_DISM";
-            this.btn_DISM.Size = new System.Drawing.Size(105, 38);
-            this.btn_DISM.TabIndex = 22;
-            this.btn_DISM.Tag = "Diagnostics";
-            this.btn_DISM.Text = "DISM";
-            this.toolTip1.SetToolTip(this.btn_DISM, "Usually helps operating system issues / windows update.");
-            this.btn_DISM.UseVisualStyleBackColor = false;
-            this.btn_DISM.Visible = false;
-            this.btn_DISM.Click += new System.EventHandler(this.DISM);
-            // 
-            // btn_CCH_Deploy
-            // 
-            this.btn_CCH_Deploy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_CCH_Deploy.BackColor = System.Drawing.Color.Brown;
-            this.btn_CCH_Deploy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_CCH_Deploy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CCH_Deploy.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CCH_Deploy.Image = ((System.Drawing.Image)(resources.GetObject("btn_CCH_Deploy.Image")));
-            this.btn_CCH_Deploy.Location = new System.Drawing.Point(605, 443);
-            this.btn_CCH_Deploy.Name = "btn_CCH_Deploy";
-            this.btn_CCH_Deploy.Size = new System.Drawing.Size(105, 38);
-            this.btn_CCH_Deploy.TabIndex = 25;
-            this.btn_CCH_Deploy.Tag = "Diagnostics";
-            this.btn_CCH_Deploy.Text = "CCH Deploy Apps";
-            this.toolTip1.SetToolTip(this.btn_CCH_Deploy, "Connects to network drive and opens up CCHDeploy1 deployment server. Use this to " +
-        "install the usual city applications.");
-            this.btn_CCH_Deploy.UseVisualStyleBackColor = false;
-            this.btn_CCH_Deploy.Visible = false;
-            this.btn_CCH_Deploy.Click += new System.EventHandler(this.CCH_Deploy);
             // 
             // pictureBox5
             // 
@@ -1032,12 +1079,11 @@
             // btn_Paperport
             // 
             this.btn_Paperport.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Paperport.BackColor = System.Drawing.Color.Brown;
+            this.btn_Paperport.BackColor = System.Drawing.Color.BurlyWood;
             this.btn_Paperport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Paperport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Paperport.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Paperport.Image = ((System.Drawing.Image)(resources.GetObject("btn_Paperport.Image")));
-            this.btn_Paperport.Location = new System.Drawing.Point(58, 411);
+            this.btn_Paperport.Location = new System.Drawing.Point(452, 307);
             this.btn_Paperport.Name = "btn_Paperport";
             this.btn_Paperport.Size = new System.Drawing.Size(105, 38);
             this.btn_Paperport.TabIndex = 12;
@@ -1051,12 +1097,11 @@
             // btn_Esignature
             // 
             this.btn_Esignature.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Esignature.BackColor = System.Drawing.Color.Brown;
+            this.btn_Esignature.BackColor = System.Drawing.Color.BurlyWood;
             this.btn_Esignature.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Esignature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Esignature.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Esignature.Image = ((System.Drawing.Image)(resources.GetObject("btn_Esignature.Image")));
-            this.btn_Esignature.Location = new System.Drawing.Point(188, 411);
+            this.btn_Esignature.Location = new System.Drawing.Point(452, 366);
             this.btn_Esignature.Name = "btn_Esignature";
             this.btn_Esignature.Size = new System.Drawing.Size(105, 38);
             this.btn_Esignature.TabIndex = 13;
@@ -1070,12 +1115,11 @@
             // btn_blank_login
             // 
             this.btn_blank_login.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_blank_login.BackColor = System.Drawing.Color.Brown;
+            this.btn_blank_login.BackColor = System.Drawing.Color.BurlyWood;
             this.btn_blank_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_blank_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_blank_login.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_blank_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_blank_login.Image")));
-            this.btn_blank_login.Location = new System.Drawing.Point(58, 474);
+            this.btn_blank_login.Location = new System.Drawing.Point(452, 243);
             this.btn_blank_login.Name = "btn_blank_login";
             this.btn_blank_login.Size = new System.Drawing.Size(105, 38);
             this.btn_blank_login.TabIndex = 23;
@@ -1089,12 +1133,11 @@
             // btn_Firewall
             // 
             this.btn_Firewall.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Firewall.BackColor = System.Drawing.Color.Brown;
+            this.btn_Firewall.BackColor = System.Drawing.Color.BurlyWood;
             this.btn_Firewall.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Firewall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Firewall.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Firewall.Image = ((System.Drawing.Image)(resources.GetObject("btn_Firewall.Image")));
-            this.btn_Firewall.Location = new System.Drawing.Point(188, 474);
+            this.btn_Firewall.Location = new System.Drawing.Point(592, 242);
             this.btn_Firewall.Name = "btn_Firewall";
             this.btn_Firewall.Size = new System.Drawing.Size(105, 38);
             this.btn_Firewall.TabIndex = 5;
@@ -1109,12 +1152,11 @@
             // btn_outlook_cache
             // 
             this.btn_outlook_cache.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_outlook_cache.BackColor = System.Drawing.Color.Brown;
+            this.btn_outlook_cache.BackColor = System.Drawing.Color.BurlyWood;
             this.btn_outlook_cache.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_outlook_cache.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_outlook_cache.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_outlook_cache.Image = ((System.Drawing.Image)(resources.GetObject("btn_outlook_cache.Image")));
-            this.btn_outlook_cache.Location = new System.Drawing.Point(315, 474);
+            this.btn_outlook_cache.Location = new System.Drawing.Point(592, 303);
             this.btn_outlook_cache.Name = "btn_outlook_cache";
             this.btn_outlook_cache.Size = new System.Drawing.Size(105, 38);
             this.btn_outlook_cache.TabIndex = 24;
@@ -1162,85 +1204,6 @@
             this.pictureBox7.TabIndex = 28;
             this.pictureBox7.TabStop = false;
             // 
-            // btn_MF_Unsuspend
-            // 
-            this.btn_MF_Unsuspend.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_MF_Unsuspend.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_Unsuspend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_Unsuspend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_Unsuspend.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_MF_Unsuspend.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Unsuspend.Image")));
-            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(278, 487);
-            this.btn_MF_Unsuspend.Name = "btn_MF_Unsuspend";
-            this.btn_MF_Unsuspend.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_Unsuspend.TabIndex = 8;
-            this.btn_MF_Unsuspend.Tag = "Mainframe";
-            this.btn_MF_Unsuspend.Text = "Install Unsuspend Macro";
-            this.toolTip1.SetToolTip(this.btn_MF_Unsuspend, "Installs unsuspend macro for VistaTN3270 by Bao Nguyen. Press guide to configure " +
-        "the rest.");
-            this.btn_MF_Unsuspend.UseVisualStyleBackColor = false;
-            this.btn_MF_Unsuspend.Visible = false;
-            this.btn_MF_Unsuspend.Click += new System.EventHandler(this.Install_ACID_Unsuspend);
-            // 
-            // btn_MF_PW_Reset
-            // 
-            this.btn_MF_PW_Reset.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_MF_PW_Reset.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_PW_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_PW_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_PW_Reset.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_MF_PW_Reset.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PW_Reset.Image")));
-            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(402, 487);
-            this.btn_MF_PW_Reset.Name = "btn_MF_PW_Reset";
-            this.btn_MF_PW_Reset.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_PW_Reset.TabIndex = 9;
-            this.btn_MF_PW_Reset.Tag = "Mainframe";
-            this.btn_MF_PW_Reset.Text = "Install PW Reset Macro";
-            this.toolTip1.SetToolTip(this.btn_MF_PW_Reset, "Installs PW Reset macro for VistaTN3270 by Sy Nishigata. Press guide to configure" +
-        " the rest.");
-            this.btn_MF_PW_Reset.UseVisualStyleBackColor = false;
-            this.btn_MF_PW_Reset.Visible = false;
-            this.btn_MF_PW_Reset.Click += new System.EventHandler(this.Install_ACID_Reset);
-            // 
-            // btn_MF_PS_Printer_Data
-            // 
-            this.btn_MF_PS_Printer_Data.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_MF_PS_Printer_Data.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_PS_Printer_Data.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_PS_Printer_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_PS_Printer_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_MF_PS_Printer_Data.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_PS_Printer_Data.Image")));
-            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(529, 487);
-            this.btn_MF_PS_Printer_Data.Name = "btn_MF_PS_Printer_Data";
-            this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_PS_Printer_Data.TabIndex = 26;
-            this.btn_MF_PS_Printer_Data.Tag = "Mainframe";
-            this.btn_MF_PS_Printer_Data.Text = "Clear PS_PrinterData";
-            this.toolTip1.SetToolTip(this.btn_MF_PS_Printer_Data, "Mainframe thunderbolt issues or miscellaneous issues? CTRL+F \"psprinterdata\", rem" +
-        "ove gibberish text and replace with \"\".");
-            this.btn_MF_PS_Printer_Data.UseVisualStyleBackColor = false;
-            this.btn_MF_PS_Printer_Data.Visible = false;
-            this.btn_MF_PS_Printer_Data.Click += new System.EventHandler(this.Clear_PS_PrinterData);
-            // 
-            // btn_MF_Guide
-            // 
-            this.btn_MF_Guide.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_MF_Guide.BackColor = System.Drawing.Color.Brown;
-            this.btn_MF_Guide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_Guide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_Guide.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_MF_Guide.Image = ((System.Drawing.Image)(resources.GetObject("btn_MF_Guide.Image")));
-            this.btn_MF_Guide.Location = new System.Drawing.Point(147, 487);
-            this.btn_MF_Guide.Name = "btn_MF_Guide";
-            this.btn_MF_Guide.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_Guide.TabIndex = 14;
-            this.btn_MF_Guide.Tag = "Mainframe";
-            this.btn_MF_Guide.Text = "Guide";
-            this.toolTip1.SetToolTip(this.btn_MF_Guide, "Opens up all relevant mainframe guides that DIT Helpdesk utilizes.");
-            this.btn_MF_Guide.UseVisualStyleBackColor = false;
-            this.btn_MF_Guide.Visible = false;
-            this.btn_MF_Guide.Click += new System.EventHandler(this.Mainframe_Guides);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DIT_AIO.Properties.Resources.warning;
@@ -1249,6 +1212,37 @@
             this.pictureBox1.Size = new System.Drawing.Size(40, 39);
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
+            // 
+            // CityLogo
+            // 
+            this.CityLogo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.CityLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CityLogo.Image = global::DIT_AIO.Properties.Resources.citylogo1;
+            this.CityLogo.Location = new System.Drawing.Point(58, 114);
+            this.CityLogo.Margin = new System.Windows.Forms.Padding(0);
+            this.CityLogo.Name = "CityLogo";
+            this.CityLogo.Size = new System.Drawing.Size(305, 294);
+            this.CityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CityLogo.TabIndex = 1;
+            this.CityLogo.TabStop = false;
+            // 
+            // btnMusic
+            // 
+            this.btnMusic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMusic.BackColor = System.Drawing.Color.Transparent;
+            this.btnMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMusic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMusic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.btnMusic.Image = global::DIT_AIO.Properties.Resources.playing;
+            this.btnMusic.Location = new System.Drawing.Point(756, 491);
+            this.btnMusic.Margin = new System.Windows.Forms.Padding(0);
+            this.btnMusic.Name = "btnMusic";
+            this.btnMusic.Size = new System.Drawing.Size(41, 38);
+            this.btnMusic.TabIndex = 17;
+            this.btnMusic.Tag = "Home";
+            this.btnMusic.UseVisualStyleBackColor = false;
             // 
             // Runetonic
             // 
@@ -1289,9 +1283,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -1299,6 +1292,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
