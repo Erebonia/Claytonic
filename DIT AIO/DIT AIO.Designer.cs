@@ -352,12 +352,12 @@
             this.Master.Controls.Add(this.btnMaximize);
             this.Master.Controls.Add(this.btnMinimize);
             this.Master.Controls.Add(this.btnClose);
-            this.Master.Controls.Add(this.Home);
-            this.Master.Controls.Add(this.DataRecovery);
-            this.Master.Controls.Add(this.Diagnostics);
             this.Master.Controls.Add(this.SystemSetup);
             this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
+            this.Master.Controls.Add(this.Home);
+            this.Master.Controls.Add(this.DataRecovery);
+            this.Master.Controls.Add(this.Diagnostics);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(825, 578);
@@ -492,7 +492,9 @@
             // 
             // Title_Home
             // 
-            this.Title_Home.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Title_Home.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title_Home.ForeColor = System.Drawing.Color.Khaki;
             this.Title_Home.Location = new System.Drawing.Point(0, 0);
@@ -947,6 +949,7 @@
             this.btn_Paperport.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Paperport.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_Paperport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Paperport.FlatAppearance.BorderColor = System.Drawing.Color.Ivory;
             this.btn_Paperport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Paperport.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Paperport.Location = new System.Drawing.Point(222, 459);
@@ -965,6 +968,7 @@
             this.btn_Esignature.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Esignature.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_Esignature.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Esignature.FlatAppearance.BorderColor = System.Drawing.Color.Ivory;
             this.btn_Esignature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Esignature.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Esignature.Location = new System.Drawing.Point(360, 459);
@@ -983,6 +987,7 @@
             this.btn_blank_login.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_blank_login.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_blank_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_blank_login.FlatAppearance.BorderColor = System.Drawing.Color.Ivory;
             this.btn_blank_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_blank_login.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_blank_login.Location = new System.Drawing.Point(88, 459);
@@ -1001,6 +1006,7 @@
             this.btn_Firewall.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Firewall.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_Firewall.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Firewall.FlatAppearance.BorderColor = System.Drawing.Color.Ivory;
             this.btn_Firewall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Firewall.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Firewall.Location = new System.Drawing.Point(626, 459);
@@ -1020,6 +1026,7 @@
             this.btn_outlook_cache.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_outlook_cache.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_outlook_cache.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_outlook_cache.FlatAppearance.BorderColor = System.Drawing.Color.Ivory;
             this.btn_outlook_cache.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_outlook_cache.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_outlook_cache.Location = new System.Drawing.Point(494, 459);
@@ -1260,11 +1267,14 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Master);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "Runetonic";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.TopMost = true;
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.programicon.ResumeLayout(false);
