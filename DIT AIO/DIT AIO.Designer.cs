@@ -352,12 +352,12 @@
             this.Master.Controls.Add(this.btnMaximize);
             this.Master.Controls.Add(this.btnMinimize);
             this.Master.Controls.Add(this.btnClose);
-            this.Master.Controls.Add(this.SystemSetup);
-            this.Master.Controls.Add(this.Mainframe);
-            this.Master.Controls.Add(this.Settings);
             this.Master.Controls.Add(this.Home);
             this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
+            this.Master.Controls.Add(this.SystemSetup);
+            this.Master.Controls.Add(this.Mainframe);
+            this.Master.Controls.Add(this.Settings);
             this.Master.Location = new System.Drawing.Point(192, 12);
             this.Master.Name = "Master";
             this.Master.Size = new System.Drawing.Size(825, 578);
@@ -787,7 +787,7 @@
             // 
             // CityLogo
             // 
-            this.CityLogo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.CityLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.CityLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CityLogo.Image = global::DIT_AIO.Properties.Resources.citylogo1;
             this.CityLogo.Location = new System.Drawing.Point(58, 114);
@@ -818,7 +818,7 @@
             // 
             // tooltip
             // 
-            this.tooltip.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tooltip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tooltip.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tooltip.ForeColor = System.Drawing.Color.Khaki;
             this.tooltip.Location = new System.Drawing.Point(101, 546);
@@ -830,8 +830,7 @@
             // 
             // DESC_Info
             // 
-            this.DESC_Info.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DESC_Info.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.DESC_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.DESC_Info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.DESC_Info.Location = new System.Drawing.Point(71, 443);
@@ -843,9 +842,7 @@
             // 
             // Title_Home
             // 
-            this.Title_Home.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Title_Home.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title_Home.ForeColor = System.Drawing.Color.Khaki;
             this.Title_Home.Location = new System.Drawing.Point(0, 0);
@@ -857,7 +854,7 @@
             // 
             // UpdateNotes
             // 
-            this.UpdateNotes.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.UpdateNotes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UpdateNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
             this.UpdateNotes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UpdateNotes.Controls.Add(this.label10);
