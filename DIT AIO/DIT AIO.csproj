@@ -339,13 +339,9 @@
     <None Include="Resources\citylogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\UI-8.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\playing.png" />
     <EmbeddedResource Include="Resources\paused.png" />
     <EmbeddedResource Include="Resources\claytonic_music.wav" />
-    <None Include="Resources\free-data-recovery.png" />
     <None Include="Resources\mainframe_bg.png" />
     <None Include="Resources\happy.png" />
     <None Include="Resources\labratory.gif" />
