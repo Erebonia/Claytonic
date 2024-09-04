@@ -65,6 +65,10 @@ namespace DIT_AIO
             npcDialogue = new NPCDialogue(npcdialogue);
             // 35 is characters displaying every 35ms to simulate talking and 10k ms (10 seconds) delay for each phrase
             this.Load += async (s, e) => await npcDialogue.StartDialogue(35, 10000);
+
+            //Maximize mode will not cover the taskbar
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
         }
 
 
