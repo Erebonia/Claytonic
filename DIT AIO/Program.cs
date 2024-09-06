@@ -13,7 +13,7 @@ namespace DIT_AIO
             Application.SetCompatibleTextRenderingDefault(false);
 
             // Define the paths for the remote and local executables
-            string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\Claytonic.exe";
+            string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\DO_NOT_TOUCH\Claytonic.exe";
             string localExePath = Application.ExecutablePath;
 
             // Check for updates before displaying the form
