@@ -6,56 +6,40 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Media;
 using System.Reflection;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace DIT_AIO
 {
     public partial class Runetonic : Form
     {
-        //This is used for the dark background when hovering over something.
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn(
-            int nLeftRect,
-            int nTopRect,
-            int nRightRect,
-            int nBottomRect,
-            int nWidthEllipse,
-            int nHeightEllipse
-        );
 
-        //Audio Player
-        private AudioPlayer audioPlayer; 
+        //UI Handler
+        private CategoryNavigator categoryNavigator;
+
+        private NPCDialogue npcDialogue;
+
+        private AudioPlayer audioPlayer;
         private Image playImage;
         private Image pauseImage;
 
-        //UI Handler
-        private ButtonNavigator navigator;
-        private CategoryNavigator categoryNavigator;
-
         public Runetonic()
         {
-            //For designer.cs to instantiate
+            // For designer.cs to instantiate
             InitializeComponent();
-
-            //Instantiate the highlighted area. When you select a navigation button there is a dark background around it.
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            pnlNav.Height = btnDashboard.Height;
-            pnlNav.Top = btnDashboard.Top;
-            pnlNav.Left = btnDashboard.Left;
-            btnDashboard.BackColor = Color.FromArgb(28, 28, 18);
 
             // Initialize the images for our music buttons.
             playImage = Image.FromStream(ResourceHelper.GetResourceStream("DIT_AIO.Resources.playing.png"));
             pauseImage = Image.FromStream(ResourceHelper.GetResourceStream("DIT_AIO.Resources.paused.png"));
 
-            // Initialize colors for the buttons
-            navigator = new ButtonNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34));
+            // Initialize AudioPlayer
+            audioPlayer = new AudioPlayer(playImage, pauseImage, musicVolume);
+
+            // Update the event handler to use the AudioPlayer's method
+            btnMusic.Click += (s, e) => audioPlayer.HandleMusicButtonClick(btnMusic);
 
             // Initialize colors for navigation buttons
             categoryNavigator = new CategoryNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34), this.Master);
-
-            // Initialize AudioPlayer
-            audioPlayer = new AudioPlayer();
-            audioPlayer.LoadAudio("DIT_AIO.Resources.claytonic_music.wav");
 
             // Attach event handlers
             btnDashboard.Click += categoryNavigator.HandleCategoryClick;
@@ -64,6 +48,7 @@ namespace DIT_AIO
             btnSystemSetup.Click += categoryNavigator.HandleCategoryClick;
             btnMainframe.Click += categoryNavigator.HandleCategoryClick;
             btnSettings.Click += categoryNavigator.HandleCategoryClick;
+            btnMaximize.Click += categoryNavigator.HandleMaximizeClick;
             btnMinimize.Click += categoryNavigator.HandleMinimizeClick;
             btnClose.Click += categoryNavigator.HandleCloseClick;
 
@@ -71,11 +56,21 @@ namespace DIT_AIO
             categoryNavigator.HandleCategoryClick(btnDashboard, EventArgs.Empty);
 
             // Attach FormDragger to THIS entire form and its controls
-            //This allows us to drag the program
+            // This allows us to drag the program
             FormDragger dragger = new FormDragger();
             dragger.Attach(this);
-            AttachDragEventHandlers(this, dragger); 
+            AttachDragEventHandlers(this, dragger);
+
+            // Initialize NPCDialogue and start it when the program loads
+            npcDialogue = new NPCDialogue(npcdialogue);
+            // 35 is characters displaying every 35ms to simulate talking and 10k ms (10 seconds) delay for each phrase
+            this.Load += async (s, e) => await npcDialogue.StartDialogue(35, 10000);
+
+            //Maximize mode will not cover the taskbar
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
         }
+
 
         private void AttachDragEventHandlers(Control control, FormDragger dragger)
         {
@@ -199,24 +194,7 @@ namespace DIT_AIO
                 MessageBox.Show($"Failed to run script: {ex.Message}");
             }
         }
-
-        private void Music_Click(object sender, EventArgs e)
-        {
-            Button clickedButton = sender as Button; // Get the button that was clicked
-
-            if (audioPlayer.IsPlaying())
-            {
-                // Stop the sound if it's playing 
-                audioPlayer.Stop();
-                clickedButton.Image = pauseImage;
-            }
-            else
-            {
-                // Play the sound if it's not playing
-                audioPlayer.PlayLooping();
-                clickedButton.Image = playImage;
-            }
-        }
     }
 }
+
 
