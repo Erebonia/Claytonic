@@ -138,8 +138,8 @@ namespace DIT_AIO
 
         private void DisableFirewall(object sender, EventArgs e)
         {
-            runCustomScript(@"\\ditfp1\helpdesk\BN\Firewall\firewall-notifications-off.reg");
-            runCustomScript(@"\\ditfp1\helpdesk\BN\Firewall\firewall-off.bat");
+            runCustomScript(@"\\ditfp1\helpdesk\BN\Technician_Tools\Common_Fixes\Firewall\firewall-notifications-off.reg");
+            runCustomScript(@"\\ditfp1\helpdesk\BN\Technician_Tools\Common_Fixes\Firewall\firewall-off.bat");
         }
 
         private void Outlook_Cache_Removal(object sender, EventArgs e)
