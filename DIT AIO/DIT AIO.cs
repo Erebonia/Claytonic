@@ -71,7 +71,6 @@ namespace DIT_AIO
 
         }
 
-
         private void AttachDragEventHandlers(Control control, FormDragger dragger)
         {
             dragger.Attach(control); // Attach drag handler to each control
