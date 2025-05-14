@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DIT_AIO
 {
-    public partial class Claytonic : Form
+    public partial class Runetonic : Form
     {
 
         //UI Handler
@@ -23,7 +23,7 @@ namespace DIT_AIO
         private Image playImage;
         private Image pauseImage;
 
-        public Claytonic()
+        public Runetonic()
         {
             // For designer.cs to instantiate
             InitializeComponent();
