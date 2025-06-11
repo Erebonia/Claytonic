@@ -468,13 +468,13 @@
             // tooltip
             // 
             this.tooltip.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tooltip.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tooltip.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tooltip.ForeColor = System.Drawing.Color.Khaki;
             this.tooltip.Location = new System.Drawing.Point(101, 546);
             this.tooltip.Name = "tooltip";
             this.tooltip.Size = new System.Drawing.Size(611, 25);
             this.tooltip.TabIndex = 15;
-            this.tooltip.Text = "Developed by Bao Nguyen, Clayton Lee, and Kyle Santiago";
+            this.tooltip.Text = "Developed by Bao Nguyen && Clayton Lee";
             this.tooltip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DESC_Info
@@ -498,7 +498,7 @@
             this.Title_Home.Name = "Title_Home";
             this.Title_Home.Size = new System.Drawing.Size(825, 62);
             this.Title_Home.TabIndex = 0;
-            this.Title_Home.Text = "Homepage";
+            this.Title_Home.Text = "Announcements";
             this.Title_Home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // UpdateNotes
@@ -526,8 +526,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(328, 64);
             this.label10.TabIndex = 22;
-            this.label10.Text = "- Added an NPC assistant to display tips and information about the program. Above" +
-    " the settings.";
+            this.label10.Text = "- Scanning && Signature now require program to be run as original user.";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
@@ -540,7 +539,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(328, 50);
             this.label9.TabIndex = 21;
-            this.label9.Text = "- Button descriptions have been converted to tool tips.";
+            this.label9.Text = "- Data && Printer Recovery now checks for admin rights. ";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
@@ -553,7 +552,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(328, 28);
             this.label8.TabIndex = 20;
-            this.label8.Text = "- Redesigned user interface and resizable UI. ";
+            this.label8.Text = "- TODO";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -579,7 +578,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(325, 28);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Version 1.1";
+            this.label7.Text = "Version 1.2";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DataRecovery
@@ -754,7 +753,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(537, 24);
             this.label4.TabIndex = 39;
-            this.label4.Text = "This page contains a compilation of CMD commands for user diagnostics.";
+            this.label4.Text = "Compilation of CMD commands for user diagnostics.";
             // 
             // pictureBox8
             // 

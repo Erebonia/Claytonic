@@ -8,6 +8,7 @@ using System.Media;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Security.Principal;
 
 namespace DIT_AIO
 {
@@ -82,21 +83,25 @@ namespace DIT_AIO
 
         private void Backup_Data(object sender, EventArgs e)
         {
+            requireAdminOrDifferentUser();
             runCustomScript(@"\\ditfp1\helpdesk\BN\Data Migration Script\00Backup - User Profile.bat");
         }
 
         private void Restore_Data(object sender, EventArgs e)
         {
+            requireAdminOrDifferentUser();
             runCustomScript(@"\\ditfp1\helpdesk\BN\Data Migration Script\00Restore - User Profile.bat");
         }
 
         private void Backup_Printers(object sender, EventArgs e)
         {
+            requireAdminOrDifferentUser();
             runCustomScript(@"\\ditfp1\helpdesk\BN\Data Migration Script\22backup_printers.bat");
         }
 
         private void Restore_Printers(object sender, EventArgs e)
         {
+            requireAdminOrDifferentUser();
             runCustomScript(@"\\ditfp1\helpdesk\BN\Data Migration Script\22restore_printers.bat");
         }
 
@@ -112,23 +117,28 @@ namespace DIT_AIO
 
         private void SFC_Scan(object sender, EventArgs e)
         {
+            requireAdminOrDifferentUser();
             runCustomScript(@"\\ditfp1\helpdesk\BN\Technician_Tools\SFC_Scannow.bat");
         }
 
         private void DISM(object sender, EventArgs e)
         {
+            requireAdminOrDifferentUser();
             runCustomScript(@"\\ditfp1\helpdesk\BN\Technician_Tools\DISM.bat");
         }
 
         private void Scanner_Setup(object sender, EventArgs e)
         {
+            stopDifferentUser();
             runCustomScript(@"\\Ditfp1\helpdesk\PaperPort\CCHSCAN1\ImageRetrieverFix5.cmd");
         }
 
         private void Electronic_Signature(object sender, EventArgs e)
         {
+            stopDifferentUser();
             runCustomScript(@"\\ditfp1\helpdesk\!SHORTCUTS!\checkCert.bat");
         }
+
 
         private void Blank_Login(object sender, EventArgs e)
         {
@@ -191,6 +201,77 @@ namespace DIT_AIO
             {
                 // Show error message if the script fails to start
                 MessageBox.Show($"Failed to run script: {ex.Message}");
+            }
+        }
+
+        //Logic to retrieve current user logged on vs who ran the console "run as different user".
+        [DllImport("wtsapi32.dll", SetLastError = true)]
+        private static extern bool WTSQuerySessionInformation(
+        IntPtr hServer, int sessionId, WTS_INFO_CLASS wtsInfoClass,
+        out IntPtr ppBuffer, out int pBytesReturned);
+
+        [DllImport("wtsapi32.dll")]
+        private static extern void WTSFreeMemory(IntPtr pointer);
+
+        private enum WTS_INFO_CLASS
+        {
+            WTSUserName = 5,
+            WTSDomainName = 7
+        }
+
+        private string GetConsoleUsername()
+        {
+            IntPtr buffer;
+            int strLen;
+            string username = null;
+
+            int sessionId = Process.GetCurrentProcess().SessionId;
+            if (WTSQuerySessionInformation(IntPtr.Zero, sessionId, WTS_INFO_CLASS.WTSUserName, out buffer, out strLen) && strLen > 1)
+            {
+                username = Marshal.PtrToStringAnsi(buffer);
+                WTSFreeMemory(buffer);
+            }
+
+            return username;
+        }
+
+        private void stopDifferentUser()
+        {
+            string processUser = WindowsIdentity.GetCurrent().Name; // DOMAIN\User or MACHINE\User
+            string consoleUser = GetConsoleUsername(); // Just the username
+
+            if (!processUser.EndsWith("\\" + consoleUser, StringComparison.OrdinalIgnoreCase))
+            {
+                MessageBox.Show("Please do not use 'Run as different user' for this feature. Log in as the intended user instead.",
+                    "Unauthorized Execution", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+        }
+
+        private void requireAdminOrDifferentUser()
+        {
+            string processUser = WindowsIdentity.GetCurrent().Name;
+            string consoleUser = GetConsoleUsername();
+
+            // Check if current user is in the Administrators group
+            using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
+            {
+                WindowsPrincipal principal = new WindowsPrincipal(identity);
+                bool isAdmin = principal.IsInRole(WindowsBuiltInRole.Administrator);
+
+                if (isAdmin)
+                {
+                    // Admins are always allowed
+                    return;
+                }
+            }
+
+            // Not admin, so must be run as different user
+            if (processUser.EndsWith("\\" + consoleUser, StringComparison.OrdinalIgnoreCase))
+            {
+                MessageBox.Show("This function requires admin rights. Please run as a different user with elevated permissions.",
+                    "Insufficient Permissions", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                throw new UnauthorizedAccessException("User is not admin and did not run as different user.");
             }
         }
     }
