@@ -546,13 +546,13 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.label8.Location = new System.Drawing.Point(4, 88);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(328, 28);
             this.label8.TabIndex = 20;
-            this.label8.Text = "- TODO";
+            this.label8.Text = "6/12/2025";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -578,7 +578,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(325, 28);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Version 1.2";
+            this.label7.Text = "Version 1.2 - QoL Updates";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DataRecovery

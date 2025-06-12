@@ -271,7 +271,7 @@ namespace DIT_AIO
             {
                 MessageBox.Show("This function requires admin rights. Please run as a different user with elevated permissions.",
                     "Insufficient Permissions", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                throw new UnauthorizedAccessException("User is not admin and did not run as different user.");
+                throw new UnauthorizedAccessException("User is not admin. Please run the program as different user with your credentials.");
             }
         }
     }
