@@ -105,6 +105,9 @@
             this.Title_Settings = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btn_MF_Install_VistaTN3270 = new System.Windows.Forms.Button();
+            this.btn_MF_Fix_Thunderbolt = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.programicon.SuspendLayout();
@@ -506,6 +509,7 @@
             this.UpdateNotes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UpdateNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
             this.UpdateNotes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UpdateNotes.Controls.Add(this.label11);
             this.UpdateNotes.Controls.Add(this.label10);
             this.UpdateNotes.Controls.Add(this.label9);
             this.UpdateNotes.Controls.Add(this.label8);
@@ -521,7 +525,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label10.Location = new System.Drawing.Point(10, 166);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(328, 64);
@@ -534,7 +538,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label9.Location = new System.Drawing.Point(7, 116);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(328, 50);
@@ -547,12 +551,12 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label8.Location = new System.Drawing.Point(4, 88);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(328, 28);
             this.label8.TabIndex = 20;
-            this.label8.Text = "6/12/2025";
+            this.label8.Text = "June 12, 2025";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -573,7 +577,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label7.Location = new System.Drawing.Point(6, 45);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(325, 28);
@@ -1052,6 +1056,8 @@
             // Mainframe
             // 
             this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.Mainframe.Controls.Add(this.btn_MF_Fix_Thunderbolt);
+            this.Mainframe.Controls.Add(this.btn_MF_Install_VistaTN3270);
             this.Mainframe.Controls.Add(this.pictureBox9);
             this.Mainframe.Controls.Add(this.label1);
             this.Mainframe.Controls.Add(this.pictureBox7);
@@ -1123,7 +1129,7 @@
             this.btn_MF_Unsuspend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_Unsuspend.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_Unsuspend.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(278, 487);
+            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(156, 487);
             this.btn_MF_Unsuspend.Name = "btn_MF_Unsuspend";
             this.btn_MF_Unsuspend.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_Unsuspend.TabIndex = 8;
@@ -1143,7 +1149,7 @@
             this.btn_MF_PW_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_PW_Reset.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_PW_Reset.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(402, 487);
+            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(276, 487);
             this.btn_MF_PW_Reset.Name = "btn_MF_PW_Reset";
             this.btn_MF_PW_Reset.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_PW_Reset.TabIndex = 9;
@@ -1163,7 +1169,7 @@
             this.btn_MF_PS_Printer_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_PS_Printer_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_PS_Printer_Data.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(529, 487);
+            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(396, 487);
             this.btn_MF_PS_Printer_Data.Name = "btn_MF_PS_Printer_Data";
             this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_PS_Printer_Data.TabIndex = 26;
@@ -1183,7 +1189,7 @@
             this.btn_MF_Guide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_Guide.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_Guide.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_MF_Guide.Location = new System.Drawing.Point(147, 487);
+            this.btn_MF_Guide.Location = new System.Drawing.Point(36, 487);
             this.btn_MF_Guide.Name = "btn_MF_Guide";
             this.btn_MF_Guide.Size = new System.Drawing.Size(105, 38);
             this.btn_MF_Guide.TabIndex = 14;
@@ -1251,6 +1257,60 @@
             this.toolTip1.ReshowDelay = 0;
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "Information";
+            // 
+            // btn_MF_Install_VistaTN3270
+            // 
+            this.btn_MF_Install_VistaTN3270.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_Install_VistaTN3270.BackColor = System.Drawing.Color.Transparent;
+            this.btn_MF_Install_VistaTN3270.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Install_VistaTN3270.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_Install_VistaTN3270.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_Install_VistaTN3270.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_MF_Install_VistaTN3270.Location = new System.Drawing.Point(518, 487);
+            this.btn_MF_Install_VistaTN3270.Name = "btn_MF_Install_VistaTN3270";
+            this.btn_MF_Install_VistaTN3270.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_Install_VistaTN3270.TabIndex = 31;
+            this.btn_MF_Install_VistaTN3270.Tag = "Mainframe";
+            this.btn_MF_Install_VistaTN3270.Text = "Install VistaTN3270";
+            this.toolTip1.SetToolTip(this.btn_MF_Install_VistaTN3270, "Mainframe thunderbolt issues or miscellaneous issues? CTRL+F \"psprinterdata\", rem" +
+        "ove gibberish text and replace with \"\".");
+            this.btn_MF_Install_VistaTN3270.UseVisualStyleBackColor = false;
+            this.btn_MF_Install_VistaTN3270.Visible = false;
+            this.btn_MF_Install_VistaTN3270.Click += new System.EventHandler(this.install_VistaTN3270);
+            // 
+            // btn_MF_Fix_Thunderbolt
+            // 
+            this.btn_MF_Fix_Thunderbolt.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_Fix_Thunderbolt.BackColor = System.Drawing.Color.Transparent;
+            this.btn_MF_Fix_Thunderbolt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Fix_Thunderbolt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_Fix_Thunderbolt.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_Fix_Thunderbolt.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_MF_Fix_Thunderbolt.Location = new System.Drawing.Point(638, 487);
+            this.btn_MF_Fix_Thunderbolt.Name = "btn_MF_Fix_Thunderbolt";
+            this.btn_MF_Fix_Thunderbolt.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_Fix_Thunderbolt.TabIndex = 32;
+            this.btn_MF_Fix_Thunderbolt.Tag = "Mainframe";
+            this.btn_MF_Fix_Thunderbolt.Text = "Fix Thunderbolt Error";
+            this.toolTip1.SetToolTip(this.btn_MF_Fix_Thunderbolt, "Mainframe thunderbolt issues or miscellaneous issues? CTRL+F \"psprinterdata\", rem" +
+        "ove gibberish text and replace with \"\".");
+            this.btn_MF_Fix_Thunderbolt.UseVisualStyleBackColor = false;
+            this.btn_MF_Fix_Thunderbolt.Visible = false;
+            this.btn_MF_Fix_Thunderbolt.Click += new System.EventHandler(this.fix_Thunderbolt_Error);
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label11.Location = new System.Drawing.Point(6, 224);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(328, 64);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "- New features added to Mainframe tab. Thunderbolt error fix and Vista TN install" +
+    "er.";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Runetonic
             // 
@@ -1382,6 +1442,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TrackBar musicVolume;
         private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.Button btn_MF_Install_VistaTN3270;
+        private System.Windows.Forms.Button btn_MF_Fix_Thunderbolt;
+        private System.Windows.Forms.Label label11;
     }
 }
 

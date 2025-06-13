@@ -182,6 +182,17 @@ namespace DIT_AIO
             runCustomScript(@"\\Ditfp1\helpdesk\BN\Mainframe");
         }
 
+        private void install_VistaTN3270(object sender, EventArgs e)
+        {
+            runCustomScript(@"\\ditfp1\helpdesk\VistaTN3270\silent.bat");
+        }
+
+        private void fix_Thunderbolt_Error(object sender, EventArgs e)
+        {
+            requireAdminOrDifferentUser();
+            runCustomScript(@"\\ditfp1\helpdesk\!SHORTCUTS!\MainframeEDPModify.cmd");
+        }
+
         private void runCustomScript(string scriptPath)
         {
             // Create a new process to run the script

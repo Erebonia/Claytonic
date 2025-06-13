@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("City and County of Honolulu")]
 [assembly: AssemblyProduct("DIT AIO")]
-[assembly: AssemblyCopyright("Copyright © City and County of Honolulu 2024")]
+[assembly: AssemblyCopyright("Copyright © City and County of Honolulu 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
