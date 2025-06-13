@@ -9,6 +9,8 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>DIT_AIO</RootNamespace>
     <AssemblyName>Claytonic</AssemblyName>
+    <ProductVersion>1.1.0.0</ProductVersion>
+    <FileVersion>1.1.0.0</FileVersion>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,7 +55,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\DIT_Logo.ico</ApplicationIcon>
+    <ApplicationIcon>DIT_Logo_V2.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>6A01CC1B3DC87415AA2231B9461CDD0C8925D4F3</ManifestCertificateThumbprint>
@@ -353,7 +355,7 @@
     <EmbeddedResource Include="Resources\CoffeeTonic.wav" />
     <None Include="Resources\datarecovery.gif" />
     <None Include="Resources\maximize.png" />
-    <Content Include="Resources\DIT_Logo.ico" />
+    <Content Include="DIT_Logo_V2.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
