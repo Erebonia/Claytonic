@@ -1,7 +1,7 @@
 # Claytonic
 This is a comprehensive suite of tools designed to aid Helpdesk technicians and CSRs with their daily tasks. It centralizes and accesses 19 different programs/scripts within network drives, eliminating the need to manually search for these tools.
 
-This tool can be easily modified to point toward customized drive locations or simply host the script locally utilizing Visual Studio 2022.
+This tool can be easily modified to point toward customized drive locations or simply host the script locally utilizing any version or variant of Visual Studio 2022.
 
 ## Data Recovery
 ![image](https://github.com/user-attachments/assets/70c3dd05-c9fd-4635-8ab1-d0ea3b03669a)
