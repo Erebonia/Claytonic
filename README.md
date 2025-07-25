@@ -65,14 +65,17 @@ Claytonics acts as a centralized launcher for various administrative scripts and
 
     Volume Control Integrated: Hooked into a musicVolume trackbar for user-controlled audio playback.
 
+## Home
+<img width="1020" height="593" alt="image" src="https://github.com/user-attachments/assets/76670873-1034-4788-a30e-6261da454555" />
+
 ## Data Recovery
-![image](https://github.com/user-attachments/assets/70c3dd05-c9fd-4635-8ab1-d0ea3b03669a)
+<img width="1021" height="597" alt="{75937000-4669-4E1F-A929-B092711CB235}" src="https://github.com/user-attachments/assets/0071a0e7-096a-415e-abaf-8d0cf50b1ab3" />
 
 ## Diagnostics
-![image](https://github.com/user-attachments/assets/be448b05-0886-4655-83bf-a69cc462a147)
+<img width="1019" height="598" alt="{BE194657-8F4C-4F98-9EF4-0D978159EE80}" src="https://github.com/user-attachments/assets/bf9ccefa-79eb-4072-afbc-fd0d909bf74c" />
 
 ## System Setup
-![image](https://github.com/user-attachments/assets/2c262f72-fb39-4551-8b45-5b57d66563e3)
+<img width="1021" height="600" alt="{430D8B03-0E78-4973-AA22-C827EC794F27}" src="https://github.com/user-attachments/assets/db30db9c-9dc7-4277-aa29-ab3047916eed" />
 
 ## Mainframe
-![image](https://github.com/user-attachments/assets/6c091bc7-871b-41dd-8ab0-fe8da0768470)
+<img width="1021" height="592" alt="{3E88AC24-B692-4A9C-8DF2-35495EF7D680}" src="https://github.com/user-attachments/assets/99812fc6-4164-4da7-a2e5-974790fc7801" />
