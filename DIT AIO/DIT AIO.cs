@@ -136,7 +136,7 @@ namespace DIT_AIO
         private void Electronic_Signature(object sender, EventArgs e)
         {
             stopDifferentUser();
-            runCustomScript(@"\\ditfp1\helpdesk\!SHORTCUTS!\checkCert.bat");
+            runCustomScript(@"\\ditfp1\helpdesk\Digital Signatures\New Files\checkCert2.bat");
         }
 
 
