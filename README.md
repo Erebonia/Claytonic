@@ -1,81 +1,94 @@
-# Claytonic - SysOps Toolbox
-This is a comprehensive suite of tools designed to aid IT Technicians with their daily tasks. It centralizes and accesses 19 different programs/scripts within network drives, eliminating the need to manually search for these tools.
+# Claytonic – Systems Operations Automation Suite
 
-## Features:
+**Claytonic** is a centralized tool launcher and diagnostics suite built in C# using Windows Forms. Designed for IT support technicians, it streamlines access to over 18 scripts and utilities used across citywide and enterprise systems, replacing manual lookup workflows with a professional, interactive interface.
 
-🛠️ Script Execution Hub for IT Tasks
+---
 
-Claytonics acts as a centralized launcher for various administrative scripts and IT tools, including:
+## ⚙️ Core Features
 
-🔁 Data Migration
+### 🛠 Script Execution Hub
+- Launches 19+ IT tools and scripts directly from shared network drives.
+- Eliminates redundant navigation and manual script execution.
 
-    Backup & Restore user profiles and printers with a single click.
+### 🔁 Data Migration Module
+- Automates backup and restoration of:
+  - User profiles
+  - Printers
+  - Desktop/Documents/Favorites/Downloads folders
+- Designed to accelerate PC replacements and minimize user downtime.
 
-🖥️ System Diagnostics
+### 🖥 System Diagnostics Panel
+- One-click execution of diagnostic commands:
+  - `sfc /scannow`
+  - `DISM`
+  - `ping`
+  - `net user`, and others
 
-    Trigger system tools like:
+### 🖨 Peripheral Setup & Repair
+- Pre-bundled fixes and installers for:
+  - ImageRetriever (scanner)
+  - Networked printer drivers
+  - Legacy terminals (e.g., VistaTN3270, Extra!)
 
-        SFC /Scannow
+### 📧 Office Troubleshooting
+- Tools to resolve Outlook form issues and registry corruption:
+  - Outlook cache clear
+  - PST repair support
+  - Add-in fixes
 
-        DISM
+### 🔐 Security & Credential Access
+- Run scripts to:
+  - Disable firewalls
+  - Reset ACID credentials
+  - Manage blank login policies
 
-        ping
+---
 
-        net user
+## 👮 Security & Permission Handling
 
-🖨️ Peripheral Setup
+- **Admin Verification**: Sensitive operations require elevation or domain-level access.
+- **Run-As Detection**: Prevents execution under mismatched credentials (compares console vs process identity).
 
-    Install or fix drivers and services for:
+---
 
-        Scanners (ImageRetrieverFix)
+## 🧩 Software Architecture
 
-        Printers
+- **Modular Design**: Organized into class components such as `AudioPlayer`, `NPCDialogue`, and `CategoryNavigator` for clean extensibility.
+- **Dynamic Script Mapping**: All scripts launched from live network shares, allowing centralized updates without client-side changes.
 
-        Mainframe terminals (VistaTN3270, Extra!)
+---
 
-📧 Office Fixes
+## 🧠 Interactive Dialogue & UX Enhancements
 
-    One-click Outlook cache and registry fixes to resolve form or add-in issues.
+- Simulated NPC textbox that types dialogue one character at a time.
+- Dialogues randomly rotate on app launch for a dynamic UI touch.
 
-🔐 Security and Access
+---
 
-    Run scripts to disable firewalls, reset ACID credentials, and manage blank login policies.
+## 🔉 Audio Integration
 
-👮 Security & Permission Handling
+- Custom toggle buttons (play/pause) using embedded assets.
+- Volume control via integrated trackbar with real-time adjustment.
 
-    Admin Verification: Some features require administrator access or a domain elevation prompt.
+---
 
-    Run-As Detection: Prevents misuse when running as a different user by comparing console and process credentials.
+## 🖼 Application Preview
 
-🧩 Extensibility and Maintenance
-
-    Modular Design: Uses classes like AudioPlayer, CategoryNavigator, and NPCDialogue for clean separation of concerns.
-
-    Dynamic Script Paths: All scripts are launched from network shares, allowing centralized updates and maintenance.
-
-🧠 Interactive NPC Dialogue
-
-    Automated NPC Chatbox: A text area simulates typing one character at a time.
-
-    Randomized Dialogue with Delays: Dialogues are automatically triggered on app load, mimicking real-time NPC conversation.
-
-🎵 Built-in Audio Player
-
-    Custom Play/Pause Toggle: Buttons switch dynamically between icons using embedded images.
-
-    Volume Control Integrated: Hooked into a musicVolume trackbar for user-controlled audio playback.
-
-## Home
+### 🏠 Home
 <img width="1020" height="593" alt="image" src="https://github.com/user-attachments/assets/76670873-1034-4788-a30e-6261da454555" />
 
-## Data Recovery
-<img width="1021" height="597" alt="{75937000-4669-4E1F-A929-B092711CB235}" src="https://github.com/user-attachments/assets/0071a0e7-096a-415e-abaf-8d0cf50b1ab3" />
+### 💾 Data Recovery
+<img width="1021" height="597" alt="data" src="https://github.com/user-attachments/assets/0071a0e7-096a-415e-abaf-8d0cf50b1ab3" />
 
-## Diagnostics
-<img width="1019" height="598" alt="{BE194657-8F4C-4F98-9EF4-0D978159EE80}" src="https://github.com/user-attachments/assets/bf9ccefa-79eb-4072-afbc-fd0d909bf74c" />
+### 🧪 Diagnostics
+<img width="1019" height="598" alt="diagnostics" src="https://github.com/user-attachments/assets/bf9ccefa-79eb-4072-afbc-fd0d909bf74c" />
 
-## System Setup
-<img width="1021" height="600" alt="{430D8B03-0E78-4973-AA22-C827EC794F27}" src="https://github.com/user-attachments/assets/db30db9c-9dc7-4277-aa29-ab3047916eed" />
+### 🛠 System Setup
+<img width="1021" height="600" alt="system-setup" src="https://github.com/user-attachments/assets/db30db9c-9dc7-4277-aa29-ab3047916eed" />
 
-## Mainframe
-<img width="1021" height="592" alt="{3E88AC24-B692-4A9C-8DF2-35495EF7D680}" src="https://github.com/user-attachments/assets/99812fc6-4164-4da7-a2e5-974790fc7801" />
+### 🖥 Mainframe Tools
+<img width="1021" height="592" alt="mainframe" src="https://github.com/user-attachments/assets/99812fc6-4164-4da7-a2e5-974790fc7801" />
+
+---
+
+> Designed to empower support teams. Built with scalability and speed in mind.
