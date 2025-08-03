@@ -89,6 +89,9 @@
             this.btnDataRecovery = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.CityLogo = new System.Windows.Forms.PictureBox();
+            this.warning_printers = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -96,9 +99,6 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.CityLogo = new System.Windows.Forms.PictureBox();
-            this.warning_printers = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.programicon.SuspendLayout();
             this.Master.SuspendLayout();
@@ -112,6 +112,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -119,9 +122,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -292,10 +292,10 @@
             this.Title_Home.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title_Home.ForeColor = System.Drawing.Color.Khaki;
-            this.Title_Home.Location = new System.Drawing.Point(-10, 0);
+            this.Title_Home.Location = new System.Drawing.Point(4, 0);
             this.Title_Home.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Title_Home.Name = "Title_Home";
-            this.Title_Home.Size = new System.Drawing.Size(962, 62);
+            this.Title_Home.Size = new System.Drawing.Size(936, 62);
             this.Title_Home.TabIndex = 0;
             this.Title_Home.Text = "Announcements";
             this.Title_Home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -319,10 +319,10 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.richTextBox1.Location = new System.Drawing.Point(8, 66);
+            this.richTextBox1.Location = new System.Drawing.Point(8, 59);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBox1.Size = new System.Drawing.Size(380, 217);
+            this.richTextBox1.Size = new System.Drawing.Size(380, 224);
             this.richTextBox1.TabIndex = 20;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -330,14 +330,14 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Calibri", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Khaki;
             this.label5.Location = new System.Drawing.Point(3, 10);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(393, 34);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Patch Notes - 8/2/2025";
+            this.label5.Text = "Update Ver. 1.3 - 8/2/2025";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DataRecovery
@@ -1115,6 +1115,44 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // CityLogo
+            // 
+            this.CityLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.CityLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CityLogo.Image = global::DIT_AIO.Properties.Resources.citylogo1;
+            this.CityLogo.Location = new System.Drawing.Point(59, 114);
+            this.CityLogo.Margin = new System.Windows.Forms.Padding(0);
+            this.CityLogo.Name = "CityLogo";
+            this.CityLogo.Size = new System.Drawing.Size(356, 294);
+            this.CityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CityLogo.TabIndex = 1;
+            this.CityLogo.TabStop = false;
+            // 
+            // warning_printers
+            // 
+            this.warning_printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.warning_printers.Image = global::DIT_AIO.Properties.Resources.warning;
+            this.warning_printers.Location = new System.Drawing.Point(80, 487);
+            this.warning_printers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.warning_printers.Name = "warning_printers";
+            this.warning_printers.Size = new System.Drawing.Size(42, 29);
+            this.warning_printers.TabIndex = 17;
+            this.warning_printers.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Image = global::DIT_AIO.Properties.Resources.datarecovery;
+            this.pictureBox3.Location = new System.Drawing.Point(31, 65);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(878, 408);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -1201,44 +1239,6 @@
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
-            // CityLogo
-            // 
-            this.CityLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.CityLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CityLogo.Image = global::DIT_AIO.Properties.Resources.citylogo1;
-            this.CityLogo.Location = new System.Drawing.Point(59, 114);
-            this.CityLogo.Margin = new System.Windows.Forms.Padding(0);
-            this.CityLogo.Name = "CityLogo";
-            this.CityLogo.Size = new System.Drawing.Size(356, 294);
-            this.CityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CityLogo.TabIndex = 1;
-            this.CityLogo.TabStop = false;
-            // 
-            // warning_printers
-            // 
-            this.warning_printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.warning_printers.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.warning_printers.Location = new System.Drawing.Point(80, 487);
-            this.warning_printers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.warning_printers.Name = "warning_printers";
-            this.warning_printers.Size = new System.Drawing.Size(42, 29);
-            this.warning_printers.TabIndex = 17;
-            this.warning_printers.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = global::DIT_AIO.Properties.Resources.datarecovery;
-            this.pictureBox3.Location = new System.Drawing.Point(31, 65);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(878, 408);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 19;
-            this.pictureBox3.TabStop = false;
-            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -1259,7 +1259,7 @@
             this.Name = "Runetonic";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Claytonic - DIT Helpdesk Application";
+            this.Text = "Claytonic";
             this.panel1.ResumeLayout(false);
             this.programicon.ResumeLayout(false);
             this.programicon.PerformLayout();
@@ -1280,6 +1280,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -1287,9 +1290,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.warning_printers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
