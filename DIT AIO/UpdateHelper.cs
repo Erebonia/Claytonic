@@ -47,7 +47,7 @@ namespace DIT_AIO.Helpers
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Failed to check for updates: {ex.Message}", "Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Failed to check for updates: {ex.Message}\nProgram will now load locally. Just press OK to continue.", "Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return false; // No update needed
         }

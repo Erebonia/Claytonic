@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 public class FormDragger
@@ -12,13 +13,18 @@ public class FormDragger
         control.MouseDown += Control_MouseDown;
         control.MouseMove += Control_MouseMove;
         control.MouseUp += Control_MouseUp;
+        control.MouseCaptureChanged += Control_MouseCaptureChanged; // Safety for ghost drag
     }
 
     private void Control_MouseDown(object sender, MouseEventArgs e)
     {
-        dragging = true;
-        dragCursorPoint = Cursor.Position;
-        dragFormPoint = ((Control)sender).FindForm().Location;
+        if (e.Button == MouseButtons.Left)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = ((Control)sender).FindForm().Location;
+            ((Control)sender).Capture = true; // Prevent ghost drag
+        }
     }
 
     private void Control_MouseMove(object sender, MouseEventArgs e)
@@ -32,6 +38,15 @@ public class FormDragger
 
     private void Control_MouseUp(object sender, MouseEventArgs e)
     {
-        dragging = false;
+        if (e.Button == MouseButtons.Left)
+        {
+            dragging = false;
+            ((Control)sender).Capture = false;
+        }
+    }
+
+    private void Control_MouseCaptureChanged(object sender, EventArgs e)
+    {
+        dragging = false; // Reset if Windows releases capture unexpectedly
     }
 }

@@ -56,11 +56,8 @@
             this.DESC_Info = new System.Windows.Forms.Label();
             this.Title_Home = new System.Windows.Forms.Label();
             this.UpdateNotes = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.DataRecovery = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.warning_printers = new System.Windows.Forms.PictureBox();
@@ -91,6 +88,8 @@
             this.btn_outlook_cache = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.Mainframe = new System.Windows.Forms.Panel();
+            this.btn_MF_Fix_Thunderbolt = new System.Windows.Forms.Button();
+            this.btn_MF_Install_VistaTN3270 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -105,9 +104,6 @@
             this.Title_Settings = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btn_MF_Install_VistaTN3270 = new System.Windows.Forms.Button();
-            this.btn_MF_Fix_Thunderbolt = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.programicon.SuspendLayout();
@@ -149,8 +145,9 @@
             this.panel1.Controls.Add(this.programicon);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 600);
+            this.panel1.Size = new System.Drawing.Size(217, 561);
             this.panel1.TabIndex = 27;
             // 
             // npcdialogue
@@ -160,9 +157,10 @@
             this.npcdialogue.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.npcdialogue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.npcdialogue.ForeColor = System.Drawing.Color.Khaki;
-            this.npcdialogue.Location = new System.Drawing.Point(12, 391);
+            this.npcdialogue.Location = new System.Drawing.Point(24, 380);
+            this.npcdialogue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.npcdialogue.Name = "npcdialogue";
-            this.npcdialogue.Size = new System.Drawing.Size(171, 70);
+            this.npcdialogue.Size = new System.Drawing.Size(175, 63);
             this.npcdialogue.TabIndex = 22;
             this.npcdialogue.Text = "Hover over buttons to view the description!";
             this.npcdialogue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -172,10 +170,10 @@
             this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox10.Image = global::DIT_AIO.Properties.Resources.clara;
-            this.pictureBox10.Location = new System.Drawing.Point(45, 471);
+            this.pictureBox10.Location = new System.Drawing.Point(46, 460);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(95, 70);
+            this.pictureBox10.Size = new System.Drawing.Size(111, 70);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 22;
             this.pictureBox10.TabStop = false;
@@ -184,8 +182,9 @@
             // 
             this.pnlNav.BackColor = System.Drawing.Color.Brown;
             this.pnlNav.Location = new System.Drawing.Point(0, 193);
+            this.pnlNav.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(3, 100);
+            this.pnlNav.Size = new System.Drawing.Size(4, 100);
             this.pnlNav.TabIndex = 2;
             // 
             // btnSettings
@@ -196,15 +195,15 @@
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.btnSettings.Image = global::DIT_AIO.Properties.Resources.settings;
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 558);
+            this.btnSettings.Location = new System.Drawing.Point(0, 519);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSettings.Size = new System.Drawing.Size(186, 42);
+            this.btnSettings.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnSettings.Size = new System.Drawing.Size(217, 42);
             this.btnSettings.TabIndex = 1;
-            this.btnSettings.Text = "Settings";
             this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Visible = false;
             // 
             // btnMainframe
             // 
@@ -218,9 +217,10 @@
             this.btnMainframe.Image = global::DIT_AIO.Properties.Resources.mainframe;
             this.btnMainframe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMainframe.Location = new System.Drawing.Point(0, 312);
+            this.btnMainframe.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMainframe.Name = "btnMainframe";
-            this.btnMainframe.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMainframe.Size = new System.Drawing.Size(186, 42);
+            this.btnMainframe.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnMainframe.Size = new System.Drawing.Size(217, 42);
             this.btnMainframe.TabIndex = 1;
             this.btnMainframe.Text = "Mainframe";
             this.btnMainframe.UseVisualStyleBackColor = false;
@@ -237,9 +237,10 @@
             this.btnSystemSetup.Image = global::DIT_AIO.Properties.Resources.system;
             this.btnSystemSetup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSystemSetup.Location = new System.Drawing.Point(0, 270);
+            this.btnSystemSetup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnSystemSetup.Name = "btnSystemSetup";
-            this.btnSystemSetup.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSystemSetup.Size = new System.Drawing.Size(186, 42);
+            this.btnSystemSetup.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnSystemSetup.Size = new System.Drawing.Size(217, 42);
             this.btnSystemSetup.TabIndex = 1;
             this.btnSystemSetup.Text = "System Setup";
             this.btnSystemSetup.UseVisualStyleBackColor = false;
@@ -256,9 +257,10 @@
             this.btnDiagnostics.Image = global::DIT_AIO.Properties.Resources.datarecov;
             this.btnDiagnostics.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDiagnostics.Location = new System.Drawing.Point(0, 228);
+            this.btnDiagnostics.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDiagnostics.Name = "btnDiagnostics";
-            this.btnDiagnostics.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnDiagnostics.Size = new System.Drawing.Size(186, 42);
+            this.btnDiagnostics.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnDiagnostics.Size = new System.Drawing.Size(217, 42);
             this.btnDiagnostics.TabIndex = 1;
             this.btnDiagnostics.Text = "Diagnostics";
             this.btnDiagnostics.UseVisualStyleBackColor = false;
@@ -275,9 +277,10 @@
             this.btnDataRecovery.Image = global::DIT_AIO.Properties.Resources.diag;
             this.btnDataRecovery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDataRecovery.Location = new System.Drawing.Point(0, 186);
+            this.btnDataRecovery.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDataRecovery.Name = "btnDataRecovery";
-            this.btnDataRecovery.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnDataRecovery.Size = new System.Drawing.Size(186, 42);
+            this.btnDataRecovery.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnDataRecovery.Size = new System.Drawing.Size(217, 42);
             this.btnDataRecovery.TabIndex = 1;
             this.btnDataRecovery.Text = "Data Recovery";
             this.btnDataRecovery.UseVisualStyleBackColor = false;
@@ -294,9 +297,10 @@
             this.btnDashboard.Image = global::DIT_AIO.Properties.Resources.Home;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.Location = new System.Drawing.Point(0, 144);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(186, 42);
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnDashboard.Size = new System.Drawing.Size(217, 42);
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Text = "Home";
             this.btnDashboard.UseVisualStyleBackColor = false;
@@ -309,8 +313,9 @@
             this.programicon.Controls.Add(this.pictureBox2);
             this.programicon.Dock = System.Windows.Forms.DockStyle.Top;
             this.programicon.Location = new System.Drawing.Point(0, 0);
+            this.programicon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.programicon.Name = "programicon";
-            this.programicon.Size = new System.Drawing.Size(186, 144);
+            this.programicon.Size = new System.Drawing.Size(217, 144);
             this.programicon.TabIndex = 0;
             // 
             // programName
@@ -319,7 +324,8 @@
             this.programName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.programName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.programName.ForeColor = System.Drawing.Color.Khaki;
-            this.programName.Location = new System.Drawing.Point(57, 97);
+            this.programName.Location = new System.Drawing.Point(66, 97);
+            this.programName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.programName.Name = "programName";
             this.programName.Size = new System.Drawing.Size(71, 16);
             this.programName.TabIndex = 1;
@@ -330,7 +336,8 @@
             this.Subtitle.AutoSize = true;
             this.Subtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Subtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.Subtitle.Location = new System.Drawing.Point(31, 120);
+            this.Subtitle.Location = new System.Drawing.Point(36, 120);
+            this.Subtitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Subtitle.Name = "Subtitle";
             this.Subtitle.Size = new System.Drawing.Size(133, 12);
             this.Subtitle.TabIndex = 2;
@@ -339,9 +346,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DIT_AIO.Properties.Resources.DIT_Logo;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 10);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 10);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(180, 84);
+            this.pictureBox2.Size = new System.Drawing.Size(210, 84);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -361,9 +369,10 @@
             this.Master.Controls.Add(this.SystemSetup);
             this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
-            this.Master.Location = new System.Drawing.Point(192, 12);
+            this.Master.Location = new System.Drawing.Point(224, 12);
+            this.Master.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Master.Name = "Master";
-            this.Master.Size = new System.Drawing.Size(825, 578);
+            this.Master.Size = new System.Drawing.Size(944, 539);
             this.Master.TabIndex = 28;
             // 
             // btnMaximize
@@ -374,11 +383,13 @@
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.ForeColor = System.Drawing.Color.White;
             this.btnMaximize.Image = global::DIT_AIO.Properties.Resources.maximize;
-            this.btnMaximize.Location = new System.Drawing.Point(754, 15);
+            this.btnMaximize.Location = new System.Drawing.Point(861, 15);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(29, 26);
+            this.btnMaximize.Size = new System.Drawing.Size(34, 26);
             this.btnMaximize.TabIndex = 29;
             this.btnMaximize.UseVisualStyleBackColor = false;
+            this.btnMaximize.Visible = false;
             // 
             // btnMinimize
             // 
@@ -388,11 +399,13 @@
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
             this.btnMinimize.Image = global::DIT_AIO.Properties.Resources.minimize;
-            this.btnMinimize.Location = new System.Drawing.Point(714, 15);
+            this.btnMinimize.Location = new System.Drawing.Point(815, 15);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(29, 26);
+            this.btnMinimize.Size = new System.Drawing.Size(34, 26);
             this.btnMinimize.TabIndex = 33;
             this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Visible = false;
             // 
             // btnClose
             // 
@@ -401,11 +414,13 @@
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Image = global::DIT_AIO.Properties.Resources.exit;
-            this.btnClose.Location = new System.Drawing.Point(790, 15);
+            this.btnClose.Location = new System.Drawing.Point(903, 15);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(29, 26);
+            this.btnClose.Size = new System.Drawing.Size(34, 26);
             this.btnClose.TabIndex = 13;
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Visible = false;
             // 
             // Home
             // 
@@ -421,8 +436,9 @@
             this.Home.Controls.Add(this.Title_Home);
             this.Home.Controls.Add(this.UpdateNotes);
             this.Home.Location = new System.Drawing.Point(0, 0);
+            this.Home.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(825, 578);
+            this.Home.Size = new System.Drawing.Size(944, 539);
             this.Home.TabIndex = 27;
             this.Home.Tag = "Home";
             this.Home.Visible = false;
@@ -430,22 +446,25 @@
             // musicVolume
             // 
             this.musicVolume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.musicVolume.Enabled = false;
             this.musicVolume.LargeChange = 3;
-            this.musicVolume.Location = new System.Drawing.Point(721, 532);
+            this.musicVolume.Location = new System.Drawing.Point(822, 493);
+            this.musicVolume.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.musicVolume.Name = "musicVolume";
-            this.musicVolume.Size = new System.Drawing.Size(104, 45);
+            this.musicVolume.Size = new System.Drawing.Size(122, 45);
             this.musicVolume.TabIndex = 23;
             this.musicVolume.Value = 4;
+            this.musicVolume.Visible = false;
             // 
             // CityLogo
             // 
             this.CityLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.CityLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CityLogo.Image = global::DIT_AIO.Properties.Resources.citylogo1;
-            this.CityLogo.Location = new System.Drawing.Point(58, 114);
+            this.CityLogo.Location = new System.Drawing.Point(59, 114);
             this.CityLogo.Margin = new System.Windows.Forms.Padding(0);
             this.CityLogo.Name = "CityLogo";
-            this.CityLogo.Size = new System.Drawing.Size(305, 294);
+            this.CityLogo.Size = new System.Drawing.Size(356, 294);
             this.CityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CityLogo.TabIndex = 1;
             this.CityLogo.TabStop = false;
@@ -456,26 +475,28 @@
             this.btnMusic.BackColor = System.Drawing.Color.Transparent;
             this.btnMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnMusic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMusic.FlatAppearance.BorderSize = 0;
             this.btnMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMusic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.btnMusic.Image = global::DIT_AIO.Properties.Resources.playing;
-            this.btnMusic.Location = new System.Drawing.Point(756, 491);
+            this.btnMusic.Location = new System.Drawing.Point(864, 452);
             this.btnMusic.Margin = new System.Windows.Forms.Padding(0);
             this.btnMusic.Name = "btnMusic";
-            this.btnMusic.Size = new System.Drawing.Size(41, 38);
+            this.btnMusic.Size = new System.Drawing.Size(48, 38);
             this.btnMusic.TabIndex = 17;
             this.btnMusic.Tag = "Home";
             this.btnMusic.UseVisualStyleBackColor = false;
+            this.btnMusic.Visible = false;
             // 
             // tooltip
             // 
             this.tooltip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tooltip.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tooltip.ForeColor = System.Drawing.Color.Khaki;
-            this.tooltip.Location = new System.Drawing.Point(101, 546);
+            this.tooltip.Location = new System.Drawing.Point(108, 546);
+            this.tooltip.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tooltip.Name = "tooltip";
-            this.tooltip.Size = new System.Drawing.Size(611, 25);
+            this.tooltip.Size = new System.Drawing.Size(713, 25);
             this.tooltip.TabIndex = 15;
             this.tooltip.Text = "Developed by Bao Nguyen && Clayton Lee";
             this.tooltip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -485,9 +506,10 @@
             this.DESC_Info.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.DESC_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.DESC_Info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.DESC_Info.Location = new System.Drawing.Point(71, 443);
+            this.DESC_Info.Location = new System.Drawing.Point(62, 423);
+            this.DESC_Info.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DESC_Info.Name = "DESC_Info";
-            this.DESC_Info.Size = new System.Drawing.Size(682, 101);
+            this.DESC_Info.Size = new System.Drawing.Size(795, 101);
             this.DESC_Info.TabIndex = 14;
             this.DESC_Info.Text = resources.GetString("DESC_Info.Text");
             this.DESC_Info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -497,9 +519,10 @@
             this.Title_Home.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Title_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title_Home.ForeColor = System.Drawing.Color.Khaki;
-            this.Title_Home.Location = new System.Drawing.Point(0, 0);
+            this.Title_Home.Location = new System.Drawing.Point(-10, 0);
+            this.Title_Home.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Title_Home.Name = "Title_Home";
-            this.Title_Home.Size = new System.Drawing.Size(825, 62);
+            this.Title_Home.Size = new System.Drawing.Size(962, 62);
             this.Title_Home.TabIndex = 0;
             this.Title_Home.Text = "Announcements";
             this.Title_Home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -509,81 +532,39 @@
             this.UpdateNotes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UpdateNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
             this.UpdateNotes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UpdateNotes.Controls.Add(this.label11);
-            this.UpdateNotes.Controls.Add(this.label10);
-            this.UpdateNotes.Controls.Add(this.label9);
-            this.UpdateNotes.Controls.Add(this.label8);
+            this.UpdateNotes.Controls.Add(this.richTextBox1);
             this.UpdateNotes.Controls.Add(this.label5);
-            this.UpdateNotes.Controls.Add(this.label7);
-            this.UpdateNotes.Location = new System.Drawing.Point(409, 114);
+            this.UpdateNotes.Location = new System.Drawing.Point(468, 114);
+            this.UpdateNotes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.UpdateNotes.Name = "UpdateNotes";
-            this.UpdateNotes.Size = new System.Drawing.Size(342, 294);
+            this.UpdateNotes.Size = new System.Drawing.Size(398, 294);
             this.UpdateNotes.TabIndex = 22;
             // 
-            // label10
+            // richTextBox1
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label10.Location = new System.Drawing.Point(10, 166);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(328, 64);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "- Scanning && Signature now require program to be run as original user.";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label9.Location = new System.Drawing.Point(7, 116);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(328, 50);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "- Data && Printer Recovery now checks for admin rights. ";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label8.Location = new System.Drawing.Point(4, 88);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(328, 28);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "June 12, 2025";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.richTextBox1.Location = new System.Drawing.Point(8, 66);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(380, 217);
+            this.richTextBox1.TabIndex = 20;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Calibri", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Khaki;
-            this.label5.Location = new System.Drawing.Point(2, -1);
+            this.label5.Location = new System.Drawing.Point(3, 10);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(337, 34);
+            this.label5.Size = new System.Drawing.Size(393, 34);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Update Log";
+            this.label5.Text = "Patch Notes - 8/2/2025";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label7.Location = new System.Drawing.Point(6, 45);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(325, 28);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Version 1.2 - QoL Updates";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DataRecovery
             // 
@@ -599,8 +580,9 @@
             this.DataRecovery.Controls.Add(this.pictureBox3);
             this.DataRecovery.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataRecovery.Location = new System.Drawing.Point(0, 0);
+            this.DataRecovery.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.DataRecovery.Name = "DataRecovery";
-            this.DataRecovery.Size = new System.Drawing.Size(825, 578);
+            this.DataRecovery.Size = new System.Drawing.Size(944, 539);
             this.DataRecovery.TabIndex = 29;
             this.DataRecovery.Tag = "DataRecovery";
             this.DataRecovery.Visible = false;
@@ -610,9 +592,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Khaki;
-            this.label2.Location = new System.Drawing.Point(105, 531);
+            this.label2.Location = new System.Drawing.Point(113, 492);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(669, 22);
+            this.label2.Size = new System.Drawing.Size(780, 22);
             this.label2.TabIndex = 18;
             this.label2.Text = "Sometimes printers fail to restore when going across windows versions. Always dou" +
     "ble check!";
@@ -621,9 +604,10 @@
             // 
             this.warning_printers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.warning_printers.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.warning_printers.Location = new System.Drawing.Point(77, 526);
+            this.warning_printers.Location = new System.Drawing.Point(80, 487);
+            this.warning_printers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.warning_printers.Name = "warning_printers";
-            this.warning_printers.Size = new System.Drawing.Size(36, 29);
+            this.warning_printers.Size = new System.Drawing.Size(42, 29);
             this.warning_printers.TabIndex = 17;
             this.warning_printers.TabStop = false;
             // 
@@ -632,7 +616,8 @@
             this.Title_Data_Recovery.AutoSize = true;
             this.Title_Data_Recovery.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title_Data_Recovery.ForeColor = System.Drawing.Color.Khaki;
-            this.Title_Data_Recovery.Location = new System.Drawing.Point(20, 17);
+            this.Title_Data_Recovery.Location = new System.Drawing.Point(24, 17);
+            this.Title_Data_Recovery.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Title_Data_Recovery.Name = "Title_Data_Recovery";
             this.Title_Data_Recovery.Size = new System.Drawing.Size(213, 32);
             this.Title_Data_Recovery.TabIndex = 12;
@@ -646,9 +631,10 @@
             this.btnBackup_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBackup_User_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackup_User_Data.ForeColor = System.Drawing.Color.Ivory;
-            this.btnBackup_User_Data.Location = new System.Drawing.Point(142, 443);
+            this.btnBackup_User_Data.Location = new System.Drawing.Point(157, 404);
+            this.btnBackup_User_Data.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBackup_User_Data.Name = "btnBackup_User_Data";
-            this.btnBackup_User_Data.Size = new System.Drawing.Size(105, 38);
+            this.btnBackup_User_Data.Size = new System.Drawing.Size(122, 38);
             this.btnBackup_User_Data.TabIndex = 0;
             this.btnBackup_User_Data.Tag = "DataRecovery";
             this.btnBackup_User_Data.Text = "Backup Data";
@@ -666,9 +652,10 @@
             this.btn_Restore_User_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Restore_User_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Restore_User_Data.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_Restore_User_Data.Location = new System.Drawing.Point(275, 443);
+            this.btn_Restore_User_Data.Location = new System.Drawing.Point(312, 404);
+            this.btn_Restore_User_Data.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Restore_User_Data.Name = "btn_Restore_User_Data";
-            this.btn_Restore_User_Data.Size = new System.Drawing.Size(105, 38);
+            this.btn_Restore_User_Data.Size = new System.Drawing.Size(122, 38);
             this.btn_Restore_User_Data.TabIndex = 2;
             this.btn_Restore_User_Data.Tag = "DataRecovery";
             this.btn_Restore_User_Data.Text = "Restore Data";
@@ -685,9 +672,10 @@
             this.btn_Backup_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Backup_Printers.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Backup_Printers.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_Backup_Printers.Location = new System.Drawing.Point(402, 443);
+            this.btn_Backup_Printers.Location = new System.Drawing.Point(459, 404);
+            this.btn_Backup_Printers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Backup_Printers.Name = "btn_Backup_Printers";
-            this.btn_Backup_Printers.Size = new System.Drawing.Size(105, 38);
+            this.btn_Backup_Printers.Size = new System.Drawing.Size(122, 38);
             this.btn_Backup_Printers.TabIndex = 10;
             this.btn_Backup_Printers.Tag = "DataRecovery";
             this.btn_Backup_Printers.Text = "Backup Printers";
@@ -704,9 +692,10 @@
             this.btn_Restore_Printers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Restore_Printers.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Restore_Printers.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_Restore_Printers.Location = new System.Drawing.Point(524, 443);
+            this.btn_Restore_Printers.Location = new System.Drawing.Point(602, 404);
+            this.btn_Restore_Printers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Restore_Printers.Name = "btn_Restore_Printers";
-            this.btn_Restore_Printers.Size = new System.Drawing.Size(105, 38);
+            this.btn_Restore_Printers.Size = new System.Drawing.Size(122, 38);
             this.btn_Restore_Printers.TabIndex = 11;
             this.btn_Restore_Printers.Tag = "DataRecovery";
             this.btn_Restore_Printers.Text = "Restore Printers";
@@ -721,9 +710,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = global::DIT_AIO.Properties.Resources.datarecovery;
-            this.pictureBox3.Location = new System.Drawing.Point(26, 65);
+            this.pictureBox3.Location = new System.Drawing.Point(31, 65);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(769, 447);
+            this.pictureBox3.Size = new System.Drawing.Size(878, 408);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
@@ -742,8 +732,9 @@
             this.Diagnostics.Controls.Add(this.pictureBox5);
             this.Diagnostics.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Diagnostics.Location = new System.Drawing.Point(0, 0);
+            this.Diagnostics.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Diagnostics.Name = "Diagnostics";
-            this.Diagnostics.Size = new System.Drawing.Size(825, 578);
+            this.Diagnostics.Size = new System.Drawing.Size(944, 539);
             this.Diagnostics.TabIndex = 28;
             this.Diagnostics.Tag = "Diagnostics";
             this.Diagnostics.Visible = false;
@@ -753,9 +744,10 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Khaki;
-            this.label4.Location = new System.Drawing.Point(173, 537);
+            this.label4.Location = new System.Drawing.Point(192, 498);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(537, 24);
+            this.label4.Size = new System.Drawing.Size(626, 24);
             this.label4.TabIndex = 39;
             this.label4.Text = "Compilation of CMD commands for user diagnostics.";
             // 
@@ -763,9 +755,10 @@
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox8.Image = global::DIT_AIO.Properties.Resources.happy;
-            this.pictureBox8.Location = new System.Drawing.Point(147, 528);
+            this.pictureBox8.Location = new System.Drawing.Point(162, 489);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(26, 39);
+            this.pictureBox8.Size = new System.Drawing.Size(31, 39);
             this.pictureBox8.TabIndex = 38;
             this.pictureBox8.TabStop = false;
             // 
@@ -774,7 +767,8 @@
             this.Title_Diagnostics.AutoSize = true;
             this.Title_Diagnostics.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title_Diagnostics.ForeColor = System.Drawing.Color.Khaki;
-            this.Title_Diagnostics.Location = new System.Drawing.Point(20, 17);
+            this.Title_Diagnostics.Location = new System.Drawing.Point(24, 17);
+            this.Title_Diagnostics.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Title_Diagnostics.Name = "Title_Diagnostics";
             this.Title_Diagnostics.Size = new System.Drawing.Size(173, 32);
             this.Title_Diagnostics.TabIndex = 26;
@@ -788,9 +782,10 @@
             this.btn_Check_User_Accounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Check_User_Accounts.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Check_User_Accounts.ForeColor = System.Drawing.Color.Lavender;
-            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(111, 443);
+            this.btn_Check_User_Accounts.Location = new System.Drawing.Point(120, 404);
+            this.btn_Check_User_Accounts.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Check_User_Accounts.Name = "btn_Check_User_Accounts";
-            this.btn_Check_User_Accounts.Size = new System.Drawing.Size(105, 38);
+            this.btn_Check_User_Accounts.Size = new System.Drawing.Size(122, 38);
             this.btn_Check_User_Accounts.TabIndex = 6;
             this.btn_Check_User_Accounts.Tag = "Diagnostics";
             this.btn_Check_User_Accounts.Text = "Check User Account";
@@ -808,9 +803,10 @@
             this.btn_Ping_IP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ping_IP.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Ping_IP.ForeColor = System.Drawing.Color.Lavender;
-            this.btn_Ping_IP.Location = new System.Drawing.Point(236, 443);
+            this.btn_Ping_IP.Location = new System.Drawing.Point(266, 404);
+            this.btn_Ping_IP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Ping_IP.Name = "btn_Ping_IP";
-            this.btn_Ping_IP.Size = new System.Drawing.Size(105, 38);
+            this.btn_Ping_IP.Size = new System.Drawing.Size(122, 38);
             this.btn_Ping_IP.TabIndex = 15;
             this.btn_Ping_IP.Tag = "Diagnostics";
             this.btn_Ping_IP.Text = "Ping IP Address";
@@ -827,9 +823,10 @@
             this.btn_SFC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_SFC.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SFC.ForeColor = System.Drawing.Color.Lavender;
-            this.btn_SFC.Location = new System.Drawing.Point(360, 443);
+            this.btn_SFC.Location = new System.Drawing.Point(410, 404);
+            this.btn_SFC.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_SFC.Name = "btn_SFC";
-            this.btn_SFC.Size = new System.Drawing.Size(105, 38);
+            this.btn_SFC.Size = new System.Drawing.Size(122, 38);
             this.btn_SFC.TabIndex = 21;
             this.btn_SFC.Tag = "Diagnostics";
             this.btn_SFC.Text = "SFC Scan";
@@ -847,9 +844,10 @@
             this.btn_DISM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_DISM.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DISM.ForeColor = System.Drawing.Color.Lavender;
-            this.btn_DISM.Location = new System.Drawing.Point(481, 443);
+            this.btn_DISM.Location = new System.Drawing.Point(552, 404);
+            this.btn_DISM.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_DISM.Name = "btn_DISM";
-            this.btn_DISM.Size = new System.Drawing.Size(105, 38);
+            this.btn_DISM.Size = new System.Drawing.Size(122, 38);
             this.btn_DISM.TabIndex = 22;
             this.btn_DISM.Tag = "Diagnostics";
             this.btn_DISM.Text = "DISM";
@@ -866,9 +864,10 @@
             this.btn_CCH_Deploy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CCH_Deploy.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CCH_Deploy.ForeColor = System.Drawing.Color.Lavender;
-            this.btn_CCH_Deploy.Location = new System.Drawing.Point(605, 443);
+            this.btn_CCH_Deploy.Location = new System.Drawing.Point(696, 404);
+            this.btn_CCH_Deploy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_CCH_Deploy.Name = "btn_CCH_Deploy";
-            this.btn_CCH_Deploy.Size = new System.Drawing.Size(105, 38);
+            this.btn_CCH_Deploy.Size = new System.Drawing.Size(122, 38);
             this.btn_CCH_Deploy.TabIndex = 25;
             this.btn_CCH_Deploy.Tag = "Diagnostics";
             this.btn_CCH_Deploy.Text = "CCH Deploy Apps";
@@ -884,9 +883,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Image = global::DIT_AIO.Properties.Resources.labratory;
-            this.pictureBox5.Location = new System.Drawing.Point(26, 65);
+            this.pictureBox5.Location = new System.Drawing.Point(31, 65);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(769, 457);
+            this.pictureBox5.Size = new System.Drawing.Size(878, 418);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 27;
             this.pictureBox5.TabStop = false;
@@ -905,8 +905,9 @@
             this.SystemSetup.Controls.Add(this.pictureBox6);
             this.SystemSetup.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SystemSetup.Location = new System.Drawing.Point(0, 0);
+            this.SystemSetup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SystemSetup.Name = "SystemSetup";
-            this.SystemSetup.Size = new System.Drawing.Size(825, 578);
+            this.SystemSetup.Size = new System.Drawing.Size(944, 539);
             this.SystemSetup.TabIndex = 30;
             this.SystemSetup.Tag = "SystemSetup";
             this.SystemSetup.Visible = false;
@@ -916,9 +917,10 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Khaki;
-            this.label6.Location = new System.Drawing.Point(115, 537);
+            this.label6.Location = new System.Drawing.Point(125, 498);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(659, 21);
+            this.label6.Size = new System.Drawing.Size(769, 21);
             this.label6.TabIndex = 37;
             this.label6.Text = "Paperport / Electronic Scanning - Make sure this program is not running under you" +
     "r admin credentials!";
@@ -927,9 +929,10 @@
             // 
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox4.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.pictureBox4.Location = new System.Drawing.Point(82, 528);
+            this.pictureBox4.Location = new System.Drawing.Point(87, 489);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 39);
+            this.pictureBox4.Size = new System.Drawing.Size(35, 39);
             this.pictureBox4.TabIndex = 36;
             this.pictureBox4.TabStop = false;
             // 
@@ -938,7 +941,8 @@
             this.Title_SystemSetup.AutoSize = true;
             this.Title_SystemSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title_SystemSetup.ForeColor = System.Drawing.Color.Khaki;
-            this.Title_SystemSetup.Location = new System.Drawing.Point(20, 17);
+            this.Title_SystemSetup.Location = new System.Drawing.Point(24, 17);
+            this.Title_SystemSetup.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Title_SystemSetup.Name = "Title_SystemSetup";
             this.Title_SystemSetup.Size = new System.Drawing.Size(202, 32);
             this.Title_SystemSetup.TabIndex = 25;
@@ -947,14 +951,16 @@
             // btn_Paperport
             // 
             this.btn_Paperport.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Paperport.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_Paperport.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btn_Paperport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Paperport.FlatAppearance.BorderColor = System.Drawing.Color.Ivory;
             this.btn_Paperport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Paperport.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Paperport.Location = new System.Drawing.Point(222, 459);
+            this.btn_Paperport.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_Paperport.Location = new System.Drawing.Point(249, 420);
+            this.btn_Paperport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Paperport.Name = "btn_Paperport";
-            this.btn_Paperport.Size = new System.Drawing.Size(105, 38);
+            this.btn_Paperport.Size = new System.Drawing.Size(122, 38);
             this.btn_Paperport.TabIndex = 12;
             this.btn_Paperport.Tag = "SystemSetup";
             this.btn_Paperport.Text = "Paperport and Scanning";
@@ -966,14 +972,16 @@
             // btn_Esignature
             // 
             this.btn_Esignature.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Esignature.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_Esignature.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btn_Esignature.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Esignature.FlatAppearance.BorderColor = System.Drawing.Color.Ivory;
             this.btn_Esignature.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Esignature.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Esignature.Location = new System.Drawing.Point(360, 459);
+            this.btn_Esignature.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_Esignature.Location = new System.Drawing.Point(410, 420);
+            this.btn_Esignature.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Esignature.Name = "btn_Esignature";
-            this.btn_Esignature.Size = new System.Drawing.Size(105, 38);
+            this.btn_Esignature.Size = new System.Drawing.Size(122, 38);
             this.btn_Esignature.TabIndex = 13;
             this.btn_Esignature.Tag = "SystemSetup";
             this.btn_Esignature.Text = "Electronic Signature";
@@ -985,14 +993,16 @@
             // btn_blank_login
             // 
             this.btn_blank_login.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_blank_login.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_blank_login.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btn_blank_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_blank_login.FlatAppearance.BorderColor = System.Drawing.Color.Ivory;
             this.btn_blank_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_blank_login.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_blank_login.Location = new System.Drawing.Point(88, 459);
+            this.btn_blank_login.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_blank_login.Location = new System.Drawing.Point(94, 420);
+            this.btn_blank_login.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_blank_login.Name = "btn_blank_login";
-            this.btn_blank_login.Size = new System.Drawing.Size(105, 38);
+            this.btn_blank_login.Size = new System.Drawing.Size(122, 38);
             this.btn_blank_login.TabIndex = 23;
             this.btn_blank_login.Tag = "SystemSetup";
             this.btn_blank_login.Text = "Blank Login";
@@ -1004,14 +1014,16 @@
             // btn_Firewall
             // 
             this.btn_Firewall.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_Firewall.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_Firewall.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btn_Firewall.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Firewall.FlatAppearance.BorderColor = System.Drawing.Color.Ivory;
             this.btn_Firewall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Firewall.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Firewall.Location = new System.Drawing.Point(626, 459);
+            this.btn_Firewall.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_Firewall.Location = new System.Drawing.Point(721, 420);
+            this.btn_Firewall.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Firewall.Name = "btn_Firewall";
-            this.btn_Firewall.Size = new System.Drawing.Size(105, 38);
+            this.btn_Firewall.Size = new System.Drawing.Size(122, 38);
             this.btn_Firewall.TabIndex = 5;
             this.btn_Firewall.Tag = "SystemSetup";
             this.btn_Firewall.Text = "Firewall Off";
@@ -1024,14 +1036,16 @@
             // btn_outlook_cache
             // 
             this.btn_outlook_cache.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_outlook_cache.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_outlook_cache.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btn_outlook_cache.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_outlook_cache.FlatAppearance.BorderColor = System.Drawing.Color.Ivory;
             this.btn_outlook_cache.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_outlook_cache.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_outlook_cache.Location = new System.Drawing.Point(494, 459);
+            this.btn_outlook_cache.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_outlook_cache.Location = new System.Drawing.Point(567, 420);
+            this.btn_outlook_cache.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_outlook_cache.Name = "btn_outlook_cache";
-            this.btn_outlook_cache.Size = new System.Drawing.Size(105, 38);
+            this.btn_outlook_cache.Size = new System.Drawing.Size(122, 38);
             this.btn_outlook_cache.TabIndex = 24;
             this.btn_outlook_cache.Tag = "SystemSetup";
             this.btn_outlook_cache.Text = "Clear Outlook Cache";
@@ -1046,9 +1060,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox6.Image = global::DIT_AIO.Properties.Resources.system_setup;
-            this.pictureBox6.Location = new System.Drawing.Point(26, 65);
+            this.pictureBox6.Location = new System.Drawing.Point(31, 65);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(769, 464);
+            this.pictureBox6.Size = new System.Drawing.Size(878, 425);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 38;
             this.pictureBox6.TabStop = false;
@@ -1068,20 +1083,64 @@
             this.Mainframe.Controls.Add(this.btn_MF_Guide);
             this.Mainframe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Mainframe.Location = new System.Drawing.Point(0, 0);
+            this.Mainframe.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Mainframe.Name = "Mainframe";
-            this.Mainframe.Size = new System.Drawing.Size(825, 578);
+            this.Mainframe.Size = new System.Drawing.Size(944, 539);
             this.Mainframe.TabIndex = 31;
             this.Mainframe.Tag = "Mainframe";
             this.Mainframe.Visible = false;
+            // 
+            // btn_MF_Fix_Thunderbolt
+            // 
+            this.btn_MF_Fix_Thunderbolt.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_Fix_Thunderbolt.BackColor = System.Drawing.Color.Transparent;
+            this.btn_MF_Fix_Thunderbolt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Fix_Thunderbolt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_Fix_Thunderbolt.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_Fix_Thunderbolt.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_MF_Fix_Thunderbolt.Location = new System.Drawing.Point(735, 448);
+            this.btn_MF_Fix_Thunderbolt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_MF_Fix_Thunderbolt.Name = "btn_MF_Fix_Thunderbolt";
+            this.btn_MF_Fix_Thunderbolt.Size = new System.Drawing.Size(122, 38);
+            this.btn_MF_Fix_Thunderbolt.TabIndex = 32;
+            this.btn_MF_Fix_Thunderbolt.Tag = "Mainframe";
+            this.btn_MF_Fix_Thunderbolt.Text = "Fix Thunderbolt Error";
+            this.toolTip1.SetToolTip(this.btn_MF_Fix_Thunderbolt, "Mainframe thunderbolt issues or miscellaneous issues? CTRL+F \"psprinterdata\", rem" +
+        "ove gibberish text and replace with \"\".");
+            this.btn_MF_Fix_Thunderbolt.UseVisualStyleBackColor = false;
+            this.btn_MF_Fix_Thunderbolt.Visible = false;
+            this.btn_MF_Fix_Thunderbolt.Click += new System.EventHandler(this.fix_Thunderbolt_Error);
+            // 
+            // btn_MF_Install_VistaTN3270
+            // 
+            this.btn_MF_Install_VistaTN3270.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_MF_Install_VistaTN3270.BackColor = System.Drawing.Color.Transparent;
+            this.btn_MF_Install_VistaTN3270.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_MF_Install_VistaTN3270.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MF_Install_VistaTN3270.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MF_Install_VistaTN3270.ForeColor = System.Drawing.Color.Ivory;
+            this.btn_MF_Install_VistaTN3270.Location = new System.Drawing.Point(595, 448);
+            this.btn_MF_Install_VistaTN3270.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_MF_Install_VistaTN3270.Name = "btn_MF_Install_VistaTN3270";
+            this.btn_MF_Install_VistaTN3270.Size = new System.Drawing.Size(122, 38);
+            this.btn_MF_Install_VistaTN3270.TabIndex = 31;
+            this.btn_MF_Install_VistaTN3270.Tag = "Mainframe";
+            this.btn_MF_Install_VistaTN3270.Text = "Install VistaTN3270";
+            this.toolTip1.SetToolTip(this.btn_MF_Install_VistaTN3270, "Mainframe thunderbolt issues or miscellaneous issues? CTRL+F \"psprinterdata\", rem" +
+        "ove gibberish text and replace with \"\".");
+            this.btn_MF_Install_VistaTN3270.UseVisualStyleBackColor = false;
+            this.btn_MF_Install_VistaTN3270.Visible = false;
+            this.btn_MF_Install_VistaTN3270.Click += new System.EventHandler(this.install_VistaTN3270);
             // 
             // pictureBox9
             // 
             this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox9.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.pictureBox9.Location = new System.Drawing.Point(176, 531);
+            this.pictureBox9.Location = new System.Drawing.Point(196, 492);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(31, 39);
+            this.pictureBox9.Size = new System.Drawing.Size(36, 39);
             this.pictureBox9.TabIndex = 30;
             this.pictureBox9.TabStop = false;
             // 
@@ -1091,7 +1150,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Khaki;
-            this.label1.Location = new System.Drawing.Point(203, 540);
+            this.label1.Location = new System.Drawing.Point(228, 501);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(406, 21);
             this.label1.TabIndex = 29;
@@ -1103,9 +1163,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox7.Image = global::DIT_AIO.Properties.Resources.mainframe_bg;
-            this.pictureBox7.Location = new System.Drawing.Point(26, 65);
+            this.pictureBox7.Location = new System.Drawing.Point(31, 65);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(757, 403);
+            this.pictureBox7.Size = new System.Drawing.Size(864, 364);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 28;
             this.pictureBox7.TabStop = false;
@@ -1115,7 +1176,8 @@
             this.Title_Mainframe.AutoSize = true;
             this.Title_Mainframe.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title_Mainframe.ForeColor = System.Drawing.Color.Khaki;
-            this.Title_Mainframe.Location = new System.Drawing.Point(20, 17);
+            this.Title_Mainframe.Location = new System.Drawing.Point(24, 17);
+            this.Title_Mainframe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Title_Mainframe.Name = "Title_Mainframe";
             this.Title_Mainframe.Size = new System.Drawing.Size(157, 32);
             this.Title_Mainframe.TabIndex = 27;
@@ -1129,9 +1191,10 @@
             this.btn_MF_Unsuspend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_Unsuspend.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_Unsuspend.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(156, 487);
+            this.btn_MF_Unsuspend.Location = new System.Drawing.Point(172, 448);
+            this.btn_MF_Unsuspend.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_MF_Unsuspend.Name = "btn_MF_Unsuspend";
-            this.btn_MF_Unsuspend.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_Unsuspend.Size = new System.Drawing.Size(122, 38);
             this.btn_MF_Unsuspend.TabIndex = 8;
             this.btn_MF_Unsuspend.Tag = "Mainframe";
             this.btn_MF_Unsuspend.Text = "Install Unsuspend Macro";
@@ -1149,9 +1212,10 @@
             this.btn_MF_PW_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_PW_Reset.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_PW_Reset.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(276, 487);
+            this.btn_MF_PW_Reset.Location = new System.Drawing.Point(312, 448);
+            this.btn_MF_PW_Reset.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_MF_PW_Reset.Name = "btn_MF_PW_Reset";
-            this.btn_MF_PW_Reset.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_PW_Reset.Size = new System.Drawing.Size(122, 38);
             this.btn_MF_PW_Reset.TabIndex = 9;
             this.btn_MF_PW_Reset.Tag = "Mainframe";
             this.btn_MF_PW_Reset.Text = "Install PW Reset Macro";
@@ -1169,9 +1233,10 @@
             this.btn_MF_PS_Printer_Data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_PS_Printer_Data.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_PS_Printer_Data.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(396, 487);
+            this.btn_MF_PS_Printer_Data.Location = new System.Drawing.Point(452, 448);
+            this.btn_MF_PS_Printer_Data.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_MF_PS_Printer_Data.Name = "btn_MF_PS_Printer_Data";
-            this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(122, 38);
             this.btn_MF_PS_Printer_Data.TabIndex = 26;
             this.btn_MF_PS_Printer_Data.Tag = "Mainframe";
             this.btn_MF_PS_Printer_Data.Text = "Clear PS_PrinterData";
@@ -1189,9 +1254,10 @@
             this.btn_MF_Guide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MF_Guide.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MF_Guide.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_MF_Guide.Location = new System.Drawing.Point(36, 487);
+            this.btn_MF_Guide.Location = new System.Drawing.Point(32, 448);
+            this.btn_MF_Guide.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_MF_Guide.Name = "btn_MF_Guide";
-            this.btn_MF_Guide.Size = new System.Drawing.Size(105, 38);
+            this.btn_MF_Guide.Size = new System.Drawing.Size(122, 38);
             this.btn_MF_Guide.TabIndex = 14;
             this.btn_MF_Guide.Tag = "Mainframe";
             this.btn_MF_Guide.Text = "Guide";
@@ -1208,8 +1274,9 @@
             this.Settings.Controls.Add(this.Title_Settings);
             this.Settings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Settings.Location = new System.Drawing.Point(0, 0);
+            this.Settings.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(825, 578);
+            this.Settings.Size = new System.Drawing.Size(944, 539);
             this.Settings.TabIndex = 32;
             this.Settings.Tag = "Settings";
             this.Settings.Visible = false;
@@ -1218,18 +1285,20 @@
             // 
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(236, 243);
+            this.label3.Location = new System.Drawing.Point(276, 243);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(409, 38);
+            this.label3.Size = new System.Drawing.Size(477, 38);
             this.label3.TabIndex = 20;
             this.label3.Text = "This page is still under development.";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.pictureBox1.Location = new System.Drawing.Point(190, 242);
+            this.pictureBox1.Location = new System.Drawing.Point(221, 242);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
+            this.pictureBox1.Size = new System.Drawing.Size(46, 39);
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
@@ -1238,7 +1307,8 @@
             this.Title_Settings.AutoSize = true;
             this.Title_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title_Settings.ForeColor = System.Drawing.Color.Khaki;
-            this.Title_Settings.Location = new System.Drawing.Point(20, 17);
+            this.Title_Settings.Location = new System.Drawing.Point(24, 17);
+            this.Title_Settings.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Title_Settings.Name = "Title_Settings";
             this.Title_Settings.Size = new System.Drawing.Size(126, 32);
             this.Title_Settings.TabIndex = 13;
@@ -1258,78 +1328,27 @@
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "Information";
             // 
-            // btn_MF_Install_VistaTN3270
-            // 
-            this.btn_MF_Install_VistaTN3270.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_MF_Install_VistaTN3270.BackColor = System.Drawing.Color.Transparent;
-            this.btn_MF_Install_VistaTN3270.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_Install_VistaTN3270.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_Install_VistaTN3270.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_MF_Install_VistaTN3270.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_MF_Install_VistaTN3270.Location = new System.Drawing.Point(518, 487);
-            this.btn_MF_Install_VistaTN3270.Name = "btn_MF_Install_VistaTN3270";
-            this.btn_MF_Install_VistaTN3270.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_Install_VistaTN3270.TabIndex = 31;
-            this.btn_MF_Install_VistaTN3270.Tag = "Mainframe";
-            this.btn_MF_Install_VistaTN3270.Text = "Install VistaTN3270";
-            this.toolTip1.SetToolTip(this.btn_MF_Install_VistaTN3270, "Mainframe thunderbolt issues or miscellaneous issues? CTRL+F \"psprinterdata\", rem" +
-        "ove gibberish text and replace with \"\".");
-            this.btn_MF_Install_VistaTN3270.UseVisualStyleBackColor = false;
-            this.btn_MF_Install_VistaTN3270.Visible = false;
-            this.btn_MF_Install_VistaTN3270.Click += new System.EventHandler(this.install_VistaTN3270);
-            // 
-            // btn_MF_Fix_Thunderbolt
-            // 
-            this.btn_MF_Fix_Thunderbolt.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_MF_Fix_Thunderbolt.BackColor = System.Drawing.Color.Transparent;
-            this.btn_MF_Fix_Thunderbolt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_MF_Fix_Thunderbolt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_MF_Fix_Thunderbolt.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_MF_Fix_Thunderbolt.ForeColor = System.Drawing.Color.Ivory;
-            this.btn_MF_Fix_Thunderbolt.Location = new System.Drawing.Point(638, 487);
-            this.btn_MF_Fix_Thunderbolt.Name = "btn_MF_Fix_Thunderbolt";
-            this.btn_MF_Fix_Thunderbolt.Size = new System.Drawing.Size(105, 38);
-            this.btn_MF_Fix_Thunderbolt.TabIndex = 32;
-            this.btn_MF_Fix_Thunderbolt.Tag = "Mainframe";
-            this.btn_MF_Fix_Thunderbolt.Text = "Fix Thunderbolt Error";
-            this.toolTip1.SetToolTip(this.btn_MF_Fix_Thunderbolt, "Mainframe thunderbolt issues or miscellaneous issues? CTRL+F \"psprinterdata\", rem" +
-        "ove gibberish text and replace with \"\".");
-            this.btn_MF_Fix_Thunderbolt.UseVisualStyleBackColor = false;
-            this.btn_MF_Fix_Thunderbolt.Visible = false;
-            this.btn_MF_Fix_Thunderbolt.Click += new System.EventHandler(this.fix_Thunderbolt_Error);
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label11.Location = new System.Drawing.Point(6, 224);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(328, 64);
-            this.label11.TabIndex = 23;
-            this.label11.Text = "- New features added to Mainframe tab. Thunderbolt error fix and Vista TN install" +
-    "er.";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Runetonic
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(1024, 600);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(1176, 561);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Master);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximumSize = new System.Drawing.Size(1192, 600);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1024, 600);
+            this.MinimumSize = new System.Drawing.Size(1192, 600);
             this.Name = "Runetonic";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Claytonic - DIT Helpdesk Application";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.programicon.ResumeLayout(false);
@@ -1420,7 +1439,6 @@
         private System.Windows.Forms.Label tooltip;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btnMusic;
         private System.Windows.Forms.Button btnMaximize;
         private System.Windows.Forms.PictureBox CityLogo;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -1433,18 +1451,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label npcdialogue;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Panel UpdateNotes;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TrackBar musicVolume;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btn_MF_Install_VistaTN3270;
         private System.Windows.Forms.Button btn_MF_Fix_Thunderbolt;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TrackBar musicVolume;
+        private System.Windows.Forms.Button btnMusic;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

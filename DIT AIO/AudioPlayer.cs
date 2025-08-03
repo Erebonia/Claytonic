@@ -30,7 +30,6 @@ public class AudioPlayer
             "DIT_AIO.Resources.claytonic_music.wav",
             "DIT_AIO.Resources.claytonic_music_slow.wav",
             "DIT_AIO.Resources.CoffeeTonic.wav"
-
         };
 
         ShuffleSongs();
