@@ -25,6 +25,9 @@ namespace DIT_AIO
             // For designer.cs to instantiate
             InitializeComponent();
 
+            // Set the patch notes
+            patchNotes.Rtf = PatchNotes.update_notes;
+
             // Initialize colors for navigation buttons
             categoryNavigator = new CategoryNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34), this.Master);
 

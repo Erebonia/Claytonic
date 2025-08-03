@@ -123,17 +123,6 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>272, 17</value>
   </metadata>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>• Optimized core program code to significantly reduce application size from 15 MB to 2.5 MB, resulting in faster load times and improved update performance.
-
-• Enhanced user interface by refining layout, improving text spacing, and removing outdated form controls.
-
-• Resolved ghost mouse dragging issue, ensuring stable window movement upon application launch.
-
-• Removed deprecated music functionality to streamline performance.
-
-• Replaced NPC Fox with [new character name or description].</value>
-  </data>
   <metadata name="fileSystemWatcher1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>114, 17</value>
   </metadata>

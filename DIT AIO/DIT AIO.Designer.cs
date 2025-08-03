@@ -51,7 +51,7 @@
             this.DESC_Info = new System.Windows.Forms.Label();
             this.Title_Home = new System.Windows.Forms.Label();
             this.UpdateNotes = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.patchNotes = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.DataRecovery = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -316,12 +316,12 @@
             // 
             this.programName.AutoSize = true;
             this.programName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.programName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.programName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.programName.ForeColor = System.Drawing.Color.Khaki;
-            this.programName.Location = new System.Drawing.Point(66, 97);
+            this.programName.Location = new System.Drawing.Point(66, 100);
             this.programName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.programName.Name = "programName";
-            this.programName.Size = new System.Drawing.Size(71, 16);
+            this.programName.Size = new System.Drawing.Size(82, 20);
             this.programName.TabIndex = 1;
             this.programName.Text = "Claytonic";
             // 
@@ -330,7 +330,7 @@
             this.Subtitle.AutoSize = true;
             this.Subtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Subtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.Subtitle.Location = new System.Drawing.Point(36, 120);
+            this.Subtitle.Location = new System.Drawing.Point(44, 126);
             this.Subtitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Subtitle.Name = "Subtitle";
             this.Subtitle.Size = new System.Drawing.Size(133, 12);
@@ -442,7 +442,7 @@
             this.UpdateNotes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UpdateNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
             this.UpdateNotes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UpdateNotes.Controls.Add(this.richTextBox1);
+            this.UpdateNotes.Controls.Add(this.patchNotes);
             this.UpdateNotes.Controls.Add(this.label5);
             this.UpdateNotes.Location = new System.Drawing.Point(468, 114);
             this.UpdateNotes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -450,18 +450,19 @@
             this.UpdateNotes.Size = new System.Drawing.Size(398, 294);
             this.UpdateNotes.TabIndex = 22;
             // 
-            // richTextBox1
+            // patchNotes
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.richTextBox1.Location = new System.Drawing.Point(8, 59);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBox1.Size = new System.Drawing.Size(380, 224);
-            this.richTextBox1.TabIndex = 20;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.patchNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
+            this.patchNotes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.patchNotes.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patchNotes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.patchNotes.Location = new System.Drawing.Point(8, 59);
+            this.patchNotes.Name = "patchNotes";
+            this.patchNotes.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.patchNotes.Size = new System.Drawing.Size(380, 224);
+            this.patchNotes.TabIndex = 20;
+            //Patch Notes sync to Designer
+            this.patchNotes.Rtf = DIT_AIO.PatchNotes.update_notes;
             // 
             // label5
             // 
@@ -874,7 +875,7 @@
             this.btn_Paperport.Size = new System.Drawing.Size(122, 38);
             this.btn_Paperport.TabIndex = 12;
             this.btn_Paperport.Tag = "SystemSetup";
-            this.btn_Paperport.Text = "Paperport and Scanning";
+            this.btn_Paperport.Text = "Scanning and Paperport";
             this.toolTip1.SetToolTip(this.btn_Paperport, "Don\'t run as admin. Sets up user\'s paperport and scanning.");
             this.btn_Paperport.UseVisualStyleBackColor = false;
             this.btn_Paperport.Visible = false;
@@ -959,7 +960,7 @@
             this.btn_outlook_cache.Size = new System.Drawing.Size(122, 38);
             this.btn_outlook_cache.TabIndex = 24;
             this.btn_outlook_cache.Tag = "SystemSetup";
-            this.btn_outlook_cache.Text = "Clear Outlook Cache";
+            this.btn_outlook_cache.Text = "Outlook Cache Fix";
             this.toolTip1.SetToolTip(this.btn_outlook_cache, "Clears outlook cache, helps restore attachments.");
             this.btn_outlook_cache.UseVisualStyleBackColor = false;
             this.btn_outlook_cache.Visible = false;
@@ -1363,7 +1364,7 @@
         private System.Windows.Forms.Panel UpdateNotes;
         private System.Windows.Forms.Button btn_MF_Install_VistaTN3270;
         private System.Windows.Forms.Button btn_MF_Fix_Thunderbolt;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox patchNotes;
     }
 }
 
