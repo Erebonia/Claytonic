@@ -266,7 +266,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AudioPlayer.cs" />
     <Compile Include="ButtonNavigator.cs" />
     <Compile Include="CategoryNavigator.cs" />
     <Compile Include="DIT AIO.cs">
@@ -330,30 +329,18 @@
     <None Include="Resources\mainframe.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\exit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimize.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\warning.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\citylogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\playing.png" />
-    <EmbeddedResource Include="Resources\paused.png" />
-    <EmbeddedResource Include="Resources\claytonic_music.wav" />
     <None Include="Resources\mainframe_bg.png" />
     <None Include="Resources\happy.png" />
     <None Include="Resources\labratory.gif" />
     <None Include="Resources\system_setup.gif" />
     <None Include="Resources\clara.gif" />
-    <EmbeddedResource Include="Resources\claytonic_music_slow.wav" />
-    <EmbeddedResource Include="Resources\CoffeeTonic.wav" />
     <None Include="Resources\datarecovery.gif" />
-    <None Include="Resources\maximize.png" />
     <Content Include="DIT_Logo_V2.ico" />
   </ItemGroup>
   <ItemGroup>

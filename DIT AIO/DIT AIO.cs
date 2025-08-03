@@ -20,24 +20,10 @@ namespace DIT_AIO
 
         private NPCDialogue npcDialogue;
 
-        //private AudioPlayer audioPlayer;
-        //private Image playImage;
-        //private Image pauseImage;
-
         public Runetonic()
         {
             // For designer.cs to instantiate
             InitializeComponent();
-
-            // Initialize the images for our music buttons.
-            //playImage = Image.FromStream(ResourceHelper.GetResourceStream("DIT_AIO.Resources.playing.png"));
-            //pauseImage = Image.FromStream(ResourceHelper.GetResourceStream("DIT_AIO.Resources.paused.png"));
-
-            // Initialize AudioPlayer
-            //audioPlayer = new AudioPlayer(playImage, pauseImage, musicVolume);
-
-            // Update the event handler to use the AudioPlayer's method
-            //btnMusic.Click += (s, e) => audioPlayer.HandleMusicButtonClick(btnMusic);
 
             // Initialize colors for navigation buttons
             categoryNavigator = new CategoryNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34), this.Master);
@@ -49,9 +35,6 @@ namespace DIT_AIO
             btnSystemSetup.Click += categoryNavigator.HandleCategoryClick;
             btnMainframe.Click += categoryNavigator.HandleCategoryClick;
             btnSettings.Click += categoryNavigator.HandleCategoryClick;
-            btnMaximize.Click += categoryNavigator.HandleMaximizeClick;
-            btnMinimize.Click += categoryNavigator.HandleMinimizeClick;
-            btnClose.Click += categoryNavigator.HandleCloseClick;
 
             // Ensure Home tab is selected when starting the program
             categoryNavigator.HandleCategoryClick(btnDashboard, EventArgs.Empty);

@@ -363,12 +363,12 @@
             this.Master.Controls.Add(this.btnMaximize);
             this.Master.Controls.Add(this.btnMinimize);
             this.Master.Controls.Add(this.btnClose);
-            this.Master.Controls.Add(this.Home);
-            this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
             this.Master.Controls.Add(this.SystemSetup);
             this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
+            this.Master.Controls.Add(this.Home);
+            this.Master.Controls.Add(this.DataRecovery);
             this.Master.Location = new System.Drawing.Point(224, 12);
             this.Master.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Master.Name = "Master";
@@ -382,7 +382,6 @@
             this.btnMaximize.FlatAppearance.BorderSize = 0;
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.ForeColor = System.Drawing.Color.White;
-            this.btnMaximize.Image = global::DIT_AIO.Properties.Resources.maximize;
             this.btnMaximize.Location = new System.Drawing.Point(861, 15);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMaximize.Name = "btnMaximize";
@@ -398,7 +397,6 @@
             this.btnMinimize.FlatAppearance.BorderSize = 0;
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
-            this.btnMinimize.Image = global::DIT_AIO.Properties.Resources.minimize;
             this.btnMinimize.Location = new System.Drawing.Point(815, 15);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMinimize.Name = "btnMinimize";
@@ -413,7 +411,6 @@
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = global::DIT_AIO.Properties.Resources.exit;
             this.btnClose.Location = new System.Drawing.Point(903, 15);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnClose.Name = "btnClose";

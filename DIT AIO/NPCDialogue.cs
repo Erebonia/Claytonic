@@ -6,7 +6,7 @@ using System.Windows.Forms;
 public class NPCDialogue
 {
     private string[] phrases = {
-        "Hover over buttons to view descriptions!", 
+        "Hover over buttons to view detailed descriptions!", 
         "For any issues with the program please contact Bao Nguyen.",
         "Welcome to Claytonic. A program designed for Helpdesk && CSRs",
         "Do you have any ideas you would like to add? Contact helpdesk."

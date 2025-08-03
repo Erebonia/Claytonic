@@ -12,7 +12,8 @@ namespace DIT_AIO
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // Define the paths for the remote and local executables
+            // This is where the program will find the "updated" program.
+            // Build the latest version of this program, slap it in here, and it will force other claytonics to update to it.
             string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\DO_NOT_TOUCH\Claytonic.exe";
             string localExePath = Application.ExecutablePath;
 
