@@ -461,7 +461,7 @@
             this.patchNotes.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.patchNotes.Size = new System.Drawing.Size(380, 224);
             this.patchNotes.TabIndex = 20;
-            //Patch Notes sync to Designer
+            //Patch Notes sync to Designer on VS Studio launch
             this.patchNotes.Rtf = DIT_AIO.PatchNotes.update_notes;
             // 
             // label5
