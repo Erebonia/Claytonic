@@ -46,7 +46,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Master = new System.Windows.Forms.Panel();
             this.Mainframe = new System.Windows.Forms.Panel();
-            this.btn_MF_Fix_Thunderbolt = new System.Windows.Forms.Button();
             this.btn_MF_Install_VistaTN3270 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -356,12 +355,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.Master.Controls.Add(this.Mainframe);
             this.Master.Controls.Add(this.Settings);
             this.Master.Controls.Add(this.Home);
             this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
             this.Master.Controls.Add(this.SystemSetup);
+            this.Master.Controls.Add(this.Mainframe);
             this.Master.Location = new System.Drawing.Point(224, 12);
             this.Master.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Master.Name = "Master";
@@ -371,7 +370,6 @@
             // Mainframe
             // 
             this.Mainframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.Mainframe.Controls.Add(this.btn_MF_Fix_Thunderbolt);
             this.Mainframe.Controls.Add(this.btn_MF_Install_VistaTN3270);
             this.Mainframe.Controls.Add(this.pictureBox9);
             this.Mainframe.Controls.Add(this.label1);
@@ -389,13 +387,6 @@
             this.Mainframe.TabIndex = 31;
             this.Mainframe.Tag = "Mainframe";
             this.Mainframe.Visible = false;
-            // 
-            // btn_MF_Fix_Thunderbolt
-            // 
-            this.btn_MF_Fix_Thunderbolt.Location = new System.Drawing.Point(0, 0);
-            this.btn_MF_Fix_Thunderbolt.Name = "btn_MF_Fix_Thunderbolt";
-            this.btn_MF_Fix_Thunderbolt.Size = new System.Drawing.Size(75, 23);
-            this.btn_MF_Fix_Thunderbolt.TabIndex = 0;
             // 
             // btn_MF_Install_VistaTN3270
             // 
@@ -525,7 +516,7 @@
             this.btn_MF_PS_Printer_Data.Size = new System.Drawing.Size(122, 38);
             this.btn_MF_PS_Printer_Data.TabIndex = 26;
             this.btn_MF_PS_Printer_Data.Tag = "Mainframe";
-            this.btn_MF_PS_Printer_Data.Text = "Clear PS_PrinterData";
+            this.btn_MF_PS_Printer_Data.Text = "Thunderbolt Error Fix";
             this.toolTip1.SetToolTip(this.btn_MF_PS_Printer_Data, "Mainframe thunderbolt issues or miscellaneous issues? CTRL+F \"psprinterdata\", rem" +
         "ove gibberish text and replace with \"\".");
             this.btn_MF_PS_Printer_Data.UseVisualStyleBackColor = false;
@@ -876,8 +867,8 @@
             // Diagnostics
             // 
             this.Diagnostics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.Diagnostics.Controls.Add(this.label4);
             this.Diagnostics.Controls.Add(this.pictureBox8);
+            this.Diagnostics.Controls.Add(this.label4);
             this.Diagnostics.Controls.Add(this.Title_Diagnostics);
             this.Diagnostics.Controls.Add(this.btn_Check_User_Accounts);
             this.Diagnostics.Controls.Add(this.btn_Ping_IP);
@@ -905,12 +896,13 @@
             this.label4.Size = new System.Drawing.Size(626, 24);
             this.label4.TabIndex = 39;
             this.label4.Text = "Compilation of CMD commands for user diagnostics.";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox8.Image = global::DIT_AIO.Properties.Resources.happy;
-            this.pictureBox8.Location = new System.Drawing.Point(162, 519);
+            this.pictureBox8.Location = new System.Drawing.Point(281, 522);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(31, 39);
@@ -1360,7 +1352,6 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Panel UpdateNotes;
         private System.Windows.Forms.Button btn_MF_Install_VistaTN3270;
-        private System.Windows.Forms.Button btn_MF_Fix_Thunderbolt;
         private System.Windows.Forms.RichTextBox patchNotes;
         private System.Windows.Forms.WebBrowser patchNotesBrowser;
     }
