@@ -151,10 +151,10 @@
             this.npcdialogue.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.npcdialogue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.npcdialogue.ForeColor = System.Drawing.Color.Khaki;
-            this.npcdialogue.Location = new System.Drawing.Point(24, 410);
+            this.npcdialogue.Location = new System.Drawing.Point(24, 372);
             this.npcdialogue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.npcdialogue.Name = "npcdialogue";
-            this.npcdialogue.Size = new System.Drawing.Size(175, 63);
+            this.npcdialogue.Size = new System.Drawing.Size(177, 63);
             this.npcdialogue.TabIndex = 22;
             this.npcdialogue.Text = "Hover over buttons to view the description!";
             this.npcdialogue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -162,12 +162,13 @@
             // pictureBox10
             // 
             this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox10.Image = global::DIT_AIO.Properties.Resources.clara;
-            this.pictureBox10.Location = new System.Drawing.Point(46, 490);
+            this.pictureBox10.Image = global::DIT_AIO.Properties.Resources.scientist;
+            this.pictureBox10.Location = new System.Drawing.Point(9, 425);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(111, 70);
+            this.pictureBox10.Size = new System.Drawing.Size(205, 150);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 22;
             this.pictureBox10.TabStop = false;
@@ -461,7 +462,6 @@
             this.patchNotes.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.patchNotes.Size = new System.Drawing.Size(380, 224);
             this.patchNotes.TabIndex = 20;
-            //Patch Notes sync to Designer on VS Studio launch
             this.patchNotes.Rtf = DIT_AIO.PatchNotes.update_notes;
             // 
             // label5

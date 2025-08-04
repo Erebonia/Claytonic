@@ -318,7 +318,6 @@
     <None Include="Resources\datarecov.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\patchnotes.rtf" />
     <None Include="Resources\settings.png" />
   </ItemGroup>
   <ItemGroup>
@@ -337,6 +336,7 @@
     <None Include="Resources\citylogo.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\scientist.png" />
     <None Include="Resources\mainframe_bg.png" />
     <None Include="Resources\happy.png" />
     <None Include="Resources\labratory.gif" />
