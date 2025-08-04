@@ -55,7 +55,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>DIT_Logo_V2.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\DIT_Logo_V2.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>6A01CC1B3DC87415AA2231B9461CDD0C8925D4F3</ManifestCertificateThumbprint>
@@ -70,6 +70,12 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LOCAL|AnyCPU'">
+    <OutputPath>bin\LOCAL\</OutputPath>
+    <DefineConstants>TRACE;local</DefineConstants>
+    <Prefer32Bit>true</Prefer32Bit>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Costura, Version=5.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Costura.Fody.5.7.0\lib\netstandard1.0\Costura.dll</HintPath>
@@ -81,34 +87,6 @@
     </Reference>
     <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
-    </Reference>
-    <Reference Include="NAudio, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.2.2.1\lib\net472\NAudio.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="NAudio.Asio, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.Asio.2.2.1\lib\netstandard2.0\NAudio.Asio.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="NAudio.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.Core.2.2.1\lib\netstandard2.0\NAudio.Core.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="NAudio.Midi, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.Midi.2.2.1\lib\netstandard2.0\NAudio.Midi.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="NAudio.Wasapi, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.Wasapi.2.2.1\lib\netstandard2.0\NAudio.Wasapi.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="NAudio.WinForms, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.WinForms.2.2.1\lib\net472\NAudio.WinForms.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="NAudio.WinMM, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.WinMM.2.2.1\lib\netstandard2.0\NAudio.WinMM.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -266,27 +244,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AudioPlayer.cs" />
-    <Compile Include="ButtonNavigator.cs" />
-    <Compile Include="CategoryNavigator.cs" />
-    <Compile Include="DIT AIO.cs">
+    <Compile Include="Form\ButtonNavigator.cs" />
+    <Compile Include="Form\CategoryNavigator.cs" />
+    <Compile Include="Core Program &amp; Features\DIT AIO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DIT AIO.Designer.cs">
+    <Compile Include="Core Program &amp; Features\DIT AIO.Designer.cs">
       <DependentUpon>DIT AIO.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDragger.cs" />
-    <Compile Include="NPCDialogue.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Form\FormDragger.cs" />
+    <Compile Include="Core Program &amp; Features\NPCDialogue.cs" />
+    <Compile Include="Core Program &amp; Features\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ResourceHelper.cs" />
-    <Compile Include="UpdateHelper.cs" />
-    <EmbeddedResource Include="DIT AIO.resx">
+    <Compile Include="Form\ResourceHelper.cs" />
+    <Compile Include="Form\UpdateHelper.cs" />
+    <EmbeddedResource Include="Core Program &amp; Features\DIT AIO.resx">
       <DependentUpon>DIT AIO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -294,7 +271,25 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="DIT AIO_TemporaryKey.pfx" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\00Backup - User Profile.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\00Restore - User Profile.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\22backup_printers.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\22restore_printers.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\BlankLogin.cmd" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\DISM.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\firewall-notifications-off.reg" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\firewall-off.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\formsCache.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\Install_ACID_PW_Reset.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\Install_ACID_Unsuspend.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\MainframeEDPModify.cmd" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\mfinstall.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\netuser.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\Outlook 2016 - 64 Bit.reg" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\ping_ipaddress.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\SFC_Scannow.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\checkCert2.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\ImageRetrieverFix5.cmd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -331,31 +326,21 @@
     <None Include="Resources\mainframe.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\exit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimize.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\warning.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\citylogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\playing.png" />
-    <EmbeddedResource Include="Resources\paused.png" />
-    <EmbeddedResource Include="Resources\claytonic_music.wav" />
+    <EmbeddedResource Include="Resources\patchnotes.html" />
+    <None Include="Resources\scientist.png" />
     <None Include="Resources\mainframe_bg.png" />
     <None Include="Resources\happy.png" />
     <None Include="Resources\labratory.gif" />
     <None Include="Resources\system_setup.gif" />
     <None Include="Resources\clara.gif" />
-    <EmbeddedResource Include="Resources\claytonic_music_slow.wav" />
-    <EmbeddedResource Include="Resources\CoffeeTonic.wav" />
     <None Include="Resources\datarecovery.gif" />
-    <None Include="Resources\maximize.png" />
-    <Content Include="DIT_Logo_V2.ico" />
+    <Content Include="Resources\DIT_Logo_V2.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
