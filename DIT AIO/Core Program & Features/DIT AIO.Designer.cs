@@ -150,7 +150,7 @@
             this.npcdialogue.Name = "npcdialogue";
             this.npcdialogue.Size = new System.Drawing.Size(177, 63);
             this.npcdialogue.TabIndex = 22;
-            this.npcdialogue.Text = "Hover over buttons to view the description!";
+            this.npcdialogue.Text = "Check OPS Ticket Knowledgebase for guides on everything!";
             this.npcdialogue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox10
