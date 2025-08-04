@@ -68,25 +68,25 @@ namespace DIT_AIO
 
         private void Backup_Data(object sender, EventArgs e)
         {
-            requireAdminOrDifferentUser();
+            if (!requireAdminOrDifferentUser()) return;
             runCustomScript(@"\\ditfp1\helpdesk\BN\Data Migration Script\00Backup - User Profile.bat");
         }
 
         private void Restore_Data(object sender, EventArgs e)
         {
-            requireAdminOrDifferentUser();
+            if (!requireAdminOrDifferentUser()) return;
             runCustomScript(@"\\ditfp1\helpdesk\BN\Data Migration Script\00Restore - User Profile.bat");
         }
 
         private void Backup_Printers(object sender, EventArgs e)
         {
-            requireAdminOrDifferentUser();
+            if (!requireAdminOrDifferentUser()) return;
             runCustomScript(@"\\ditfp1\helpdesk\BN\Data Migration Script\22backup_printers.bat");
         }
 
         private void Restore_Printers(object sender, EventArgs e)
         {
-            requireAdminOrDifferentUser();
+            if (!requireAdminOrDifferentUser()) return;
             runCustomScript(@"\\ditfp1\helpdesk\BN\Data Migration Script\22restore_printers.bat");
         }
 
@@ -102,25 +102,25 @@ namespace DIT_AIO
 
         private void SFC_Scan(object sender, EventArgs e)
         {
-            requireAdminOrDifferentUser();
+            if (!requireAdminOrDifferentUser()) return;
             runCustomScript(@"\\ditfp1\helpdesk\BN\Technician_Tools\SFC_Scannow.bat");
         }
 
         private void DISM(object sender, EventArgs e)
         {
-            requireAdminOrDifferentUser();
+            if (!requireAdminOrDifferentUser()) return;
             runCustomScript(@"\\ditfp1\helpdesk\BN\Technician_Tools\DISM.bat");
         }
 
         private void Scanner_Setup(object sender, EventArgs e)
         {
-            stopDifferentUser();
+            if (!stopDifferentUser()) return;
             runCustomScript(@"\\Ditfp1\helpdesk\PaperPort\CCHSCAN1\ImageRetrieverFix5.cmd");
         }
 
         private void Electronic_Signature(object sender, EventArgs e)
         {
-            stopDifferentUser();
+            if (!stopDifferentUser()) return;
             runCustomScript(@"\\ditfp1\helpdesk\Digital Signatures\New Files\checkCert2.bat");
         }
 
@@ -174,31 +174,50 @@ namespace DIT_AIO
 
         private void fix_Thunderbolt_Error(object sender, EventArgs e)
         {
-            requireAdminOrDifferentUser();
+            if (!requireAdminOrDifferentUser()) return;
             runCustomScript(@"\\ditfp1\helpdesk\!SHORTCUTS!\MainframeEDPModify.cmd");
         }
 
         private void runCustomScript(string scriptPath)
         {
-            // Create a new process to run the script
-            ProcessStartInfo processStartInfo = new ProcessStartInfo
-            {
-                FileName = scriptPath,
-                // UseShellExecute needs to be set to true if the script requires using the system shell
-                UseShellExecute = true
-            };
-
+        #if local
+            // LOCAL build: always use embedded resources
+            string fileName = Path.GetFileName(scriptPath);
+            ResourceHelper.RunEmbeddedBat(fileName);
+        #else
             try
             {
-                // Start the process
-                Process process = Process.Start(processStartInfo);
+                // Attempt to run from network path
+                ProcessStartInfo processStartInfo = new ProcessStartInfo
+                {
+                    FileName = scriptPath,
+                    UseShellExecute = true
+                };
+                Process.Start(processStartInfo);
             }
             catch (Exception ex)
             {
-                // Show error message if the script fails to start
-                MessageBox.Show($"Failed to run script: {ex.Message}");
+                // Fallback to embedded resource if network fails
+                MessageBox.Show(
+                    $"Network shared drive connection to script failed ({ex.Message}). Falling back to local version.",
+                    "Fallback",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+
+                try
+                {
+                    string fileName = Path.GetFileName(scriptPath);
+                    ResourceHelper.RunEmbeddedBat(fileName);
+                }
+                catch (Exception embeddedEx)
+                {
+                    MessageBox.Show($"Embedded script also failed: {embeddedEx.Message}");
+                }
             }
+        #endif
         }
+
 
         //Logic to retrieve current user logged on vs who ran the console "run as different user".
         [DllImport("wtsapi32.dll", SetLastError = true)]
@@ -231,25 +250,31 @@ namespace DIT_AIO
             return username;
         }
 
-        private void stopDifferentUser()
-        {
-            string processUser = WindowsIdentity.GetCurrent().Name; // DOMAIN\User or MACHINE\User
-            string consoleUser = GetConsoleUsername(); // Just the username
-
-            if (!processUser.EndsWith("\\" + consoleUser, StringComparison.OrdinalIgnoreCase))
-            {
-                MessageBox.Show("Please do not use 'Run as different user' for this feature. Log in as the intended user instead.",
-                    "Unauthorized Execution", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-        }
-
-        private void requireAdminOrDifferentUser()
+        private bool stopDifferentUser()
         {
             string processUser = WindowsIdentity.GetCurrent().Name;
             string consoleUser = GetConsoleUsername();
 
-            // Check if current user is in the Administrators group
+            if (!processUser.EndsWith("\\" + consoleUser, StringComparison.OrdinalIgnoreCase))
+            {
+                MessageBox.Show(
+                    "Please do not use 'Run as different user' for this feature. Log in as the intended user instead.",
+                    "Unauthorized Execution",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return false; // ❌ Block execution
+            }
+
+            return true; // ✅ Allowed
+        }
+
+
+        private bool requireAdminOrDifferentUser()
+        {
+            string processUser = WindowsIdentity.GetCurrent().Name;
+            string consoleUser = GetConsoleUsername();
+
             using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
             {
                 WindowsPrincipal principal = new WindowsPrincipal(identity);
@@ -257,18 +282,22 @@ namespace DIT_AIO
 
                 if (isAdmin)
                 {
-                    // Admins are always allowed
-                    return;
+                    return true; // Admin OK
                 }
             }
 
-            // Not admin, so must be run as different user
             if (processUser.EndsWith("\\" + consoleUser, StringComparison.OrdinalIgnoreCase))
             {
-                MessageBox.Show("This function requires admin rights. Please run as a different user with elevated permissions.",
-                    "Insufficient Permissions", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                throw new UnauthorizedAccessException("User is not admin. Please run the program as different user with your credentials.");
+                MessageBox.Show(
+                    "This function requires admin rights. Please run as a different user with elevated permissions.",
+                    "Insufficient Permissions",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return false; // ❌ Stop here
             }
+
+            return true;
         }
     }
 }

@@ -70,6 +70,12 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LOCAL|AnyCPU'">
+    <OutputPath>bin\LOCAL\</OutputPath>
+    <DefineConstants>TRACE;local</DefineConstants>
+    <Prefer32Bit>true</Prefer32Bit>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Costura, Version=5.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Costura.Fody.5.7.0\lib\netstandard1.0\Costura.dll</HintPath>
@@ -265,6 +271,10 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\00Backup - User Profile.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\00Restore - User Profile.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\22backup_printers.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\22restore_printers.bat" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
