@@ -275,6 +275,21 @@
     <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\00Restore - User Profile.bat" />
     <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\22backup_printers.bat" />
     <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\22restore_printers.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\BlankLogin.cmd" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\DISM.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\firewall-notifications-off.reg" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\firewall-off.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\formsCache.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\Install_ACID_PW_Reset.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\Install_ACID_Unsuspend.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\MainframeEDPModify.cmd" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\mfinstall.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\netuser.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\Outlook 2016 - 64 Bit.reg" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\ping_ipaddress.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\SFC_Scannow.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\checkCert2.bat" />
+    <EmbeddedResource Include="Core Program &amp; Features\LocalScripts\ImageRetrieverFix5.cmd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

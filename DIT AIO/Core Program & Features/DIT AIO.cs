@@ -144,7 +144,13 @@ namespace DIT_AIO
 
         private void CCH_Deploy(object sender, EventArgs e)
         {
+            #if local
+            MessageBox.Show($"You need network connection for this feature.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            #else
             runCustomScript(@"\\cchdeploy1\dep$\AppInstallOnly.bat");
+            #endif
+
         }
 
         private void Install_ACID_Unsuspend(object sender, EventArgs e)
@@ -159,32 +165,37 @@ namespace DIT_AIO
 
         private void Clear_PS_PrinterData(object sender, EventArgs e)
         {
+            if (!requireAdminOrDifferentUser()) return;
             runCustomScript(@"\\ditfp1\helpdesk\Mainframe attachmate (Extra!)\MainframeEDPModify.cmd");
         }
 
         private void Mainframe_Guides(object sender, EventArgs e)
         {
+            #if local
+            MessageBox.Show($"You need network connection for this feature.", "Warning", MessageBoxButtons.OK,  MessageBoxIcon.Warning);
+            #else
             runCustomScript(@"\\Ditfp1\helpdesk\BN\Mainframe");
+            #endif
         }
 
         private void install_VistaTN3270(object sender, EventArgs e)
         {
-            runCustomScript(@"\\ditfp1\helpdesk\VistaTN3270\silent.bat");
-        }
+            #if local
+            MessageBox.Show($"You need network connection for this feature.");
 
-        private void fix_Thunderbolt_Error(object sender, EventArgs e)
-        {
-            if (!requireAdminOrDifferentUser()) return;
-            runCustomScript(@"\\ditfp1\helpdesk\!SHORTCUTS!\MainframeEDPModify.cmd");
+            #else
+            runCustomScript(@"\\ditfp1\helpdesk\VistaTN3270\mfinstall.bat");
+            #endif
+
         }
 
         private void runCustomScript(string scriptPath)
         {
-        #if local
+            #if local
             // LOCAL build: always use embedded resources
             string fileName = Path.GetFileName(scriptPath);
             ResourceHelper.RunEmbeddedBat(fileName);
-        #else
+            #else
             try
             {
                 // Attempt to run from network path
@@ -215,7 +226,7 @@ namespace DIT_AIO
                     MessageBox.Show($"Embedded script also failed: {embeddedEx.Message}");
                 }
             }
-        #endif
+            #endif
         }
 
 
@@ -263,10 +274,10 @@ namespace DIT_AIO
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
-                return false; // ❌ Block execution
+                return false; 
             }
 
-            return true; // ✅ Allowed
+            return true; 
         }
 
 
@@ -282,7 +293,7 @@ namespace DIT_AIO
 
                 if (isAdmin)
                 {
-                    return true; // Admin OK
+                    return true; 
                 }
             }
 
@@ -294,7 +305,7 @@ namespace DIT_AIO
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
-                return false; // ❌ Stop here
+                return false;
             }
 
             return true;
