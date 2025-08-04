@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
-using System.Windows.Forms;
 using System.Security.Principal;
+using System.Windows.Forms;
 
 namespace DIT_AIO
 {
@@ -20,8 +21,11 @@ namespace DIT_AIO
             // For designer.cs to instantiate
             InitializeComponent();
 
-            // Set the patch notes
-            patchNotes.Rtf = PatchNotes.update_notes;
+            using (var stream = ResourceHelper.GetResourceStream("DIT_AIO.Resources.patchnotes.html"))
+            using (var reader = new StreamReader(stream))
+            {
+                patchNotesBrowser.DocumentText = reader.ReadToEnd();
+            }
 
             // Initialize colors for navigation buttons
             categoryNavigator = new CategoryNavigator(pnlNav, Color.FromArgb(46, 51, 73), Color.FromArgb(30, 31, 34), this.Master);

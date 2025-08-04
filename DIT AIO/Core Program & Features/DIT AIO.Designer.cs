@@ -99,6 +99,7 @@
             this.Title_Settings = new System.Windows.Forms.Label();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.patchNotesBrowser = new System.Windows.Forms.WebBrowser();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.programicon.SuspendLayout();
@@ -443,6 +444,7 @@
             this.UpdateNotes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UpdateNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(61)))), ((int)(((byte)(56)))));
             this.UpdateNotes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UpdateNotes.Controls.Add(this.patchNotesBrowser);
             this.UpdateNotes.Controls.Add(this.patchNotes);
             this.UpdateNotes.Controls.Add(this.label5);
             this.UpdateNotes.Location = new System.Drawing.Point(468, 114);
@@ -462,7 +464,7 @@
             this.patchNotes.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.patchNotes.Size = new System.Drawing.Size(380, 224);
             this.patchNotes.TabIndex = 20;
-            this.patchNotes.Rtf = DIT_AIO.PatchNotes.update_notes;
+            this.patchNotes.Text = resources.GetString("patchNotes.Text");
             // 
             // label5
             // 
@@ -1240,6 +1242,15 @@
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "Information";
             // 
+            // patchNotesBrowser
+            // 
+            this.patchNotesBrowser.Location = new System.Drawing.Point(-1, -1);
+            this.patchNotesBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.patchNotesBrowser.Name = "patchNotesBrowser";
+            this.patchNotesBrowser.Size = new System.Drawing.Size(397, 294);
+            this.patchNotesBrowser.TabIndex = 23;
+            this.patchNotesBrowser.Url = new System.Uri("http://patchnotes.html", System.UriKind.Absolute);
+            // 
             // Runetonic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -1365,6 +1376,7 @@
         private System.Windows.Forms.Button btn_MF_Install_VistaTN3270;
         private System.Windows.Forms.Button btn_MF_Fix_Thunderbolt;
         private System.Windows.Forms.RichTextBox patchNotes;
+        private System.Windows.Forms.WebBrowser patchNotesBrowser;
     }
 }
 
