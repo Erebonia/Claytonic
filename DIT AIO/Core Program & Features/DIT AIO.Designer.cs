@@ -55,10 +55,6 @@
             this.btn_MF_PW_Reset = new System.Windows.Forms.Button();
             this.btn_MF_PS_Printer_Data = new System.Windows.Forms.Button();
             this.btn_MF_Guide = new System.Windows.Forms.Button();
-            this.Settings = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Title_Settings = new System.Windows.Forms.Label();
             this.Home = new System.Windows.Forms.Panel();
             this.CityLogo = new System.Windows.Forms.PictureBox();
             this.tooltip = new System.Windows.Forms.Label();
@@ -107,8 +103,6 @@
             this.Mainframe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.Settings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).BeginInit();
             this.UpdateNotes.SuspendLayout();
@@ -355,7 +349,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
-            this.Master.Controls.Add(this.Settings);
             this.Master.Controls.Add(this.Home);
             this.Master.Controls.Add(this.DataRecovery);
             this.Master.Controls.Add(this.Diagnostics);
@@ -542,54 +535,6 @@
             this.btn_MF_Guide.UseVisualStyleBackColor = false;
             this.btn_MF_Guide.Visible = false;
             this.btn_MF_Guide.Click += new System.EventHandler(this.Mainframe_Guides);
-            // 
-            // Settings
-            // 
-            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.Settings.Controls.Add(this.label3);
-            this.Settings.Controls.Add(this.pictureBox1);
-            this.Settings.Controls.Add(this.Title_Settings);
-            this.Settings.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Settings.Location = new System.Drawing.Point(0, 0);
-            this.Settings.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(944, 569);
-            this.Settings.TabIndex = 32;
-            this.Settings.Tag = "Settings";
-            this.Settings.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(276, 243);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(477, 38);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "This page is still under development.";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DIT_AIO.Properties.Resources.warning;
-            this.pictureBox1.Location = new System.Drawing.Point(221, 242);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 39);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Title_Settings
-            // 
-            this.Title_Settings.AutoSize = true;
-            this.Title_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_Settings.ForeColor = System.Drawing.Color.Khaki;
-            this.Title_Settings.Location = new System.Drawing.Point(24, 17);
-            this.Title_Settings.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Title_Settings.Name = "Title_Settings";
-            this.Title_Settings.Size = new System.Drawing.Size(126, 32);
-            this.Title_Settings.TabIndex = 13;
-            this.Title_Settings.Text = "Settings";
             // 
             // Home
             // 
@@ -1261,9 +1206,6 @@
             this.Mainframe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.Settings.ResumeLayout(false);
-            this.Settings.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Home.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CityLogo)).EndInit();
             this.UpdateNotes.ResumeLayout(false);
@@ -1321,18 +1263,14 @@
         private System.Windows.Forms.Panel Diagnostics;
         private System.Windows.Forms.Panel SystemSetup;
         private System.Windows.Forms.Panel Mainframe;
-        private System.Windows.Forms.Panel Settings;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Label Title_Home;
         private System.Windows.Forms.Label Title_Data_Recovery;
         private System.Windows.Forms.Label Title_Mainframe;
         private System.Windows.Forms.Label Title_Diagnostics;
         private System.Windows.Forms.Label Title_SystemSetup;
-        private System.Windows.Forms.Label Title_Settings;
         private System.Windows.Forms.PictureBox warning_printers;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label DESC_Info;
         private System.Windows.Forms.Label tooltip;
         private System.Windows.Forms.Label label6;
