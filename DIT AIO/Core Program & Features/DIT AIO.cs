@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using System.Media;
-using System.Reflection;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Security.Principal;
 
 namespace DIT_AIO
