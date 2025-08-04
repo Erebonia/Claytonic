@@ -280,7 +280,6 @@ namespace DIT_AIO
             return true; 
         }
 
-
         private bool requireAdminOrDifferentUser()
         {
             string processUser = WindowsIdentity.GetCurrent().Name;

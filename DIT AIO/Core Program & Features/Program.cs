@@ -24,7 +24,7 @@ namespace DIT_AIO
                 // Attempt update
                 bool updating = UpdateHelper.CheckForUpdates(remoteExePath, localExePath);
 
-                // Only run program if not updating
+            // Only run program if not updating
             if (!updating)
             {
                 Application.Run(new Runetonic());
