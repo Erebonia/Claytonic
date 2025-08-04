@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using DIT_AIO.Helpers; // Ensure this namespace is correctly referenced
+using DIT_AIO.Helpers;
 
 namespace DIT_AIO
 {
@@ -12,13 +12,19 @@ namespace DIT_AIO
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // This is where the program will find the "updated" program.
-            // Build the latest version of this program, slap it in here, and it will force other claytonics to update to it.
-            string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\DO_NOT_TOUCH\Claytonic.exe";
-            string localExePath = Application.ExecutablePath;
+            #if local
+                // LOCAL build update path
+                string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\DO_NOT_TOUCH\Claytonic_LOCAL.exe";
+            #else
+                // Debug/Release build update path
+                string remoteExePath = @"\\ditfp1\helpdesk\BN\Technician_Tools\DO_NOT_TOUCH\Claytonic.exe";
+            #endif
+                string localExePath = Application.ExecutablePath;
 
-            // Check for updates before displaying the form
-            bool updating = UpdateHelper.CheckForUpdates(remoteExePath, localExePath);
+                // Attempt update
+                bool updating = UpdateHelper.CheckForUpdates(remoteExePath, localExePath);
+
+                // Only run program if not updating
             if (!updating)
             {
                 Application.Run(new Runetonic());
