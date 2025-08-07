@@ -245,6 +245,7 @@ namespace DIT_AIO
             WTSDomainName = 7
         }
 
+        // Check who is utilizing the program.
         private string GetConsoleUsername()
         {
             IntPtr buffer;
@@ -261,6 +262,7 @@ namespace DIT_AIO
             return username;
         }
 
+        //Compare who is using against the logged on domain user
         private bool stopDifferentUser()
         {
             string processUser = WindowsIdentity.GetCurrent().Name;
