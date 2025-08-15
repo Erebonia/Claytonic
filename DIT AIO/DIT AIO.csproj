@@ -332,13 +332,15 @@
     <None Include="Resources\citylogo.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Bao.png" />
+    <Content Include="Resources\claytonic_logo.jpg" />
+    <Content Include="Resources\favicon.ico" />
     <EmbeddedResource Include="Resources\patchnotes.html" />
     <None Include="Resources\scientist.png" />
     <None Include="Resources\mainframe_bg.png" />
     <None Include="Resources\happy.png" />
     <None Include="Resources\labratory.gif" />
     <None Include="Resources\system_setup.gif" />
-    <None Include="Resources\clara.gif" />
     <None Include="Resources\datarecovery.gif" />
     <Content Include="Resources\DIT_Logo_V2.ico" />
   </ItemGroup>
