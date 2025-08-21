@@ -73,7 +73,7 @@
 ## 🖼 Application Preview
 
 ### 🏠 Home
-<img width="885" height="467" alt="{673132B2-5ABF-479C-85C2-31ABCD297A28}" src="https://github.com/user-attachments/assets/eb0fa4be-c0e2-486a-8d47-11505ab1adc9" />
+<img width="1173" height="613" alt="{673132B2-5ABF-479C-85C2-31ABCD297A28}" src="https://github.com/user-attachments/assets/eb0fa4be-c0e2-486a-8d47-11505ab1adc9" />
 
 ### 💾 Data Recovery
 <img width="1173" height="613" alt="{92541C22-2ECC-49DD-91BF-EB8EAAB7035B}" src="https://github.com/user-attachments/assets/c8cf788b-b17a-4c93-b8b9-d3c03e3c91a5" />
