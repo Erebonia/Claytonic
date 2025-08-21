@@ -1,5 +1,3 @@
-<img width="1172" height="615" alt="{673132B2-5ABF-479C-85C2-31ABCD297A28}" src="https://github.com/user-attachments/assets/ffad3977-4212-4086-8873-75ac11ee4762" /># Claytonic – Systems Operations Automation Suite
-
 **Claytonic** is a centralized tool launcher and diagnostics suite built in C# using Windows Forms. Designed for IT support technicians, it streamlines access to over 18 scripts and utilities used across citywide and enterprise systems, replacing manual lookup workflows with a professional, interactive interface.
 
 ---
