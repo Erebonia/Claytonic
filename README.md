@@ -75,20 +75,20 @@
 ## 🖼 Application Preview
 
 ### 🏠 Home
-
 <img width="885" height="467" alt="{673132B2-5ABF-479C-85C2-31ABCD297A28}" src="https://github.com/user-attachments/assets/eb0fa4be-c0e2-486a-8d47-11505ab1adc9" />
 
 ### 💾 Data Recovery
-<img width="884" height="468" alt="{0F421FB4-560A-4F1A-94DE-7CC5C0E8CC5C}" src="https://github.com/user-attachments/assets/8870574c-c9f6-45ff-9208-b62c2c64ac5c" />
+<img width="1173" height="613" alt="{92541C22-2ECC-49DD-91BF-EB8EAAB7035B}" src="https://github.com/user-attachments/assets/c8cf788b-b17a-4c93-b8b9-d3c03e3c91a5" />
 
 ### 🧪 Diagnostics
-<img width="884" height="466" alt="{391B8A05-7E9F-4607-A640-878F0889A7BC}" src="https://github.com/user-attachments/assets/76018761-5133-4e2c-a0ac-636f0c139d06" />
+<img width="1177" height="622" alt="{91E8AC04-A33D-44DD-A6A4-A6C0DEAF23F0}" src="https://github.com/user-attachments/assets/4c0299f6-a636-4ee8-aaeb-20a8b9fe7664" />
 
 ### 🛠 System Setup
-<img width="882" height="467" alt="{E7D76BE4-D1F5-42D3-8D67-106D1B317181}" src="https://github.com/user-attachments/assets/92943912-c050-4d96-94dd-9de5af92af81" />
+<img width="1177" height="620" alt="{13561587-D52F-4807-AA3F-24EB1A9C2121}" src="https://github.com/user-attachments/assets/d2df0e13-892f-4ebf-abd0-cce7d75b377a" />
 
 ### 🖥 Mainframe Tools
-<img width="885" height="463" alt="{591EA0A1-B3A9-48FA-AFF5-341180B68C57}" src="https://github.com/user-attachments/assets/acef81fe-37f8-45ee-a1ec-268d18c27a91" />
+<img width="1180" height="624" alt="{43212393-A75D-47C5-A090-766A824B0582}" src="https://github.com/user-attachments/assets/ab3ef555-6bf1-4126-ac84-bed486ebbb78" />
+
 
 ---
 
