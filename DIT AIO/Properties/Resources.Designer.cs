@@ -123,16 +123,6 @@ namespace DIT_AIO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DIT_Logo {
-            get {
-                object obj = ResourceManager.GetObject("DIT_Logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap happy {
             get {
                 object obj = ResourceManager.GetObject("happy", resourceCulture);
@@ -176,16 +166,6 @@ namespace DIT_AIO.Properties {
         internal static System.Drawing.Bitmap mainframe_bg {
             get {
                 object obj = ResourceManager.GetObject("mainframe_bg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap scientist {
-            get {
-                object obj = ResourceManager.GetObject("scientist", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
