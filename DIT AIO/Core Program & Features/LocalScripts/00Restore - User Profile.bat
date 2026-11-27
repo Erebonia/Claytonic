@@ -52,55 +52,6 @@ if %errorlevel% neq 0 (
 )
 echo Printer import completed.
 
-:: Copy PST files (if they are stored separately)
-echo Restoring PST files...
-Robocopy "%drv%:\%id%\Documents\Outlook Files" "C:\Users\%id%\Documents\Outlook Files" *.pst /R:3 /W:5
-
-:: Set the path for the PowerShell script on the external drive
-set psScriptPath="\\ditfp1\helpdesk\BN\Data Migration Script\import_pst.ps1"
-
-:: Generate PowerShell script for importing PST files
-echo Creating PowerShell script for PST import...
-(
-echo param ^(
-echo     [string]$pstDirectory1,
-echo     [string]$pstDirectory2
-echo ^)
-echo
-echo # Create an Outlook application object
-echo $outlook = New-Object -ComObject Outlook.Application
-echo
-echo # Get the namespace (MAPI)
-echo $namespace = $outlook.GetNamespace("MAPI")
-echo
-echo # Initialize an array to hold all PST files
-echo $pstFiles = @()
-echo
-echo # Get all PST files in both directories
-echo $pstFiles += Get-ChildItem -Path $pstDirectory1 -Filter *.pst
-echo $pstFiles += Get-ChildItem -Path $pstDirectory2 -Filter *.pst
-echo
-echo # Loop through each PST file and add it to the profile
-echo foreach ($pstFile in $pstFiles) {
-echo     $pstPath = $pstFile.FullName
-echo     try {
-echo         $namespace.AddStore($pstPath)
-echo         Write-Output "PST file imported successfully: $pstPath"
-echo     } catch {
-echo         Write-Output "Failed to import PST file: $pstPath"
-echo         Write-Output "Error: $_"
-echo     }
-echo }
-) > %psScriptPath%
-
-:: Determine the user's directories
-set userDirectory1=C:\Users\%id%\Documents\Outlook Files
-set userDirectory2=C:\Users\%id%\Outlook
-
-:: Execute the PowerShell script, passing the directory paths as arguments
-echo Importing PST files into Outlook...
-PowerShell -ExecutionPolicy Bypass -File %psScriptPath% -pstDirectory1 "%userDirectory1%" -pstDirectory2 "%userDirectory2%"
-
-echo All files have been successfully restored and PST files have been imported.
+echo All files have been successfully restored.
 
 pause
